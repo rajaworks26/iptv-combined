@@ -1,0 +1,17 @@
+#EXTM3U
+#EXTINF:-1 tvg-id="ABNUrdu.us@SD" tvg-logo="https://i.imgur.com/Y9ScPIl.png" group-title="USA | Religious",ABN Urdu (540p)
+https://mediaserver.abnvideos.com/streams/abnurdu.m3u8
+#EXTINF:-1 tvg-id="DDUrdu.in@SD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_DD_URDU/images/LOGO_HD/image.png" group-title="India | Entertainment",DD Urdu (720p)
+https://cdn.pishow.tv/ott/live/8/master.m3u8
+#EXTINF:-1 tvg-id="News18Urdu.in@SD" tvg-logo="https://i.imgur.com/8xnwMRR.png" group-title="India | News",News18 Urdu (1080p)
+https://n18syndication.akamaized.net/bpk-tv/News18_Urdu_NW18_MOB/output01/master.m3u8
+#EXTINF:-1 tvg-id="PeaceTVUrdu.ae@SD" tvg-logo="https://github.com/fawazahmed0/tiger/raw/master/peace/urdu.jpg" group-title="India | Religious",Peace TV Urdu (1080p)
+https://dzkyvlfyge.erbvr.com/PeaceTvUrdu/index.m3u8
+#EXTINF:-1 tvg-id="GodStandsKidsClubTV.pk@Urdu" tvg-logo="https://i.imgur.com/FxDBbpz.jpeg" group-title="Pakistan | Kids",God Stands Kids Club TV Urdu
+https://online.godstands.tv:5443/WebRTCApp/streams/KidsUrdu.m3u8
+#EXTINF:-1 tvg-id="GodStandsTV.pk@Urdu" tvg-logo="https://i.imgur.com/EO6cYUI.png" group-title="Pakistan | Religious",God Stands TV Urdu
+https://online.godstands.tv:5443/WebRTCApp/streams/UrduStreaming.m3u8
+#EXTINF:-1 tvg-id="MadaniChannelUrdu.pk@SD" tvg-logo="https://i.imgur.com/MitLeCJ.png" group-title="Pakistan | Religious",Madani Channel Urdu (720p)
+https://streaming.madanichannel.tv/static/streaming-playlists/hls/b9790f10-cb0d-4e30-82bf-84a756234e58/master.m3u8
+#EXTINF:-1 tvg-id="SkyNewsUrdu.pk@SD" tvg-logo="https://raw.githubusercontent.com/songwenhui239/Songwenhui239/refs/heads/main/sky-news-urdu-pk.png" group-title="Pakistan | News",Sky News Urdu (720p)
+https://lbgo.bozztv.com/ssh101/ssh101/skynews/playlist.m3u8

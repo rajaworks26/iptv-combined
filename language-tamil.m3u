@@ -1,0 +1,34 @@
+#EXTM3U
+#EXTINF:-1 tvg-id="TamilVisionTV.ca@SD" tvg-logo="https://i.imgur.com/DodsLuW.png" group-title="Canada | Undefined",TamilVision-TV (1080p)
+https://live.cmr24.fm/TVI/HD/chunks.m3u8
+#EXTINF:-1 tvg-id="AasthaTamil.in@SD" tvg-logo="https://i.imgur.com/YQK9ewf.png" group-title="India | Religious",Aastha Tamil (480p)
+https://aasthaott.akamaized.net/110923/smil:aasthatamil.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="ColorsTamil.in@HD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_COLORS_TAMIL/images/LOGO_HD/image.png" group-title="India | Entertainment",Colors Tamil HD (720p)
+https://da86m1sqpm3o0.cloudfront.net/28072023/smil:colorstamilhd11.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="DDTamil.in@SD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_DD_TAMIL/images/LOGO_HD/image.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36" group-title="India | Entertainment",DD Tamil (576p)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+https://fta.ektv.in/live/679/master.m3u8
+#EXTINF:-1 tvg-id="DDTamil.in@HD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_DD_TAMIL/images/LOGO_HD/image.png" group-title="India | Entertainment",DD Tamil HD (1080p)
+https://cdn.pishow.tv/ott/live/1737/master.m3u8
+#EXTINF:-1 tvg-id="News7Tamil.in@SD" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/News7_Tamil.png" group-title="India | News",News 7 Tamil (576p)
+https://cdn.pishow.tv/ott/live/1498/master.m3u8
+#EXTINF:-1 tvg-id="News18TamilNadu.in@SD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_NEWS18_TAMIL_NADU/images/LOGO_HD/image.png" group-title="India | News",News18 Tamil Nadu (1080p)
+https://n18syndication.akamaized.net/bpk-tv/News18_Tamil_Nadu_NW18_MOB/output01/master.m3u8
+#EXTINF:-1 tvg-id="NewsTamil24x7.in@SD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_NEWS_TAMIL_24X7/images/LOGO_HD/image.png" group-title="India | News",News Tamil 24x7 (1080p)
+https://stream.ottlive.co.in/newstamil/index.m3u8
+#EXTINF:-1 tvg-id="NHTamilGold.in@HD" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN400061DB_20260623T015348SQUARE.png" group-title="India | Movies",NH Tamil Gold (1080p)
+https://d3arbp6l7f096k.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/pb-gv6wgpbb4mgwk/playlist.m3u8?ads.ads_cdn=cf&ads.app_domain=APP_DOMAIN&ads.cdn=cf
+#EXTINF:-1 tvg-id="RajMusixTamil.in@SD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_RAJ_MUSIX_TAMIL/images/LOGO_HD/image.png" group-title="India | Music",Raj Musix Tamil (1080p)
+https://livestream.rajtv.tv/hlslive/Admin/px08241087/live/Raj_Musix/master_1.m3u8
+#EXTINF:-1 tvg-id="TamilJanam.in@SD" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Janam_Tamil.png" group-title="India | News",Tamil Janam (576p)
+https://mumt01.tangotv.in/O5aw8Zn3JANAMTVTAMIL/index.m3u8
+#EXTINF:-1 tvg-id="TamilanTV.in@SD" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Tamilan_Television.png" group-title="India | Undefined",Tamilan TV (576p)
+https://mumt04.tangotv.in/m18aqlK4TAMILANTELEVISION/index.m3u8
+#EXTINF:-1 tvg-id="WOWKidz.in@Tamil" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yupptvnew/content/common/channel/logos/mjvezt.png" group-title="India | Kids",WOW Kidz Tamil (720p)
+https://yuppparoriglin.akamaized.net/181224/smil:wowkidztam.smil/playlist.m3u8?hdnts=st=1735898689~exp=1835898688~acl=*~hmac=f5fe24724fe05481e3841f9eb5ab8efdee0a3dd83645ae9dcf45703f525bab7b
+#EXTINF:-1 tvg-id="ZeeTamil.in@SD" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0022S29Y.png?lock=720x540" group-title="India | Entertainment",Zee Tamil (576p) [Geo-blocked]
+https://ev-eu-hw-fast-mpd.starzplayarabia.com/Zee_Tamil/dash/drm/index.mpd
+#EXTINF:-1 tvg-id="ZeeTamil.in@HD" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG00233WCL.png?lock=720x540" group-title="India | Entertainment",Zee Tamil HD (1080p)
+https://d2o8pibksxtln6.cloudfront.net/live/media/Zee_Tamil_HD/hls/Zee_Tamil_HD.m3u8
+#EXTINF:-1 tvg-id="ZeeTamilNews.in@SD" tvg-logo="https://english.cdn.zeenews.com/images/logo/zee-tamil-logo-20.svg" group-title="India | News",Zee Tamil News (720p)
+https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main/streams/in/ZMCL/ZeeTamilNews.m3u8

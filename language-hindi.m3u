@@ -1,0 +1,19 @@
+#EXTM3U
+#EXTINF:-1 tvg-id="JusHindi.us@SD" tvg-logo="https://i.imgur.com/5GI7Nh7.png" group-title="USA | Culture",Jus Hindi (1080p)
+http://103.154.3.101:5001/live/960.m3u8
+#EXTINF:-1 tvg-id="SonyKALHindi.us@SD" tvg-logo="https://i.imgur.com/9Qq8DKh.png" group-title="USA | Undefined",Sony KAL Hindi (1080p)
+https://wurlsonypicturestv.global.transmit.live/hls/68deeb1c0238cda82df543dd/v1/spt_sonykal_1/lg_us/latest/main/hls/playlist.m3u8
+#EXTINF:-1 tvg-id="HindiHits.in@SD" tvg-logo="https://i.ibb.co/SwWjbPSv/hindi-hits-hd.png" group-title="India | Music",Hindi Hits SD (1080p)
+http://146.59.253.52:8080/hindihitshd/index.m3u8
+#EXTINF:-1 tvg-id="HindiKhabar.in@SD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_HINDI_KHABAR/images/LOGO_HD/image.png" group-title="India | News",Hindi Khabar (1080p)
+https://livingindiaottlive.akamaized.net/hindikhabar/index.m3u8
+#EXTINF:-1 tvg-id="HosannaTV.in@Hindi" tvg-logo="https://i.imgur.com/VYorU1L.png" group-title="India | Religious",Hosanna TV Hindi (720p)
+https://mumbai-edge.smartplaytv.in/HosannaTV/index.m3u8
+#EXTINF:-1 tvg-id="NaxatraNewsHindi.in@SD" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Naxatra_News_Hindi.png" group-title="India | News",Naxatra News Hindi (576p)
+https://d2gvyg6lvauoko.cloudfront.net/230226/naxatranewshindi/playlist.m3u8?hdnts=st=1735898689~exp=1835898688~acl=*~hmac=f5fe24724fe05481e3841f9eb5ab8efdee0a3dd83645ae9dcf45703f525bab7b
+#EXTINF:-1 tvg-id="SonySportsTen3Hindi.in@SD" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0025TCMR.png?lock=720x540" group-title="India | Sports",Sony Sports Ten 3 Hindi (1080p)
+https://r2.amml.in/sony-ten-3-hd/live.m3u8
+#EXTINF:-1 tvg-id="StarSports1Hindi.in@HD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_STAR_SPORTS_1_HD_HINDI/images/LOGO_HD/image.png" group-title="India | Sports",Star Sports 1 Hindi HD (1080p)
+http://116.90.120.149:8000/play/a122/index.m3u8
+#EXTINF:-1 tvg-id="GodStandsTV.pk@Hindi" tvg-logo="https://i.imgur.com/EO6cYUI.png" group-title="Pakistan | Religious",God Stands TV Hindi
+https://online.godstands.tv:5443/WebRTCApp/streams/HindiStreaming.m3u8
