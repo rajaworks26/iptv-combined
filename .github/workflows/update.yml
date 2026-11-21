@@ -70,7 +70,9 @@ jobs:
           git add -A
           git reset -q -- iptv-epg 2>/dev/null || true
 
+
           if ! git diff --cached --quiet; then
             git commit -m "Update IPTV playlist and EPG"
-            git push
+            git pull --rebase origin main
+            git push origin HEAD:main
           fi
