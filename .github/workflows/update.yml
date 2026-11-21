@@ -55,7 +55,9 @@ jobs:
           npm run grab -- \
             --channels="$GITHUB_WORKSPACE/epg.channels.xml" \
             --output="$GITHUB_WORKSPACE/combined.xml" \
-            --days=3
+            --days=3 \
+            --maxConnections=4 \
+            --timeout=30000
 
       - name: Validate generated files
         run: |
