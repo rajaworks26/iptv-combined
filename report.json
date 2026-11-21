@@ -1,24 +1,25 @@
 {
   "countries": {
-    "USA": 1562,
-    "Canada": 237,
-    "India": 848,
-    "Pakistan": 102
+    "USA": 1282,
+    "Canada": 189,
+    "India": 774,
+    "Pakistan": 30
   },
-  "total_channels": 2749,
+  "total_channels": 2275,
   "duplicate_entries_removed": 57,
-  "unique_tvg_ids": 2749,
-  "epg_mapped_ids": 1215,
-  "epg_mapping_percent": 44.2,
+  "dead_streams_removed": 554,
+  "unique_tvg_ids": 2269,
+  "epg_mapped_ids": 1014,
+  "epg_mapping_percent": 44.7,
   "language_estimates_from_names": {
-    "Other / Unspecified": 2667,
-    "English": 12,
-    "Urdu": 8,
-    "Hindi": 9,
-    "Punjabi": 19,
+    "English": 1468,
+    "Urdu": 34,
+    "Hindi": 5,
     "Malayalam": 5,
-    "Tamil": 16,
-    "Telugu": 13
+    "Punjabi": 17,
+    "Tamil": 14,
+    "Other / Unspecified": 716,
+    "Telugu": 16
   },
-  "note": "EPG mapping does not guarantee listings; language guesses are approximate. Stream health is not automatically asserted."
+  "note": "Stream reachability probed at build time. Blocked EPG scrapers excluded."
 }
