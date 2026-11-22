@@ -1,25 +1,27 @@
 {
   "countries": {
-    "USA": 1282,
-    "Canada": 189,
-    "India": 774,
-    "Pakistan": 30
+    "USA": 1049,
+    "Canada": 102,
+    "India": 877,
+    "Pakistan": 45,
+    "Sports": 167,
+    "Movies": 1664
   },
-  "total_channels": 2275,
-  "duplicate_entries_removed": 57,
-  "dead_streams_removed": 554,
-  "unique_tvg_ids": 2269,
-  "epg_mapped_ids": 1014,
-  "epg_mapping_percent": 44.7,
+  "total_channels": 3904,
+  "duplicate_entries_removed": 1869,
+  "dead_streams_removed": 16870,
+  "unique_tvg_ids": 2071,
+  "epg_mapped_ids": 1062,
+  "epg_mapping_percent": 51.3,
   "language_estimates_from_names": {
-    "English": 1468,
-    "Urdu": 34,
-    "Hindi": 5,
-    "Malayalam": 5,
-    "Punjabi": 17,
-    "Tamil": 14,
-    "Other / Unspecified": 716,
-    "Telugu": 16
+    "English": 1149,
+    "Urdu": 49,
+    "Hindi": 22,
+    "Malayalam": 6,
+    "Punjabi": 22,
+    "Tamil": 18,
+    "Other / Unspecified": 2619,
+    "Telugu": 19
   },
-  "note": "Stream reachability probed at build time. Blocked EPG scrapers excluded."
+  "note": "Merged live TV + Sports + Intl News + verified movies into single combined.m3u."
 }
