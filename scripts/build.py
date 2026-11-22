@@ -16,38 +16,64 @@ COUNTRIES = {
     'pk': 'Pakistan',
 }
 
-# Primary (iptv-org) and curated secondary (Free-TV/IPTV) M3U sources
 SOURCES = [
-    ('us', 'https://iptv-org.github.io/iptv/countries/us.m3u'),
     ('ca', 'https://iptv-org.github.io/iptv/countries/ca.m3u'),
+    ('us', 'https://iptv-org.github.io/iptv/countries/us.m3u'),
     ('in', 'https://iptv-org.github.io/iptv/countries/in.m3u'),
     ('pk', 'https://iptv-org.github.io/iptv/countries/pk.m3u'),
-    ('us', 'https://raw.githubusercontent.com/Free-TV/IPTV/master/playlists/playlist_usa.m3u8'),
     ('ca', 'https://raw.githubusercontent.com/Free-TV/IPTV/master/playlists/playlist_canada.m3u8'),
+    ('us', 'https://raw.githubusercontent.com/Free-TV/IPTV/master/playlists/playlist_usa.m3u8'),
     ('in', 'https://raw.githubusercontent.com/Free-TV/IPTV/master/playlists/playlist_india.m3u8'),
 ]
 
-# Secondary global active playlist (filtered to target countries + Global Sports & Intl News)
 GLOBAL_ACTIVE_SOURCES = [
     'https://raw.githubusercontent.com/Zaman-Topu/Ip-tv-Collection/main/FINAL_IPTV_ACTIVE.m3u',
 ]
 
-# Movies playlist merged directly into combined.m3u under "Movies | ..." groups
 MOVIE_SOURCES = [
     'https://raw.githubusercontent.com/Zaman-Topu/Ip-tv-Collection/main/FINAL_MOVIES_COMPLETE.m3u',
 ]
 
 COUNTRY_MATCHERS = {
+    'ca': ('Canada', ['canada', 'canadian', 'ca |', '[ca]', '(ca)', 'toronto', 'cp24', 'cbc', 'ctv', 'citytv', 'global']),
     'us': ('USA', ['usa', 'united states', 'us |', '[us]', '(us)']),
-    'ca': ('Canada', ['canada', 'canadian', 'ca |', '[ca]', '(ca)']),
     'in': ('India', ['india', 'indian', 'hindi', 'punjabi', 'tamil', 'telugu', 'malayalam', 'bengali', 'in |', '[in]']),
-    'pk': ('Pakistan', ['pakistan', 'pakistani', 'urdu', 'pk |', '[pk]']),
+    'pk': ('Pakistan', ['pakistan', 'pakistani', 'urdu', 'pk |', '[pk]', 'geo', 'ary', 'hum', 'samaa', 'ptv']),
 }
 
-# Broken or Cloudflare-blocked EPG scrapers to avoid when alternatives exist
+SPORTS_KEYWORDS = (
+    'sport', 'sports', 'cricket', 'football', 'soccer', 'espn', 'bein',
+    'sky sports', 'star sports', 't sports', 'ten sports', 'sony ten',
+    'f1', 'formula 1', 'dazn', 'tsn', 'sportsnet', 'ptv sports', 'geo super',
+    'a sports', 'willow', 'fox sports', 'cbs sports', 'nbc sports', 'golf', 'tennis', 'racing'
+)
+
+NEWS_KEYWORDS = (
+    'news', 'cnn', 'bbc', 'al jazeera', 'sky news', 'euronews', 'france 24',
+    'dw', 'msnbc', 'fox news', 'cnbc', 'bloomberg', 'cp24', 'cbc news', 'ctv news',
+    'citynews', 'geo news', 'ary news', 'hum news', 'samaa', 'dunya news', 'express news',
+    'ndtv', 'india today', 'aaj tak', 'republic', 'wion', 'times now'
+)
+
+# Deterministic TiviMate sidebar order & channel number blocks
+GROUP_ORDER = {
+    'Live Sports': (1, 100),
+    'International News': (2, 200),
+    'Canada': (3, 300),
+    'USA': (4, 400),
+    'India': (5, 500),
+    'Pakistan': (6, 600),
+    'Movies | Hollywood & English': (7, 1000),
+    'Movies | Bollywood & Hindi': (8, 2000),
+    'Movies | Pakistani & Urdu': (9, 3000),
+    'Movies | Action & General': (10, 4000),
+}
+
+# Set True to keep 1 best stream per channel/movie title (zero duplicate names in TiviMate)
+DEDUPLICATE_BY_TITLE = True
+
 BLOCKED_SITES = {'tvtv.us', 'distro.tv'}
 
-# Preferred reliable EPG providers (higher number = higher priority)
 SITE_PRIORITY = {
     'tvpassport.com': 5,
     'tvguide.com': 5,
@@ -58,7 +84,6 @@ SITE_PRIORITY = {
     'tvhebdo.com': 3,
 }
 
-# Regional EPG aliases so local CityNews feeds map to their local Citytv schedules
 EPG_ALIASES = {
     'CityNewsToronto.ca@SD': ['CitytvToronto.ca@HD', 'CitytvToronto.ca@SD', 'CitytvToronto.ca'],
     'CityNewsCalgary.ca@SD': ['CitytvCalgary.ca@HD', 'CitytvCalgary.ca@SD', 'CitytvCalgary.ca'],
@@ -66,7 +91,6 @@ EPG_ALIASES = {
     'CityNewsVancouver.ca@SD': ['CitytvVancouver.ca@HD', 'CitytvVancouver.ca@SD', 'CitytvVancouver.ca'],
 }
 
-# Fast parallel stream health verification settings (Option A)
 CHECK_STREAM_HEALTH = True
 STREAM_TIMEOUT = 2.5
 MAX_WORKERS = 120
@@ -95,7 +119,6 @@ def is_stream_alive(url, check_segment=True):
             body = resp.read(2048).decode('utf-8', errors='ignore')
             if not body:
                 return False
-            # If HLS playlist (.m3u8), verify first sub-playlist or .ts segment actually opens
             if body.lstrip().startswith('#EXTM3U'):
                 next_uri = next(
                     (ln.strip() for ln in body.splitlines() if ln.strip() and not ln.startswith('#')),
@@ -118,7 +141,7 @@ def attr(line, key):
 
 
 def put(line, key, value):
-    value = value.replace('"', '').replace('\n', ' ')
+    value = str(value).replace('"', '').replace('\n', ' ')
     if re.search(r'(?<!\w)' + re.escape(key) + r'="[^"]*"', line):
         return re.sub(
             r'(?<!\w)' + re.escape(key) + r'="[^"]*"',
@@ -127,6 +150,16 @@ def put(line, key, value):
             count=1,
         )
     return line.replace('#EXTINF:', f'#EXTINF: {key}="{value}" ', 1)
+
+
+def normalize_name(name):
+    cleaned = re.sub(r'\([^)]*\)|\[[^\]]*\]', '', name.lower())
+    cleaned = re.sub(r'\b(hd|sd|fhd|uhd|4k|1080p|720p|live|tv|channel|us|uk|ca|in|pk|usa|india|pakistan|canada)\b', '', cleaned)
+    return re.sub(r'[^a-z0-9]+', '', cleaned)
+
+
+def has_word(text, *terms):
+    return any(re.search(r'\b' + re.escape(term) + r'\b', text) for term in terms)
 
 
 def lang(text, country_code=''):
@@ -150,42 +183,37 @@ def lang(text, country_code=''):
     return 'Other / Unspecified'
 
 
-def category(name, old, country_code=''):
-    s = (name + ' ' + old).lower()
+def classify_live_group(name, old_group, country_code=''):
+    og = (old_group or '').strip().lower()
+    s = f'{name} {og}'.lower()
 
-    def has(*terms):
-        return any(re.search(r'\b' + re.escape(term) + r'\b', s) for term in terms)
+    if og == 'sports' or has_word(s, *SPORTS_KEYWORDS):
+        return 'Live Sports'
+    if og in ('international news', 'news bd') or has_word(s, *NEWS_KEYWORDS):
+        return 'International News'
+    if og == 'movies' or has_word(s, 'movie', 'movies', 'cinema', 'film', 'films', 'bollywood', 'lollywood'):
+        if country_code == 'pk' or has_word(s, 'pakistani', 'pakistan', 'lollywood', 'urdu'):
+            return 'Movies | Pakistani & Urdu'
+        if country_code == 'in' or has_word(s, 'bollywood', 'hindi', 'indian', 'punjabi', 'tamil', 'telugu'):
+            return 'Movies | Bollywood & Hindi'
+        return 'Movies | Hollywood & English'
 
-    if has('news', 'current affairs'):
-        return 'News'
-    if has('sport', 'sports', 'cricket', 'football', 'soccer', 'racing', 'golf', 'tennis'):
-        return 'Sports'
+    if og == 'india' or country_code == 'in':
+        return 'India'
+    if country_code in COUNTRIES:
+        return COUNTRIES[country_code]
+    return 'USA'
 
-    is_movie = has('movie', 'movies', 'cinema', 'film', 'films', 'bollywood', 'lollywood')
-    is_drama = has('drama', 'dramas', 'serial', 'series', 'soap opera', 'tv shows')
-    if is_movie:
-        if country_code == 'pk' or has('pakistani', 'pakistan', 'lollywood', 'urdu'):
-            return 'Pakistani Movies'
-        if country_code == 'in' or has('bollywood', 'hindi', 'indian', 'punjabi', 'tamil', 'telugu'):
-            return 'Bollywood & Indian Movies'
-        return 'Hollywood & English Movies'
-    if is_drama:
-        if country_code == 'pk' or has('pakistani', 'pakistan', 'urdu'):
-            return 'Pakistani Dramas'
-        if country_code == 'in' or has('indian', 'hindi', 'punjabi', 'tamil', 'telugu'):
-            return 'Indian TV Series'
-        return 'English TV Series'
 
-    for words, label in [
-        (['kids', 'cartoon', 'children'], 'Kids'),
-        (['music', 'radio'], 'Music'),
-        (['religion', 'islam', 'quran', 'faith', 'christian', 'devotional'], 'Religious'),
-        (['education', 'learning'], 'Education'),
-        (['entertainment', 'general'], 'Entertainment'),
-    ]:
-        if has(*words):
-            return label
-    return old or 'General'
+def classify_movie_group(name, old_group):
+    s = f'{name} {old_group}'.lower()
+    if has_word(s, 'pakistani', 'pakistan', 'lollywood', 'urdu'):
+        return 'Movies | Pakistani & Urdu'
+    if has_word(s, 'bollywood', 'hindi', 'indian', 'punjabi', 'tamil', 'telugu', 'malayalam', 'south indian'):
+        return 'Movies | Bollywood & Hindi'
+    if has_word(s, 'hollywood', 'english', 'american', 'uk'):
+        return 'Movies | Hollywood & English'
+    return 'Movies | Action & General'
 
 
 def parse_m3u_blocks(lines):
@@ -202,15 +230,15 @@ def parse_m3u_blocks(lines):
         yield line, extras, lines[j].strip()
 
 
-# Tuple format: (line, extras, url, section, language, group, tvgid, check_segment)
 raw_entries = []
 seen_pairs = set()
 seen_urls = set()
+name_to_tvgid = {}
+name_to_logo = {}
 duplicates = 0
 
-# 1. Primary country-specific sources
+# 1. Primary country-specific sources (also builds EPG & logo lookup tables)
 for code, source_url in SOURCES:
-    country = COUNTRIES[code]
     try:
         lines = fetch(source_url).splitlines()
     except Exception as exc:
@@ -220,6 +248,14 @@ for code, source_url in SOURCES:
     for line, extras, url in parse_m3u_blocks(lines):
         name = line.split(',', 1)[-1].strip()
         tvgid = attr(line, 'tvg-id')
+        logo = attr(line, 'tvg-logo')
+        norm = normalize_name(name)
+        if norm:
+            if tvgid and norm not in name_to_tvgid:
+                name_to_tvgid[norm] = tvgid
+            if logo and norm not in name_to_logo:
+                name_to_logo[norm] = logo
+
         key = (tvgid, url)
         if key in seen_pairs or url in seen_urls:
             duplicates += 1
@@ -228,12 +264,11 @@ for code, source_url in SOURCES:
         seen_urls.add(url)
 
         old_group = attr(line, 'group-title')
-        group = category(name, old_group, code)
+        menu_group = classify_live_group(name, old_group, code)
         language = lang(f'{name} {old_group} {attr(line, "tvg-language")}', code)
-        line = put(line, 'group-title', f'{country} | {group}')
-        raw_entries.append((line, extras, url, country, language, group, tvgid, True))
+        raw_entries.append((line, extras, url, menu_group, language, name, tvgid, True))
 
-# 2. Secondary global active list: [SPORTS] Sports, [INTL-NEWS] News, + target countries
+# 2. Secondary global active list (with EPG & logo backfill)
 for active_url in GLOBAL_ACTIVE_SOURCES:
     try:
         lines = fetch(active_url).splitlines()
@@ -248,40 +283,36 @@ for active_url in GLOBAL_ACTIVE_SOURCES:
 
         name = line.split(',', 1)[-1].strip()
         old_group = attr(line, 'group-title')
-        old_group_lower = old_group.lower()
-        tvgid = attr(line, 'tvg-id')
-        haystack = f'{name} {old_group} {tvgid}'.lower()
+        og_lower = old_group.lower().strip()
+        norm = normalize_name(name)
+        tvgid = attr(line, 'tvg-id') or name_to_tvgid.get(norm, '')
+        logo = attr(line, 'tvg-logo') or name_to_logo.get(norm, '')
+        s = f'{name} {old_group}'.lower()
 
-        # Check country match first
         matched_code = None
-        matched_country = None
-        for code, (country_label, keywords) in COUNTRY_MATCHERS.items():
-            if any(kw in haystack for kw in keywords):
+        for code, (_, keywords) in COUNTRY_MATCHERS.items():
+            if any(kw in f'{s} {tvgid.lower()}' for kw in keywords):
                 matched_code = code
-                matched_country = country_label
                 break
 
-        if matched_country:
-            seen_urls.add(url)
-            seen_pairs.add((tvgid, url))
-            group = category(name, old_group, matched_code)
-            language = lang(f'{name} {old_group} {attr(line, "tvg-language")}', matched_code)
-            line = put(line, 'group-title', f'{matched_country} | {group}')
-            raw_entries.append((line, extras, url, matched_country, language, group, tvgid, True))
-        elif '[sports]' in old_group_lower or 'sports' in old_group_lower:
-            seen_urls.add(url)
-            seen_pairs.add((tvgid, url))
-            language = lang(f'{name} {old_group} {attr(line, "tvg-language")}')
-            line = put(line, 'group-title', 'Sports | Live Sports')
-            raw_entries.append((line, extras, url, 'Sports', language, 'Sports', tvgid, True))
-        elif '[intl-news]' in old_group_lower or 'intl-news' in old_group_lower:
-            seen_urls.add(url)
-            seen_pairs.add((tvgid, url))
-            language = lang(f'{name} {old_group} {attr(line, "tvg-language")}')
-            line = put(line, 'group-title', 'News | International News')
-            raw_entries.append((line, extras, url, 'Intl News', language, 'News', tvgid, True))
+        is_sports = og_lower == 'sports' or has_word(s, *SPORTS_KEYWORDS)
+        is_news = og_lower in ('international news', 'news bd') or has_word(s, *NEWS_KEYWORDS)
+        is_allowed_group = og_lower in ('english', 'india')
 
-# 3. Movies merged into the same combined.m3u under "Movies | ..." (single-hop check for speed)
+        if not (is_sports or is_news or matched_code or is_allowed_group):
+            continue
+
+        seen_urls.add(url)
+        seen_pairs.add((tvgid, url))
+        menu_group = classify_live_group(name, old_group, matched_code or '')
+        language = lang(f'{name} {old_group} {attr(line, "tvg-language")}', matched_code or '')
+        if tvgid:
+            line = put(line, 'tvg-id', tvgid)
+        if logo:
+            line = put(line, 'tvg-logo', logo)
+        raw_entries.append((line, extras, url, menu_group, language, name, tvgid, True))
+
+# 3. Movies consolidated into 4 clean folders (no tvg-id so EPG stays fast)
 for movie_url in MOVIE_SOURCES:
     try:
         lines = fetch(movie_url).splitlines()
@@ -296,12 +327,11 @@ for movie_url in MOVIE_SOURCES:
 
         seen_urls.add(url)
         name = line.split(',', 1)[-1].strip()
-        old_group = attr(line, 'group-title') or 'All Movies'
-        # Strip any bogus tvg-id so EPG generator doesn't look up TV schedules for movies
+        old_group = attr(line, 'group-title')
+        menu_group = classify_movie_group(name, old_group)
         line = put(line, 'tvg-id', '')
-        line = put(line, 'group-title', f'Movies | {old_group}')
         language = lang(f'{name} {old_group} {attr(line, "tvg-language")}')
-        raw_entries.append((line, extras, url, 'Movies', language, 'Movies', '', False))
+        raw_entries.append((line, extras, url, menu_group, language, name, '', False))
 
 if not raw_entries:
     raise RuntimeError('No channels found from upstream sources')
@@ -321,18 +351,52 @@ if CHECK_STREAM_HEALTH:
                 pool.map(lambda pair: is_stream_alive(pair[0], pair[1]), check_items),
             )
         )
-    entries = []
+    alive_entries = []
     for item in raw_entries:
         if results.get(item[2], False):
-            entries.append(item)
+            alive_entries.append(item)
         else:
             dead_removed += 1
 else:
-    entries = raw_entries
+    alive_entries = raw_entries
 
-if not entries:
+if not alive_entries:
     raise RuntimeError('All streams failed health checks')
 
+# Deduplicate by normalized title within each group (preferring streams with tvg-id & logo)
+if DEDUPLICATE_BY_TITLE:
+    alive_entries.sort(
+        key=lambda e: (
+            0 if e[6] else 1,
+            0 if attr(e[0], 'tvg-logo') else 1,
+        )
+    )
+    entries = []
+    seen_titles = set()
+    for item in alive_entries:
+        title_key = (item[3], normalize_name(item[5]) or item[5].lower())
+        if title_key in seen_titles:
+            duplicates += 1
+            continue
+        seen_titles.add(title_key)
+        entries.append(item)
+else:
+    entries = alive_entries
+
+# Sort entries cleanly by GROUP_ORDER, then alphabetically by name, and assign tvg-chno
+entries.sort(key=lambda e: (GROUP_ORDER.get(e[3], (99, 9000))[0], e[5].lower()))
+
+numbered_entries = []
+group_counters = {}
+for line, extras, url, menu_group, language, name, tvgid, check_seg in entries:
+    base_chno = GROUP_ORDER.get(menu_group, (99, 9000))[1]
+    chno = group_counters.get(menu_group, base_chno)
+    group_counters[menu_group] = chno + 1
+    line = put(line, 'group-title', menu_group)
+    line = put(line, 'tvg-chno', chno)
+    numbered_entries.append((line, extras, url, menu_group, language, name, tvgid))
+
+entries = numbered_entries
 ids = {e[6] for e in entries if e[6]}
 stats = collections.Counter(e[3] for e in entries)
 languages = collections.Counter(e[4] for e in entries)
@@ -431,7 +495,7 @@ ET.indent(root)
 ET.ElementTree(root).write(ROOT / 'epg.channels.xml', encoding='utf-8', xml_declaration=True)
 
 report = {
-    'countries': dict(stats),
+    'menu_groups': dict(stats),
     'total_channels': len(entries),
     'duplicate_entries_removed': duplicates,
     'dead_streams_removed': dead_removed,
@@ -439,7 +503,7 @@ report = {
     'epg_mapped_ids': len(selected),
     'epg_mapping_percent': round(100 * len(selected) / max(len(ids), 1), 1),
     'language_estimates_from_names': dict(languages),
-    'note': 'Merged live TV + Sports + Intl News + verified movies into single combined.m3u.',
+    'note': 'Title-deduplicated, alphabetically sorted, channel-numbered (tvg-chno) playlist with EPG & logo backfill.',
 }
 (ROOT / 'report.json').write_text(json.dumps(report, indent=2) + '\n')
 print(json.dumps(report, indent=2))
