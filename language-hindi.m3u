@@ -1,39 +1,41 @@
-#EXTM3U
-#EXTINF: tvg-chno="131" -1 tvg-logo="https://static.epg.best/cn/StarSports1.cn.png" group-title="Live Sports",CR | Star Sports 1 Hindi
+#EXTM3U x-tvg-url="https://raw.githubusercontent.com/rajaworks26/iptv-combined/main/combined.xml"
+#EXTINF: tvg-name="CR | Star Sports 1 Hindi"  tvg-chno="1" -1 tvg-logo="https://static.epg.best/cn/StarSports1.cn.png" group-title="Top Picks",CR | Star Sports 1 Hindi
 https://starsportshindiii.pages.dev/index.m3u8
-#EXTINF: tvg-chno="274" -1 tvg-id="SonySportsTen3Hindi.in@SD" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0025TCMR.png?lock=720x540" group-title="Live Sports",Sony Sports Ten 3 Hindi (1080p)
-https://r2.amml.in/sony-ten-3-hd/live.m3u8
-#EXTINF: tvg-chno="285" -1 tvg-id="StarSports1Hindi.in@HD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_STAR_SPORTS_1_HD_HINDI/images/LOGO_HD/image.png" group-title="Live Sports",Star Sports 1 Hindi HD (1080p)
+#EXTINF: tvg-name="Star Sports 1 Hindi HD (1080p)"  tvg-chno="13" -1 tvg-id="StarSports1Hindi.in@HD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_STAR_SPORTS_1_HD_HINDI/images/LOGO_HD/image.png" group-title="Top Picks",Star Sports 1 Hindi HD (1080p)
 http://116.90.120.149:8000/play/a122/index.m3u8
-#EXTINF: tvg-chno="513" -1 tvg-id="HindiKhabar.in@SD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_HINDI_KHABAR/images/LOGO_HD/image.png" group-title="International News",Hindi Khabar (1080p)
+#EXTINF: tvg-name="CR | Star Sports 1 Hindi"  tvg-chno="68" -1 tvg-logo="https://static.epg.best/cn/StarSports1.cn.png" group-title="Live Sports",CR | Star Sports 1 Hindi
+https://starsportshindiii.pages.dev/index.m3u8
+#EXTINF: tvg-name="Sony Sports Ten 3 Hindi (1080p)"  tvg-chno="238" -1 tvg-id="SonySportsTen3Hindi.in@SD" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0025TCMR.png?lock=720x540" group-title="Live Sports",Sony Sports Ten 3 Hindi (1080p)
+https://r2.amml.in/sony-ten-3-hd/live.m3u8
+#EXTINF: tvg-name="Star Sports 1 Hindi HD (1080p)"  tvg-chno="251" -1 tvg-id="StarSports1Hindi.in@HD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_STAR_SPORTS_1_HD_HINDI/images/LOGO_HD/image.png" group-title="Live Sports",Star Sports 1 Hindi HD (1080p)
+http://116.90.120.149:8000/play/a122/index.m3u8
+#EXTINF: tvg-name="Hindi Khabar (1080p)"  tvg-chno="614" -1 tvg-id="HindiKhabar.in@SD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_HINDI_KHABAR/images/LOGO_HD/image.png" group-title="International News",Hindi Khabar (1080p)
 https://livingindiaottlive.akamaized.net/hindikhabar/index.m3u8
-#EXTINF: tvg-chno="668" -1 tvg-id="NaxatraNewsHindi.in@SD" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Naxatra_News_Hindi.png" group-title="International News",Naxatra News Hindi (576p)
+#EXTINF: tvg-name="Naxatra News Hindi (576p)"  tvg-chno="772" -1 tvg-id="NaxatraNewsHindi.in@SD" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Naxatra_News_Hindi.png" group-title="International News",Naxatra News Hindi (576p)
 https://d2gvyg6lvauoko.cloudfront.net/230226/naxatranewshindi/playlist.m3u8?hdnts=st=1735898689~exp=1835898688~acl=*~hmac=f5fe24724fe05481e3841f9eb5ab8efdee0a3dd83645ae9dcf45703f525bab7b
-#EXTINF: tvg-chno="723" -1 tvg-logo="https://logodix.com/logo/2131933.jpg" group-title="International News",NEWS | NDTV Hindi
+#EXTINF: tvg-name="NEWS | NDTV Hindi"  tvg-chno="826" -1 tvg-logo="https://logodix.com/logo/2131933.jpg" group-title="International News",NEWS | NDTV Hindi
 https://ndtvindiaelemarchana.akamaized.net/hls/live/2003679-b/ndtvindia/master.m3u8
-#EXTINF: tvg-chno="1070" -1 tvg-id="SonyKALHindi.us@SD" tvg-logo="https://i.imgur.com/9Qq8DKh.png" group-title="USA",Sony KAL Hindi (1080p)
+#EXTINF: tvg-name="Sony KAL Hindi (1080p)"  tvg-chno="2138" -1 tvg-id="SonyKALHindi.us@SD" tvg-logo="https://i.imgur.com/9Qq8DKh.png" group-title="USA",Sony KAL Hindi (1080p)
 https://wurlsonypicturestv.global.transmit.live/hls/68deeb1c0238cda82df543dd/v1/spt_sonykal_1/lg_us/latest/main/hls/playlist.m3u8
-#EXTINF: tvg-chno="637" -1 tvg-id="HindiHits.in@SD" tvg-logo="https://i.ibb.co/SwWjbPSv/hindi-hits-hd.png" group-title="India",Hindi Hits SD (1080p)
-http://146.59.253.52:8080/hindihitshd/index.m3u8
-#EXTINF: tvg-chno="639" -1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/5/5b/History_TV18_HD_2022.png" group-title="India",History TV18 HD Hindi
+#EXTINF: tvg-chno="2478" -1 tvg-id="c7f57cda-5a87-48c5-a758-4273db0864d2" tvg-name="Goldmines" tvg-logo="https://s3.aynaott.com/storage/9d0cda929d2a459842a85cce47442776" group-title="India",Goldmines
+https://tvsen6.aynaott.com/hKrngve2/index.m3u8?e=1784102592&u=ee5437a7-c16b-4700-b317-a41b77d5cba9&token=c2995b4981869497cd8659e3a739f2d1
+#EXTINF: tvg-name="History TV18 HD Hindi"  tvg-chno="2493" -1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/5/5b/History_TV18_HD_2022.png" group-title="India",History TV18 HD Hindi
 https://n18syndication.akamaized.net/bpk-tv/History_TV18_Hindi_NW18_MOB/output01/master.m3u8
-#EXTINF: tvg-chno="866" -1 tvg-id="a787feb3-0d50-41ad-9d43-f2cc02fada70" tvg-name="The Q" tvg-logo="https://s3.aynaott.com/storage/5e07d993dda4763f4c35125fb9734e72" group-title="India",The Q
-https://tvsen6.aynaott.com/3PjZZahm/index.m3u8?e=1784102596&u=ee5437a7-c16b-4700-b317-a41b77d5cba9&token=92ddc6a5821e135aef133dbd8b8b6fc7
-#EXTINF: tvg-chno="895" -1 tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN460000585_20250416T020413SQUARE.png" group-title="India",Wild Flix Hindi
+#EXTINF: tvg-name="Wild Flix Hindi"  tvg-chno="2741" -1 tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN460000585_20250416T020413SQUARE.png" group-title="India",Wild Flix Hindi
 https://cc-qgrxgp51645lw.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-qgrxgp51645lw/IQJW/WBD/WildFlix_IN/WildFlix_IN.m3u8
-#EXTINF: tvg-chno="900" -1 tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN46000011Q_20250205T004626SQUARE.png" group-title="India",XXTreme Jobs Hindi
+#EXTINF: tvg-name="XXTreme Jobs Hindi"  tvg-chno="2746" -1 tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN46000011Q_20250205T004626SQUARE.png" group-title="India",XXTreme Jobs Hindi
 https://cc-zko1curyce7jh.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-zko1curyce7jh/IQJW/WBD/XXtremeJobs_IN/XXtremeJobs_IN.m3u8
-#EXTINF: tvg-chno="658" -1 tvg-id="GodStandsTV.pk@Hindi" tvg-logo="https://i.imgur.com/EO6cYUI.png" group-title="Pakistan",God Stands TV Hindi
+#EXTINF: tvg-name="God Stands TV Hindi"  tvg-chno="2833" -1 tvg-id="GodStandsTV.pk@Hindi" tvg-logo="https://i.imgur.com/EO6cYUI.png" group-title="Pakistan",God Stands TV Hindi
 https://online.godstands.tv:5443/WebRTCApp/streams/HindiStreaming.m3u8
-#EXTINF: tvg-chno="2016"  tvg-id="" -1 group-title="Movies | Bollywood & Hindi" tvg-logo="https://bugsfreeweb.github.io/LiveTVCollector/BugsfreeLogo/default-logo.png",Dominic and The Ladies Purse 720p WEBRip Hindi HQ-Studio Dub x264 [DDN] (2025)
+#EXTINF: tvg-name="Dominic and The Ladies Purse 720p WEBRip Hindi HQ-Studio Dub x264 [DDN] (2025)"  tvg-chno="3143"  tvg-id="" -1 group-title="Movies | Bollywood & Hindi" tvg-logo="https://bugsfreeweb.github.io/LiveTVCollector/BugsfreeLogo/default-logo.png",Dominic and The Ladies Purse 720p WEBRip Hindi HQ-Studio Dub x264 [DDN] (2025)
 http://103.225.94.27/Infobase/hdd-3/Hindi%20Dub/Dominic.and.The.Ladies.Purse.2025.720p.WEBRip.Hindi.HQ-Studio.Dub.x264%20%5bDDN%5d.mp4
-#EXTINF: tvg-chno="2022"  tvg-id="" -1 group-title="Movies | Bollywood & Hindi" tvg-logo="https://bugsfreeweb.github.io/LiveTVCollector/BugsfreeLogo/default-logo.png",Greenland 2: Migration (2026) (Hindi)
+#EXTINF: tvg-name="Greenland 2: Migration (2026) (Hindi)"  tvg-chno="3149"  tvg-id="" -1 group-title="Movies | Bollywood & Hindi" tvg-logo="https://bugsfreeweb.github.io/LiveTVCollector/BugsfreeLogo/default-logo.png",Greenland 2: Migration (2026) (Hindi)
 http://premimum.online/movie/jen12345/jen54321/717746.mp4
-#EXTINF: tvg-chno="2023" -1 tvg-id="4d5c3f29-c835-4920-8fa0-c0bafeaa31ed" tvg-name="Hindi Movie Classic 24" tvg-logo="https://s3.aynaott.com/storage/3132515182ec50091b496fe515564084" group-title="Movies | Bollywood & Hindi",Hindi Movie Classic 24
+#EXTINF: tvg-chno="3150" -1 tvg-id="4d5c3f29-c835-4920-8fa0-c0bafeaa31ed" tvg-name="Hindi Movie Classic 24" tvg-logo="https://s3.aynaott.com/storage/3132515182ec50091b496fe515564084" group-title="Movies | Bollywood & Hindi",Hindi Movie Classic 24
 https://vods2.aynaott.com/hindimovies/index.m3u8
-#EXTINF: tvg-chno="2025"  tvg-id="" -1 group-title="Movies | Bollywood & Hindi" tvg-logo="https://bugsfreeweb.github.io/LiveTVCollector/BugsfreeLogo/default-logo.png",Jana Nayagan (2026) (Hindi)
+#EXTINF: tvg-name="Jana Nayagan (2026) (Hindi)"  tvg-chno="3153"  tvg-id="" -1 group-title="Movies | Bollywood & Hindi" tvg-logo="https://bugsfreeweb.github.io/LiveTVCollector/BugsfreeLogo/default-logo.png",Jana Nayagan (2026) (Hindi)
 http://premimum.online/movie/jen12345/jen54321/724489.mp4
-#EXTINF: tvg-chno="2051"  tvg-id="" -1 group-title="Movies | Bollywood & Hindi" tvg-logo="https://bugsfreeweb.github.io/LiveTVCollector/BugsfreeLogo/default-logo.png",SNOWDROP (SEOLGANGHWA) (HINDI & KOREAN) SEASON 01 (2021)
+#EXTINF: tvg-name="SNOWDROP (SEOLGANGHWA) (HINDI & KOREAN) SEASON 01 (2021)"  tvg-chno="3179"  tvg-id="" -1 group-title="Movies | Bollywood & Hindi" tvg-logo="https://bugsfreeweb.github.io/LiveTVCollector/BugsfreeLogo/default-logo.png",SNOWDROP (SEOLGANGHWA) (HINDI & KOREAN) SEASON 01 (2021)
 http://103.225.94.27/Infobase/hdd-1/Korean/SNOWDROP%20(SEOLGANGHWA)%20(HINDI%20&%20KOREAN)%20SEASON%2001%20(2021).mp4
-#EXTINF: tvg-chno="2067"  tvg-id="" -1 group-title="Movies | Bollywood & Hindi" tvg-logo="https://bugsfreeweb.github.io/LiveTVCollector/BugsfreeLogo/default-logo.png",Sweetheart Hindi Dubbed Full Movie 720p WEB-DL-(Filmywap mov) (2025)
+#EXTINF: tvg-name="Sweetheart Hindi Dubbed Full Movie 720p WEB-DL-(Filmywap mov) (2025)"  tvg-chno="3195"  tvg-id="" -1 group-title="Movies | Bollywood & Hindi" tvg-logo="https://bugsfreeweb.github.io/LiveTVCollector/BugsfreeLogo/default-logo.png",Sweetheart Hindi Dubbed Full Movie 720p WEB-DL-(Filmywap mov) (2025)
 http://103.225.94.27/Infobase/hdd-3/Hindi%20Dub/Sweetheart_2025_Hindi_Dubbed_Full_Movie_720p_WEB-DL-(Filmywap.mov).mp4

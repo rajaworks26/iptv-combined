@@ -1,31 +1,26 @@
 {
-  "menu_groups": {
-    "Live Sports": 231,
-    "International News": 804,
-    "Canada": 179,
-    "USA": 865,
-    "India": 420,
-    "Pakistan": 176,
-    "Movies | Hollywood & English": 59,
-    "Movies | Bollywood & Hindi": 75,
-    "Movies | Pakistani & Urdu": 4,
+  "generated_utc": "2026-11-22T03:32:30Z",
+  "primary_sources_ok": "7/7",
+  "source_entries": 22811,
+  "unique_urls": 22118,
+  "passed_health_checks": 5086,
+  "unique_primary_channels": 4802,
+  "alternate_streams_saved": 284,
+  "top_picks": 32,
+  "groups": {
+    "Live Sports": 266,
+    "International News": 805,
+    "Canada": 212,
+    "USA": 1045,
+    "India": 405,
+    "Pakistan": 232,
+    "Movies | Hollywood & English": 129,
+    "Movies | Bollywood & Hindi": 77,
+    "Movies | Pakistani & Urdu": 5,
     "Movies | Action & General": 1626
   },
-  "total_channels": 4439,
-  "duplicate_entries_removed": 2186,
-  "dead_streams_removed": 17424,
-  "unique_tvg_ids": 2631,
-  "epg_mapped_ids": 1286,
-  "epg_mapping_percent": 48.9,
-  "language_estimates_from_names": {
-    "Other / Unspecified": 2901,
-    "English": 1253,
-    "Hindi": 19,
-    "Urdu": 214,
-    "Telugu": 16,
-    "Punjabi": 15,
-    "Tamil": 15,
-    "Malayalam": 6
-  },
-  "note": "Title-deduplicated, alphabetically sorted, channel-numbered (tvg-chno) playlist with EPG & logo backfill."
+  "unique_tvg_ids": 2993,
+  "epg_mapped_ids": 1588,
+  "epg_mapping_percent": 53.1,
+  "source_errors": []
 }
