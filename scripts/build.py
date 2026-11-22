@@ -27,7 +27,7 @@ SOURCES = [
     ('in', 'https://raw.githubusercontent.com/Free-TV/IPTV/master/playlists/playlist_india.m3u8'),
 ]
 
-# Secondary global active playlist (filtered to USA, Canada, India, Pakistan)
+# Secondary global active playlist (filtered to target countries + Global Sports & Intl News)
 GLOBAL_ACTIVE_SOURCES = [
     'https://raw.githubusercontent.com/Zaman-Topu/Ip-tv-Collection/main/FINAL_IPTV_ACTIVE.m3u',
 ]
@@ -66,10 +66,10 @@ EPG_ALIASES = {
     'CityNewsVancouver.ca@SD': ['CitytvVancouver.ca@HD', 'CitytvVancouver.ca@SD', 'CitytvVancouver.ca'],
 }
 
-# Stream health verification settings
+# Fast parallel stream health verification settings (Option A)
 CHECK_STREAM_HEALTH = True
-STREAM_TIMEOUT = 4
-MAX_WORKERS = 32
+STREAM_TIMEOUT = 2.5
+MAX_WORKERS = 120
 
 
 def fetch(url, timeout=90):
@@ -78,7 +78,7 @@ def fetch(url, timeout=90):
         return r.read().decode('utf-8-sig', errors='ignore')
 
 
-def is_stream_alive(url):
+def is_stream_alive(url, check_segment=True):
     if not url.startswith(('http://', 'https://')):
         return False
     headers = {
@@ -90,6 +90,8 @@ def is_stream_alive(url):
         with urllib.request.urlopen(req, timeout=STREAM_TIMEOUT) as resp:
             if getattr(resp, 'status', 200) >= 400:
                 return False
+            if not check_segment:
+                return True
             body = resp.read(2048).decode('utf-8', errors='ignore')
             if not body:
                 return False
@@ -200,6 +202,7 @@ def parse_m3u_blocks(lines):
         yield line, extras, lines[j].strip()
 
 
+# Tuple format: (line, extras, url, section, language, group, tvgid, check_segment)
 raw_entries = []
 seen_pairs = set()
 seen_urls = set()
@@ -228,9 +231,9 @@ for code, source_url in SOURCES:
         group = category(name, old_group, code)
         language = lang(f'{name} {old_group} {attr(line, "tvg-language")}', code)
         line = put(line, 'group-title', f'{country} | {group}')
-        raw_entries.append((line, extras, url, country, language, group, tvgid))
+        raw_entries.append((line, extras, url, country, language, group, tvgid, True))
 
-# 2. Secondary global active list filtered to USA, Canada, India, Pakistan
+# 2. Secondary global active list: [SPORTS] Sports, [INTL-NEWS] News, + target countries
 for active_url in GLOBAL_ACTIVE_SOURCES:
     try:
         lines = fetch(active_url).splitlines()
@@ -245,9 +248,11 @@ for active_url in GLOBAL_ACTIVE_SOURCES:
 
         name = line.split(',', 1)[-1].strip()
         old_group = attr(line, 'group-title')
+        old_group_lower = old_group.lower()
         tvgid = attr(line, 'tvg-id')
         haystack = f'{name} {old_group} {tvgid}'.lower()
 
+        # Check country match first
         matched_code = None
         matched_country = None
         for code, (country_label, keywords) in COUNTRY_MATCHERS.items():
@@ -256,17 +261,27 @@ for active_url in GLOBAL_ACTIVE_SOURCES:
                 matched_country = country_label
                 break
 
-        if not matched_country:
-            continue
+        if matched_country:
+            seen_urls.add(url)
+            seen_pairs.add((tvgid, url))
+            group = category(name, old_group, matched_code)
+            language = lang(f'{name} {old_group} {attr(line, "tvg-language")}', matched_code)
+            line = put(line, 'group-title', f'{matched_country} | {group}')
+            raw_entries.append((line, extras, url, matched_country, language, group, tvgid, True))
+        elif '[sports]' in old_group_lower or 'sports' in old_group_lower:
+            seen_urls.add(url)
+            seen_pairs.add((tvgid, url))
+            language = lang(f'{name} {old_group} {attr(line, "tvg-language")}')
+            line = put(line, 'group-title', 'Sports | Live Sports')
+            raw_entries.append((line, extras, url, 'Sports', language, 'Sports', tvgid, True))
+        elif '[intl-news]' in old_group_lower or 'intl-news' in old_group_lower:
+            seen_urls.add(url)
+            seen_pairs.add((tvgid, url))
+            language = lang(f'{name} {old_group} {attr(line, "tvg-language")}')
+            line = put(line, 'group-title', 'News | International News')
+            raw_entries.append((line, extras, url, 'Intl News', language, 'News', tvgid, True))
 
-        seen_urls.add(url)
-        seen_pairs.add((tvgid, url))
-        group = category(name, old_group, matched_code)
-        language = lang(f'{name} {old_group} {attr(line, "tvg-language")}', matched_code)
-        line = put(line, 'group-title', f'{matched_country} | {group}')
-        raw_entries.append((line, extras, url, matched_country, language, group, tvgid))
-
-# 3. Movies merged into the same combined.m3u under "Movies | ..." groups
+# 3. Movies merged into the same combined.m3u under "Movies | ..." (single-hop check for speed)
 for movie_url in MOVIE_SOURCES:
     try:
         lines = fetch(movie_url).splitlines()
@@ -286,16 +301,26 @@ for movie_url in MOVIE_SOURCES:
         line = put(line, 'tvg-id', '')
         line = put(line, 'group-title', f'Movies | {old_group}')
         language = lang(f'{name} {old_group} {attr(line, "tvg-language")}')
-        raw_entries.append((line, extras, url, 'Movies', language, 'Movies', ''))
+        raw_entries.append((line, extras, url, 'Movies', language, 'Movies', '', False))
 
 if not raw_entries:
     raise RuntimeError('No channels found from upstream sources')
 
 dead_removed = 0
 if CHECK_STREAM_HEALTH:
-    unique_urls = list({e[2] for e in raw_entries})
+    url_check_mode = {}
+    for item in raw_entries:
+        u, seg = item[2], item[7]
+        url_check_mode[u] = url_check_mode.get(u, False) or seg
+
+    check_items = list(url_check_mode.items())
     with concurrent.futures.ThreadPoolExecutor(max_workers=MAX_WORKERS) as pool:
-        results = dict(zip(unique_urls, pool.map(is_stream_alive, unique_urls)))
+        results = dict(
+            zip(
+                (u for u, _ in check_items),
+                pool.map(lambda pair: is_stream_alive(pair[0], pair[1]), check_items),
+            )
+        )
     entries = []
     for item in raw_entries:
         if results.get(item[2], False):
@@ -414,7 +439,7 @@ report = {
     'epg_mapped_ids': len(selected),
     'epg_mapping_percent': round(100 * len(selected) / max(len(ids), 1), 1),
     'language_estimates_from_names': dict(languages),
-    'note': 'Merged live TV + verified movies into single combined.m3u with strict HLS/stream health checks.',
+    'note': 'Merged live TV + Sports + Intl News + verified movies into single combined.m3u.',
 }
 (ROOT / 'report.json').write_text(json.dumps(report, indent=2) + '\n')
 print(json.dumps(report, indent=2))
