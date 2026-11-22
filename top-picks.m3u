@@ -51,8 +51,8 @@ https://n18syndication.akamaized.net/bpk-tv/CNN_News18_NW18_MOB/output01/master.
 https://amg01918-cnnus-amg01918c2-vizio-us-9192.playouts.now.amagi.tv/playlist/amg01918-cnnus-cnnoriginals-vizious/playlist.m3u8
 #EXTINF:-1 tvg-name="CNN Portugal" tvg-logo="https://i.imgur.com/NYH39xs.png" tvg-id="CNNPortugal.pt" tvg-chno="26" tvg-country="PT" group-title="Top Picks",CNN Portugal
 https://github.com/LITUATUI/M3UPT/raw/main/M3U/CNN_Portugal.m3u8
-#EXTINF: tvg-name="CP24 (576p)"  tvg-chno="27" -1 tvg-id="CP24.ca@SD" tvg-logo="https://i.imgur.com/YzjZUEl.png" group-title="Top Picks",CP24 (576p)
-https://tvsen6.aynaott.com/cp24/index.m3u8
+#EXTINF: tvg-name="CP24 (720p)"  tvg-chno="27" -1 tvg-id="CP24.ca@SD" tvg-logo="https://i.imgur.com/YzjZUEl.png" group-title="Top Picks",CP24 (720p)
+http://107.167.16.138/cp24/index.m3u8?token=test
 #EXTINF:-1 tvg-name="CTV News" tvg-logo="https://i.imgur.com/T3oBeiX.png" tvg-id="CTVNewsChannel.ca" tvg-chno="28" tvg-country="CA" group-title="Top Picks",CTV News Ⓨ
 https://www.youtube.com/c/CTVNews/live
 #EXTINF: tvg-name="NEWS | ARY NEWS"  tvg-chno="29" -1 tvg-logo="https://arynews.tv/assets/images/logo.webp" group-title="Top Picks",NEWS | ARY NEWS
