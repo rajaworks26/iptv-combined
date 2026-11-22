@@ -5,6 +5,7 @@ import re
 import urllib.request
 import xml.etree.ElementTree as ET
 from pathlib import Path
+from urllib.parse import urljoin
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -25,6 +26,23 @@ SOURCES = [
     ('ca', 'https://raw.githubusercontent.com/Free-TV/IPTV/master/playlists/playlist_canada.m3u8'),
     ('in', 'https://raw.githubusercontent.com/Free-TV/IPTV/master/playlists/playlist_india.m3u8'),
 ]
+
+# Secondary global active playlist (filtered to USA, Canada, India, Pakistan)
+GLOBAL_ACTIVE_SOURCES = [
+    'https://raw.githubusercontent.com/Zaman-Topu/Ip-tv-Collection/main/FINAL_IPTV_ACTIVE.m3u',
+]
+
+# Movies playlist merged directly into combined.m3u under "Movies | ..." groups
+MOVIE_SOURCES = [
+    'https://raw.githubusercontent.com/Zaman-Topu/Ip-tv-Collection/main/FINAL_MOVIES_COMPLETE.m3u',
+]
+
+COUNTRY_MATCHERS = {
+    'us': ('USA', ['usa', 'united states', 'us |', '[us]', '(us)']),
+    'ca': ('Canada', ['canada', 'canadian', 'ca |', '[ca]', '(ca)']),
+    'in': ('India', ['india', 'indian', 'hindi', 'punjabi', 'tamil', 'telugu', 'malayalam', 'bengali', 'in |', '[in]']),
+    'pk': ('Pakistan', ['pakistan', 'pakistani', 'urdu', 'pk |', '[pk]']),
+}
 
 # Broken or Cloudflare-blocked EPG scrapers to avoid when alternatives exist
 BLOCKED_SITES = {'tvtv.us', 'distro.tv'}
@@ -48,7 +66,7 @@ EPG_ALIASES = {
     'CityNewsVancouver.ca@SD': ['CitytvVancouver.ca@HD', 'CitytvVancouver.ca@SD', 'CitytvVancouver.ca'],
 }
 
-# Set to True to verify stream URLs respond before including them in combined.m3u
+# Stream health verification settings
 CHECK_STREAM_HEALTH = True
 STREAM_TIMEOUT = 4
 MAX_WORKERS = 32
@@ -57,27 +75,37 @@ MAX_WORKERS = 32
 def fetch(url, timeout=90):
     req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
     with urllib.request.urlopen(req, timeout=timeout) as r:
-        return r.read().decode('utf-8-sig')
+        return r.read().decode('utf-8-sig', errors='ignore')
 
 
 def is_stream_alive(url):
     if not url.startswith(('http://', 'https://')):
         return False
-    req = urllib.request.Request(
-        url,
-        headers={
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)',
-            'Accept': '*/*',
-        },
-    )
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)',
+        'Accept': '*/*',
+    }
     try:
+        req = urllib.request.Request(url, headers=headers)
         with urllib.request.urlopen(req, timeout=STREAM_TIMEOUT) as resp:
-            status = getattr(resp, 'status', 200)
-            if status >= 400:
+            if getattr(resp, 'status', 200) >= 400:
                 return False
-            # Read a tiny chunk to confirm stream payload actually starts
-            chunk = resp.read(256)
-            return len(chunk) > 0
+            body = resp.read(2048).decode('utf-8', errors='ignore')
+            if not body:
+                return False
+            # If HLS playlist (.m3u8), verify first sub-playlist or .ts segment actually opens
+            if body.lstrip().startswith('#EXTM3U'):
+                next_uri = next(
+                    (ln.strip() for ln in body.splitlines() if ln.strip() and not ln.startswith('#')),
+                    None,
+                )
+                if not next_uri:
+                    return False
+                seg_url = urljoin(resp.geturl(), next_uri)
+                seg_req = urllib.request.Request(seg_url, headers=headers)
+                with urllib.request.urlopen(seg_req, timeout=STREAM_TIMEOUT) as seg_resp:
+                    return getattr(seg_resp, 'status', 200) < 400 and len(seg_resp.read(256)) > 0
+            return True
     except Exception:
         return False
 
@@ -99,8 +127,8 @@ def put(line, key, value):
     return line.replace('#EXTINF:', f'#EXTINF: {key}="{value}" ', 1)
 
 
-def lang(name, country_code=''):
-    s = name.lower()
+def lang(text, country_code=''):
+    s = text.lower()
     for word, label in [
         ('urdu', 'Urdu'),
         ('punjabi', 'Punjabi'),
@@ -120,35 +148,45 @@ def lang(name, country_code=''):
     return 'Other / Unspecified'
 
 
-def category(name, old):
+def category(name, old, country_code=''):
     s = (name + ' ' + old).lower()
+
+    def has(*terms):
+        return any(re.search(r'\b' + re.escape(term) + r'\b', s) for term in terms)
+
+    if has('news', 'current affairs'):
+        return 'News'
+    if has('sport', 'sports', 'cricket', 'football', 'soccer', 'racing', 'golf', 'tennis'):
+        return 'Sports'
+
+    is_movie = has('movie', 'movies', 'cinema', 'film', 'films', 'bollywood', 'lollywood')
+    is_drama = has('drama', 'dramas', 'serial', 'series', 'soap opera', 'tv shows')
+    if is_movie:
+        if country_code == 'pk' or has('pakistani', 'pakistan', 'lollywood', 'urdu'):
+            return 'Pakistani Movies'
+        if country_code == 'in' or has('bollywood', 'hindi', 'indian', 'punjabi', 'tamil', 'telugu'):
+            return 'Bollywood & Indian Movies'
+        return 'Hollywood & English Movies'
+    if is_drama:
+        if country_code == 'pk' or has('pakistani', 'pakistan', 'urdu'):
+            return 'Pakistani Dramas'
+        if country_code == 'in' or has('indian', 'hindi', 'punjabi', 'tamil', 'telugu'):
+            return 'Indian TV Series'
+        return 'English TV Series'
+
     for words, label in [
-        (['news', 'current affairs'], 'News'),
-        (['sport', 'cricket', 'football'], 'Sports'),
-        (['movie', 'cinema', 'film'], 'Movies'),
         (['kids', 'cartoon', 'children'], 'Kids'),
         (['music', 'radio'], 'Music'),
         (['religion', 'islam', 'quran', 'faith', 'christian', 'devotional'], 'Religious'),
         (['education', 'learning'], 'Education'),
         (['entertainment', 'general'], 'Entertainment'),
     ]:
-        if any(w in s for w in words):
+        if has(*words):
             return label
     return old or 'General'
 
 
-raw_entries = []
-seen = set()
-duplicates = 0
-
-for code, source_url in SOURCES:
-    country = COUNTRIES[code]
-    try:
-        lines = fetch(source_url).splitlines()
-    except Exception as exc:
-        print(f'Warning: failed to fetch {source_url}: {exc}')
-        continue
-
+def parse_m3u_blocks(lines):
     for i, line in enumerate(lines):
         if not line.startswith('#EXTINF:'):
             continue
@@ -159,20 +197,96 @@ for code, source_url in SOURCES:
             j += 1
         if j >= len(lines) or lines[j].startswith('#'):
             continue
+        yield line, extras, lines[j].strip()
 
-        url = lines[j].strip()
+
+raw_entries = []
+seen_pairs = set()
+seen_urls = set()
+duplicates = 0
+
+# 1. Primary country-specific sources
+for code, source_url in SOURCES:
+    country = COUNTRIES[code]
+    try:
+        lines = fetch(source_url).splitlines()
+    except Exception as exc:
+        print(f'Warning: failed to fetch {source_url}: {exc}')
+        continue
+
+    for line, extras, url in parse_m3u_blocks(lines):
         name = line.split(',', 1)[-1].strip()
         tvgid = attr(line, 'tvg-id')
         key = (tvgid, url)
-        if key in seen:
+        if key in seen_pairs or url in seen_urls:
             duplicates += 1
             continue
-        seen.add(key)
+        seen_pairs.add(key)
+        seen_urls.add(url)
 
-        group = category(name, attr(line, 'group-title'))
-        language = lang(name + ' ' + attr(line, 'group-title'), code)
+        old_group = attr(line, 'group-title')
+        group = category(name, old_group, code)
+        language = lang(f'{name} {old_group} {attr(line, "tvg-language")}', code)
         line = put(line, 'group-title', f'{country} | {group}')
         raw_entries.append((line, extras, url, country, language, group, tvgid))
+
+# 2. Secondary global active list filtered to USA, Canada, India, Pakistan
+for active_url in GLOBAL_ACTIVE_SOURCES:
+    try:
+        lines = fetch(active_url).splitlines()
+    except Exception as exc:
+        print(f'Warning: failed to fetch {active_url}: {exc}')
+        continue
+
+    for line, extras, url in parse_m3u_blocks(lines):
+        if url in seen_urls:
+            duplicates += 1
+            continue
+
+        name = line.split(',', 1)[-1].strip()
+        old_group = attr(line, 'group-title')
+        tvgid = attr(line, 'tvg-id')
+        haystack = f'{name} {old_group} {tvgid}'.lower()
+
+        matched_code = None
+        matched_country = None
+        for code, (country_label, keywords) in COUNTRY_MATCHERS.items():
+            if any(kw in haystack for kw in keywords):
+                matched_code = code
+                matched_country = country_label
+                break
+
+        if not matched_country:
+            continue
+
+        seen_urls.add(url)
+        seen_pairs.add((tvgid, url))
+        group = category(name, old_group, matched_code)
+        language = lang(f'{name} {old_group} {attr(line, "tvg-language")}', matched_code)
+        line = put(line, 'group-title', f'{matched_country} | {group}')
+        raw_entries.append((line, extras, url, matched_country, language, group, tvgid))
+
+# 3. Movies merged into the same combined.m3u under "Movies | ..." groups
+for movie_url in MOVIE_SOURCES:
+    try:
+        lines = fetch(movie_url).splitlines()
+    except Exception as exc:
+        print(f'Warning: failed to fetch {movie_url}: {exc}')
+        continue
+
+    for line, extras, url in parse_m3u_blocks(lines):
+        if url in seen_urls:
+            duplicates += 1
+            continue
+
+        seen_urls.add(url)
+        name = line.split(',', 1)[-1].strip()
+        old_group = attr(line, 'group-title') or 'All Movies'
+        # Strip any bogus tvg-id so EPG generator doesn't look up TV schedules for movies
+        line = put(line, 'tvg-id', '')
+        line = put(line, 'group-title', f'Movies | {old_group}')
+        language = lang(f'{name} {old_group} {attr(line, "tvg-language")}')
+        raw_entries.append((line, extras, url, 'Movies', language, 'Movies', ''))
 
 if not raw_entries:
     raise RuntimeError('No channels found from upstream sources')
@@ -225,7 +339,6 @@ try:
 except Exception as exc:
     raise RuntimeError('Guide mapping API unavailable; existing published files are untouched') from exc
 
-# Index guides by candidate ID for fast lookup including aliases
 guide_index = collections.defaultdict(list)
 for g in guides:
     channel = g.get('channel')
@@ -240,7 +353,17 @@ for g in guides:
 
 selected = {}
 for mid in sorted(ids):
-    lookup_keys = [mid] + EPG_ALIASES.get(mid, [])
+    base_id = mid.split('@', 1)[0]
+    lookup_keys = list(dict.fromkeys([
+        mid,
+        base_id,
+        f'{base_id}@HD',
+        f'{base_id}@SD',
+        f'{base_id}@East',
+        f'{base_id}@National',
+        *EPG_ALIASES.get(mid, []),
+    ]))
+
     best_score = None
     best_guide = None
 
@@ -250,10 +373,10 @@ for mid in sorted(ids):
             if site in BLOCKED_SITES:
                 continue
             score = (
-                1 if alias_idx == 0 else 0,          # Prefer direct match over alias
-                SITE_PRIORITY.get(site, 1),          # Prefer reliable EPG providers
-                2 if exact_feed else 1,              # Prefer exact feed match
-                1 if g.get('lang') == 'en' else 0,   # Prefer English metadata
+                1 if alias_idx == 0 else 0,
+                SITE_PRIORITY.get(site, 1),
+                2 if exact_feed else 1,
+                1 if g.get('lang') == 'en' else 0,
             )
             if best_score is None or score > best_score:
                 best_score = score
@@ -291,7 +414,7 @@ report = {
     'epg_mapped_ids': len(selected),
     'epg_mapping_percent': round(100 * len(selected) / max(len(ids), 1), 1),
     'language_estimates_from_names': dict(languages),
-    'note': 'Stream reachability probed at build time. Blocked EPG scrapers excluded.',
+    'note': 'Merged live TV + verified movies into single combined.m3u with strict HLS/stream health checks.',
 }
 (ROOT / 'report.json').write_text(json.dumps(report, indent=2) + '\n')
 print(json.dumps(report, indent=2))
