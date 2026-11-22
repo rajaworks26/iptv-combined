@@ -1,27 +1,31 @@
 {
-  "countries": {
-    "USA": 1049,
-    "Canada": 102,
-    "India": 877,
-    "Pakistan": 45,
-    "Sports": 167,
-    "Movies": 1664
+  "menu_groups": {
+    "Live Sports": 231,
+    "International News": 804,
+    "Canada": 179,
+    "USA": 865,
+    "India": 420,
+    "Pakistan": 176,
+    "Movies | Hollywood & English": 59,
+    "Movies | Bollywood & Hindi": 75,
+    "Movies | Pakistani & Urdu": 4,
+    "Movies | Action & General": 1626
   },
-  "total_channels": 3904,
-  "duplicate_entries_removed": 1869,
-  "dead_streams_removed": 16870,
-  "unique_tvg_ids": 2071,
-  "epg_mapped_ids": 1062,
-  "epg_mapping_percent": 51.3,
+  "total_channels": 4439,
+  "duplicate_entries_removed": 2186,
+  "dead_streams_removed": 17424,
+  "unique_tvg_ids": 2631,
+  "epg_mapped_ids": 1286,
+  "epg_mapping_percent": 48.9,
   "language_estimates_from_names": {
-    "English": 1149,
-    "Urdu": 49,
-    "Hindi": 22,
-    "Malayalam": 6,
-    "Punjabi": 22,
-    "Tamil": 18,
-    "Other / Unspecified": 2619,
-    "Telugu": 19
+    "Other / Unspecified": 2901,
+    "English": 1253,
+    "Hindi": 19,
+    "Urdu": 214,
+    "Telugu": 16,
+    "Punjabi": 15,
+    "Tamil": 15,
+    "Malayalam": 6
   },
-  "note": "Merged live TV + Sports + Intl News + verified movies into single combined.m3u."
+  "note": "Title-deduplicated, alphabetically sorted, channel-numbered (tvg-chno) playlist with EPG & logo backfill."
 }
