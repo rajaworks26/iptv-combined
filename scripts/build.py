@@ -1,5 +1,6 @@
 import collections
 import concurrent.futures
+import http.client
 import json
 import re
 import sys
@@ -111,7 +112,6 @@ EPG_ALIASES = {
     'CityNewsVancouver.ca@SD': ['CitytvVancouver.ca@HD', 'CitytvVancouver.ca@SD', 'CitytvVancouver.ca'],
 }
 
-# Two-tier health check settings: generous 6s timeout for Live TV, fast 2.5s for massive movie list
 CHECK_STREAMS = True
 LIVE_TIMEOUT = 6.0
 LIVE_WORKERS = 60
@@ -121,16 +121,30 @@ MIN_PRIMARY_SOURCES_OK = 5
 MIN_CHANNELS = 300
 
 
-def get_bytes(url, timeout=90, limit=None):
+def get_bytes(url, timeout=90, limit=None, retries=3):
     req = urllib.request.Request(
         url,
         headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)', 'Accept': '*/*'},
     )
-    with urllib.request.urlopen(req, timeout=timeout) as resp:
-        if getattr(resp, 'status', 200) >= 400:
-            raise urllib.error.HTTPError(url, resp.status, 'HTTP Error', resp.headers, None)
-        data = resp.read(limit) if limit else resp.read()
-        return data, resp.geturl()
+    last_exc = None
+    attempts = 1 if limit else retries
+    for attempt in range(attempts):
+        try:
+            with urllib.request.urlopen(req, timeout=timeout) as resp:
+                if getattr(resp, 'status', 200) >= 400:
+                    raise urllib.error.HTTPError(url, resp.status, 'HTTP Error', resp.headers, None)
+                try:
+                    data = resp.read(limit) if limit else resp.read()
+                except http.client.IncompleteRead as ir:
+                    if limit and ir.partial:
+                        return ir.partial, resp.geturl()
+                    raise
+                return data, resp.geturl()
+        except Exception as exc:
+            last_exc = exc
+            if attempt + 1 < attempts:
+                time.sleep(1.5 * (attempt + 1))
+    raise last_exc
 
 
 def fetch_text(url, timeout=90):
@@ -164,7 +178,7 @@ def is_stream_alive(url, is_live=True):
                 seg_data, _ = get_bytes(current_url, timeout=timeout, limit=16384)
                 return bool(seg_data)
         return False
-    except (OSError, ValueError, TimeoutError, urllib.error.URLError):
+    except (OSError, ValueError, TimeoutError, urllib.error.URLError, http.client.HTTPException):
         return False
 
 
