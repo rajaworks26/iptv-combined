@@ -12,7 +12,10 @@ import xml.etree.ElementTree as ET
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-EPG_PUBLIC_URL = 'https://raw.githubusercontent.com/rajaworks26/iptv-combined/main/combined.xml'
+DATA_DIR = ROOT / 'data'
+HISTORY_PATH = DATA_DIR / 'stream_history.json'
+UNMATCHED_EPG_PATH = DATA_DIR / 'unmatched_epg.json'
+EPG_PUBLIC_URL = 'https://raw.githubusercontent.com/rajaworks26/iptv-combined/main/combined.xml.gz'
 
 COUNTRIES = {
     'us': 'USA',
@@ -35,38 +38,87 @@ GLOBAL_ACTIVE_SOURCES = [
     'https://raw.githubusercontent.com/Zaman-Topu/Ip-tv-Collection/main/FINAL_IPTV_ACTIVE.m3u',
 ]
 
-MOVIE_SOURCES = [
-    'https://raw.githubusercontent.com/Zaman-Topu/Ip-tv-Collection/main/FINAL_MOVIES_COMPLETE.m3u',
+CATEGORY_SOURCES = [
+    'https://iptv-org.github.io/iptv/categories/sports.m3u',
+    'https://iptv-org.github.io/iptv/categories/news.m3u',
+    'https://iptv-org.github.io/iptv/categories/movies.m3u',
+    'https://iptv-org.github.io/iptv/categories/kids.m3u',
+    'https://iptv-org.github.io/iptv/categories/documentary.m3u',
+    'https://iptv-org.github.io/iptv/categories/music.m3u',
+    'https://iptv-org.github.io/iptv/categories/entertainment.m3u',
 ]
 
+LANGUAGE_SOURCES = [
+    'https://iptv-org.github.io/iptv/languages/eng.m3u',
+    'https://iptv-org.github.io/iptv/languages/hin.m3u',
+    'https://iptv-org.github.io/iptv/languages/urd.m3u',
+    'https://iptv-org.github.io/iptv/languages/pan.m3u',
+    'https://iptv-org.github.io/iptv/languages/tam.m3u',
+    'https://iptv-org.github.io/iptv/languages/tel.m3u',
+]
+
+# Canadian, Indian & global FAST lists (excludes US-only lists that geo-block in Ontario)
+FAST_SOURCES = [
+    'https://raw.githubusercontent.com/BuddyChewChew/app-m3u-generator/main/playlists/plutotv_ca.m3u',
+    'https://raw.githubusercontent.com/BuddyChewChew/app-m3u-generator/main/playlists/samsungtvplus_ca.m3u',
+    'https://raw.githubusercontent.com/BuddyChewChew/app-m3u-generator/main/playlists/samsungtvplus_in.m3u',
+    'https://raw.githubusercontent.com/BuddyChewChew/app-m3u-generator/main/playlists/plex_ca.m3u',
+    'https://raw.githubusercontent.com/BuddyChewChew/app-m3u-generator/main/playlists/roku_all.m3u',
+]
+
+HINDI_PUNJABI_SOURCES = [
+    'https://raw.githubusercontent.com/deep2772/Hindi_Punjabi-iptv-playlist/refs/heads/main/Hindi_Punjabi_Merged.m3u',
+]
+
+SHOVO_SOURCES = [
+    'https://shovo127.github.io/IPTV-By-Shovo/index.m3u',
+]
+
+EXTRA_SOURCES = (
+    CATEGORY_SOURCES + LANGUAGE_SOURCES + FAST_SOURCES
+    + HINDI_PUNJABI_SOURCES + SHOVO_SOURCES
+)
+
 GROUPS = [
-    'Top Picks',
     'Live Sports',
     'International News',
     'Canada',
     'USA',
     'India',
     'Pakistan',
-    'Movies | Hollywood & English',
-    'Movies | Bollywood & Hindi',
-    'Movies | Pakistani & Urdu',
-    'Movies | Action & General',
+    'Movies',
 ]
 
-TOP_PICKS_KEYWORDS = (
-    'cp24', 'cbc news', 'ctv news', 'citynews toronto', 'tsn 1', 'tsn1',
-    'sportsnet ontario', 'sportsnet one', 'espn', 'sky sports cricket',
-    'star sports 1', 't sports', 'willow', 'cnn', 'bbc world news',
-    'al jazeera english', 'geo news', 'ary news', 'hum tv', 'ary digital',
-    'geo entertainment', 'star plus', 'colors tv', 'sony entertainment'
-)
-
 COUNTRY_MATCHERS = {
-    'ca': ('Canada', ['canada', 'canadian', 'ca |', '[ca]', '(ca)', 'toronto', 'cp24', 'cbc', 'ctv', 'citytv', 'global']),
-    'us': ('USA', ['usa', 'united states', 'us |', '[us]', '(us)']),
-    'in': ('India', ['india', 'indian', 'hindi', 'punjabi', 'tamil', 'telugu', 'malayalam', 'bengali', 'in |', '[in]']),
-    'pk': ('Pakistan', ['pakistan', 'pakistani', 'urdu', 'pk |', '[pk]', 'geo', 'ary', 'hum', 'samaa', 'ptv']),
+    'ca': ('Canada', [
+        'canada', 'canadian', 'toronto', 'cp24', 'cbc', 'ctv', 'citytv',
+        'global news', 'tvo', 'tsn', 'sportsnet', 'ami-tv', 'aptn'
+    ]),
+    'us': ('USA', [
+        'usa', 'united states', 'american', 'abc', 'nbc', 'cbs', 'fox',
+        'pbs', 'cw', 'amc', 'hbo', 'showtime', 'fx', 'tnt', 'tbs', 'usa network'
+    ]),
+    'in': ('India', [
+        'india', 'indian', 'hindi', 'punjabi', 'tamil', 'telugu', 'malayalam',
+        'bengali', 'marathi', 'gujarati', 'kannada', 'star plus', 'colors',
+        'zee tv', 'sony sab', 'aaj tak', 'ndtv', 'dd national', 'ptc punjabi'
+    ]),
+    'pk': ('Pakistan', [
+        'pakistan', 'pakistani', 'urdu', 'lollywood', 'geo news', 'geo tv',
+        'geo super', 'geo entertainment', 'ary digital', 'ary news', 'ary qtv',
+        'ary zindagi', 'hum tv', 'hum news', 'hum sitaray', 'hum masala',
+        'samaa', 'ptv', 'dunya news', 'express news', 'bol news', '92 news',
+        'aaj news', 'dawn news', 'ktn', 'sindh tv', 'apna channel'
+    ]),
 }
+
+EXCLUDED_LANG_KEYWORDS = (
+    'spanish', 'español', 'espanol', 'latino', 'latin', 'portuguese', 'português',
+    'arabic', 'russian', 'turkish',
+    'german', 'deutsch', 'italian', 'italiano', 'korean', 'japanese', 'chinese',
+    'mandarin', 'cantonese', 'vietnamese', 'thai', 'indonesian', 'persian', 'farsi',
+    'telemundo', 'univision', 'unimas', 'galavision', 'azteca', 'caracol', 'rcn', 'telefe'
+)
 
 SPORTS_KEYWORDS = (
     'sport', 'sports', 'cricket', 'football', 'soccer', 'espn', 'bein',
@@ -82,8 +134,10 @@ NEWS_KEYWORDS = (
     'ndtv', 'india today', 'aaj tak', 'republic', 'wion', 'times now'
 )
 
+VOD_EXTENSIONS = ('.mp4', '.mkv', '.avi', '.mov', '.flv', '.wmv', '.m4v')
+EXPIRING_TOKEN_MARKERS = ('wmsauthsign=', 'hdnea=', 'edge-token=', 'session_token=')
+
 FALLBACK_LOGOS = {
-    'Top Picks': 'https://img.icons8.com/color/240/star--v1.png',
     'Live Sports': 'https://img.icons8.com/color/240/trophy.png',
     'International News': 'https://img.icons8.com/color/240/news.png',
     'Canada': 'https://img.icons8.com/color/240/canada-circular.png',
@@ -113,19 +167,18 @@ EPG_ALIASES = {
 }
 
 CHECK_STREAMS = True
-LIVE_TIMEOUT = 6.0
+LIVE_TIMEOUT = 5.0
 LIVE_WORKERS = 60
-MOVIE_TIMEOUT = 2.5
-MOVIE_WORKERS = 120
 MIN_PRIMARY_SOURCES_OK = 5
 MIN_CHANNELS = 300
+HISTORY_WINDOW = 10
 
 
-def get_bytes(url, timeout=90, limit=None, retries=3):
-    req = urllib.request.Request(
-        url,
-        headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)', 'Accept': '*/*'},
-    )
+def get_bytes(url, timeout=90, limit=None, retries=3, extra_headers=None):
+    headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)', 'Accept': '*/*'}
+    if extra_headers:
+        headers.update(extra_headers)
+    req = urllib.request.Request(url, headers=headers)
     last_exc = None
     attempts = 1 if limit else retries
     for attempt in range(attempts):
@@ -152,34 +205,117 @@ def fetch_text(url, timeout=90):
     return data.decode('utf-8-sig', errors='ignore')
 
 
-def is_stream_alive(url, is_live=True):
-    if not url.startswith(('http://', 'https://')):
-        return False
-    timeout = LIVE_TIMEOUT if is_live else MOVIE_TIMEOUT
+def is_unreliable_url(url):
+    low = url.lower()
+    path = urllib.parse.urlparse(low).path
+    if path.endswith(VOD_EXTENSIONS) or '/movie/' in path or '/vod/' in path:
+        return True
+    if any(tok in low for tok in EXPIRING_TOKEN_MARKERS):
+        return True
+    return False
+
+
+def extract_vlc_headers(extras):
+    headers = {}
+    for line in extras:
+        if line.startswith('#EXTVLCOPT:http-user-agent='):
+            headers['User-Agent'] = line.split('=', 1)[1].strip()
+        elif line.startswith('#EXTVLCOPT:http-referrer='):
+            headers['Referer'] = line.split('=', 1)[1].strip()
+    return headers
+
+
+def build_tivimate_url(url, extras):
+    if '|' in url:
+        return url
+    headers = extract_vlc_headers(extras)
+    if not headers:
+        return url
+    params = '&'.join(f'{k}={urllib.parse.quote(v, safe="")}' for k, v in headers.items())
+    return f'{url}|{params}'
+
+
+def parse_max_height(m3u8_text):
+    heights = [int(h) for h in re.findall(r'RESOLUTION=\d+x(\d+)', m3u8_text)]
+    return max(heights) if heights else 0
+
+
+def probe_stream(url, extras=None):
+    """Returns (alive: bool, max_height: int, latency_ms: int)."""
+    base_url = url.split('|', 1)[0]
+    if not base_url.startswith(('http://', 'https://')) or is_unreliable_url(base_url):
+        return False, 0, 9999
+    req_headers = extract_vlc_headers(extras or [])
+    t0 = time.monotonic()
+    max_height = 0
     try:
-        current_url = url
-        for _ in range(3 if is_live else 1):
-            data, final_url = get_bytes(current_url, timeout=timeout, limit=65536)
+        current_url = base_url
+        for _ in range(3):
+            data, final_url = get_bytes(current_url, timeout=LIVE_TIMEOUT, limit=65536, extra_headers=req_headers)
             if not data:
-                return False
-            if not is_live:
-                return True
+                return False, 0, 9999
             text = data.decode('utf-8', errors='ignore')
             if not text.lstrip().startswith('#EXTM3U'):
-                return True
+                latency_ms = int((time.monotonic() - t0) * 1000)
+                return True, max_height, latency_ms
+            h = parse_max_height(text)
+            if h > max_height:
+                max_height = h
             next_uri = next(
                 (ln.strip() for ln in text.splitlines() if ln.strip() and not ln.startswith('#')),
                 None,
             )
             if not next_uri:
-                return False
+                return False, 0, 9999
             current_url = urllib.parse.urljoin(final_url, next_uri)
             if '#EXT-X-STREAM-INF' not in text and '#EXTINF:' in text:
-                seg_data, _ = get_bytes(current_url, timeout=timeout, limit=16384)
-                return bool(seg_data)
-        return False
+                seg_data, _ = get_bytes(current_url, timeout=LIVE_TIMEOUT, limit=16384, extra_headers=req_headers)
+                if seg_data:
+                    latency_ms = int((time.monotonic() - t0) * 1000)
+                    return True, max_height, latency_ms
+                return False, 0, 9999
+        return False, 0, 9999
     except (OSError, ValueError, TimeoutError, urllib.error.URLError, http.client.HTTPException):
-        return False
+        return False, 0, 9999
+
+
+def load_history():
+    if HISTORY_PATH.exists():
+        try:
+            return json.loads(HISTORY_PATH.read_text(encoding='utf-8'))
+        except Exception:
+            return {}
+    return {}
+
+
+def save_history(history):
+    DATA_DIR.mkdir(parents=True, exist_ok=True)
+    # Keep only active/recent streams to avoid repository bloat
+    pruned = {u: bits for u, bits in history.items() if '1' in bits[-HISTORY_WINDOW:]}
+    HISTORY_PATH.write_text(json.dumps(pruned, separators=(',', ':')) + '\n', encoding='utf-8')
+
+
+def compute_score(entry, uptime_ratio, height, latency_ms):
+    """Score stream 0-100: Uptime (45), Metadata (25), Resolution (15), Speed (15)."""
+    uptime_pts = 45.0 * uptime_ratio
+    meta_pts = (15.0 if entry['tvgid'] else 0.0) + (10.0 if entry['logo'] else 0.0)
+    if height >= 1080:
+        res_pts = 15.0
+    elif height >= 720:
+        res_pts = 11.0
+    elif height >= 480:
+        res_pts = 7.0
+    else:
+        res_pts = 5.0
+    if latency_ms <= 600:
+        speed_pts = 15.0
+    elif latency_ms <= 1500:
+        speed_pts = 11.0
+    elif latency_ms <= 3000:
+        speed_pts = 7.0
+    else:
+        speed_pts = 3.0
+    return round(uptime_pts + meta_pts + res_pts + speed_pts, 1)
 
 
 def attr(line, key):
@@ -245,28 +381,13 @@ def classify_live_group(name, old_group, country_code=''):
     if og in ('international news', 'news bd') or has_word(s, *NEWS_KEYWORDS):
         return 'International News'
     if og == 'movies' or has_word(s, 'movie', 'movies', 'cinema', 'film', 'films', 'bollywood', 'lollywood'):
-        if country_code == 'pk' or has_word(s, 'pakistani', 'pakistan', 'lollywood', 'urdu'):
-            return 'Movies | Pakistani & Urdu'
-        if country_code == 'in' or has_word(s, 'bollywood', 'hindi', 'indian', 'punjabi', 'tamil', 'telugu'):
-            return 'Movies | Bollywood & Hindi'
-        return 'Movies | Hollywood & English'
+        return 'Movies'
 
     if og == 'india' or country_code == 'in':
         return 'India'
     if country_code in COUNTRIES:
         return COUNTRIES[country_code]
     return 'USA'
-
-
-def classify_movie_group(name, old_group):
-    s = f'{name} {old_group}'.lower()
-    if has_word(s, 'pakistani', 'pakistan', 'lollywood', 'urdu'):
-        return 'Movies | Pakistani & Urdu'
-    if has_word(s, 'bollywood', 'hindi', 'indian', 'punjabi', 'tamil', 'telugu', 'malayalam', 'south indian'):
-        return 'Movies | Bollywood & Hindi'
-    if has_word(s, 'hollywood', 'english', 'american', 'uk'):
-        return 'Movies | Hollywood & English'
-    return 'Movies | Action & General'
 
 
 def parse_m3u_blocks(lines):
@@ -290,9 +411,10 @@ def format_extinf(e, number, group_name):
         line = put(line, 'tvg-name', e['name'])
     if e['tvgid']:
         line = put(line, 'tvg-id', e['tvgid'])
-    logo = e['logo'] or FALLBACK_LOGOS.get('Movies' if group_name.startswith('Movies') else group_name, FALLBACK_LOGOS['Top Picks'])
+    logo = e['logo'] or FALLBACK_LOGOS.get(group_name, FALLBACK_LOGOS['Movies'])
     line = put(line, 'tvg-logo', logo)
-    return '\n'.join([line, *e['extras'], e['url']]) + '\n'
+    final_url = build_tivimate_url(e['url'], e['extras'])
+    return '\n'.join([line, *e['extras'], final_url]) + '\n'
 
 
 def write_playlist(path, items):
@@ -334,7 +456,7 @@ def main():
     name_to_tvgid = {}
     name_to_logo = {}
 
-    # 1. Primary country sources (guard against partial upstream outages)
+    # 1. Primary country sources
     for priority, (code, url) in enumerate(SOURCES):
         try:
             lines = fetch_text(url).splitlines()
@@ -344,6 +466,8 @@ def main():
             continue
 
         for line, extras, stream_url in parse_m3u_blocks(lines):
+            if is_unreliable_url(stream_url):
+                continue
             name = line.split(',', 1)[-1].strip()
             n_epg = norm_epg_name(name)
             n_title = norm_title(name)
@@ -366,33 +490,53 @@ def main():
                 'group': classify_live_group(name, old_group, code),
                 'language': detect_lang(f'{name} {old_group} {attr(line, "tvg-language")}', code),
                 'priority': priority,
-                'is_live': True,
             })
 
     if primary_ok < MIN_PRIMARY_SOURCES_OK:
         raise RuntimeError(f'Only {primary_ok}/{len(SOURCES)} primary sources reachable; aborting to preserve existing playlist')
 
-    # 2. Zaman-Topu active list (with country-scoped EPG & logo backfill)
-    for active_url in GLOBAL_ACTIVE_SOURCES:
+    # 2. Global active & extra live TV sources
+    for active_url in GLOBAL_ACTIVE_SOURCES + EXTRA_SOURCES:
         try:
             lines = fetch_text(active_url).splitlines()
         except Exception as exc:
             errors.append(f'{active_url}: {exc}')
             continue
 
+        is_ca_fast = any(tag in active_url for tag in ('plutotv_ca', 'samsungtvplus_ca', 'plex_ca'))
+        is_in_source = 'Hindi_Punjabi' in active_url or 'samsungtvplus_in' in active_url or any(tag in active_url for tag in ('/hin.m3u', '/pan.m3u', '/tam.m3u', '/tel.m3u'))
+        is_pk_source = '/urd.m3u' in active_url
+
         for line, extras, stream_url in parse_m3u_blocks(lines):
+            if is_unreliable_url(stream_url):
+                continue
             name = line.split(',', 1)[-1].strip()
             old_group = attr(line, 'group-title')
+            tvg_lang = attr(line, 'tvg-language')
             og_lower = old_group.lower().strip()
             n_epg = norm_epg_name(name)
             n_title = norm_title(name)
-            s = f'{name} {old_group}'.lower()
+            s = f'{name} {old_group} {tvg_lang}'.lower()
+
+            if has_word(s, *EXCLUDED_LANG_KEYWORDS):
+                continue
 
             matched_code = None
-            for code, (_, keywords) in COUNTRY_MATCHERS.items():
-                if any(kw in s for kw in keywords):
-                    matched_code = code
-                    break
+            if is_ca_fast:
+                matched_code = 'ca'
+            elif is_in_source:
+                matched_code = 'in'
+            elif is_pk_source:
+                matched_code = 'pk'
+            else:
+                tag_match = re.search(r'[\[\(\|]\s*(ca|us|in|pk)\s*[\]\)\|]', s)
+                if tag_match:
+                    matched_code = tag_match.group(1)
+                else:
+                    for code, (_, keywords) in COUNTRY_MATCHERS.items():
+                        if has_word(s, *keywords):
+                            matched_code = code
+                            break
 
             tvgid = (
                 attr(line, 'tvg-id')
@@ -404,8 +548,12 @@ def main():
             is_sports = og_lower == 'sports' or has_word(s, *SPORTS_KEYWORDS)
             is_news = og_lower in ('international news', 'news bd') or has_word(s, *NEWS_KEYWORDS)
             is_allowed_group = og_lower in ('english', 'india')
+            is_allowed_category = og_lower in (
+                'movies', 'kids', 'documentary', 'music', 'entertainment',
+                'general', 'family', 'education', 'culture', 'comedy', 'animation',
+            )
 
-            if not (is_sports or is_news or matched_code or is_allowed_group):
+            if not (is_sports or is_news or matched_code or is_allowed_group or is_allowed_category):
                 continue
 
             fetched.append({
@@ -416,33 +564,8 @@ def main():
                 'tvgid': tvgid,
                 'logo': logo,
                 'group': classify_live_group(name, old_group, matched_code or ''),
-                'language': detect_lang(f'{name} {old_group} {attr(line, "tvg-language")}', matched_code or ''),
+                'language': detect_lang(s, matched_code or ''),
                 'priority': 10,
-                'is_live': True,
-            })
-
-    # 3. Movies playlist
-    for movie_url in MOVIE_SOURCES:
-        try:
-            lines = fetch_text(movie_url).splitlines()
-        except Exception as exc:
-            errors.append(f'{movie_url}: {exc}')
-            continue
-
-        for line, extras, stream_url in parse_m3u_blocks(lines):
-            name = line.split(',', 1)[-1].strip()
-            old_group = attr(line, 'group-title')
-            fetched.append({
-                'line': put(line, 'tvg-id', ''),
-                'extras': extras,
-                'url': stream_url,
-                'name': name,
-                'tvgid': '',
-                'logo': attr(line, 'tvg-logo'),
-                'group': classify_movie_group(name, old_group),
-                'language': detect_lang(f'{name} {old_group} {attr(line, "tvg-language")}'),
-                'priority': 20,
-                'is_live': False,
             })
 
     if not fetched:
@@ -453,19 +576,37 @@ def main():
         unique_urls.setdefault(e['url'], e)
     candidates = list(unique_urls.values())
 
+    history = load_history()
+    grace_retained = 0
+
     if CHECK_STREAMS:
-        live_cands = [e for e in candidates if e['is_live']]
-        movie_cands = [e for e in candidates if not e['is_live']]
-
         with concurrent.futures.ThreadPoolExecutor(max_workers=LIVE_WORKERS) as pool:
-            live_ok = list(pool.map(lambda item: is_stream_alive(item['url'], True), live_cands))
-        with concurrent.futures.ThreadPoolExecutor(max_workers=MOVIE_WORKERS) as pool:
-            movie_ok = list(pool.map(lambda item: is_stream_alive(item['url'], False), movie_cands))
+            results = list(pool.map(lambda item: probe_stream(item['url'], item['extras']), candidates))
 
-        candidates = [e for e, ok in zip(live_cands, live_ok) if ok] + [e for e, ok in zip(movie_cands, movie_ok) if ok]
+        healthy = []
+        for e, (alive, height, latency_ms) in zip(candidates, results):
+            u = e['url']
+            prev_bits = history.get(u, '')[-HISTORY_WINDOW:]
+            new_bits = (prev_bits + ('1' if alive else '0'))[-HISTORY_WINDOW:]
+            history[u] = new_bits
+            uptime_ratio = new_bits.count('1') / len(new_bits)
 
-    # Prefer source priority, valid tvg-id, and valid tvg-logo; save working mirrors to alternates.m3u
-    candidates.sort(key=lambda e: (e['priority'], -bool(e['tvgid']), -bool(e['logo'])))
+            # Retain high-reliability streams for 1 grace run on temporary hiccups
+            keep = alive or (len(prev_bits) >= 3 and uptime_ratio >= 0.70 and prev_bits.endswith('1'))
+            if keep:
+                if not alive:
+                    grace_retained += 1
+                e['score'] = compute_score(e, uptime_ratio, height, latency_ms)
+                e['resolution'] = f'{height}p' if height else 'unknown'
+                healthy.append(e)
+        candidates = healthy
+    else:
+        for e in candidates:
+            e['score'] = 50.0
+            e['resolution'] = 'unknown'
+
+    # Rank duplicates by highest reliability score first, then source priority
+    candidates.sort(key=lambda e: (-e['score'], e['priority']))
     primary = []
     backups = []
     seen_titles = set()
@@ -481,24 +622,18 @@ def main():
     if len(primary) < MIN_CHANNELS:
         raise RuntimeError(f'Only {len(primary)} unique playable channels (minimum {MIN_CHANNELS})')
 
-    primary.sort(key=lambda e: (GROUPS.index(e['group']) if e['group'] in GROUPS else 99, e['name'].casefold()))
+    save_history(history)
 
-    favorites = [
-        e for e in primary
-        if not e['group'].startswith('Movies') and any(kw.replace(' ', '') in norm_title(e['name']) for kw in TOP_PICKS_KEYWORDS)
-    ][:99]
-
-    numbered = []
-    number = 1
-    for e in favorites:
-        numbered.append((e, number, 'Top Picks'))
-        number += 1
+    allowed_groups = set(GROUPS)
     for e in primary:
-        numbered.append((e, number, e['group']))
-        number += 1
+        if e['group'] not in allowed_groups:
+            e['group'] = 'USA'
+
+    primary.sort(key=lambda e: (GROUPS.index(e['group']), e['name'].casefold()))
+
+    numbered = [(e, number, e['group']) for number, e in enumerate(primary, 1)]
 
     write_playlist(ROOT / 'combined.m3u', numbered)
-    write_playlist(ROOT / 'top-picks.m3u', numbered[:len(favorites)])
     write_playlist(ROOT / 'alternates.m3u', [(e, i, e['group']) for i, e in enumerate(backups, 1)])
     for lang_name in ['English', 'Hindi', 'Urdu', 'Punjabi', 'Tamil', 'Telugu']:
         write_playlist(
@@ -560,15 +695,24 @@ def main():
     ET.indent(root)
     ET.ElementTree(root).write(ROOT / 'epg.channels.xml', encoding='utf-8', xml_declaration=True)
 
+    unmatched = [
+        {'name': e['name'], 'group': e['group'], 'tvg_id': e['tvgid']}
+        for e in primary
+        if not e['tvgid'] or e['tvgid'] not in selected
+    ]
+    DATA_DIR.mkdir(parents=True, exist_ok=True)
+    UNMATCHED_EPG_PATH.write_text(json.dumps(unmatched[:500], indent=2) + '\n', encoding='utf-8')
+
     report = {
         'generated_utc': time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime()),
         'primary_sources_ok': f'{primary_ok}/{len(SOURCES)}',
         'source_entries': len(fetched),
         'unique_urls': len(unique_urls),
         'passed_health_checks': len(candidates),
+        'grace_retained_streams': grace_retained,
         'unique_primary_channels': len(primary),
         'alternate_streams_saved': len(backups),
-        'top_picks': len(favorites),
+        'average_stream_score': round(sum(e['score'] for e in primary) / max(len(primary), 1), 1),
         'groups': dict(collections.Counter(e['group'] for e in primary)),
         'unique_tvg_ids': len(ids),
         'epg_mapped_ids': len(selected),
