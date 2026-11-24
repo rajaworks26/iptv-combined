@@ -31,7 +31,7 @@ Copy and paste these two URLs into your IPTV player:
 | **Tamil** | `https://raw.githubusercontent.com/rajaworks26/iptv-combined/main/language-tamil.m3u` |
 | **Telugu** | `https://raw.githubusercontent.com/rajaworks26/iptv-combined/main/language-telugu.m3u` |
 
-### TiviMate Setup
+### Setup
 1. **Add Playlist:** Settings → Playlists → Add playlist → M3U playlist → paste the **Primary Playlist** URL above.
 2. **Assign EPG:** Settings → EPG → EPG sources → Add source → paste the **EPG TV Guide** URL (`.../epg/combined.xml.gz`) and assign it to the playlist.
 3. **Update Interval:** Set both Playlist and EPG update intervals to **Every 6 hours** (or **On app start**).
