@@ -339,13 +339,7 @@ def attr(line, key):
 
 def put(line, key, value):
     value = str(value).replace('"', '').replace('\n', ' ')
-    if re.search(r'(?<!\w)' + re.escape(key) + r'="[^"]*"', line):
-        return re.sub(
-            r'(?<!\w)' + re.escape(key) + r'="[^"]*"',
-            lambda m: key + '="' + value + '"',
-            line,
-            count=1,
-        )
+    line = re.sub(r'\s*(?<!\w)' + re.escape(key) + r'=(?:"[^"]*"|\'[^\']*\')', '', line)
     return line.replace('#EXTINF:', f'#EXTINF: {key}="{value}" ', 1)
 
 
@@ -651,14 +645,14 @@ def main():
             seen_titles.add(key)
             primary.append(e)
 
+    # Filter out any stray group names not in the allowed 7 GROUPS
+    allowed_groups = set(GROUPS)
+    primary = [e for e in primary if e['group'] in allowed_groups]
+
     if len(primary) < MIN_CHANNELS:
         raise RuntimeError(f'Only {len(primary)} unique playable channels (minimum {MIN_CHANNELS})')
 
     save_history(history)
-
-    # Filter out any stray group names not in the allowed 7 GROUPS
-    allowed_groups = set(GROUPS)
-    primary = [e for e in primary if e['group'] in allowed_groups]
 
     primary.sort(key=lambda e: (GROUPS.index(e['group']), e['name'].casefold()))
 
