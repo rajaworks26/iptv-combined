@@ -1,35 +1,37 @@
 #EXTM3U x-tvg-url="https://raw.githubusercontent.com/rajaworks26/iptv-combined/epg/combined.xml.gz"
-#EXTINF: tvg-logo="https://play-lh.googleusercontent.com/8zcsR5HWFk84RwYkA6r-OXvYzFtVBOmgnicCYMGXPAmMKEozaRQ9Idw4g2dljsIvZ5ES6r8G_lxs19IU9h-ADg"  tvg-id="D5ChannelPunjabi.in@SD"  tvg-name="D5 Channel Punjabi (1080p)"  tvg-chno="720"  group-title="International News" -1,D5 Channel Punjabi (1080p)
+#EXTINF: tvg-logo="https://play-lh.googleusercontent.com/8zcsR5HWFk84RwYkA6r-OXvYzFtVBOmgnicCYMGXPAmMKEozaRQ9Idw4g2dljsIvZ5ES6r8G_lxs19IU9h-ADg"  tvg-id="D5ChannelPunjabi.in@SD"  tvg-name="D5 Channel Punjabi (1080p)"  tvg-chno="725"  group-title="International News" -1,D5 Channel Punjabi (1080p)
 https://d5.tv360.ca:3453/live/cd5live.m3u8
-#EXTINF: tvg-logo="https://papaji.freetvindia.com/media/World_Punjabi_TV.png"  tvg-id="WorldPunjabiTV.in@SD"  tvg-name="World Punjabi TV (1080p)"  tvg-chno="1365"  group-title="International News" -1,World Punjabi TV (1080p)
+#EXTINF: tvg-logo="https://papaji.freetvindia.com/media/World_Punjabi_TV.png"  tvg-id="WorldPunjabiTV.in@SD"  tvg-name="World Punjabi TV (1080p)"  tvg-chno="1376"  group-title="International News" -1,World Punjabi TV (1080p)
 https://live1.ottlive.co.in/worldpunjabitv/worldpunjabitv/index.m3u8
-#EXTINF: tvg-logo="https://upload.wikimedia.org/wikipedia/en/8/88/PTC_Punjabi.png"  tvg-id="PTCPunjabiCanada.ca@SD"  tvg-name="PTC Punjabi Canada (1080p)"  tvg-chno="1637"  group-title="Canada" -1,PTC Punjabi Canada (1080p)
+#EXTINF: tvg-logo="https://upload.wikimedia.org/wikipedia/en/8/88/PTC_Punjabi.png"  tvg-id="PTCPunjabiCanada.ca@SD"  tvg-name="PTC Punjabi Canada (1080p)"  tvg-chno="1638"  group-title="Canada" -1,PTC Punjabi Canada (1080p)
 https://stream.ottlive.co.in/ptccanada/index.m3u8
-#EXTINF: tvg-logo="https://dtil.tmsimg.com/assets/s142800_ld_h15_aa.png?lock=720x540"  tvg-id="DDPunjabi.in@SD"  tvg-name="DD Punjabi (504p)"  tvg-chno="2953"  group-title="India" -1,DD Punjabi (504p)
+#EXTINF: tvg-logo="https://dtil.tmsimg.com/assets/s142800_ld_h15_aa.png?lock=720x540"  tvg-id="DDPunjabi.in@SD"  tvg-name="DD Punjabi (504p)"  tvg-chno="2946"  group-title="India" -1,DD Punjabi (504p)
 https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/da821c24a59d4e57960497aeaca8fb33/index.m3u8
-#EXTINF: tvg-logo="https://media.thegtcnetwork.com/uploads/gtc-pujabin-s.jpg"  tvg-id="GTCPunjabi.in@SD"  tvg-name="GTC Punjabi (1080p)"  tvg-chno="3013"  group-title="India" -1,GTC Punjabi (1080p)
+#EXTINF: tvg-logo="https://media.thegtcnetwork.com/uploads/gtc-pujabin-s.jpg"  tvg-id="GTCPunjabi.in@SD"  tvg-name="GTC Punjabi (1080p)"  tvg-chno="3009"  group-title="India" -1,GTC Punjabi (1080p)
 https://cdn.ottlive.co.in/gtcpunjabi/index.m3u8
-#EXTINF: tvg-logo="https://media.thegtcnetwork.com/uploads/gtc-pujabin-s.jpg"  tvg-id="GTCPunjabi.in@UK"  tvg-name="GTC Punjabi UK (1080p)"  tvg-chno="3014"  group-title="India" -1,GTC Punjabi UK (1080p)
+#EXTINF: tvg-logo="https://media.thegtcnetwork.com/uploads/gtc-pujabin-s.jpg"  tvg-id="GTCPunjabi.in@UK"  tvg-name="GTC Punjabi UK (1080p)"  tvg-chno="3010"  group-title="India" -1,GTC Punjabi UK (1080p)
 https://neotv.ottlive.co.in/gtcpunjabiuk/index.m3u8
-#EXTINF: tvg-logo="https://i.imgur.com/AWUcSb8.png"  tvg-id="MahaPunjabi.in@SD"  tvg-name="Maha Punjabi (576p)"  tvg-chno="3109"  group-title="India" -1,Maha Punjabi (576p)
+#EXTINF: tvg-logo="https://media.thegtcnetwork.com/uploads/gtc-pujabin-s.jpg"  tvg-id="GTCPunjabi.in@US"  tvg-name="GTC Punjabi US (1080p)"  tvg-chno="3011"  group-title="India" -1,GTC Punjabi US (1080p)
+https://neotv.ottlive.co.in/gtcpunjabiusa/index.m3u8
+#EXTINF: tvg-logo="https://i.imgur.com/AWUcSb8.png"  tvg-id="MahaPunjabi.in@SD"  tvg-name="Maha Punjabi (576p)"  tvg-chno="3107"  group-title="India" -1,Maha Punjabi (576p)
 https://cdn.pishow.tv/ott/live/1521/master.m3u8
-#EXTINF: tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_PTC_PUNJABI_GOLD/images/LOGO_HD/image.png"  tvg-id="PTCPunjabiGold.in@SD"  tvg-name="PTC Punjabi Gold (1080p)"  tvg-chno="3180"  group-title="India" -1,PTC Punjabi Gold (1080p)
+#EXTINF: tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_PTC_PUNJABI_GOLD/images/LOGO_HD/image.png"  tvg-id="PTCPunjabiGold.in@SD"  tvg-name="PTC Punjabi Gold (1080p)"  tvg-chno="3181"  group-title="India" -1,PTC Punjabi Gold (1080p)
 https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/6e14bac6d0384e129521a4d005188bfb/index.m3u8
-#EXTINF: tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_PTC_PUNJABI/images/LOGO_HD/image.png"  tvg-id="PTCPunjabi.in@HD"  tvg-name="PTC Punjabi HD (1080p)"  tvg-chno="3181"  group-title="India" -1,PTC Punjabi HD (1080p)
+#EXTINF: tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_PTC_PUNJABI/images/LOGO_HD/image.png"  tvg-id="PTCPunjabi.in@HD"  tvg-name="PTC Punjabi HD (1080p)"  tvg-chno="3182"  group-title="India" -1,PTC Punjabi HD (1080p)
 https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/3e22a9c278db4e3eb779afd42e41b0a6/index.m3u8
-#EXTINF: tvg-logo="https://i.imgur.com/1Za9gNQ.jpg"  tvg-id="PunjabiBeatsHD.in@HD"  tvg-name="Punjabi Beats HD (576p)"  tvg-chno="3185"  group-title="India" -1,Punjabi Beats HD (576p)
+#EXTINF: tvg-logo="https://i.imgur.com/1Za9gNQ.jpg"  tvg-id="PunjabiBeatsHD.in@HD"  tvg-name="Punjabi Beats HD (576p)"  tvg-chno="3187"  group-title="India" -1,Punjabi Beats HD (576p)
 https://mumt01.tangotv.in/O5aw8Zn3STVHARYANANEWS/index.m3u8
-#EXTINF: tvg-logo="https://dtil.tmsimg.com/assets/s143691_ld_h15_aa.png?lock=720x540"  tvg-id="PunjabiHits.in@SD"  tvg-name="Punjabi Hits (1080p)"  tvg-chno="3186"  group-title="India" -1,Punjabi Hits (1080p)
-https://legitpro.co.in/punjabihits/punjabihits/index.m3u8
-#EXTINF: tvg-logo="https://papaji.freetvindia.com/media/Punjabi_Music_HD.png"  tvg-id="PunjabiMusicHD.in@SD"  tvg-name="Punjabi Music HD (720p)"  tvg-chno="3187"  group-title="India" -1,Punjabi Music HD (720p)
+#EXTINF: tvg-logo="https://dtil.tmsimg.com/assets/s143691_ld_h15_aa.png?lock=720x540"  tvg-id="PunjabiHits.in@SD"  tvg-name="Punjabi Hits (1080p)"  tvg-chno="3188"  group-title="India" -1,Punjabi Hits (1080p)
+https://stream.ottlive.co.in/punjabihits/index.m3u8
+#EXTINF: tvg-logo="https://papaji.freetvindia.com/media/Punjabi_Music_HD.png"  tvg-id="PunjabiMusicHD.in@SD"  tvg-name="Punjabi Music HD (720p)"  tvg-chno="3189"  group-title="India" -1,Punjabi Music HD (720p)
 https://samitaorigin.tangotv.in/PUNJABIMUSICHD/SAMITAORIGIN/index.m3u8
-#EXTINF: tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN400064VZ_20260623T015554SQUARE.png"  tvg-id="IN400064VZ"  tvg-chno="3188"  group-title="India" -1 channel-id="IN400064VZ" tvg-name="Punjabi Shorts",Punjabi Shorts
+#EXTINF: tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN400064VZ_20260623T015554SQUARE.png"  tvg-id="IN400064VZ"  tvg-chno="3190"  group-title="India" -1 channel-id="IN400064VZ" tvg-name="Punjabi Shorts",Punjabi Shorts
 https://jmp2.uk/stvp-IN400064VZ
-#EXTINF: tvg-logo="https://papaji.freetvindia.com/media/PunjabiTV.png"  tvg-id="PunjabiTV.in@SD"  tvg-name="Punjabi TV (720p)"  tvg-chno="3189"  group-title="India" -1,Punjabi TV (720p)
+#EXTINF: tvg-logo="https://papaji.freetvindia.com/media/PunjabiTV.png"  tvg-id="PunjabiTV.in@SD"  tvg-name="Punjabi TV (720p)"  tvg-chno="3191"  group-title="India" -1,Punjabi TV (720p)
 https://samitaorigin.tangotv.in/PUNJABITV/SAMITAORIGIN/index.m3u8
-#EXTINF: tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Wah_Punjabi.png"  tvg-id="WahPunjabi.in@SD"  tvg-name="Wah Punjabi (720p)"  tvg-chno="3321"  group-title="India" -1,Wah Punjabi (720p)
+#EXTINF: tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Wah_Punjabi.png"  tvg-id="WahPunjabi.in@SD"  tvg-name="Wah Punjabi (720p)"  tvg-chno="3320"  group-title="India" -1,Wah Punjabi (720p)
 https://yuppnimrestreammum.akamaized.net/181224/smil:wahpunjabi.smil/playlist.m3u8?hdnts=st=1735898689~exp=1835898688~acl=*~hmac=f5fe24724fe05481e3841f9eb5ab8efdee0a3dd83645ae9dcf45703f525bab7b
-#EXTINF: tvg-logo="https://i.imgur.com/EO6cYUI.png"  tvg-id="GodStandsTV.pk@Punjabi"  tvg-name="God Stands TV Punjabi"  tvg-chno="3371"  group-title="Pakistan" -1,God Stands TV Punjabi
+#EXTINF: tvg-logo="https://i.imgur.com/EO6cYUI.png"  tvg-id="GodStandsTV.pk@Punjabi"  tvg-name="God Stands TV Punjabi"  tvg-chno="3370"  group-title="Pakistan" -1,God Stands TV Punjabi
 https://online.godstands.tv:5443/WebRTCApp/streams/PunjabiStreaming.m3u8
-#EXTINF: tvg-logo="https://www.thegtcnetwork.com/punjabi-shorts.jpg"  tvg-id="PunjabiShorts.in@SD"  tvg-name="Punjabi Shorts (1080p)"  tvg-chno="3834"  group-title="Movies" -1,Punjabi Shorts (1080p)
+#EXTINF: tvg-logo="https://www.thegtcnetwork.com/punjabi-shorts.jpg"  tvg-id="PunjabiShorts.in@SD"  tvg-name="Punjabi Shorts (1080p)"  tvg-chno="3828"  group-title="Movies" -1,Punjabi Shorts (1080p)
 https://vglivessai.akamaized.net/ptnr-yupptv/title-Punjabi_Shorts/in/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/27c3fd7a-b01f-4b00-ac03-557ac77acd47/index.m3u8
