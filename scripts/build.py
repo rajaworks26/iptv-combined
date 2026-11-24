@@ -15,7 +15,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DATA_DIR = ROOT / 'data'
 HISTORY_PATH = DATA_DIR / 'stream_history.json'
 UNMATCHED_EPG_PATH = DATA_DIR / 'unmatched_epg.json'
-EPG_PUBLIC_URL = 'https://raw.githubusercontent.com/rajaworks26/iptv-combined/main/combined.xml.gz'
+EPG_PUBLIC_URL = 'https://raw.githubusercontent.com/rajaworks26/iptv-combined/epg/combined.xml.gz'
 
 COUNTRIES = {
     'us': 'USA',
@@ -96,11 +96,11 @@ COUNTRY_MATCHERS = {
     ]),
     'us': ('USA', [
         'usa', 'united states', 'american', 'abc', 'nbc', 'cbs', 'fox',
-        'pbs', 'cw', 'amc', 'hbo', 'showtime', 'fx', 'tnt', 'tbs', 'usa network'
+        'pbs', 'amc', 'hbo', 'showtime', 'tnt', 'tbs', 'usa network'
     ]),
     'in': ('India', [
         'india', 'indian', 'hindi', 'punjabi', 'tamil', 'telugu', 'malayalam',
-        'bengali', 'marathi', 'gujarati', 'kannada', 'star plus', 'colors',
+        'bengali', 'marathi', 'gujarati', 'kannada', 'star plus',
         'zee tv', 'sony sab', 'aaj tak', 'ndtv', 'dd national', 'ptc punjabi'
     ]),
     'pk': ('Pakistan', [
@@ -108,7 +108,7 @@ COUNTRY_MATCHERS = {
         'geo super', 'geo entertainment', 'ary digital', 'ary news', 'ary qtv',
         'ary zindagi', 'hum tv', 'hum news', 'hum sitaray', 'hum masala',
         'samaa', 'ptv', 'dunya news', 'express news', 'bol news', '92 news',
-        'aaj news', 'dawn news', 'ktn', 'sindh tv', 'apna channel'
+        'aaj news', 'dawn news', 'sindh tv', 'apna channel'
     ]),
 }
 
@@ -123,13 +123,13 @@ EXCLUDED_LANG_KEYWORDS = (
 SPORTS_KEYWORDS = (
     'sport', 'sports', 'cricket', 'football', 'soccer', 'espn', 'bein',
     'sky sports', 'star sports', 't sports', 'ten sports', 'sony ten',
-    'f1', 'formula 1', 'dazn', 'tsn', 'sportsnet', 'ptv sports', 'geo super',
+    'formula 1', 'dazn', 'tsn', 'sportsnet', 'ptv sports', 'geo super',
     'a sports', 'willow', 'fox sports', 'cbs sports', 'nbc sports', 'golf', 'tennis', 'racing'
 )
 
 NEWS_KEYWORDS = (
     'news', 'cnn', 'bbc', 'al jazeera', 'sky news', 'euronews', 'france 24',
-    'dw', 'msnbc', 'fox news', 'cnbc', 'bloomberg', 'cp24', 'cbc news', 'ctv news',
+    'msnbc', 'fox news', 'cnbc', 'bloomberg', 'cp24', 'cbc news', 'ctv news',
     'citynews', 'geo news', 'ary news', 'hum news', 'samaa', 'dunya news', 'express news',
     'ndtv', 'india today', 'aaj tak', 'republic', 'wion', 'times now'
 )
@@ -240,6 +240,21 @@ def parse_max_height(m3u8_text):
     return max(heights) if heights else 0
 
 
+def looks_like_markup(data):
+    head = data[:512].lstrip(b'\xef\xbb\xbf \r\n\t').lower()
+    return head.startswith((b'<', b'{', b'[')) or b'<html' in head or b'<!doctype' in head
+
+
+def looks_like_media(data):
+    if len(data) < 188 or looks_like_markup(data):
+        return False
+    if data[0] == 0x47 or data[4:8] in (b'ftyp', b'styp', b'moof') or data[:3] in (b'ID3', b'FLV'):
+        return True
+    sample = data[:256]
+    printable = sum(1 for b in sample if 32 <= b < 127 or b in (9, 10, 13))
+    return printable / len(sample) < 0.6  # encrypted/binary segments
+
+
 def probe_stream(url, extras=None):
     """Returns (alive: bool, max_height: int, latency_ms: int)."""
     base_url = url.split('|', 1)[0]
@@ -256,11 +271,11 @@ def probe_stream(url, extras=None):
                 return False, 0, 9999
             text = data.decode('utf-8', errors='ignore')
             if not text.lstrip().startswith('#EXTM3U'):
-                latency_ms = int((time.monotonic() - t0) * 1000)
-                return True, max_height, latency_ms
-            h = parse_max_height(text)
-            if h > max_height:
-                max_height = h
+                ok = looks_like_media(data)
+                return ok, max_height, int((time.monotonic() - t0) * 1000) if ok else 9999
+            if '#EXT-X-ENDLIST' in text or 'PLAYLIST-TYPE:VOD' in text:
+                return False, 0, 9999  # VOD, not live
+            max_height = max(max_height, parse_max_height(text))
             next_uri = next(
                 (ln.strip() for ln in text.splitlines() if ln.strip() and not ln.startswith('#')),
                 None,
@@ -270,9 +285,8 @@ def probe_stream(url, extras=None):
             current_url = urllib.parse.urljoin(final_url, next_uri)
             if '#EXT-X-STREAM-INF' not in text and '#EXTINF:' in text:
                 seg_data, _ = get_bytes(current_url, timeout=LIVE_TIMEOUT, limit=16384, extra_headers=req_headers)
-                if seg_data:
-                    latency_ms = int((time.monotonic() - t0) * 1000)
-                    return True, max_height, latency_ms
+                if looks_like_media(seg_data):
+                    return True, max_height, int((time.monotonic() - t0) * 1000)
                 return False, 0, 9999
         return False, 0, 9999
     except (OSError, ValueError, TimeoutError, urllib.error.URLError, http.client.HTTPException):
@@ -382,12 +396,22 @@ def classify_live_group(name, old_group, country_code=''):
         return 'International News'
     if og == 'movies' or has_word(s, 'movie', 'movies', 'cinema', 'film', 'films', 'bollywood', 'lollywood'):
         return 'Movies'
-
-    if og == 'india' or country_code == 'in':
+    if og == 'india':
         return 'India'
-    if country_code in COUNTRIES:
-        return COUNTRIES[country_code]
-    return 'USA'
+    return COUNTRIES.get(country_code)  # None -> dropped, no USA default
+
+
+def resolve_tvgid(tvgid, name, code, guide_index, scoped_site_to_id, fast=False):
+    if fast:
+        return tvgid
+    if tvgid and (tvgid in guide_index or tvgid.split('@', 1)[0] in guide_index):
+        return tvgid
+    n = norm_epg_name(name)
+    for cc in ([code] if code in COUNTRIES else list(COUNTRIES)):
+        hit = scoped_site_to_id.get((cc, n))
+        if hit:
+            return hit
+    return tvgid
 
 
 def parse_m3u_blocks(lines):
@@ -490,6 +514,8 @@ def main():
                 'group': classify_live_group(name, old_group, code),
                 'language': detect_lang(f'{name} {old_group} {attr(line, "tvg-language")}', code),
                 'priority': priority,
+                'code': code,
+                'fast': False,
             })
 
     if primary_ok < MIN_PRIMARY_SOURCES_OK:
@@ -566,8 +592,14 @@ def main():
                 'group': classify_live_group(name, old_group, matched_code or ''),
                 'language': detect_lang(s, matched_code or ''),
                 'priority': 10,
+                'code': matched_code or '',
+                'fast': active_url in FAST_SOURCES,
             })
 
+    fetched = [e for e in fetched if e['group']]
+    for e in fetched:
+        e['tvgid'] = resolve_tvgid(e['tvgid'], e['name'], e.get('code', ''),
+                                   guide_index, scoped_site_to_id, e.get('fast', False))
     if not fetched:
         raise RuntimeError('No source playlists available')
 
@@ -623,11 +655,6 @@ def main():
         raise RuntimeError(f'Only {len(primary)} unique playable channels (minimum {MIN_CHANNELS})')
 
     save_history(history)
-
-    allowed_groups = set(GROUPS)
-    for e in primary:
-        if e['group'] not in allowed_groups:
-            e['group'] = 'USA'
 
     primary.sort(key=lambda e: (GROUPS.index(e['group']), e['name'].casefold()))
 
