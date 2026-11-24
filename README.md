@@ -6,7 +6,7 @@
 [![EPG Coverage](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Frajaworks26%2Fiptv-combined%2Fmain%2Freport.json&query=%24.epg_final_percent&suffix=%25&label=EPG%20coverage&color=blue)](https://raw.githubusercontent.com/rajaworks26/iptv-combined/main/report.json)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-An automated, self-maintaining IPTV playlist and XMLTV EPG aggregator built for **TiviMate** and modern IPTV players. Every 6 hours, GitHub Actions fetches public streams across **28 sources** (7 primary + 21 supplementary), probes each stream down to the live media segment, scores and deduplicates channels, merges official FAST + `iptv-org` TV guides, and publishes lightweight outputs to GitHub.
+An automated, self-maintaining IPTV playlist and XMLTV EPG aggregator built for modern IPTV players. Every 6 hours, GitHub Actions fetches public streams across **28 sources** (7 primary + 21 supplementary), probes each stream down to the live media segment, scores and deduplicates channels, merges official FAST + `iptv-org` TV guides, and publishes lightweight outputs to GitHub.
 
 ---
 
