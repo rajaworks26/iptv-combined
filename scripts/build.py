@@ -656,6 +656,10 @@ def main():
 
     save_history(history)
 
+    # Filter out any stray group names not in the allowed 7 GROUPS
+    allowed_groups = set(GROUPS)
+    primary = [e for e in primary if e['group'] in allowed_groups]
+
     primary.sort(key=lambda e: (GROUPS.index(e['group']), e['name'].casefold()))
 
     numbered = [(e, number, e['group']) for number, e in enumerate(primary, 1)]
