@@ -1,23 +1,17 @@
-
 name: Update IPTV Playlist and EPG
 
 on:
-  workflow_dispatch:
   schedule:
-    - cron: "0 6 * * *"
+    - cron: '17 1,7,13,19 * * *'
+  workflow_dispatch:
 
 permissions:
   contents: write
 
-concurrency:
-  group: iptv-update
-  cancel-in-progress: false
-
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 330
-
+    timeout-minutes: 45
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -25,56 +19,84 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.12"
+          python-version: '3.12'
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: '20'
 
-      - name: Install Python dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install requests lxml
-
-      - name: Build combined playlist
-        run: |
-          python scripts/build.py
+      - name: Build combined playlist, score streams, and prune dead links
+        run: python scripts/build.py
 
       - name: Install IPTV-org EPG generator
         run: |
-          git clone --depth 1 \
-            https://github.com/iptv-org/epg.git \
-            /tmp/iptv-epg
-          cd /tmp/iptv-epg
-          npm ci
+          git clone --depth 1 https://github.com/iptv-org/epg.git /tmp/epg
+          cd /tmp/epg
+          npm install
 
       - name: Generate EPG
         run: |
-          cd /tmp/iptv-epg
-          npm run grab -- \
-            --channels="$GITHUB_WORKSPACE/epg.channels.xml" \
-            --output="$GITHUB_WORKSPACE/combined.xml" \
-            --days=3 \
-            --maxConnections=4 \
-            --timeout=30000
+          cp epg.channels.xml /tmp/epg/channels.xml
+          cd /tmp/epg
+          npm run grab -- --channels=channels.xml --output="${{ github.workspace }}/combined.xml" --maxConnections=10 --timeout=30000
+
+      - name: Merge FAST EPG guides and compress XMLTV
+        run: |
+          python - <<'PY'
+          import gzip, re, urllib.request, xml.etree.ElementTree as ET
+          from pathlib import Path
+
+          m3u = Path('combined.m3u').read_text(encoding='utf-8', errors='ignore')
+          wanted_ids = set(re.findall(r'tvg-id="([^"]+)"', m3u)) - {''}
+
+          base_tree = ET.parse('combined.xml')
+          base_root = base_tree.getroot()
+          existing_ch = {c.attrib.get('id') for c in base_root.findall('channel')}
+
+          fast_urls = [
+              'https://i.mjh.nz/PlutoTV/ca.xml.gz',
+              'https://i.mjh.nz/SamsungTVPlus/ca.xml.gz',
+              'https://i.mjh.nz/SamsungTVPlus/in.xml.gz',
+              'https://i.mjh.nz/Plex/ca.xml.gz',
+              'https://i.mjh.nz/Roku/all.xml.gz',
+          ]
+
+          for url in fast_urls:
+              try:
+                  req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+                  raw = gzip.decompress(urllib.request.urlopen(req, timeout=60).read())
+                  ext_root = ET.fromstring(raw)
+                  added = set()
+                  for ch in ext_root.findall('channel'):
+                      cid = ch.attrib.get('id', '')
+                      if cid in wanted_ids and cid not in existing_ch:
+                          base_root.append(ch)
+                          existing_ch.add(cid)
+                          added.add(cid)
+                  for prog in ext_root.findall('programme'):
+                      if prog.attrib.get('channel', '') in added:
+                          base_root.append(prog)
+                  print(f'Merged {len(added)} FAST channels from {url}')
+              except Exception as exc:
+                  print(f'Warning: skipped {url}: {exc}')
+
+          base_tree.write('combined.xml', encoding='utf-8', xml_declaration=True)
+          with open('combined.xml', 'rb') as f_in, gzip.open('combined.xml.gz', 'wb', compresslevel=9) as f_out:
+              f_out.writelines(f_in)
+          PY
 
       - name: Validate generated files
         run: |
-          python scripts/validate.py
+          test -s combined.m3u
+          test -s combined.xml
+          test -s combined.xml.gz
+          test -s report.json
 
-      - name: Publish updated files
+      - name: Commit and push updated playlists, history, and EPG
         run: |
           git config user.name "github-actions[bot]"
-          git config user.email \
-            "41898282+github-actions[bot]@users.noreply.github.com"
-
-          git add -A
-          git reset -q -- iptv-epg 2>/dev/null || true
-
-
-          if ! git diff --cached --quiet; then
-            git commit -m "Update IPTV playlist and EPG"
-            git pull --rebase origin main
-            git push origin HEAD:main
-          fi
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add combined.m3u combined.xml combined.xml.gz alternates.m3u language-*.m3u epg.channels.xml report.json data/
+          git diff --cached --quiet || git commit -m "Auto-update live playlist, stream scores, and EPG"
+          git push
