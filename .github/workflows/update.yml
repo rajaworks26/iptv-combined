@@ -132,17 +132,18 @@ jobs:
           print(report['epg_final_percent'], '% final EPG coverage')
           PY
 
+      - name: Promote staged outputs
+        run: |
+          cp build_staging/combined.m3u build_staging/alternates.m3u build_staging/language-*.m3u .
+          cp build_staging/sports.m3u build_staging/news.m3u build_staging/canada.m3u build_staging/usa.m3u .
+          cp build_staging/india.m3u build_staging/pakistan.m3u build_staging/movies.m3u build_staging/music.m3u .
+          cp build_staging/report.json build_staging/epg.channels.xml .
+
       - name: Validate final outputs
         run: python scripts/validate.py --root "${{ github.workspace }}"
 
       - name: Publish validated playlists
         run: |
-          cp build_staging/combined.m3u build_staging/alternates.m3u build_staging/language-*.m3u .
-          cp build_staging/sports.m3u build_staging/news.m3u build_staging/canada.m3u build_staging/usa.m3u .
-          cp build_staging/india.m3u build_staging/pakistan.m3u build_staging/movies.m3u build_staging/music.m3u .
-          cp build_staging/report.json build_staging/channel_numbers.json .
-          cp build_staging/epg.channels.xml .
-
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git rm --cached --ignore-unmatch -q combined.xml combined.xml.gz epg.channels.xml top-picks.m3u
