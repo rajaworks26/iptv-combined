@@ -972,7 +972,6 @@ def main():
             effective_category = entry.get("category", "") if group in news_groups else ""
             matches = (
                 group in rule.get("groups", set())
-                or entry.get("code", "") in rule.get("countries", set())
                 or effective_category in rule.get("categories", set())
             )
             if matches:
