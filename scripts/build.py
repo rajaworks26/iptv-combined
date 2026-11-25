@@ -323,7 +323,7 @@ def build_tivimate_url(url, extras):
     headers = extract_vlc_headers(extras)
     if not headers:
         return url
-    params = "&".join(f"{key}={urllib.parse.quote(value, safe='')" for key, value in headers.items())
+    params = urllib.parse.urlencode(headers)
     return f"{url}|{params}"
 
 
