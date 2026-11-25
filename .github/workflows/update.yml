@@ -137,7 +137,7 @@ jobs:
           cp build_staging/combined.m3u build_staging/alternates.m3u build_staging/language-*.m3u .
           cp build_staging/sports.m3u build_staging/news.m3u build_staging/canada.m3u build_staging/usa.m3u .
           cp build_staging/india.m3u build_staging/pakistan.m3u build_staging/movies.m3u build_staging/music.m3u .
-          cp build_staging/report.json build_staging/epg.channels.xml .
+          cp build_staging/report.json .
 
       - name: Validate final outputs
         run: python scripts/validate.py --root "${{ github.workspace }}"
@@ -147,7 +147,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git rm --cached --ignore-unmatch -q combined.xml combined.xml.gz epg.channels.xml top-picks.m3u
-          git add .gitignore combined.m3u alternates.m3u language-*.m3u sports.m3u news.m3u canada.m3u usa.m3u india.m3u pakistan.m3u movies.m3u music.m3u channel_numbers.json report.json data/ epg.channels.xml
+          git add .gitignore combined.m3u alternates.m3u language-*.m3u sports.m3u news.m3u canada.m3u usa.m3u india.m3u pakistan.m3u movies.m3u music.m3u channel_numbers.json report.json data/
           git diff --cached --quiet || git commit -m "Auto-update playlists, channel numbering, and stream history"
           git pull --rebase origin "${GITHUB_REF_NAME:-main}"
           git push origin "HEAD:${GITHUB_REF_NAME:-main}"
