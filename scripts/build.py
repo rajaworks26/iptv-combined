@@ -965,13 +965,15 @@ def main():
             ],
         )
 
+    news_groups = SPLIT_PLAYLISTS.get("news.m3u", {}).get("groups", set())
     for filename, rule in SPLIT_PLAYLISTS.items():
         selected = []
         for entry, number, group in numbered:
+            effective_category = entry.get("category", "") if group in news_groups else ""
             matches = (
                 group in rule.get("groups", set())
                 or entry.get("code", "") in rule.get("countries", set())
-                or entry.get("category", "") in rule.get("categories", set())
+                or effective_category in rule.get("categories", set())
             )
             if matches:
                 selected.append((entry, number, group))
