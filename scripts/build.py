@@ -585,8 +585,7 @@ def format_extinf(entry, number, group_name):
     line = set_display_name(entry["line"], display_name)
     line = put(line, "group-title", group_name)
     line = put(line, "tvg-chno", str(number))
-    if not attr(line, "tvg-name"):
-        line = put(line, "tvg-name", display_name)
+    line = put(line, "tvg-name", display_name)
     if entry["tvgid"]:
         line = put(line, "tvg-id", entry["tvgid"])
     logo = entry["logo"] or FALLBACK_LOGOS.get(group_name, FALLBACK_LOGOS["Movies"])
