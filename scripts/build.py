@@ -932,18 +932,18 @@ def main():
 
     assign_channel_numbers(primary)
 
-    # Deduplicate on the badge-free base name so stripping [1080p] never causes collisions
-    seen_base_names = set()
+    # Guarantee unique (tvgid, display_name.casefold()) across combined.m3u so validate.py never collides
+    seen_identities = set()
     for entry in primary:
         base_clean = clean_display_name(entry["name"])
         badge = resolution_badge(entry.get("height", 0))
-        candidate_base = base_clean
+        candidate_name = f"{base_clean}{badge}"
         suffix = 2
-        while candidate_base.casefold() in seen_base_names:
-            candidate_base = f"{base_clean} (Feed {suffix})"
+        while (entry["tvgid"], candidate_name.casefold()) in seen_identities:
+            candidate_name = f"{base_clean} (Feed {suffix}){badge}"
             suffix += 1
-        seen_base_names.add(candidate_base.casefold())
-        entry["display_name"] = f"{candidate_base}{badge}"
+        seen_identities.add((entry["tvgid"], candidate_name.casefold()))
+        entry["display_name"] = candidate_name
 
     numbered = [(entry, entry["number"], entry["group"]) for entry in primary]
 
