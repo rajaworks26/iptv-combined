@@ -635,9 +635,10 @@ def assign_channel_numbers(entries):
     """Assign stable, collision-free numbers while retaining prior assignments."""
     registry = load_channel_numbers()
 
-    # Disambiguate any duplicate stable_channel_id among primary entries so no two get the same tvg-chno
+    # Clear any stale number on incoming entries and disambiguate duplicate primary IDs
     seen_ids = set()
     for entry in entries:
+        entry.pop("number", None)
         base_id = stable_channel_id(entry)
         channel_id = base_id
         suffix = 2
