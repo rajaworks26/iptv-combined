@@ -588,6 +588,8 @@ def format_extinf(entry, number, group_name):
     line = put(line, "tvg-name", display_name)
     if entry["tvgid"]:
         line = put(line, "tvg-id", entry["tvgid"])
+    else:
+        line = re.sub(r'\s*(?<!\w)tvg-id=(?:"[^"]*"|\'[^\']*\')', "", line)
     logo = entry["logo"] or FALLBACK_LOGOS.get(group_name, FALLBACK_LOGOS["Movies"])
     line = put(line, "tvg-logo", logo)
     final_url = build_tivimate_url(entry["url"], entry["extras"])
@@ -932,17 +934,17 @@ def main():
 
     assign_channel_numbers(primary)
 
-    # Guarantee unique (tvgid, display_name.casefold()) across combined.m3u so validate.py never collides
-    seen_identities = set()
+    # Guarantee globally unique display_name across the entire playlist
+    seen_names = set()
     for entry in primary:
-        base_clean = clean_display_name(entry["name"])
+        base_clean = clean_display_name(entry["name"]).replace(",", "")
         badge = resolution_badge(entry.get("height", 0))
         candidate_name = f"{base_clean}{badge}"
         suffix = 2
-        while (entry["tvgid"], candidate_name.casefold()) in seen_identities:
+        while candidate_name.casefold() in seen_names:
             candidate_name = f"{base_clean} (Feed {suffix}){badge}"
             suffix += 1
-        seen_identities.add((entry["tvgid"], candidate_name.casefold()))
+        seen_names.add(candidate_name.casefold())
         entry["display_name"] = candidate_name
 
     numbered = [(entry, entry["number"], entry["group"]) for entry in primary]
