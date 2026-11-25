@@ -454,7 +454,7 @@ def clean_display_name(name):
     """Normalize clutter while preserving meaningful branding and variants."""
     value = name.strip()
     value = re.sub(r"^\s*(?:US|USA|CA|IN|PK)\s*[:|]\s*", "", value, flags=re.IGNORECASE)
-    value = re.sub(r"\[(?:FHD|HD|SD|4K|UHD)\]", "", value, flags=re.IGNORECASE)
+    value = re.sub(r"[\[\(]\s*(?:FHD|HD|SD|4K|UHD|2160p|1080p|720p|576p|480p)\s*[\]\)]", "", value, flags=re.IGNORECASE)
     value = re.sub(r"\b(?:FHD|UHD|4K)\b", "", value, flags=re.IGNORECASE)
     value = re.sub(r"\bBACKUP\b", "", value, flags=re.IGNORECASE)
     value = re.sub(r"\s{2,}", " ", value)
@@ -579,7 +579,9 @@ def parse_m3u_blocks(lines):
 
 
 def format_extinf(entry, number, group_name):
-    display_name = clean_display_name(entry["name"]) + resolution_badge(entry.get("height", 0))
+    display_name = entry.get("display_name") or (
+        clean_display_name(entry["name"]) + resolution_badge(entry.get("height", 0))
+    )
     line = set_display_name(entry["line"], display_name)
     line = put(line, "group-title", group_name)
     line = put(line, "tvg-chno", str(number))
@@ -930,6 +932,20 @@ def main():
     ))
 
     assign_channel_numbers(primary)
+
+    # Ensure every primary entry has a unique display name across playlists
+    seen_display_names = set()
+    for entry in primary:
+        base_clean = clean_display_name(entry["name"])
+        badge = resolution_badge(entry.get("height", 0))
+        candidate_name = f"{base_clean}{badge}"
+        suffix = 2
+        while candidate_name.casefold() in seen_display_names:
+            candidate_name = f"{base_clean} (Feed {suffix}){badge}"
+            suffix += 1
+        seen_display_names.add(candidate_name.casefold())
+        entry["display_name"] = candidate_name
+
     numbered = [(entry, entry["number"], entry["group"]) for entry in primary]
 
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
