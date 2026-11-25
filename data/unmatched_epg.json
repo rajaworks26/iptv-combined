@@ -1,13 +1,368 @@
 [
   {
-    "name": "--Live(beIN SPORTS XTRA)--",
+    "name": "American Ninja Warrior (1080p)",
     "group": "Live Sports",
-    "tvg_id": ""
+    "tvg_id": "AmericanNinjaWarrior.us@SD"
   },
   {
-    "name": "30A Golf Kingdom (720p)",
+    "name": "Cowboy+ Sports",
     "group": "Live Sports",
-    "tvg_id": "30AGolfKingdom.us@SD"
+    "tvg_id": "647f8d22a2fc3fadb4721685-680ad9f73f3c406c06d7392b"
+  },
+  {
+    "name": "FITE 24/7 (1080p)",
+    "group": "Live Sports",
+    "tvg_id": "FITE247.us@SD"
+  },
+  {
+    "name": "FloHockey (1080p)",
+    "group": "Live Sports",
+    "tvg_id": "FloHockey.us@HD"
+  },
+  {
+    "name": "FloRacing (1080p)",
+    "group": "Live Sports",
+    "tvg_id": "FloRacing.us@HD"
+  },
+  {
+    "name": "ge Fast (1080p)",
+    "group": "Live Sports",
+    "tvg_id": "geFast.br@SD"
+  },
+  {
+    "name": "Kozoom TV (1080p)",
+    "group": "Live Sports",
+    "tvg_id": "KozoomTV.fr@SD"
+  },
+  {
+    "name": "NBC Sports",
+    "group": "Live Sports",
+    "tvg_id": "9f230f21-7a07-4b80-b845-77f9327ddad3"
+  },
+  {
+    "name": "NESN (720p)",
+    "group": "Live Sports",
+    "tvg_id": "NESN.us@SD"
+  },
+  {
+    "name": "Ovacion TV (720p) [Not 24/7]",
+    "group": "Live Sports",
+    "tvg_id": "OvacionTV.pe@SD"
+  },
+  {
+    "name": "Pickleball TV (1080p) [Geo-blocked]",
+    "group": "Live Sports",
+    "tvg_id": "PickleballTV.us@HD"
+  },
+  {
+    "name": "Racer Network (1080p)",
+    "group": "Live Sports",
+    "tvg_id": "RacerNetwork.us@SD"
+  },
+  {
+    "name": "speed sports 1",
+    "group": "Live Sports",
+    "tvg_id": "3f01188b-bba8-44ed-a75a-2662c108450c"
+  },
+  {
+    "name": "Sports First TV",
+    "group": "Live Sports",
+    "tvg_id": "79ce27a8-bbfa-4661-a6ff-e6006e1510a3"
+  },
+  {
+    "name": "TVR Sport",
+    "group": "Live Sports",
+    "tvg_id": "TVRSport.ro@SD"
+  },
+  {
+    "name": "W14DK-D 14.5 All Sports Television Network",
+    "group": "Live Sports",
+    "tvg_id": "W14DKD145.us@SD"
+  },
+  {
+    "name": "Xtrem Sports",
+    "group": "Live Sports",
+    "tvg_id": "538b24c3-9493-44d5-be7c-482b51734f2c"
+  },
+  {
+    "name": "Arryadia HD 1 (1080p)",
+    "group": "Live Sports",
+    "tvg_id": "ArryadiaHD1.ma@HD"
+  },
+  {
+    "name": "Arryadia HD 3 (1080p)",
+    "group": "Live Sports",
+    "tvg_id": "ArryadiaHD3.ma@HD"
+  },
+  {
+    "name": "AYM Sports 3 USA",
+    "group": "Live Sports",
+    "tvg_id": "45d1a1d195389ccd95894d31b7d8627d"
+  },
+  {
+    "name": "Bassmaster",
+    "group": "Live Sports",
+    "tvg_id": "9210a8fbeab66e9d1ce20c187804ee7d"
+  },
+  {
+    "name": "Baywatch",
+    "group": "Live Sports",
+    "tvg_id": "ab47c5037be851e6a929a4d09daafeac"
+  },
+  {
+    "name": "Bicolor+ (720p)",
+    "group": "Live Sports",
+    "tvg_id": "BicolorPlus.pe@SD"
+  },
+  {
+    "name": "Bicolor+ Premium 2 (720p)",
+    "group": "Live Sports",
+    "tvg_id": "BicolorPlusPremium2.pe@SD"
+  },
+  {
+    "name": "Bicolor+ Premium 3 (720p)",
+    "group": "Live Sports",
+    "tvg_id": "BicolorPlusPremium3.pe@SD"
+  },
+  {
+    "name": "Big 12 Studios",
+    "group": "Live Sports",
+    "tvg_id": "CA4100001H8"
+  },
+  {
+    "name": "Cindie TV",
+    "group": "Live Sports",
+    "tvg_id": "42f8b22cbf239c576a05fe9a2f2a8233"
+  },
+  {
+    "name": "Colimdo TV (720p)",
+    "group": "Live Sports",
+    "tvg_id": "ColimdoTV.do@SD"
+  },
+  {
+    "name": "DEPORTES ESTRELLATV",
+    "group": "Live Sports",
+    "tvg_id": "b3c06fdf730b2bc048507d096111d6c5"
+  },
+  {
+    "name": "DraftKings",
+    "group": "Live Sports",
+    "tvg_id": "5976983fa00953dab911a0ebea932943"
+  },
+  {
+    "name": "El Rey Rebel",
+    "group": "Live Sports",
+    "tvg_id": "31d5929928835b90af7bee669e6dd217"
+  },
+  {
+    "name": "Electric Now",
+    "group": "Live Sports",
+    "tvg_id": "15cc44e50d8453e18f21ea37713319c5"
+  },
+  {
+    "name": "Eurovision Sport (1080p)",
+    "group": "Live Sports",
+    "tvg_id": "EurovisionSport.uk@Europe"
+  },
+  {
+    "name": "FIFA+ Women (720p)",
+    "group": "Live Sports",
+    "tvg_id": "FIFAPlusWomen.uk@English"
+  },
+  {
+    "name": "FILMEX",
+    "group": "Live Sports",
+    "tvg_id": "1e2a4ec82eb65f729ad7484337c0bcd4"
+  },
+  {
+    "name": "FILMEX Cl\u00e1sico",
+    "group": "Live Sports",
+    "tvg_id": "50cd4d6c632d5172834eb5b77fa395c6"
+  },
+  {
+    "name": "FOX Sports",
+    "group": "Live Sports",
+    "tvg_id": "0fc01f1136055d89bae495ba92eff445"
+  },
+  {
+    "name": "FreeTV Asia",
+    "group": "Live Sports",
+    "tvg_id": "9b3f0b588b03c9126a053d3eebfc58db"
+  },
+  {
+    "name": "FreeTV Cl\u00e1sico",
+    "group": "Live Sports",
+    "tvg_id": "b29445028909978c06411a954c4b955e"
+  },
+  {
+    "name": "Futbol (1080p)",
+    "group": "Live Sports",
+    "tvg_id": "Futbol.tj@SD"
+  },
+  {
+    "name": "Hagerty",
+    "group": "Live Sports",
+    "tvg_id": "CA290000616"
+  },
+  {
+    "name": "In The Heat of the Night",
+    "group": "Live Sports",
+    "tvg_id": "108bd1c824eaca47592ec02c00f0a18a"
+  },
+  {
+    "name": "KTV Sport (1080p)",
+    "group": "Live Sports",
+    "tvg_id": "KTVSport.kw@SD"
+  },
+  {
+    "name": "L1 Max (1080p)",
+    "group": "Live Sports",
+    "tvg_id": "L1Max.pe@SD"
+  },
+  {
+    "name": "Lacrosse TV (720p)",
+    "group": "Live Sports",
+    "tvg_id": "LacrosseTV.us@SD"
+  },
+  {
+    "name": "MadeinBO TV (1080p)",
+    "group": "Live Sports",
+    "tvg_id": "MadeinBOTV.it@SD"
+  },
+  {
+    "name": "Maverick Black Cinema",
+    "group": "Live Sports",
+    "tvg_id": "834e2a09799752b3be7ecaab726b7242"
+  },
+  {
+    "name": "MAVTV Motorsports",
+    "group": "Live Sports",
+    "tvg_id": "INBD4700014DU"
+  },
+  {
+    "name": "Movie Hub",
+    "group": "Live Sports",
+    "tvg_id": "d32267711c6a5cf36520716c96b5b3fa"
+  },
+  {
+    "name": "Movie Hub Action",
+    "group": "Live Sports",
+    "tvg_id": "c5cbd4129753f5732d7160596440404f"
+  },
+  {
+    "name": "Outside TV",
+    "group": "Live Sports",
+    "tvg_id": "CAAJ2700030ON"
+  },
+  {
+    "name": "Pam Grier's Soul Flix",
+    "group": "Live Sports",
+    "tvg_id": "e7b30e2a58409242100d0edd2bfebbfd"
+  },
+  {
+    "name": "PFL MMA",
+    "group": "Live Sports",
+    "tvg_id": "e46ac8cd0299b4c5f1403d999a432561"
+  },
+  {
+    "name": "PHLY Sports",
+    "group": "Live Sports",
+    "tvg_id": "9ec48964d9b9502396f19fcb3a527074"
+  },
+  {
+    "name": "PopCorn Central",
+    "group": "Live Sports",
+    "tvg_id": "a208207740dabd5e846e107b84db9123"
+  },
+  {
+    "name": "Rally TV (1080p)",
+    "group": "Live Sports",
+    "tvg_id": "RallyTV.us@SD"
+  },
+  {
+    "name": "REV'N Action (720p) [Geo-blocked]",
+    "group": "Live Sports",
+    "tvg_id": "REVNAction.us@SD"
+  },
+  {
+    "name": "Stargate",
+    "group": "Live Sports",
+    "tvg_id": "11c7c3660c6b6f18a21838fd404a7a1d"
+  },
+  {
+    "name": "Strongman (720p)",
+    "group": "Live Sports",
+    "tvg_id": "Strongman.us@Germany"
+  },
+  {
+    "name": "Strongman UK (720p)",
+    "group": "Live Sports",
+    "tvg_id": "Strongman.us@UK"
+  },
+  {
+    "name": "Swerve Sports Talk",
+    "group": "Live Sports",
+    "tvg_id": "8886bc5cea175ba011a228c63b22e0d5"
+  },
+  {
+    "name": "Swerve Women\u2019s Sports",
+    "group": "Live Sports",
+    "tvg_id": "51dea927355343df5a6f26545d07adc8"
+  },
+  {
+    "name": "Team USA TV",
+    "group": "Live Sports",
+    "tvg_id": "257afd66cee15a1ca2125fc377e87cc2"
+  },
+  {
+    "name": "Todo Cine",
+    "group": "Live Sports",
+    "tvg_id": "b015fcbafb496320954672321e746f8a"
+  },
+  {
+    "name": "Top Rank Classics",
+    "group": "Live Sports",
+    "tvg_id": "c0b79a332cfd90b8eeb6d4a0dcb63674"
+  },
+  {
+    "name": "UFC",
+    "group": "Live Sports",
+    "tvg_id": "CA2900012S9"
+  },
+  {
+    "name": "Unbeaten Sports",
+    "group": "Live Sports",
+    "tvg_id": "98cafb7f4b01848a967fda4bd2225bd7"
+  },
+  {
+    "name": "Universal Westerns",
+    "group": "Live Sports",
+    "tvg_id": "8346cc0f3d415e39875fca80b67fd951"
+  },
+  {
+    "name": "ViX Lo Mejor de Liga MX",
+    "group": "Live Sports",
+    "tvg_id": "35633f08c98857cb9e85c91eae17c0d5"
+  },
+  {
+    "name": "Waypoint TV",
+    "group": "Live Sports",
+    "tvg_id": "CABB2500034Q4"
+  },
+  {
+    "name": "WedoTV Sports",
+    "group": "Live Sports",
+    "tvg_id": "IN2100015RL"
+  },
+  {
+    "name": "WOF 1",
+    "group": "Live Sports",
+    "tvg_id": "d2152bbb-64e0-4822-826b-60853ca1d056"
+  },
+  {
+    "name": "Z Nation",
+    "group": "Live Sports",
+    "tvg_id": "f99fa811e587e924c1aeebfe3d7f575f"
   },
   {
     "name": "5Gold (1080p)",
@@ -35,114 +390,9 @@
     "tvg_id": "5Stars.il@SD"
   },
   {
-    "name": "A sports",
-    "group": "Live Sports",
-    "tvg_id": "a3d48c46-7902-45e2-abf9-0fab60c4d117"
-  },
-  {
-    "name": "ABC Sport in 90 Seconds",
-    "group": "Live Sports",
-    "tvg_id": ""
-  },
-  {
-    "name": "Ace TV",
-    "group": "Live Sports",
-    "tvg_id": "IN400056QQ"
-  },
-  {
     "name": "ADO TV (720p)",
     "group": "Live Sports",
     "tvg_id": "ADOTV.bj@SD"
-  },
-  {
-    "name": "Africa 24 Sport (1080p)",
-    "group": "Live Sports",
-    "tvg_id": "Africa24Sport.fr@SD"
-  },
-  {
-    "name": "American Ninja Warrior (1080p)",
-    "group": "Live Sports",
-    "tvg_id": "AmericanNinjaWarrior.us@SD"
-  },
-  {
-    "name": "AntenaPlay Events (576p) [Not 24/7]",
-    "group": "Live Sports",
-    "tvg_id": "AntenaPlayEvents.ro@SD"
-  },
-  {
-    "name": "AntenaSport",
-    "group": "Live Sports",
-    "tvg_id": "AntenaSport.ro@SD"
-  },
-  {
-    "name": "Arryadia HD 1 (1080p)",
-    "group": "Live Sports",
-    "tvg_id": "ArryadiaHD1.ma@HD"
-  },
-  {
-    "name": "Arryadia HD 2 (1080p)",
-    "group": "Live Sports",
-    "tvg_id": "ArryadiaHD2.ma@HD"
-  },
-  {
-    "name": "Arryadia HD 3 (1080p)",
-    "group": "Live Sports",
-    "tvg_id": "ArryadiaHD3.ma@HD"
-  },
-  {
-    "name": "AS3 Sport TV (1080p)",
-    "group": "Live Sports",
-    "tvg_id": "AS3SportTV.ve@SD"
-  },
-  {
-    "name": "Astrahan.Ru Sport (720p)",
-    "group": "Live Sports",
-    "tvg_id": "AstrahanRuSport.ru@SD"
-  },
-  {
-    "name": "Auto Motor Sport",
-    "group": "Live Sports",
-    "tvg_id": ""
-  },
-  {
-    "name": "AWSN",
-    "group": "Live Sports",
-    "tvg_id": "66fd394e9269330008413302"
-  },
-  {
-    "name": "AYM Sports 3 USA",
-    "group": "Live Sports",
-    "tvg_id": "45d1a1d195389ccd95894d31b7d8627d"
-  },
-  {
-    "name": "Bahrain Sports 1 (720p) [Not 24/7]",
-    "group": "Live Sports",
-    "tvg_id": "BahrainSports1.bh@SD"
-  },
-  {
-    "name": "Bahrain Sports 2 (720p) [Not 24/7]",
-    "group": "Live Sports",
-    "tvg_id": "BahrainSports2.bh@SD"
-  },
-  {
-    "name": "Bassmaster",
-    "group": "Live Sports",
-    "tvg_id": "9210a8fbeab66e9d1ce20c187804ee7d"
-  },
-  {
-    "name": "Baywatch",
-    "group": "Live Sports",
-    "tvg_id": "ab47c5037be851e6a929a4d09daafeac"
-  },
-  {
-    "name": "beIN Sports 1 Turk (1080p)",
-    "group": "Live Sports",
-    "tvg_id": "beINSports1Turk.tr@SD"
-  },
-  {
-    "name": "Bein Sports Extra 2",
-    "group": "Live Sports",
-    "tvg_id": ""
   },
   {
     "name": "BEK Sports West (720p)",
@@ -155,19 +405,104 @@
     "tvg_id": "Belarus5.by@SD"
   },
   {
-    "name": "Bicolor+ (720p)",
+    "name": "Combate Global MMA",
     "group": "Live Sports",
-    "tvg_id": "BicolorPlus.pe@SD"
+    "tvg_id": "CA4600017KV"
   },
   {
-    "name": "Bicolor+ Premium 2 (720p)",
+    "name": "CRTV Sports and Entertainment SD (360p)",
     "group": "Live Sports",
-    "tvg_id": "BicolorPlusPremium2.pe@SD"
+    "tvg_id": "CRTVSportsandEntertainment.cm@SD"
   },
   {
-    "name": "Bicolor+ Premium 3 (720p)",
+    "name": "FilmRise Western",
     "group": "Live Sports",
-    "tvg_id": "BicolorPlusPremium3.pe@SD"
+    "tvg_id": "c5a72a598a355db4b1781ca075280773"
+  },
+  {
+    "name": "FON TV (1080p)",
+    "group": "Live Sports",
+    "tvg_id": "FONTV.ru@HD"
+  },
+  {
+    "name": "FTV (Bolivia) (720p)",
+    "group": "Live Sports",
+    "tvg_id": "FTV.bo@SD"
+  },
+  {
+    "name": "Golf Network",
+    "group": "Live Sports",
+    "tvg_id": "IN400057EZ"
+  },
+  {
+    "name": "M Sports (1080p)",
+    "group": "Live Sports",
+    "tvg_id": "MSports.pk@SD"
+  },
+  {
+    "name": "Marquee Sports Network (576p)",
+    "group": "Live Sports",
+    "tvg_id": "MarqueeSportsNetwork.us@SD"
+  },
+  {
+    "name": "Match! Ultra (1080p)",
+    "group": "Live Sports",
+    "tvg_id": "MatchUltra.ru@4K"
+  },
+  {
+    "name": "One 2 (1080p)",
+    "group": "Live Sports",
+    "tvg_id": "One2.il@SD"
+  },
+  {
+    "name": "People Are Awesome",
+    "group": "Live Sports",
+    "tvg_id": "CAAJ34000089L"
+  },
+  {
+    "name": "PFL",
+    "group": "Live Sports",
+    "tvg_id": "CA3500003OX"
+  },
+  {
+    "name": "Pickleball Now (720p) [Geo-blocked]",
+    "group": "Live Sports",
+    "tvg_id": "PickleballNow.in@SD"
+  },
+  {
+    "name": "Right Now TV (720p)",
+    "group": "Live Sports",
+    "tvg_id": "RightNowTV.us@SD"
+  },
+  {
+    "name": "Sports Fishing TV",
+    "group": "Live Sports",
+    "tvg_id": "33386cf6-4275-4e8a-93f8-a530f0db1e45"
+  },
+  {
+    "name": "Sqala TV (720p)",
+    "group": "Live Sports",
+    "tvg_id": "SqalaTV.pe@SD"
+  },
+  {
+    "name": "TNA Wrestling Channel",
+    "group": "Live Sports",
+    "tvg_id": "6d8659091f745b8b864f438f06c56fae"
+  },
+  {
+    "name": "TVS Bowling Network (720p)",
+    "group": "Live Sports",
+    "tvg_id": "TVSBowlingNetwork.us@SD"
+  },
+  {
+    "name": "WedoTV Cars",
+    "group": "Live Sports",
+    "tvg_id": "IN3300004EI"
+  },
+  {
+    "name": "Xena",
+    "group": "Live Sports",
+    "tvg_id": "302d8d86738c0ab83d0ca3a5e2df3492"
   },
   {
     "name": "Bicolor+ Premium [Geo-blocked]",
@@ -175,19 +510,124 @@
     "tvg_id": "BicolorPlusPremium.pe@SD"
   },
   {
-    "name": "Big 12 Studios",
-    "group": "Live Sports",
-    "tvg_id": "CA4100001H8"
-  },
-  {
-    "name": "Brondby TV",
-    "group": "Live Sports",
-    "tvg_id": "BrondbyTV.se@DK"
-  },
-  {
     "name": "Canal Showsport (720p)",
     "group": "Live Sports",
     "tvg_id": "CanalShowsport.ar@SD"
+  },
+  {
+    "name": "CRTV (Chile) (720p)",
+    "group": "Live Sports",
+    "tvg_id": "CRTV.cl@SD"
+  },
+  {
+    "name": "DAZN Combat (684p)",
+    "group": "Live Sports",
+    "tvg_id": "DAZNCombat.uk@SD"
+  },
+  {
+    "name": "FOX Central (1080p)",
+    "group": "Live Sports",
+    "tvg_id": "FOXCentral.mx@CostaRica"
+  },
+  {
+    "name": "KTV Sport Plus (1080p)",
+    "group": "Live Sports",
+    "tvg_id": "KTVSportPlus.kw@SD"
+  },
+  {
+    "name": "Sport 2 (Slovakia)",
+    "group": "Live Sports",
+    "tvg_id": "Sport2.sk@HD"
+  },
+  {
+    "name": "CHGO Sports",
+    "group": "Live Sports",
+    "tvg_id": "b238edf1869657abb47970bc9b7bfce1"
+  },
+  {
+    "name": "A sports",
+    "group": "Live Sports",
+    "tvg_id": "a3d48c46-7902-45e2-abf9-0fab60c4d117"
+  },
+  {
+    "name": "Ace TV",
+    "group": "Live Sports",
+    "tvg_id": "IN400056QQ"
+  },
+  {
+    "name": "Africa 24 Sport (1080p)",
+    "group": "Live Sports",
+    "tvg_id": "Africa24Sport.fr@SD"
+  },
+  {
+    "name": "Bahrain Sports 1 (720p) [Not 24/7]",
+    "group": "Live Sports",
+    "tvg_id": "BahrainSports1.bh@SD"
+  },
+  {
+    "name": "Bahrain Sports 2 (720p) [Not 24/7]",
+    "group": "Live Sports",
+    "tvg_id": "BahrainSports2.bh@SD"
+  },
+  {
+    "name": "Dong Nai TV 2 (1080p)",
+    "group": "Live Sports",
+    "tvg_id": "DongNaiTV2.vn@SD"
+  },
+  {
+    "name": "Fight TV",
+    "group": "Live Sports",
+    "tvg_id": "IN300086YL"
+  },
+  {
+    "name": "Kabaddi 24x7 (720p)",
+    "group": "Live Sports",
+    "tvg_id": "Kabaddi24x7.in@SD"
+  },
+  {
+    "name": "NBA AntenaPlay (576p)",
+    "group": "Live Sports",
+    "tvg_id": "NBAAntenaPlay.ro@SD"
+  },
+  {
+    "name": "Realitatea Sportiva (720p)",
+    "group": "Live Sports",
+    "tvg_id": "RealitateaSportiva.ro@SD"
+  },
+  {
+    "name": "Sport Total FM (576i)",
+    "group": "Live Sports",
+    "tvg_id": "SportTotalFM.ro@SD"
+  },
+  {
+    "name": "Sports Live",
+    "group": "Live Sports",
+    "tvg_id": "IN3000899C"
+  },
+  {
+    "name": "Turf Movil (720p)",
+    "group": "Live Sports",
+    "tvg_id": "TurfMovil.cl@SD"
+  },
+  {
+    "name": "TVS Sports (720p) [Not 24/7]",
+    "group": "Live Sports",
+    "tvg_id": "TVSSports.us@SD"
+  },
+  {
+    "name": "AntenaPlay Events (576p) [Not 24/7]",
+    "group": "Live Sports",
+    "tvg_id": "AntenaPlayEvents.ro@SD"
+  },
+  {
+    "name": "AntenaSport",
+    "group": "Live Sports",
+    "tvg_id": "AntenaSport.ro@SD"
+  },
+  {
+    "name": "AWSN",
+    "group": "Live Sports",
+    "tvg_id": "66fd394e9269330008413302"
   },
   {
     "name": "Canal+ Sport 2 SK",
@@ -230,99 +670,9 @@
     "tvg_id": "CanalPlusSportSK.sk@SD"
   },
   {
-    "name": "CHGO Sports",
-    "group": "Live Sports",
-    "tvg_id": "b238edf1869657abb47970bc9b7bfce1"
-  },
-  {
-    "name": "Cindie TV",
-    "group": "Live Sports",
-    "tvg_id": "42f8b22cbf239c576a05fe9a2f2a8233"
-  },
-  {
-    "name": "Colimdo TV (720p)",
-    "group": "Live Sports",
-    "tvg_id": "ColimdoTV.do@SD"
-  },
-  {
-    "name": "Combate Global MMA",
-    "group": "Live Sports",
-    "tvg_id": "CA4600017KV"
-  },
-  {
-    "name": "Cowboy+ Sports",
-    "group": "Live Sports",
-    "tvg_id": "647f8d22a2fc3fadb4721685-680ad9f73f3c406c06d7392b"
-  },
-  {
-    "name": "CR | Cricket Gold",
-    "group": "Live Sports",
-    "tvg_id": ""
-  },
-  {
-    "name": "CR | Star Sports 1 Hindi",
-    "group": "Live Sports",
-    "tvg_id": ""
-  },
-  {
-    "name": "CRTV (Chile) (720p)",
-    "group": "Live Sports",
-    "tvg_id": "CRTV.cl@SD"
-  },
-  {
-    "name": "CRTV Sports and Entertainment SD (360p)",
-    "group": "Live Sports",
-    "tvg_id": "CRTVSportsandEntertainment.cm@SD"
-  },
-  {
-    "name": "DAZN Combat (684p)",
-    "group": "Live Sports",
-    "tvg_id": "DAZNCombat.uk@SD"
-  },
-  {
-    "name": "Dazn Ringside (1080p)",
-    "group": "Live Sports",
-    "tvg_id": ""
-  },
-  {
     "name": "DAZN TV",
     "group": "Live Sports",
     "tvg_id": "647f07e74cfc2c0008a2e557"
-  },
-  {
-    "name": "DEPORTES ESTRELLATV",
-    "group": "Live Sports",
-    "tvg_id": "b3c06fdf730b2bc048507d096111d6c5"
-  },
-  {
-    "name": "Dong Nai TV 2 (1080p)",
-    "group": "Live Sports",
-    "tvg_id": "DongNaiTV2.vn@SD"
-  },
-  {
-    "name": "DraftKings",
-    "group": "Live Sports",
-    "tvg_id": "5976983fa00953dab911a0ebea932943"
-  },
-  {
-    "name": "Dyn Sport Mix (720p)",
-    "group": "Live Sports",
-    "tvg_id": ""
-  },
-  {
-    "name": "El Rey Rebel",
-    "group": "Live Sports",
-    "tvg_id": "31d5929928835b90af7bee669e6dd217"
-  },
-  {
-    "name": "Electric Now",
-    "group": "Live Sports",
-    "tvg_id": "15cc44e50d8453e18f21ea37713319c5"
-  },
-  {
-    "name": "Equidia Racing Mag (1080p)",
-    "group": "Live Sports",
-    "tvg_id": ""
   },
   {
     "name": "ESPN 4 (1080p)",
@@ -330,39 +680,69 @@
     "tvg_id": "ESPN4.br@SD"
   },
   {
-    "name": "Eurosport 3 Polska (1080p)",
+    "name": "FloHockey 24/7",
     "group": "Live Sports",
-    "tvg_id": "Eurosport3Polska.pl@SD"
+    "tvg_id": "6a67825875fd5e3828e83703"
   },
   {
-    "name": "Eurosport 4 Polska (1080p)",
+    "name": "Formula 1 AntenaPlay (576p) [Not 24/7]",
     "group": "Live Sports",
-    "tvg_id": "Eurosport4Polska.pl@SD"
+    "tvg_id": "Formula1AntenaPlay.ro@SD"
   },
   {
-    "name": "Eurovision Sport (1080p)",
+    "name": "like Gecko) Chrome/130.0.0.0 Safari/537.36\" group-title=\"Sports\",Eurosport 4K Czechia",
     "group": "Live Sports",
-    "tvg_id": "EurovisionSport.uk@Europe"
+    "tvg_id": "Eurosport4KCzechia.cz@UHD"
   },
   {
-    "name": "FB | A SPOR",
+    "name": "Monterrico TV",
     "group": "Live Sports",
-    "tvg_id": ""
+    "tvg_id": "MonterricoTV.pe@SD"
   },
   {
-    "name": "FCK Lovinderne",
+    "name": "NHL AntenaPlay (576p) [Not 24/7]",
     "group": "Live Sports",
-    "tvg_id": "FCKLovinderne.se@DK"
+    "tvg_id": "NHLAntenaPlay.ro@SD"
   },
   {
-    "name": "FIFA+ Women (720p)",
+    "name": "Pluto TV F\u00fatbol",
     "group": "Live Sports",
-    "tvg_id": "FIFAPlusWomen.uk@English"
+    "tvg_id": "PlutoTVFutbol.us@LatAm"
   },
   {
-    "name": "Fight TV",
+    "name": "Prima Sport Czechia",
     "group": "Live Sports",
-    "tvg_id": "IN300086YL"
+    "tvg_id": "PrimaSportCzechia.cz@SD"
+  },
+  {
+    "name": "Rad Bull TV",
+    "group": "Live Sports",
+    "tvg_id": "(no tvg-id)"
+  },
+  {
+    "name": "TNT Sports Premium ArgentinaHD (1080p)",
+    "group": "Live Sports",
+    "tvg_id": "TNTSportsPremium.cl@ArgentinaHD"
+  },
+  {
+    "name": "Volleyball (1080p)",
+    "group": "Live Sports",
+    "tvg_id": "Volleyball.ru@SD"
+  },
+  {
+    "name": "Voyo Events (576i) [Not 24/7]",
+    "group": "Live Sports",
+    "tvg_id": "VoyoEvents.ro@SD"
+  },
+  {
+    "name": "Voyo Sport 1 (1080p)",
+    "group": "Live Sports",
+    "tvg_id": "VoyoSport1.ro@HD"
+  },
+  {
+    "name": "Win+ Futbol (1080p)",
+    "group": "Live Sports",
+    "tvg_id": "WinPlusFutbol.co@SD"
   },
   {
     "name": "FIGHT | FIGHT NETWORK",
@@ -375,104 +755,74 @@
     "tvg_id": ""
   },
   {
-    "name": "FIGHT | MMA TV",
-    "group": "Live Sports",
-    "tvg_id": ""
-  },
-  {
     "name": "FIGHT | MVMT Culture",
     "group": "Live Sports",
     "tvg_id": ""
   },
   {
-    "name": "FIGHT | PFL",
+    "name": "MIXER | Cornhole TV",
     "group": "Live Sports",
     "tvg_id": ""
   },
   {
-    "name": "FILMEX",
+    "name": "POKER | Poker Night In America",
     "group": "Live Sports",
-    "tvg_id": "1e2a4ec82eb65f729ad7484337c0bcd4"
+    "tvg_id": ""
   },
   {
-    "name": "FILMEX Cl\u00e1sico",
+    "name": "POKER | World Poker Tour",
     "group": "Live Sports",
-    "tvg_id": "50cd4d6c632d5172834eb5b77fa395c6"
+    "tvg_id": ""
   },
   {
-    "name": "FilmRise Western",
+    "name": "RACING | Hagerty",
     "group": "Live Sports",
-    "tvg_id": "c5a72a598a355db4b1781ca075280773"
+    "tvg_id": ""
   },
   {
-    "name": "FITE 24/7 (1080p)",
+    "name": "RACING | RACER International",
     "group": "Live Sports",
-    "tvg_id": "FITE247.us@SD"
+    "tvg_id": ""
   },
   {
-    "name": "FloHockey (1080p)",
+    "name": "Astrahan.Ru Sport (720p)",
     "group": "Live Sports",
-    "tvg_id": "FloHockey.us@HD"
+    "tvg_id": "AstrahanRuSport.ru@SD"
   },
   {
-    "name": "FloHockey 24/7",
+    "name": "Sportivnyy (1080p)",
     "group": "Live Sports",
-    "tvg_id": "6a67825875fd5e3828e83703"
+    "tvg_id": "Sportivnyy.ru@SD"
   },
   {
-    "name": "FloRacing (1080p)",
+    "name": "30A Golf Kingdom (720p)",
     "group": "Live Sports",
-    "tvg_id": "FloRacing.us@HD"
+    "tvg_id": "30AGolfKingdom.us@SD"
   },
   {
-    "name": "FON TV (1080p)",
+    "name": "TJK TV (1080p)",
     "group": "Live Sports",
-    "tvg_id": "FONTV.ru@HD"
+    "tvg_id": "TJKTV.tr@SD"
   },
   {
-    "name": "Formula 1 AntenaPlay (576p) [Not 24/7]",
+    "name": "Brondby TV",
     "group": "Live Sports",
-    "tvg_id": "Formula1AntenaPlay.ro@SD"
+    "tvg_id": "BrondbyTV.se@DK"
   },
   {
-    "name": "FOX Central (1080p)",
+    "name": "Top Gear",
     "group": "Live Sports",
-    "tvg_id": "FOXCentral.mx@CostaRica"
+    "tvg_id": "638e10220aa6a6000726979f"
   },
   {
-    "name": "FOX Sports",
+    "name": "TVS Sports Bureau (720p)",
     "group": "Live Sports",
-    "tvg_id": "0fc01f1136055d89bae495ba92eff445"
+    "tvg_id": "TVSSportsBureau.us@SD"
   },
   {
-    "name": "FreeTV Asia",
+    "name": "CR | Star Sports 1 Hindi",
     "group": "Live Sports",
-    "tvg_id": "9b3f0b588b03c9126a053d3eebfc58db"
-  },
-  {
-    "name": "FreeTV Cl\u00e1sico",
-    "group": "Live Sports",
-    "tvg_id": "b29445028909978c06411a954c4b955e"
-  },
-  {
-    "name": "FTV (Bolivia) (720p)",
-    "group": "Live Sports",
-    "tvg_id": "FTV.bo@SD"
-  },
-  {
-    "name": "Futbol (1080p)",
-    "group": "Live Sports",
-    "tvg_id": "Futbol.tj@SD"
-  },
-  {
-    "name": "ge Fast (1080p)",
-    "group": "Live Sports",
-    "tvg_id": "geFast.br@SD"
-  },
-  {
-    "name": "Golf Network",
-    "group": "Live Sports",
-    "tvg_id": "IN400057EZ"
+    "tvg_id": ""
   },
   {
     "name": "GOLF | GOLFPASS",
@@ -480,102 +830,7 @@
     "tvg_id": ""
   },
   {
-    "name": "Hagerty",
-    "group": "Live Sports",
-    "tvg_id": "CA290000616"
-  },
-  {
-    "name": "Horse & Country",
-    "group": "Live Sports",
-    "tvg_id": ""
-  },
-  {
-    "name": "In The Heat of the Night",
-    "group": "Live Sports",
-    "tvg_id": "108bd1c824eaca47592ec02c00f0a18a"
-  },
-  {
-    "name": "Jordan Sports ARB",
-    "group": "Live Sports",
-    "tvg_id": "Jordan Sports ARB"
-  },
-  {
-    "name": "Kabaddi 24x7 (720p)",
-    "group": "Live Sports",
-    "tvg_id": "Kabaddi24x7.in@SD"
-  },
-  {
-    "name": "Kozoom TV (1080p)",
-    "group": "Live Sports",
-    "tvg_id": "KozoomTV.fr@SD"
-  },
-  {
-    "name": "KTV Sport (1080p)",
-    "group": "Live Sports",
-    "tvg_id": "KTVSport.kw@SD"
-  },
-  {
-    "name": "KTV Sport Plus (1080p)",
-    "group": "Live Sports",
-    "tvg_id": "KTVSportPlus.kw@SD"
-  },
-  {
-    "name": "L1 Max (1080p)",
-    "group": "Live Sports",
-    "tvg_id": "L1Max.pe@SD"
-  },
-  {
-    "name": "Lacrosse TV (720p)",
-    "group": "Live Sports",
-    "tvg_id": "LacrosseTV.us@SD"
-  },
-  {
-    "name": "Leaderboard Sports News (1080p)",
-    "group": "Live Sports",
-    "tvg_id": ""
-  },
-  {
-    "name": "like Gecko) Chrome/130.0.0.0 Safari/537.36\" group-title=\"Sports\",Eurosport 4K Czechia",
-    "group": "Live Sports",
-    "tvg_id": "Eurosport4KCzechia.cz@UHD"
-  },
-  {
-    "name": "M Sports (1080p)",
-    "group": "Live Sports",
-    "tvg_id": "MSports.pk@SD"
-  },
-  {
-    "name": "MadeinBO TV (1080p)",
-    "group": "Live Sports",
-    "tvg_id": "MadeinBOTV.it@SD"
-  },
-  {
-    "name": "Marquee Sports Network (576p)",
-    "group": "Live Sports",
-    "tvg_id": "MarqueeSportsNetwork.us@SD"
-  },
-  {
-    "name": "Match! Ultra (1080p)",
-    "group": "Live Sports",
-    "tvg_id": "MatchUltra.ru@4K"
-  },
-  {
-    "name": "Maverick Black Cinema",
-    "group": "Live Sports",
-    "tvg_id": "834e2a09799752b3be7ecaab726b7242"
-  },
-  {
-    "name": "MAVTV Motorsports",
-    "group": "Live Sports",
-    "tvg_id": "INBD4700014DU"
-  },
-  {
     "name": "MIXER | ACE TV",
-    "group": "Live Sports",
-    "tvg_id": ""
-  },
-  {
-    "name": "MIXER | Cornhole TV",
     "group": "Live Sports",
     "tvg_id": ""
   },
@@ -610,11 +865,6 @@
     "tvg_id": ""
   },
   {
-    "name": "MIXER | SportsGrid",
-    "group": "Live Sports",
-    "tvg_id": ""
-  },
-  {
     "name": "MIXER | Strongman Champions League",
     "group": "Live Sports",
     "tvg_id": ""
@@ -630,207 +880,7 @@
     "tvg_id": ""
   },
   {
-    "name": "MODUS Super Series Darts",
-    "group": "Live Sports",
-    "tvg_id": "671645c4529ac900080c9a0b"
-  },
-  {
-    "name": "Monterrico TV",
-    "group": "Live Sports",
-    "tvg_id": "MonterricoTV.pe@SD"
-  },
-  {
-    "name": "Movie Hub",
-    "group": "Live Sports",
-    "tvg_id": "d32267711c6a5cf36520716c96b5b3fa"
-  },
-  {
-    "name": "Movie Hub Action",
-    "group": "Live Sports",
-    "tvg_id": "c5cbd4129753f5732d7160596440404f"
-  },
-  {
-    "name": "MRTV Sports [Not 24/7]",
-    "group": "Live Sports",
-    "tvg_id": "MRTVSports.mm@SD"
-  },
-  {
-    "name": "MTRSPT",
-    "group": "Live Sports",
-    "tvg_id": ""
-  },
-  {
-    "name": "N Sports",
-    "group": "Live Sports",
-    "tvg_id": "ONTV.mn"
-  },
-  {
-    "name": "NBA AntenaPlay (576p)",
-    "group": "Live Sports",
-    "tvg_id": "NBAAntenaPlay.ro@SD"
-  },
-  {
-    "name": "NBC Sports",
-    "group": "Live Sports",
-    "tvg_id": "9f230f21-7a07-4b80-b845-77f9327ddad3"
-  },
-  {
-    "name": "NESN (720p)",
-    "group": "Live Sports",
-    "tvg_id": "NESN.us@SD"
-  },
-  {
-    "name": "NHL AntenaPlay (576p) [Not 24/7]",
-    "group": "Live Sports",
-    "tvg_id": "NHLAntenaPlay.ro@SD"
-  },
-  {
-    "name": "One 2 (1080p)",
-    "group": "Live Sports",
-    "tvg_id": "One2.il@SD"
-  },
-  {
-    "name": "One Championship TV",
-    "group": "Live Sports",
-    "tvg_id": "CA2600001D9"
-  },
-  {
-    "name": "Outside TV",
-    "group": "Live Sports",
-    "tvg_id": "CAAJ2700030ON"
-  },
-  {
-    "name": "Ovacion TV (720p) [Not 24/7]",
-    "group": "Live Sports",
-    "tvg_id": "OvacionTV.pe@SD"
-  },
-  {
-    "name": "Pam Grier's Soul Flix",
-    "group": "Live Sports",
-    "tvg_id": "e7b30e2a58409242100d0edd2bfebbfd"
-  },
-  {
-    "name": "People Are Awesome",
-    "group": "Live Sports",
-    "tvg_id": "CAAJ34000089L"
-  },
-  {
-    "name": "Persiana Fight",
-    "group": "Live Sports",
-    "tvg_id": "PersianaFight.fr@HD"
-  },
-  {
-    "name": "PFL",
-    "group": "Live Sports",
-    "tvg_id": "CA3500003OX"
-  },
-  {
-    "name": "PFL MMA",
-    "group": "Live Sports",
-    "tvg_id": "e46ac8cd0299b4c5f1403d999a432561"
-  },
-  {
-    "name": "PHLY Sports",
-    "group": "Live Sports",
-    "tvg_id": "9ec48964d9b9502396f19fcb3a527074"
-  },
-  {
-    "name": "Pickleball Now (720p) [Geo-blocked]",
-    "group": "Live Sports",
-    "tvg_id": "PickleballNow.in@SD"
-  },
-  {
-    "name": "Pickleball TV (1080p) [Geo-blocked]",
-    "group": "Live Sports",
-    "tvg_id": "PickleballTV.us@HD"
-  },
-  {
-    "name": "Pluto TV F\u00fatbol",
-    "group": "Live Sports",
-    "tvg_id": "PlutoTVFutbol.us@LatAm"
-  },
-  {
-    "name": "POKER | Poker Night In America",
-    "group": "Live Sports",
-    "tvg_id": ""
-  },
-  {
-    "name": "POKER | World Poker Tour",
-    "group": "Live Sports",
-    "tvg_id": ""
-  },
-  {
-    "name": "PopCorn Central",
-    "group": "Live Sports",
-    "tvg_id": "a208207740dabd5e846e107b84db9123"
-  },
-  {
-    "name": "Prima Sport Czechia",
-    "group": "Live Sports",
-    "tvg_id": "PrimaSportCzechia.cz@SD"
-  },
-  {
-    "name": "PSL + IPL",
-    "group": "Live Sports",
-    "tvg_id": ""
-  },
-  {
-    "name": "Racer Network (1080p)",
-    "group": "Live Sports",
-    "tvg_id": "RacerNetwork.us@SD"
-  },
-  {
     "name": "RACING | FloRacing",
-    "group": "Live Sports",
-    "tvg_id": ""
-  },
-  {
-    "name": "RACING | Hagerty",
-    "group": "Live Sports",
-    "tvg_id": ""
-  },
-  {
-    "name": "RACING | RACER International",
-    "group": "Live Sports",
-    "tvg_id": ""
-  },
-  {
-    "name": "Rad Bull TV",
-    "group": "Live Sports",
-    "tvg_id": "(no tvg-id)"
-  },
-  {
-    "name": "Rally TV (1080p)",
-    "group": "Live Sports",
-    "tvg_id": "RallyTV.us@SD"
-  },
-  {
-    "name": "Realitatea Sportiva (720p)",
-    "group": "Live Sports",
-    "tvg_id": "RealitateaSportiva.ro@SD"
-  },
-  {
-    "name": "Retake E-sport Live (720p)",
-    "group": "Live Sports",
-    "tvg_id": ""
-  },
-  {
-    "name": "Rete 8 Sport",
-    "group": "Live Sports",
-    "tvg_id": ""
-  },
-  {
-    "name": "REV'N Action (720p) [Geo-blocked]",
-    "group": "Live Sports",
-    "tvg_id": "REVNAction.us@SD"
-  },
-  {
-    "name": "Right Now TV (720p)",
-    "group": "Live Sports",
-    "tvg_id": "RightNowTV.us@SD"
-  },
-  {
-    "name": "Roku Sports Channel (1080p)",
     "group": "Live Sports",
     "tvg_id": ""
   },
@@ -840,122 +890,7 @@
     "tvg_id": ""
   },
   {
-    "name": "Setanta Sport",
-    "group": "Live Sports",
-    "tvg_id": ""
-  },
-  {
-    "name": "Setenta Sport 1",
-    "group": "Live Sports",
-    "tvg_id": ""
-  },
-  {
-    "name": "Setenta Sport 2",
-    "group": "Live Sports",
-    "tvg_id": ""
-  },
-  {
-    "name": "Shooting Sports Life (1080p)",
-    "group": "Live Sports",
-    "tvg_id": ""
-  },
-  {
-    "name": "SI TV",
-    "group": "Live Sports",
-    "tvg_id": "6a8d96aa2cfd341eb5809214"
-  },
-  {
-    "name": "SKY SPORT LALIGA",
-    "group": "Live Sports",
-    "tvg_id": ""
-  },
-  {
-    "name": "speed sports 1",
-    "group": "Live Sports",
-    "tvg_id": "3f01188b-bba8-44ed-a75a-2662c108450c"
-  },
-  {
-    "name": "Sport Total FM (576i)",
-    "group": "Live Sports",
-    "tvg_id": "SportTotalFM.ro@SD"
-  },
-  {
-    "name": "Sport \u2013 Pluto TV",
-    "group": "Live Sports",
-    "tvg_id": "PlutoTVSportItaly.it"
-  },
-  {
-    "name": "Sportivnyy (1080p)",
-    "group": "Live Sports",
-    "tvg_id": "Sportivnyy.ru@SD"
-  },
-  {
-    "name": "Sports First TV",
-    "group": "Live Sports",
-    "tvg_id": "79ce27a8-bbfa-4661-a6ff-e6006e1510a3"
-  },
-  {
-    "name": "Sports Fishing TV",
-    "group": "Live Sports",
-    "tvg_id": "33386cf6-4275-4e8a-93f8-a530f0db1e45"
-  },
-  {
-    "name": "Sports Live",
-    "group": "Live Sports",
-    "tvg_id": "IN3000899C"
-  },
-  {
-    "name": "Sqala TV (720p)",
-    "group": "Live Sports",
-    "tvg_id": "SqalaTV.pe@SD"
-  },
-  {
-    "name": "Stargate",
-    "group": "Live Sports",
-    "tvg_id": "11c7c3660c6b6f18a21838fd404a7a1d"
-  },
-  {
-    "name": "Strongman (720p)",
-    "group": "Live Sports",
-    "tvg_id": "Strongman.us@Germany"
-  },
-  {
-    "name": "Strongman UK (720p)",
-    "group": "Live Sports",
-    "tvg_id": "Strongman.us@UK"
-  },
-  {
-    "name": "Suspilne Sport",
-    "group": "Live Sports",
-    "tvg_id": "SuspilneSport.ua"
-  },
-  {
-    "name": "Swerve Sports Talk",
-    "group": "Live Sports",
-    "tvg_id": "8886bc5cea175ba011a228c63b22e0d5"
-  },
-  {
-    "name": "Swerve Women\u2019s Sports",
-    "group": "Live Sports",
-    "tvg_id": "51dea927355343df5a6f26545d07adc8"
-  },
-  {
-    "name": "T2 Tennis Channel (1080p)",
-    "group": "Live Sports",
-    "tvg_id": ""
-  },
-  {
     "name": "TANNIS | Pickle TV",
-    "group": "Live Sports",
-    "tvg_id": ""
-  },
-  {
-    "name": "Team USA TV",
-    "group": "Live Sports",
-    "tvg_id": "257afd66cee15a1ca2125fc377e87cc2"
-  },
-  {
-    "name": "Tennis Channel Germany (720p)",
     "group": "Live Sports",
     "tvg_id": ""
   },
@@ -965,49 +900,14 @@
     "tvg_id": ""
   },
   {
-    "name": "Tigo Sports+",
+    "name": "MRTV Sports [Not 24/7]",
     "group": "Live Sports",
-    "tvg_id": "TigoSportsPlus.py@SD"
+    "tvg_id": "MRTVSports.mm@SD"
   },
   {
-    "name": "TJK TV (1080p)",
+    "name": "One Championship TV",
     "group": "Live Sports",
-    "tvg_id": "TJKTV.tr@SD"
-  },
-  {
-    "name": "TNA Wrestling Channel",
-    "group": "Live Sports",
-    "tvg_id": "6d8659091f745b8b864f438f06c56fae"
-  },
-  {
-    "name": "TNT SPORTS PREMIUM",
-    "group": "Live Sports",
-    "tvg_id": ""
-  },
-  {
-    "name": "TNT Sports Premium ArgentinaHD (1080p)",
-    "group": "Live Sports",
-    "tvg_id": "TNTSportsPremium.cl@ArgentinaHD"
-  },
-  {
-    "name": "Todo Cine",
-    "group": "Live Sports",
-    "tvg_id": "b015fcbafb496320954672321e746f8a"
-  },
-  {
-    "name": "Top Gear",
-    "group": "Live Sports",
-    "tvg_id": "638e10220aa6a6000726979f"
-  },
-  {
-    "name": "Top Rank Classics",
-    "group": "Live Sports",
-    "tvg_id": "c0b79a332cfd90b8eeb6d4a0dcb63674"
-  },
-  {
-    "name": "Tour Spot TV (1280p) [Not 24/7]",
-    "group": "Live Sports",
-    "tvg_id": "TourSpotTV.do@HD"
+    "tvg_id": "CA2600001D9"
   },
   {
     "name": "TR Sport (480p)",
@@ -1015,9 +915,29 @@
     "tvg_id": "TRSport.it@SD"
   },
   {
-    "name": "Turf Movil (720p)",
+    "name": "VTV6 (720p)",
     "group": "Live Sports",
-    "tvg_id": "TurfMovil.cl@SD"
+    "tvg_id": "VTV6.vn@HD"
+  },
+  {
+    "name": "FCK Lovinderne",
+    "group": "Live Sports",
+    "tvg_id": "FCKLovinderne.se@DK"
+  },
+  {
+    "name": "Jordan Sports ARB",
+    "group": "Live Sports",
+    "tvg_id": "Jordan Sports ARB"
+  },
+  {
+    "name": "MODUS Super Series Darts",
+    "group": "Live Sports",
+    "tvg_id": "671645c4529ac900080c9a0b"
+  },
+  {
+    "name": "SI TV",
+    "group": "Live Sports",
+    "tvg_id": "6a8d96aa2cfd341eb5809214"
   },
   {
     "name": "Turkmenistan Sport (406p) [Not 24/7]",
@@ -1025,39 +945,59 @@
     "tvg_id": "TurkmenistanSport.tm@SD"
   },
   {
-    "name": "TVR Sport",
+    "name": "FIGHT | MMA TV",
     "group": "Live Sports",
-    "tvg_id": "TVRSport.ro@SD"
+    "tvg_id": ""
   },
   {
-    "name": "TVS Bowling Network (720p)",
+    "name": "FIGHT | PFL",
     "group": "Live Sports",
-    "tvg_id": "TVSBowlingNetwork.us@SD"
+    "tvg_id": ""
   },
   {
-    "name": "TVS Sports (720p) [Not 24/7]",
+    "name": "Persiana Fight",
     "group": "Live Sports",
-    "tvg_id": "TVSSports.us@SD"
+    "tvg_id": "PersianaFight.fr@HD"
   },
   {
-    "name": "TVS Sports Bureau (720p)",
+    "name": "Dazn Ringside (1080p)",
     "group": "Live Sports",
-    "tvg_id": "TVSSportsBureau.us@SD"
+    "tvg_id": ""
   },
   {
-    "name": "TyC Sports USA",
+    "name": "--Live(beIN SPORTS XTRA)--",
     "group": "Live Sports",
-    "tvg_id": "TyCSportsUSA.ar@SD"
+    "tvg_id": ""
   },
   {
-    "name": "UFC",
+    "name": "MIXER | SportsGrid",
     "group": "Live Sports",
-    "tvg_id": "CA2900012S9"
+    "tvg_id": ""
   },
   {
-    "name": "Unbeaten Sports",
+    "name": "RealMadrid TV",
     "group": "Live Sports",
-    "tvg_id": "98cafb7f4b01848a967fda4bd2225bd7"
+    "tvg_id": ""
+  },
+  {
+    "name": "Roku Sports Channel (1080p)",
+    "group": "Live Sports",
+    "tvg_id": ""
+  },
+  {
+    "name": "Shooting Sports Life (1080p)",
+    "group": "Live Sports",
+    "tvg_id": ""
+  },
+  {
+    "name": "T2 Tennis Channel (1080p)",
+    "group": "Live Sports",
+    "tvg_id": ""
+  },
+  {
+    "name": "Tennis Channel Germany (720p)",
+    "group": "Live Sports",
+    "tvg_id": ""
   },
   {
     "name": "Unbeaten Sports \u2013 Pluto TV",
@@ -1065,69 +1005,9 @@
     "tvg_id": ""
   },
   {
-    "name": "Universal Westerns",
+    "name": "Yahoo! Sports Network (1080p)",
     "group": "Live Sports",
-    "tvg_id": "8346cc0f3d415e39875fca80b67fd951"
-  },
-  {
-    "name": "Vinh Long TV 4 (720p)",
-    "group": "Live Sports",
-    "tvg_id": "VinhLongTV4.vn@SD"
-  },
-  {
-    "name": "ViX Lo Mejor de Liga MX",
-    "group": "Live Sports",
-    "tvg_id": "35633f08c98857cb9e85c91eae17c0d5"
-  },
-  {
-    "name": "Volleyball (1080p)",
-    "group": "Live Sports",
-    "tvg_id": "Volleyball.ru@SD"
-  },
-  {
-    "name": "Voyo Events (576i) [Not 24/7]",
-    "group": "Live Sports",
-    "tvg_id": "VoyoEvents.ro@SD"
-  },
-  {
-    "name": "Voyo Sport 1 (1080p)",
-    "group": "Live Sports",
-    "tvg_id": "VoyoSport1.ro@HD"
-  },
-  {
-    "name": "VTV6 (720p)",
-    "group": "Live Sports",
-    "tvg_id": "VTV6.vn@HD"
-  },
-  {
-    "name": "W14DK-D 14.5 All Sports Television Network",
-    "group": "Live Sports",
-    "tvg_id": "W14DKD145.us@SD"
-  },
-  {
-    "name": "Waypoint TV",
-    "group": "Live Sports",
-    "tvg_id": "CABB2500034Q4"
-  },
-  {
-    "name": "WedoTV Cars",
-    "group": "Live Sports",
-    "tvg_id": "IN3300004EI"
-  },
-  {
-    "name": "WedoTV Sports",
-    "group": "Live Sports",
-    "tvg_id": "IN2100015RL"
-  },
-  {
-    "name": "Willow TV",
-    "group": "Live Sports",
-    "tvg_id": "abfabaee-3898-4279-8645-3da5b0232867"
-  },
-  {
-    "name": "Win+ Futbol (1080p)",
-    "group": "Live Sports",
-    "tvg_id": "WinPlusFutbol.co@SD"
+    "tvg_id": ""
   },
   {
     "name": "Wired2Fish TV",
@@ -1135,1368 +1015,1488 @@
     "tvg_id": "6a8d96996d62a56d3bdd959c"
   },
   {
-    "name": "WOF 1",
+    "name": "N Sports",
     "group": "Live Sports",
-    "tvg_id": "d2152bbb-64e0-4822-826b-60853ca1d056"
+    "tvg_id": "ONTV.mn"
   },
   {
-    "name": "Xena",
+    "name": "FreeTV Acci\u00f3n",
     "group": "Live Sports",
-    "tvg_id": "302d8d86738c0ab83d0ca3a5e2df3492"
+    "tvg_id": "9fc6583c28985e15b3f05b46f5d77957"
   },
   {
-    "name": "Xtrem Sports",
+    "name": "Setanta Sports 3 (1080p)",
     "group": "Live Sports",
-    "tvg_id": "538b24c3-9493-44d5-be7c-482b51734f2c"
+    "tvg_id": "SetantaSports3.ge@SD"
   },
   {
-    "name": "Yahoo! Sports Network (1080p)",
+    "name": "Vinh Long TV 4 (720p)",
+    "group": "Live Sports",
+    "tvg_id": "VinhLongTV4.vn@SD"
+  },
+  {
+    "name": "CR | Cricket Gold",
     "group": "Live Sports",
     "tvg_id": ""
   },
   {
-    "name": "Z Nation",
+    "name": "Horse & Country",
     "group": "Live Sports",
-    "tvg_id": "f99fa811e587e924c1aeebfe3d7f575f"
-  },
-  {
-    "name": "100% NEWS (576p)",
-    "group": "International News",
-    "tvg_id": "100NEWS.ua@SD"
-  },
-  {
-    "name": "188.NDTV 24x7",
-    "group": "International News",
     "tvg_id": ""
   },
   {
-    "name": "24 Horas Catalunya (720p)",
-    "group": "International News",
-    "tvg_id": "24HorasCatalunya.es@SD"
+    "name": "Leaderboard Sports News (1080p)",
+    "group": "Live Sports",
+    "tvg_id": ""
   },
   {
-    "name": "24 Kanal (720p)",
-    "group": "International News",
-    "tvg_id": "24Kanal.ua@SD"
+    "name": "MTRSPT",
+    "group": "Live Sports",
+    "tvg_id": ""
   },
   {
-    "name": "24 News (576p)",
-    "group": "International News",
-    "tvg_id": "24News.in@SD"
+    "name": "Tigo Sports+",
+    "group": "Live Sports",
+    "tvg_id": "TigoSportsPlus.py@SD"
   },
   {
-    "name": "30A Georgia Hollywood Review (720p)",
-    "group": "International News",
-    "tvg_id": "30AGeorgiaHollywoodReview.us@SD"
+    "name": "TyC Sports USA",
+    "group": "Live Sports",
+    "tvg_id": "TyCSportsUSA.ar@SD"
   },
   {
-    "name": "3CatInfo (1080p)",
-    "group": "International News",
-    "tvg_id": "3CatInfo.es@SD"
+    "name": "Arryadia HD 2 (1080p)",
+    "group": "Live Sports",
+    "tvg_id": "ArryadiaHD2.ma@HD"
   },
   {
-    "name": "6 TV Telugu (576p)",
-    "group": "International News",
-    "tvg_id": "6TVTelugu.in@SD"
+    "name": "AS3 Sport TV (1080p)",
+    "group": "Live Sports",
+    "tvg_id": "AS3SportTV.ve@SD"
   },
   {
-    "name": "7 Info",
-    "group": "International News",
-    "tvg_id": "7Info.ci@SD"
+    "name": "Tour Spot TV (1280p) [Not 24/7]",
+    "group": "Live Sports",
+    "tvg_id": "TourSpotTV.do@HD"
   },
   {
-    "name": "9 Plus News (1080p)",
-    "group": "International News",
-    "tvg_id": "9PlusNews.in@SD"
+    "name": "Willow TV",
+    "group": "Live Sports",
+    "tvg_id": "abfabaee-3898-4279-8645-3da5b0232867"
   },
   {
-    "name": "99TV (720p)",
-    "group": "International News",
-    "tvg_id": "99TV.in@SD"
+    "name": "Equidia Racing Mag (1080p)",
+    "group": "Live Sports",
+    "tvg_id": ""
   },
   {
-    "name": "A24 Paraguay (1080p)",
-    "group": "International News",
-    "tvg_id": "A24Paraguay.py@SD"
+    "name": "HTV Sports",
+    "group": "Live Sports",
+    "tvg_id": "HTVSports.vn@SD"
   },
   {
-    "name": "Aaj Ki Khabar (1080p)",
-    "group": "International News",
-    "tvg_id": "AajKiKhabar.in@SD"
+    "name": "Bein Sports Extra 2",
+    "group": "Live Sports",
+    "tvg_id": ""
+  },
+  {
+    "name": "Esport3 Originals (1080p) [Not 24/7]",
+    "group": "Live Sports",
+    "tvg_id": "Esport3.es@Originals"
+  },
+  {
+    "name": "TNT SPORTS PREMIUM",
+    "group": "Live Sports",
+    "tvg_id": ""
+  },
+  {
+    "name": "FB | A SPOR",
+    "group": "Live Sports",
+    "tvg_id": ""
+  },
+  {
+    "name": "TSN Tele Sondrio News",
+    "group": "Live Sports",
+    "tvg_id": ""
   },
   {
     "name": "Abante TV (1080p)",
-    "group": "International News",
+    "group": "News | International",
     "tvg_id": "AbanteTV.ph@HD"
   },
   {
-    "name": "ABC News in 90 Seconds",
-    "group": "International News",
-    "tvg_id": ""
-  },
-  {
-    "name": "ABC-TV Paraguay",
-    "group": "International News",
-    "tvg_id": "ABCTVParaguay.py@SD"
-  },
-  {
-    "name": "ABC7 Sarasota",
-    "group": "International News",
-    "tvg_id": "50b18dea9c5c51568c1343fcd3d88ec9"
-  },
-  {
-    "name": "ABP Asmita",
-    "group": "International News",
-    "tvg_id": "INBD400010BD"
-  },
-  {
-    "name": "ABP Ganga (1080p)",
-    "group": "International News",
-    "tvg_id": "ABPGanga.in@SD"
-  },
-  {
-    "name": "ACN TV (1080p)",
-    "group": "International News",
-    "tvg_id": "ACNTV.cm@SD"
-  },
-  {
-    "name": "ADN 40 (720p)",
-    "group": "International News",
-    "tvg_id": "ADN40.mx@SD"
-  },
-  {
-    "name": "ADN TV (720p)",
-    "group": "International News",
-    "tvg_id": "ADNTV.cl@SD"
-  },
-  {
-    "name": "Advocate Broadcasting Network (576p)",
-    "group": "International News",
-    "tvg_id": "AdvocateBroadcastingNetwork.ng@SD"
-  },
-  {
-    "name": "Afghanistan International (720p)",
-    "group": "International News",
-    "tvg_id": "AfghanistanInternational.uk@SD"
-  },
-  {
-    "name": "Africa 24 English (1080p)",
-    "group": "International News",
-    "tvg_id": "Africa24English.fr@SD"
-  },
-  {
-    "name": "Africanews French (720p)",
-    "group": "International News",
-    "tvg_id": "AfricanewsFrench.fr@SD"
-  },
-  {
-    "name": "Afrik Info TV",
-    "group": "International News",
-    "tvg_id": "AfrikInfoTV.gn@SD"
-  },
-  {
-    "name": "Afrique Media (720p)",
-    "group": "International News",
-    "tvg_id": "AfriqueMedia.cm@SD"
-  },
-  {
-    "name": "AJ Net News (576p)",
-    "group": "International News",
-    "tvg_id": "AJNetNews.in@SD"
-  },
-  {
-    "name": "Akhon Kolkata (478p)",
-    "group": "International News",
-    "tvg_id": "AkhonKolkata.in@SD"
-  },
-  {
-    "name": "Al Alam Al Yawm",
-    "group": "International News",
-    "tvg_id": "AlAlamAlYawm.sa@SD"
-  },
-  {
-    "name": "Al Jazeera Mubasher 24 (1080p)",
-    "group": "International News",
-    "tvg_id": "AlJazeeraMubasher24.qa@SD"
-  },
-  {
-    "name": "Al Jazeera Mubasher Broadcast 2 (1080p)",
-    "group": "International News",
-    "tvg_id": "AlJazeeraMubasherBroadcast2.qa@SD"
-  },
-  {
     "name": "Al Jazeera \u0627\u0644\u0639\u0631\u0628\u064a\u0629",
-    "group": "International News",
+    "group": "News | International",
     "tvg_id": "AlJazeeraChannel.qa"
   },
   {
-    "name": "Al Masar TV (576p)",
-    "group": "International News",
-    "tvg_id": "AlMasarTV.ly@SD"
-  },
-  {
-    "name": "Al Mashhad (1080p)",
-    "group": "International News",
-    "tvg_id": "AlMashhad.ae@SD"
-  },
-  {
-    "name": "Al Masirah Mubacher (642p) [Not 24/7]",
-    "group": "International News",
-    "tvg_id": "AlMasirahMubacher.ye@SD"
-  },
-  {
-    "name": "Al Najah News (720p)",
-    "group": "International News",
-    "tvg_id": "AlNajahNews.ps@SD"
-  },
-  {
-    "name": "Al Yaum TV (1080p)",
-    "group": "International News",
-    "tvg_id": "AlYaumTV.ae@SD"
-  },
-  {
-    "name": "AL24 News",
-    "group": "International News",
-    "tvg_id": "AL24News.dz@SD"
-  },
-  {
-    "name": "Alalam News Channel Syria (1080p)",
-    "group": "International News",
-    "tvg_id": "AlalamNewsChannelSyria.sy@SD"
-  },
-  {
-    "name": "Alert TV (576p) [Not 24/7]",
-    "group": "International News",
-    "tvg_id": "AlertTV.gr@SD"
-  },
-  {
-    "name": "Alhaqeqa Aldawlia (1080p) [Not 24/7]",
-    "group": "International News",
-    "tvg_id": "AlhaqeqaAldawlia.jo@SD"
-  },
-  {
-    "name": "Alikhbaria Syria (1080p)",
-    "group": "International News",
-    "tvg_id": "AlikhbariaSyria.sy@SD"
-  },
-  {
-    "name": "Almahriah TV (576p)",
-    "group": "International News",
-    "tvg_id": "AlmahriahTV.tr@SD"
-  },
-  {
-    "name": "Altaghier TV (1080p)",
-    "group": "International News",
-    "tvg_id": "AltaghierTV.jo@SD"
-  },
-  {
-    "name": "ALWifak News TV (720p)",
-    "group": "International News",
-    "tvg_id": "ALWifakNewsTV.lb@SD"
-  },
-  {
-    "name": "Amu TV",
-    "group": "International News",
-    "tvg_id": "AmuTV.us@SD"
-  },
-  {
-    "name": "AMX Noticias (720p) [Not 24/7]",
-    "group": "International News",
-    "tvg_id": "AMXNoticias.mx@SD"
-  },
-  {
-    "name": "Ananda Barta (720p)",
-    "group": "International News",
-    "tvg_id": "AnandaBarta.in@SD"
-  },
-  {
-    "name": "Anjali TV (720p)",
-    "group": "International News",
-    "tvg_id": "AnjaliTV.in@SD"
-  },
-  {
-    "name": "Antena 3 CNN HD (1080i)",
-    "group": "International News",
-    "tvg_id": "Antena3CNN.ro@HD"
-  },
-  {
-    "name": "Antena 3 Constanta (576p)",
-    "group": "International News",
-    "tvg_id": "Antena3Constanta.ro@SD"
-  },
-  {
-    "name": "Antik Info TV (1080p)",
-    "group": "International News",
-    "tvg_id": "AntikInfoTV.sk@HD"
-  },
-  {
-    "name": "Apostrophe TV (1080p)",
-    "group": "International News",
-    "tvg_id": "ApostropheTV.ua@SD"
-  },
-  {
-    "name": "Aratu On",
-    "group": "International News",
-    "tvg_id": "AratuOn.br@SD"
-  },
-  {
-    "name": "ARB 24",
-    "group": "International News",
-    "tvg_id": "ARB24.az@SD"
-  },
-  {
-    "name": "Arirang",
-    "group": "International News",
-    "tvg_id": "(no tvg-id)"
-  },
-  {
-    "name": "Asharq Radio (1080p)",
-    "group": "International News",
-    "tvg_id": "AsharqRadio.sa@SD"
-  },
-  {
-    "name": "Ashwaveega News 24x7 (720p)",
-    "group": "International News",
-    "tvg_id": "AshwaveegaNews24x7.in@SD"
-  },
-  {
-    "name": "Astra TV (1080p)",
-    "group": "International News",
-    "tvg_id": "AstraTV.gr@SD"
-  },
-  {
-    "name": "ASTV News 1 (720p) [Not 24/7]",
-    "group": "International News",
-    "tvg_id": "News1.th@SD"
-  },
-  {
-    "name": "Atacama Noticias (720p) [Not 24/7]",
-    "group": "International News",
-    "tvg_id": "AtacamaNoticias.cl@SD"
-  },
-  {
-    "name": "Atlanta News First",
-    "group": "International News",
-    "tvg_id": "1672824c4fd55e5dbfcb57f147910270"
-  },
-  {
-    "name": "ATN Samachar (1080p)",
-    "group": "International News",
-    "tvg_id": "ATNSamachar.in@SD"
-  },
-  {
-    "name": "Awaaz India TV (720p) [Not 24/7]",
-    "group": "International News",
-    "tvg_id": "AwaazIndiaTV.in@SD"
-  },
-  {
-    "name": "Bangla Jago (720p)",
-    "group": "International News",
-    "tvg_id": "BanglaJago.in@SD"
-  },
-  {
-    "name": "Baraka Television (720p) [Not 24/7]",
-    "group": "International News",
-    "tvg_id": "BarakaTelevision.cd@SD"
-  },
-  {
-    "name": "BBC Comedy",
-    "group": "International News",
-    "tvg_id": "647f8d22a2fc3fadb4721685-65622fb65dbccec83a87b643"
-  },
-  {
-    "name": "BBC Drama \u2013 Pluto TV",
-    "group": "International News",
-    "tvg_id": ""
-  },
-  {
-    "name": "BBC Game Shows",
-    "group": "International News",
-    "tvg_id": "647f8d22a2fc3fadb4721685-656229e4b7d737841f30a4fb"
-  },
-  {
-    "name": "BBC Home",
-    "group": "International News",
-    "tvg_id": "BBCHome.us"
-  },
-  {
-    "name": "BBC Impossible",
-    "group": "International News",
-    "tvg_id": ""
-  },
-  {
-    "name": "BBC Radio 1Xtra",
-    "group": "International News",
-    "tvg_id": "BBCRadio1Xtra.uk"
-  },
-  {
-    "name": "BBC Radio 2",
-    "group": "International News",
-    "tvg_id": "BBCRadio2.uk"
-  },
-  {
-    "name": "BBC Radio 3",
-    "group": "International News",
-    "tvg_id": "BBCRadio3.uk"
-  },
-  {
-    "name": "BBC Radio 5 Live",
-    "group": "International News",
-    "tvg_id": "BBCRadio5Live.uk"
-  },
-  {
-    "name": "BBC Radio 6 Music",
-    "group": "International News",
-    "tvg_id": "BBCRadio6Music.uk"
-  },
-  {
-    "name": "BBC Sci-Fi",
-    "group": "International News",
-    "tvg_id": "647f8d22a2fc3fadb4721685-65622ac05dbccec83a87b641"
-  },
-  {
-    "name": "BBC Series",
-    "group": "International News",
-    "tvg_id": ""
-  },
-  {
-    "name": "BBC Top Gear (1080p)",
-    "group": "International News",
-    "tvg_id": ""
-  },
-  {
-    "name": "BBC Top Gear Finland (1080p)",
-    "group": "International News",
-    "tvg_id": ""
-  },
-  {
-    "name": "BBC Top Gear France (1080p)",
-    "group": "International News",
-    "tvg_id": ""
-  },
-  {
-    "name": "BBC Top Gear Germany (1080p)",
-    "group": "International News",
-    "tvg_id": ""
-  },
-  {
-    "name": "BBC Top Gear Italy (1080p)",
-    "group": "International News",
-    "tvg_id": ""
-  },
-  {
-    "name": "BD | DBC NEWS HD",
-    "group": "International News",
-    "tvg_id": ""
-  },
-  {
-    "name": "BD | JAMUNA TV",
-    "group": "International News",
-    "tvg_id": ""
-  },
-  {
-    "name": "BD | NEWS 24 Television",
-    "group": "International News",
-    "tvg_id": ""
-  },
-  {
-    "name": "BEK News (720p)",
-    "group": "International News",
-    "tvg_id": "BEKNews.us@SD"
-  },
-  {
-    "name": "Benin Web TV (720p)",
-    "group": "International News",
-    "tvg_id": "BeninWebTV.bj@SD"
-  },
-  {
-    "name": "Bharat AtoZ (720p)",
-    "group": "International News",
-    "tvg_id": "BharatAtoZ.in@SD"
-  },
-  {
-    "name": "BHI Channel (720p)",
-    "group": "International News",
-    "tvg_id": "BHIChannel.in@SD"
-  },
-  {
-    "name": "Big TV 24x7 (576i)",
-    "group": "International News",
-    "tvg_id": "BigTV24x7.in@SD"
-  },
-  {
-    "name": "Bilyonaryo News Channel (1080p) [Geo-blocked]",
-    "group": "International News",
-    "tvg_id": "BilyonaryoNewsChannel.ph@SD"
-  },
-  {
-    "name": "BN Channel (720p)",
-    "group": "International News",
-    "tvg_id": "BNChannel.id@SD"
-  },
-  {
-    "name": "Breaking News",
-    "group": "International News",
-    "tvg_id": ""
-  },
-  {
-    "name": "Breaking News by LeadStory (1080p)",
-    "group": "International News",
-    "tvg_id": ""
-  },
-  {
-    "name": "Brian TV (720p) [Not 24/7]",
-    "group": "International News",
-    "tvg_id": "BrianTV.la@SD"
-  },
-  {
-    "name": "BSTV (India) (720p)",
-    "group": "International News",
-    "tvg_id": "BSTV.in@SD"
-  },
-  {
-    "name": "BT TV (720p)",
-    "group": "International News",
-    "tvg_id": "BTTV.in@SD"
-  },
-  {
-    "name": "BTB Info (1080p)",
-    "group": "International News",
-    "tvg_id": "BTBInfo.pl@SD"
-  },
-  {
-    "name": "C-10 (576p)",
-    "group": "International News",
-    "tvg_id": "C10.in@SD"
-  },
-  {
-    "name": "C4 en Alerta",
-    "group": "International News",
-    "tvg_id": "5cbb91d07dbd5b92ae3ef3e37be7f2ce"
-  },
-  {
-    "name": "Canal 24 Horas Canarias (720p)",
-    "group": "International News",
-    "tvg_id": "24HorasCanarias.es@SD"
-  },
-  {
     "name": "Canal 33 Tijuana (720p)",
-    "group": "International News",
+    "group": "News | International",
     "tvg_id": "Canal33Tijuana.mx@SD"
   },
   {
-    "name": "Canal 38 (720p)",
-    "group": "International News",
-    "tvg_id": "Canal38.br@SD"
-  },
-  {
-    "name": "Canal E (720p)",
-    "group": "International News",
-    "tvg_id": "CanalE.ar@SD"
-  },
-  {
-    "name": "Canal Metropolitano de Noticias",
-    "group": "International News",
-    "tvg_id": "CanalMetropolitanodeNoticias.br@SD"
-  },
-  {
-    "name": "Canal Sur Noticias",
-    "group": "International News",
-    "tvg_id": "CanalSurNoticias.es@SD"
-  },
-  {
-    "name": "Canal TDC",
-    "group": "International News",
-    "tvg_id": "CanalTDC.ar@SD"
-  },
-  {
-    "name": "Capital TV",
-    "group": "International News",
-    "tvg_id": "CapitalTV.pk@SD"
-  },
-  {
-    "name": "Carivision (1080p) [Geo-blocked]",
-    "group": "International News",
-    "tvg_id": "Carivision.do@SD"
-  },
-  {
-    "name": "Catamarca TV (720p)",
-    "group": "International News",
-    "tvg_id": "CatamarcaTV.ar@SD"
-  },
-  {
-    "name": "CBC News",
-    "group": "International News",
-    "tvg_id": "8db0f9f4abf6542ba95f97a545f98513"
-  },
-  {
-    "name": "CBC News BC",
-    "group": "International News",
-    "tvg_id": "CA15000018F"
-  },
-  {
-    "name": "CBC News British Columbia",
-    "group": "International News",
-    "tvg_id": "66a8f01914a2bb00084dd86c"
-  },
-  {
-    "name": "CBC News Calgary",
-    "group": "International News",
-    "tvg_id": "6aaaec502714ce519248c55e"
-  },
-  {
-    "name": "CBC News Edmonton",
-    "group": "International News",
-    "tvg_id": "6aaaec5abd51830177e9a185"
-  },
-  {
-    "name": "CBC News Manitoba",
-    "group": "International News",
-    "tvg_id": "6aaaec396d05845d59cdabc0"
-  },
-  {
-    "name": "CBC News New Brunswick",
-    "group": "International News",
-    "tvg_id": "6aaaec6dde3a888e5a491479"
-  },
-  {
-    "name": "CBC News NL",
-    "group": "International News",
-    "tvg_id": "6aaaec76496b635ad6da73f5"
-  },
-  {
-    "name": "CBC News North",
-    "group": "International News",
-    "tvg_id": "6aaaec805532ad5708651be3"
-  },
-  {
-    "name": "CBC News Nova Scotia",
-    "group": "International News",
-    "tvg_id": "6aaaec237a9bc501c300c9e6"
-  },
-  {
-    "name": "CBC News Ottawa",
-    "group": "International News",
-    "tvg_id": "6aaaec477a9bc501c300ca35"
-  },
-  {
-    "name": "CBC News PEI",
-    "group": "International News",
-    "tvg_id": "6aaaec898ce7aa0932094d4e"
-  },
-  {
-    "name": "CBC News Quebec",
-    "group": "International News",
-    "tvg_id": "6aaaec2ec349e6a78bb333eb"
-  },
-  {
-    "name": "CBC News Saskatchewan",
-    "group": "International News",
-    "tvg_id": "6aaaec640c9f5239c2f17359"
-  },
-  {
-    "name": "CBC News Toronto",
-    "group": "International News",
-    "tvg_id": "6536721dbfbaec00088687c0"
-  },
-  {
-    "name": "CBC News Windsor",
-    "group": "International News",
-    "tvg_id": "6aaaec94611342bebfd49e9e"
-  },
-  {
-    "name": "CBN News (1080p)",
-    "group": "International News",
-    "tvg_id": "CBNNews.us@SD"
-  },
-  {
-    "name": "CBS News \u2013 Pluto TV",
-    "group": "International News",
-    "tvg_id": ""
-  },
-  {
-    "name": "CCTV+ 1 (600p) [Not 24/7]",
-    "group": "International News",
-    "tvg_id": "CCTVPlus1.cn@SD"
-  },
-  {
-    "name": "CCTV+ 2 (600p) [Not 24/7]",
-    "group": "International News",
-    "tvg_id": "CCTVPlus2.cn@SD"
-  },
-  {
-    "name": "CEACOM TV (1080p) [Not 24/7]",
-    "group": "International News",
-    "tvg_id": "CEACOMTV.bo@SD"
-  },
-  {
-    "name": "Channel 24 (Ukraine) (1080p)",
-    "group": "International News",
-    "tvg_id": "Channel24.ua@SD"
-  },
-  {
-    "name": "Channel 3 Eyewitness News",
-    "group": "International News",
-    "tvg_id": "307cbde3d30957828ff68b3b979d6958"
-  },
-  {
-    "name": "Channel Y (720p) [Not 24/7]",
-    "group": "International News",
-    "tvg_id": "ChannelY.ca@SD"
-  },
-  {
-    "name": "Channel8 (720p)",
-    "group": "International News",
-    "tvg_id": "Channel8.iq@SD"
-  },
-  {
-    "name": "Chardikla Gurbaani TV (1080p)",
-    "group": "International News",
-    "tvg_id": "ChardiklaGurbaaniTV.in@SD"
-  },
-  {
-    "name": "Chardikla Time TV North America (1080p)",
-    "group": "International News",
-    "tvg_id": "ChardiklaTimeTVNorthAmerica.in@SD"
-  },
-  {
-    "name": "Chifeng Comprehensive News Chanel",
-    "group": "International News",
-    "tvg_id": "ChifengComprehensiveNewsChanel.cn@SD"
-  },
-  {
-    "name": "Chuxiong News Channel [Not 24/7]",
-    "group": "International News",
-    "tvg_id": "ChuxiongNewsChannel.cn@SD"
-  },
-  {
-    "name": "Citrico TV (480p) [Not 24/7]",
-    "group": "International News",
-    "tvg_id": "CitricoTV.do@SD"
-  },
-  {
-    "name": "City News 24/7",
-    "group": "International News",
-    "tvg_id": ""
-  },
-  {
-    "name": "CityNews Calgary (720p)",
-    "group": "International News",
-    "tvg_id": "CityNewsCalgary.ca@SD"
-  },
-  {
-    "name": "CityNews Edmonton",
-    "group": "International News",
-    "tvg_id": "CityNewsEdmonton.ca@SD"
-  },
-  {
-    "name": "CityNews Toronto (720p)",
-    "group": "International News",
-    "tvg_id": "CityNewsToronto.ca@SD"
-  },
-  {
-    "name": "CityNews Vancouver (720p)",
-    "group": "International News",
-    "tvg_id": "CityNewsVancouver.ca@SD"
-  },
-  {
-    "name": "Cleveland 19 News Plus",
-    "group": "International News",
-    "tvg_id": "d0d9af56b7735c318b66afe21089d028"
-  },
-  {
-    "name": "CNEWS PRIME (1080p)",
-    "group": "International News",
-    "tvg_id": "CNEWSPRIME.fr@HD"
-  },
-  {
-    "name": "CNN Headlines International",
-    "group": "International News",
-    "tvg_id": ""
-  },
-  {
-    "name": "CNN Noticias",
-    "group": "International News",
-    "tvg_id": ""
-  },
-  {
-    "name": "Conecta2TV (720p) [Not 24/7]",
-    "group": "International News",
-    "tvg_id": "Conecta2TV.pe@SD"
-  },
-  {
-    "name": "Connecting America",
-    "group": "International News",
-    "tvg_id": ""
-  },
-  {
-    "name": "Contivision (720p)",
-    "group": "International News",
-    "tvg_id": "Contivision.cl@SD"
-  },
-  {
-    "name": "Corfu Channel (720p)",
-    "group": "International News",
-    "tvg_id": "CorfuChannel.gr@SD"
-  },
-  {
-    "name": "Cosmos Tv",
-    "group": "International News",
-    "tvg_id": "CosmosTv.ar@HD"
-  },
-  {
-    "name": "CRTV News",
-    "group": "International News",
-    "tvg_id": "CRTVNews.cm@SD"
-  },
-  {
-    "name": "CVR English (720p)",
-    "group": "International News",
-    "tvg_id": "CVREnglish.in@SD"
-  },
-  {
-    "name": "C\u00f3rdoba TV [Not 24/7]",
-    "group": "International News",
-    "tvg_id": "CordobaTV.es@SD"
-  },
-  {
-    "name": "D5 Channel Punjabi (1080p)",
-    "group": "International News",
-    "tvg_id": "D5ChannelPunjabi.in@SD"
-  },
-  {
-    "name": "Dabanga TV (1080p)",
-    "group": "International News",
-    "tvg_id": "DabangaTV.sd@SD"
-  },
-  {
-    "name": "Daily Post TV (1080p)",
-    "group": "International News",
-    "tvg_id": "DailyPostTV.in@SD"
-  },
-  {
-    "name": "De Ultimo Minuto TV",
-    "group": "International News",
-    "tvg_id": "DeUltimoMinutoTV.do@SD"
-  },
-  {
-    "name": "Di TV (1080p)",
-    "group": "International News",
-    "tvg_id": "DiTV.se@SD"
-  },
-  {
-    "name": "Didgah TV (576p)",
-    "group": "International News",
-    "tvg_id": "DidgahTV.us@SD"
-  },
-  {
-    "name": "D\u0130M TV (720p) [Geo-blocked]",
-    "group": "International News",
-    "tvg_id": "DimTV.tr@SD"
-  },
-  {
-    "name": "Dong Nai TV 1 (1080p)",
-    "group": "International News",
-    "tvg_id": "DongNaiTV1.vn@SD"
-  },
-  {
-    "name": "Dotto TV (1080p)",
-    "group": "International News",
-    "tvg_id": "DottoTV.ro@SD"
-  },
-  {
-    "name": "Duniya News",
-    "group": "International News",
-    "tvg_id": ""
-  },
-  {
-    "name": "Dunya News",
-    "group": "International News",
-    "tvg_id": "(no tvg-id)"
-  },
-  {
-    "name": "Dunya News UK (720p) [Not 24/7]",
-    "group": "International News",
-    "tvg_id": "DunyaNewsUK.uk@SD"
-  },
-  {
-    "name": "DVB TV (720p) [Geo-blocked]",
-    "group": "International News",
-    "tvg_id": "DVBTV.mm@SD"
-  },
-  {
     "name": "DW News",
-    "group": "International News",
+    "group": "News | International",
     "tvg_id": "4f059328-a08e-41c0-aa0e-fb11eb69da7e"
   },
   {
     "name": "DW \u0627\u0644\u0639\u0631\u0628\u064a\u0629",
-    "group": "International News",
+    "group": "News | International",
     "tvg_id": "DWArabic.de"
   },
   {
-    "name": "EAC News TV",
-    "group": "International News",
-    "tvg_id": "EACNewsTV.kh@SD"
+    "name": "First Channel News (1080p)",
+    "group": "News | International",
+    "tvg_id": "FirstChannelNews.am@SD"
   },
   {
-    "name": "Eagle News HD",
-    "group": "International News",
-    "tvg_id": "EagleNews.mn"
+    "name": "Guardian Talk Radio (1080p)",
+    "group": "News | International",
+    "tvg_id": "GuardianTalkRadio.bs@SD"
   },
   {
-    "name": "Ecotel TV (720p)",
-    "group": "International News",
-    "tvg_id": "EcotelTV.ec@SD"
+    "name": "LN24SA (1080p)",
+    "group": "News | International",
+    "tvg_id": "LN24SA.za@SD"
   },
   {
-    "name": "Egnatia TV (576p)",
-    "group": "International News",
-    "tvg_id": "EgnatiaTV.gr@SD"
+    "name": "Medi1TV Maghreb (1080p)",
+    "group": "News | International",
+    "tvg_id": "Medi1TVMaghreb.ma@SD"
   },
   {
-    "name": "Ekamra Bharat Odia (400p)",
-    "group": "International News",
-    "tvg_id": "EkamraBharatOdia.in@SD"
+    "name": "Meganoticias Ahora (1080p)",
+    "group": "News | International",
+    "tvg_id": "MeganoticiasAhora.cl@SD"
   },
   {
-    "name": "Ekushey TV (480p)",
-    "group": "International News",
-    "tvg_id": "EkusheyTV.bd@SD"
+    "name": "Mihan TV",
+    "group": "News | International",
+    "tvg_id": "MihanTV.ir@SD"
   },
   {
-    "name": "El Centro TV (720p)",
-    "group": "International News",
-    "tvg_id": "ElCentroTV.cl@SD"
+    "name": "NowMedia Television (1080p)",
+    "group": "News | International",
+    "tvg_id": "NowMediaTelevision.us@HD"
   },
   {
-    "name": "El Nuevo Diario TV (480p)",
-    "group": "International News",
-    "tvg_id": "ElNuevoDiarioTV.do@SD"
+    "name": "RCV TV (712p)",
+    "group": "News | International",
+    "tvg_id": "RCVTV.hn@SD"
+  },
+  {
+    "name": "RNN (720p) [Not 24/7]",
+    "group": "News | International",
+    "tvg_id": "RNN.do@SD"
+  },
+  {
+    "name": "Salem News Channel (1080p)",
+    "group": "News | International",
+    "tvg_id": "SalemNewsChannel.us@SD"
+  },
+  {
+    "name": "TVR Info",
+    "group": "News | International",
+    "tvg_id": "TVRInfo.ro@SD"
+  },
+  {
+    "name": "UN Web TV (540p)",
+    "group": "News | International",
+    "tvg_id": "UNWebTV.us@SD"
+  },
+  {
+    "name": "VEJA+ TV (1080p)",
+    "group": "News | International",
+    "tvg_id": "VEJAPlusTV.br@HD"
+  },
+  {
+    "name": "Al Jazeera Mubasher Broadcast 2 (1080p)",
+    "group": "News | International",
+    "tvg_id": "AlJazeeraMubasherBroadcast2.qa@SD"
+  },
+  {
+    "name": "Al Mashhad (1080p)",
+    "group": "News | International",
+    "tvg_id": "AlMashhad.ae@SD"
+  },
+  {
+    "name": "Al Yaum TV (1080p)",
+    "group": "News | International",
+    "tvg_id": "AlYaumTV.ae@SD"
+  },
+  {
+    "name": "Alikhbaria Syria (1080p)",
+    "group": "News | International",
+    "tvg_id": "AlikhbariaSyria.sy@SD"
+  },
+  {
+    "name": "AMX Noticias (720p) [Not 24/7]",
+    "group": "News | International",
+    "tvg_id": "AMXNoticias.mx@SD"
+  },
+  {
+    "name": "Asharq Radio (1080p)",
+    "group": "News | International",
+    "tvg_id": "AsharqRadio.sa@SD"
+  },
+  {
+    "name": "Bilyonaryo News Channel (1080p) [Geo-blocked]",
+    "group": "News | International",
+    "tvg_id": "BilyonaryoNewsChannel.ph@SD"
+  },
+  {
+    "name": "Brian TV (720p) [Not 24/7]",
+    "group": "News | International",
+    "tvg_id": "BrianTV.la@SD"
+  },
+  {
+    "name": "Canal E (720p)",
+    "group": "News | International",
+    "tvg_id": "CanalE.ar@SD"
+  },
+  {
+    "name": "Citrico TV (480p) [Not 24/7]",
+    "group": "News | International",
+    "tvg_id": "CitricoTV.do@SD"
+  },
+  {
+    "name": "Elyssa TV (1080p)",
+    "group": "News | International",
+    "tvg_id": "ElyssaTV.tn@HD"
+  },
+  {
+    "name": "Estrella News",
+    "group": "News | International",
+    "tvg_id": "0af429c36c6b517e8df2025e809b3964"
+  },
+  {
+    "name": "Finans Turk TV (720p)",
+    "group": "News | International",
+    "tvg_id": "FinansTurkTV.tr@SD"
+  },
+  {
+    "name": "Free Speech TV (720p)",
+    "group": "News | International",
+    "tvg_id": "FreeSpeechTV.us@SD"
+  },
+  {
+    "name": "i24NEWS Hebrew (1080p)",
+    "group": "News | International",
+    "tvg_id": "i24NEWSHebrew.il@SD"
+  },
+  {
+    "name": "Iran International (1080p)",
+    "group": "News | International",
+    "tvg_id": "IranInternational.uk@SD"
+  },
+  {
+    "name": "Kurdsat News (1080p)",
+    "group": "News | International",
+    "tvg_id": "KurdsatNews.iq@SD"
+  },
+  {
+    "name": "Latina Noticias 24/7 (1080p)",
+    "group": "News | International",
+    "tvg_id": "LatinaNoticias247.pe@SD"
+  },
+  {
+    "name": "Law & Crime",
+    "group": "News | International",
+    "tvg_id": "8ba514251e1a58b7b53368177baa1041"
+  },
+  {
+    "name": "Mekameleen TV (1080p)",
+    "group": "News | International",
+    "tvg_id": "MekameleenTV.tr@SD"
+  },
+  {
+    "name": "Naftemporiki TV (1080p)",
+    "group": "News | International",
+    "tvg_id": "NaftemporikiTV.gr@HD"
+  },
+  {
+    "name": "News 12 New York",
+    "group": "News | International",
+    "tvg_id": "6abe7dcc96d5d834853c8d1c93d97230"
+  },
+  {
+    "name": "Newsmax 2",
+    "group": "News | International",
+    "tvg_id": "28844a800a4e54909eec9695aa3762b2"
+  },
+  {
+    "name": "OAN Plus",
+    "group": "News | International",
+    "tvg_id": "e29e205ea1fb529f996ad862a2d6724e"
+  },
+  {
+    "name": "Red TV Lebanon (1080p)",
+    "group": "News | International",
+    "tvg_id": "RedTVLebanon.lb@HD"
+  },
+  {
+    "name": "RNN DOS (720p) [Not 24/7]",
+    "group": "News | International",
+    "tvg_id": "RNN.do@DOS"
+  },
+  {
+    "name": "Shams TV (Iraq) (1080p)",
+    "group": "News | International",
+    "tvg_id": "ShamsTV.iq@SD"
+  },
+  {
+    "name": "Sky News Arabia Vertical (1080p)",
+    "group": "News | International",
+    "tvg_id": "SkyNewsArabiaVertical.ae@HD"
+  },
+  {
+    "name": "Sterk TV (1080p)",
+    "group": "News | International",
+    "tvg_id": "SterkTV.be@SD"
+  },
+  {
+    "name": "Suceso TV (720p) [Not 24/7]",
+    "group": "News | International",
+    "tvg_id": "SucesoTV.py@SD"
+  },
+  {
+    "name": "Telenews TV (1080p)",
+    "group": "News | International",
+    "tvg_id": "TelenewsTV.do@SD"
+  },
+  {
+    "name": "TV Sim Cachoeiro (720p)",
+    "group": "News | International",
+    "tvg_id": "TVSimCachoeiro.br@SD"
+  },
+  {
+    "name": "TVN24 (720p) [Not 24/7]",
+    "group": "News | International",
+    "tvg_id": "TVN24.do@SD"
+  },
+  {
+    "name": "UMSA TVU LP (720p)",
+    "group": "News | International",
+    "tvg_id": "UMSATVULP.bo@SD"
+  },
+  {
+    "name": "Unifranz (720p)",
+    "group": "News | International",
+    "tvg_id": "Unifranz.bo@HD"
+  },
+  {
+    "name": "UNU TV (1080p)",
+    "group": "News | International",
+    "tvg_id": "UNUTV.md@SD"
+  },
+  {
+    "name": "Voice of Lebanon (1080p)",
+    "group": "News | International",
+    "tvg_id": "VoiceofLebanon.lb@SD"
+  },
+  {
+    "name": "Welat TV (1080i)",
+    "group": "News | International",
+    "tvg_id": "WelatTV.sy@HD"
+  },
+  {
+    "name": "Euronews World",
+    "group": "News | International",
+    "tvg_id": "dafd06b712a35fbe9935d4c04c2e8b53"
+  },
+  {
+    "name": "3CatInfo (1080p)",
+    "group": "News | International",
+    "tvg_id": "3CatInfo.es@SD"
+  },
+  {
+    "name": "24 Horas Catalunya (720p)",
+    "group": "News | International",
+    "tvg_id": "24HorasCatalunya.es@SD"
+  },
+  {
+    "name": "ABC7 Sarasota",
+    "group": "News | International",
+    "tvg_id": "50b18dea9c5c51568c1343fcd3d88ec9"
+  },
+  {
+    "name": "ADN 40 (720p)",
+    "group": "News | International",
+    "tvg_id": "ADN40.mx@SD"
+  },
+  {
+    "name": "ADN TV (720p)",
+    "group": "News | International",
+    "tvg_id": "ADNTV.cl@SD"
+  },
+  {
+    "name": "Africa 24 English (1080p)",
+    "group": "News | International",
+    "tvg_id": "Africa24English.fr@SD"
+  },
+  {
+    "name": "Africanews French (720p)",
+    "group": "News | International",
+    "tvg_id": "AfricanewsFrench.fr@SD"
+  },
+  {
+    "name": "Al Jazeera Mubasher 24 (1080p)",
+    "group": "News | International",
+    "tvg_id": "AlJazeeraMubasher24.qa@SD"
+  },
+  {
+    "name": "Al Masirah Mubacher (642p) [Not 24/7]",
+    "group": "News | International",
+    "tvg_id": "AlMasirahMubacher.ye@SD"
+  },
+  {
+    "name": "Al Najah News (720p)",
+    "group": "News | International",
+    "tvg_id": "AlNajahNews.ps@SD"
+  },
+  {
+    "name": "Atacama Noticias (720p) [Not 24/7]",
+    "group": "News | International",
+    "tvg_id": "AtacamaNoticias.cl@SD"
+  },
+  {
+    "name": "C4 en Alerta",
+    "group": "News | International",
+    "tvg_id": "5cbb91d07dbd5b92ae3ef3e37be7f2ce"
+  },
+  {
+    "name": "Canal 24 Horas Canarias (720p)",
+    "group": "News | International",
+    "tvg_id": "24HorasCanarias.es@SD"
+  },
+  {
+    "name": "Carivision (1080p) [Geo-blocked]",
+    "group": "News | International",
+    "tvg_id": "Carivision.do@SD"
+  },
+  {
+    "name": "Catamarca TV (720p)",
+    "group": "News | International",
+    "tvg_id": "CatamarcaTV.ar@SD"
+  },
+  {
+    "name": "Channel8 (720p)",
+    "group": "News | International",
+    "tvg_id": "Channel8.iq@SD"
+  },
+  {
+    "name": "Channel 3 Eyewitness News",
+    "group": "News | International",
+    "tvg_id": "307cbde3d30957828ff68b3b979d6958"
+  },
+  {
+    "name": "Channel 24 (Ukraine) (1080p)",
+    "group": "News | International",
+    "tvg_id": "Channel24.ua@SD"
+  },
+  {
+    "name": "Cleveland 19 News Plus",
+    "group": "News | International",
+    "tvg_id": "d0d9af56b7735c318b66afe21089d028"
+  },
+  {
+    "name": "Conecta2TV (720p) [Not 24/7]",
+    "group": "News | International",
+    "tvg_id": "Conecta2TV.pe@SD"
+  },
+  {
+    "name": "CRTV News",
+    "group": "News | International",
+    "tvg_id": "CRTVNews.cm@SD"
+  },
+  {
+    "name": "Di TV (1080p)",
+    "group": "News | International",
+    "tvg_id": "DiTV.se@SD"
   },
   {
     "name": "El Pinguino TV (720p)",
-    "group": "International News",
+    "group": "News | International",
     "tvg_id": "ElPinguinoTV.cl@SD"
   },
   {
     "name": "ERT News HD (1080p)",
-    "group": "International News",
+    "group": "News | International",
     "tvg_id": "ERTNews.gr@HD"
   },
   {
-    "name": "Estrella TV",
-    "group": "International News",
-    "tvg_id": "91dff2b8a62b5fe1bdf64de721032cba"
-  },
-  {
     "name": "Etna Espresso Channel (720p)",
-    "group": "International News",
+    "group": "News | International",
     "tvg_id": "EtnaEspressoChannel.it@SD"
   },
   {
-    "name": "ETV News (1080p)",
-    "group": "International News",
-    "tvg_id": "ETVNews.in@HD"
-  },
-  {
     "name": "Euronews (720p)",
-    "group": "International News",
+    "group": "News | International",
     "tvg_id": "Euronews.pl@FAST"
   },
   {
-    "name": "Euronews Georgia",
-    "group": "International News",
-    "tvg_id": "EuronewsGeorgia.ge@SD"
-  },
-  {
     "name": "Euronews Greek (720p)",
-    "group": "International News",
+    "group": "News | International",
     "tvg_id": "EuronewsGreek.fr@SD"
   },
   {
-    "name": "Euronews Romania (576p)",
-    "group": "International News",
-    "tvg_id": "EuronewsRomania.ro@SD"
-  },
-  {
-    "name": "Euronews World",
-    "group": "International News",
-    "tvg_id": "dafd06b712a35fbe9935d4c04c2e8b53"
-  },
-  {
-    "name": "Europe 1 TV (1080p)",
-    "group": "International News",
-    "tvg_id": "Europe1TV.fr@HD"
-  },
-  {
     "name": "Expressen TV (1080p)",
-    "group": "International News",
+    "group": "News | International",
     "tvg_id": "ExpressenTV.se@SD"
   },
   {
-    "name": "Extra ProNews (576p)",
-    "group": "International News",
-    "tvg_id": "ExtraProNews.gr@SD"
-  },
-  {
-    "name": "Finans Turk TV (720p)",
-    "group": "International News",
-    "tvg_id": "FinansTurkTV.tr@SD"
-  },
-  {
     "name": "First Alert 4 St. Louis",
-    "group": "International News",
+    "group": "News | International",
     "tvg_id": "e8f8972f377a598590592ecd079e7cc4"
   },
   {
-    "name": "First Channel News (1080p)",
-    "group": "International News",
-    "tvg_id": "FirstChannelNews.am@SD"
-  },
-  {
-    "name": "For You TV",
-    "group": "International News",
-    "tvg_id": "ForYouTV.cm@SD"
-  },
-  {
-    "name": "Fox 5",
-    "group": "International News",
-    "tvg_id": "442d91ee-46f3-4dc7-bbde-05f6775e9e6f"
-  },
-  {
-    "name": "Fox News Radio (720p)",
-    "group": "International News",
-    "tvg_id": "FoxNewsRadio.us@SD"
-  },
-  {
-    "name": "FOX Weather",
-    "group": "International News",
-    "tvg_id": "0838d5ccb1d5564d98fb804ab314c85e"
-  },
-  {
-    "name": "France 24 FAST English (1080p)",
-    "group": "International News",
-    "tvg_id": ""
-  },
-  {
-    "name": "Free Speech TV (720p)",
-    "group": "International News",
-    "tvg_id": "FreeSpeechTV.us@SD"
-  },
-  {
     "name": "Fresh News",
-    "group": "International News",
+    "group": "News | International",
     "tvg_id": "FreshNews.kh@SD"
   },
   {
-    "name": "FZTV-1 News \u65b0\u95fb\u7efc\u5408\u9891\u9053",
-    "group": "International News",
-    "tvg_id": "FZTV1.cn"
-  },
-  {
-    "name": "Gem TV (720p)",
-    "group": "International News",
-    "tvg_id": "GemTV.in@SD"
-  },
-  {
-    "name": "Global India (720p)",
-    "group": "International News",
-    "tvg_id": "GlobalIndia.in@SD"
-  },
-  {
-    "name": "Global News",
-    "group": "International News",
-    "tvg_id": "GlobalNews.ca"
-  },
-  {
-    "name": "Global News BC",
-    "group": "International News",
-    "tvg_id": "62cbf063257170000724590c"
-  },
-  {
-    "name": "Global News Calgary",
-    "group": "International News",
-    "tvg_id": "62cbf23dcfb48300077f8348"
-  },
-  {
-    "name": "Global News Edmonton",
-    "group": "International News",
-    "tvg_id": "62cbf2de1fba5f0007e47d9c"
-  },
-  {
-    "name": "Global News Halifax",
-    "group": "International News",
-    "tvg_id": "62cbf398b8e02600071deda5"
-  },
-  {
-    "name": "Global News Kingston",
-    "group": "International News",
-    "tvg_id": "62cbf4964446e2000742073e"
-  },
-  {
-    "name": "Global News Lethbridge",
-    "group": "International News",
-    "tvg_id": "62cbf7439cb58900088dc77b"
-  },
-  {
-    "name": "Global News Montreal",
-    "group": "International News",
-    "tvg_id": "62cbfbd6ad95670007f567af"
-  },
-  {
-    "name": "Global News Okanagan",
-    "group": "International News",
-    "tvg_id": "62cbfc572dc3750007a493ce"
-  },
-  {
-    "name": "Global News Peterborough",
-    "group": "International News",
-    "tvg_id": "62cbfcd8c2db990007861e43"
-  },
-  {
-    "name": "Global News Regina",
-    "group": "International News",
-    "tvg_id": "62cbff53ca8f2200080253b5"
-  },
-  {
-    "name": "Global News Toronto",
-    "group": "International News",
-    "tvg_id": "62cc00b3b821cf00070f82c3"
-  },
-  {
-    "name": "Global News Winnipeg",
-    "group": "International News",
-    "tvg_id": "CKNDDT.ca"
-  },
-  {
-    "name": "Global Punjab (1080p)",
-    "group": "International News",
-    "tvg_id": "GlobalPunjab.in@SD"
-  },
-  {
-    "name": "Globe TV (720p)",
-    "group": "International News",
-    "tvg_id": "GlobeTV.in@SD"
-  },
-  {
-    "name": "Govorit Moskva (720p)",
-    "group": "International News",
-    "tvg_id": "GovoritMoskva.ru@SD"
-  },
-  {
-    "name": "GS TV (576p)",
-    "group": "International News",
-    "tvg_id": "GSTV.in@SD"
-  },
-  {
-    "name": "Guarantee News (1080p)",
-    "group": "International News",
-    "tvg_id": "GuaranteeNews.in@SD"
-  },
-  {
-    "name": "Guardian Talk Radio (1080p)",
-    "group": "International News",
-    "tvg_id": "GuardianTalkRadio.bs@SD"
-  },
-  {
     "name": "Gugbang TV (1080p) [Not 24/7]",
-    "group": "International News",
+    "group": "News | International",
     "tvg_id": "GugbangTV.kr@SD"
   },
   {
-    "name": "Haber61 TV (720p) [Not 24/7]",
-    "group": "International News",
-    "tvg_id": "Haber61TV.tr@SD"
-  },
-  {
     "name": "Haiti News Channel (1080p) [Not 24/7]",
-    "group": "International News",
+    "group": "News | International",
     "tvg_id": "HaitiNewsChannel.ht@SD"
   },
   {
-    "name": "Hamdard TV (1080p)",
-    "group": "International News",
-    "tvg_id": "HamdardTV.ca@SD"
-  },
-  {
-    "name": "Harbin Comprehensive News Channel",
-    "group": "International News",
-    "tvg_id": "HarbinComprehensiveNewsChannel.cn@SD"
-  },
-  {
-    "name": "HBO 3 (Czech Republic)",
-    "group": "International News",
-    "tvg_id": "HBO3.cz@SD"
-  },
-  {
-    "name": "Hermanas Mirabal TV (720p) [Not 24/7]",
-    "group": "International News",
-    "tvg_id": "HermanasMirabalTV.do@SD"
-  },
-  {
-    "name": "High News (480p)",
-    "group": "International News",
-    "tvg_id": "HighNews.in@SD"
-  },
-  {
-    "name": "HMI PROMZ NEWS (720p)",
-    "group": "International News",
-    "tvg_id": "HMIPROMZNEWS.us@SD"
-  },
-  {
-    "name": "HTV9 (1080p)",
-    "group": "International News",
-    "tvg_id": "HTV9.vn@SD"
-  },
-  {
     "name": "I News (1080p)",
-    "group": "International News",
+    "group": "News | International",
     "tvg_id": "INews.iq@SD"
   },
   {
-    "name": "i24NEWS Hebrew (1080p)",
-    "group": "International News",
-    "tvg_id": "i24NEWSHebrew.il@SD"
+    "name": "Lenca TV (720p) [Not 24/7]",
+    "group": "News | International",
+    "tvg_id": "LencaTV.hn@SD"
   },
   {
-    "name": "ICN Digital",
-    "group": "International News",
-    "tvg_id": "ICNDigital.hn@SD"
+    "name": "Lira TV",
+    "group": "News | International",
+    "tvg_id": "LiraTV.it@SD"
   },
   {
-    "name": "IN | ABP Ananda",
-    "group": "International News",
-    "tvg_id": ""
+    "name": "Mega News",
+    "group": "News | International",
+    "tvg_id": "MegaChannel.gr"
   },
   {
-    "name": "IN | Calcutta News",
-    "group": "International News",
-    "tvg_id": ""
+    "name": "Miracle Channel (1080p)",
+    "group": "News | International",
+    "tvg_id": "MiracleChannel.se@SD"
   },
   {
-    "name": "IN | High News",
-    "group": "International News",
+    "name": "NCTV (1080p)",
+    "group": "News | International",
+    "tvg_id": "NCTV.cl@SD"
+  },
+  {
+    "name": "Noticiero 90 Minutos (1080p)",
+    "group": "News | International",
+    "tvg_id": "Noticiero90Minutos.co@SD"
+  },
+  {
+    "name": "NTD TV English UK (1080p)",
+    "group": "News | International",
+    "tvg_id": "NTDTVEnglish.us@UK"
+  },
+  {
+    "name": "Observator News (360p)",
+    "group": "News | International",
+    "tvg_id": "ObservatorNews.ro@SD"
+  },
+  {
+    "name": "Panorama TV (720p)",
+    "group": "News | International",
+    "tvg_id": "PanoramaTV.al@SD"
+  },
+  {
+    "name": "PBO (1080p)",
+    "group": "News | International",
+    "tvg_id": "PBO.pe@SD"
+  },
+  {
+    "name": "Prensa Latina TV (1080p)",
+    "group": "News | International",
+    "tvg_id": "PrensaLatinaTV.cu@SD"
+  },
+  {
+    "name": "Redseat The First (720p)",
+    "group": "News | International",
+    "tvg_id": "RedseatTheFirst.us@SD"
+  },
+  {
+    "name": "SABC Lehae [Geo-blocked]",
+    "group": "News | International",
+    "tvg_id": "SABCLehae.za@SD"
+  },
+  {
+    "name": "SABC News (720p) [Geo-blocked]",
+    "group": "News | International",
+    "tvg_id": "SABCNews.za@SD"
+  },
+  {
+    "name": "SBT News (720p)",
+    "group": "News | International",
+    "tvg_id": "SBTNews.br@SD"
+  },
+  {
+    "name": "Star Kentrikis Elladas (1080p)",
+    "group": "News | International",
+    "tvg_id": "StarKentrikisElladas.gr@SD"
+  },
+  {
+    "name": "Super Express TV (1080p)",
+    "group": "News | International",
+    "tvg_id": "SuperExpressTV.pl@FAST"
+  },
+  {
+    "name": "Times Brasil (720p)",
+    "group": "News | International",
+    "tvg_id": "TimesBrasil.br@SD"
+  },
+  {
+    "name": "TOI Global (1080p)",
+    "group": "News | International",
+    "tvg_id": "TOIGlobal.in@SD"
+  },
+  {
+    "name": "TOLOnews (720p)",
+    "group": "News | International",
+    "tvg_id": "TOLOnews.af@SD"
+  },
+  {
+    "name": "TV Sim Colatina (720p)",
+    "group": "News | International",
+    "tvg_id": "TVSimColatina.br@SD"
+  },
+  {
+    "name": "Visir (1080p)",
+    "group": "News | International",
+    "tvg_id": "Visir.is@SD"
+  },
+  {
+    "name": "WBTV News 3",
+    "group": "News | International",
+    "tvg_id": "bf7ee95e6a905222a1d24174120cc106"
+  },
+  {
+    "name": "WSMV 4 News",
+    "group": "News | International",
+    "tvg_id": "d53b1fb8c41f574387cde82d084515ea"
+  },
+  {
+    "name": "7 Info",
+    "group": "News | International",
+    "tvg_id": "7Info.ci@SD"
+  },
+  {
+    "name": "ACN TV (1080p)",
+    "group": "News | International",
+    "tvg_id": "ACNTV.cm@SD"
+  },
+  {
+    "name": "ARB 24",
+    "group": "News | International",
+    "tvg_id": "ARB24.az@SD"
+  },
+  {
+    "name": "Big TV 24x7 (576i)",
+    "group": "News | International",
+    "tvg_id": "BigTV24x7.in@SD"
+  },
+  {
+    "name": "Canal Sur Noticias",
+    "group": "News | International",
+    "tvg_id": "CanalSurNoticias.es@SD"
+  },
+  {
+    "name": "CNEWS PRIME (1080p)",
+    "group": "News | International",
+    "tvg_id": "CNEWSPRIME.fr@HD"
+  },
+  {
+    "name": "De Ultimo Minuto TV",
+    "group": "News | International",
+    "tvg_id": "DeUltimoMinutoTV.do@SD"
+  },
+  {
+    "name": "El Nuevo Diario TV (480p)",
+    "group": "News | International",
+    "tvg_id": "ElNuevoDiarioTV.do@SD"
+  },
+  {
+    "name": "Linieros TV (480p) [Not 24/7]",
+    "group": "News | International",
+    "tvg_id": "LinierosTV.do@SD"
+  },
+  {
+    "name": "Multivision Federal",
+    "group": "News | International",
+    "tvg_id": "MultivisionFederal.ar@SD"
+  },
+  {
+    "name": "Nanduti (1080p)",
+    "group": "News | International",
+    "tvg_id": "Nanduti.py@SD"
+  },
+  {
+    "name": "News24 World",
+    "group": "News | International",
+    "tvg_id": "News24World.au@SD"
+  },
+  {
+    "name": "PSN (288p)",
+    "group": "News | International",
+    "tvg_id": "PSN.mx@SD"
+  },
+  {
+    "name": "PSN Canal 45.2 (288p)",
+    "group": "News | International",
+    "tvg_id": "PSNCanal452.mx@SD"
+  },
+  {
+    "name": "Quantica TV",
+    "group": "News | International",
+    "tvg_id": "QuanticaTV.ar@SD"
+  },
+  {
+    "name": "RDN (1080p) [Not 24/7]",
+    "group": "News | International",
+    "tvg_id": "RDN.do@SD"
+  },
+  {
+    "name": "Television del Este (1080p) [Not 24/7]",
+    "group": "News | International",
+    "tvg_id": "TelevisiondelEste.do@SD"
+  },
+  {
+    "name": "tv9 Telemaremma (576p)",
+    "group": "News | International",
+    "tvg_id": "tv9Telemaremma.it@HD"
+  },
+  {
+    "name": "UNE TV (720p)",
+    "group": "News | International",
+    "tvg_id": "UNETV.hn@SD"
+  },
+  {
+    "name": "VIVE TV (1080p)",
+    "group": "News | International",
+    "tvg_id": "VIVETV.ar@HD"
+  },
+  {
+    "name": "A24 Paraguay (1080p)",
+    "group": "News | International",
+    "tvg_id": "A24Paraguay.py@SD"
+  },
+  {
+    "name": "El Centro TV (720p)",
+    "group": "News | International",
+    "tvg_id": "ElCentroTV.cl@SD"
+  },
+  {
+    "name": "Estrella TV",
+    "group": "News | International",
+    "tvg_id": "91dff2b8a62b5fe1bdf64de721032cba"
+  },
+  {
+    "name": "Europe 1 TV (1080p)",
+    "group": "News | International",
+    "tvg_id": "Europe1TV.fr@HD"
+  },
+  {
+    "name": "24 Kanal (720p)",
+    "group": "News | International",
+    "tvg_id": "24Kanal.ua@SD"
+  },
+  {
+    "name": "Advocate Broadcasting Network (576p)",
+    "group": "News | International",
+    "tvg_id": "AdvocateBroadcastingNetwork.ng@SD"
+  },
+  {
+    "name": "Antena 3 Constanta (576p)",
+    "group": "News | International",
+    "tvg_id": "Antena3Constanta.ro@SD"
+  },
+  {
+    "name": "Contivision (720p)",
+    "group": "News | International",
+    "tvg_id": "Contivision.cl@SD"
+  },
+  {
+    "name": "Corfu Channel (720p)",
+    "group": "News | International",
+    "tvg_id": "CorfuChannel.gr@SD"
+  },
+  {
+    "name": "C\u00f3rdoba TV [Not 24/7]",
+    "group": "News | International",
+    "tvg_id": "CordobaTV.es@SD"
+  },
+  {
+    "name": "Dong Nai TV 1 (1080p)",
+    "group": "News | International",
+    "tvg_id": "DongNaiTV1.vn@SD"
+  },
+  {
+    "name": "Extra ProNews (576p)",
+    "group": "News | International",
+    "tvg_id": "ExtraProNews.gr@SD"
+  },
+  {
+    "name": "GS TV (576p)",
+    "group": "News | International",
+    "tvg_id": "GSTV.in@SD"
+  },
+  {
+    "name": "HTV9 (1080p)",
+    "group": "News | International",
+    "tvg_id": "HTV9.vn@SD"
+  },
+  {
+    "name": "Informer TV (720p)",
+    "group": "News | International",
+    "tvg_id": "InformerTV.rs@SD"
+  },
+  {
+    "name": "IRINN (576p)",
+    "group": "News | International",
+    "tvg_id": "IRINN.ir@SD"
+  },
+  {
+    "name": "L'altro Corriere TV",
+    "group": "News | International",
+    "tvg_id": "LaltroCorriereTV.it@SD"
+  },
+  {
+    "name": "LaC News 24 (720p)",
+    "group": "News | International",
+    "tvg_id": "LaCNews24.it@SD"
+  },
+  {
+    "name": "Life TV (Turkiye) (720p) [Not 24/7]",
+    "group": "News | International",
+    "tvg_id": "LifeTV.tr@SD"
+  },
+  {
+    "name": "Madhimugam TV (576p)",
+    "group": "News | International",
+    "tvg_id": "MadhimugamTV.in@SD"
+  },
+  {
+    "name": "Malabar News (720p)",
+    "group": "News | International",
+    "tvg_id": "MalabarNews.in@SD"
+  },
+  {
+    "name": "Minformo TV (720p)",
+    "group": "News | International",
+    "tvg_id": "MinformoTV.it@SD"
+  },
+  {
+    "name": "News 24 BD",
+    "group": "News | International",
+    "tvg_id": "2b1a4340-2557-4d57-b77c-657bb30ce0c8"
+  },
+  {
+    "name": "News Daily 24 (576p)",
+    "group": "News | International",
+    "tvg_id": "NewsDaily24.in@SD"
+  },
+  {
+    "name": "News Live Bangla (576p)",
+    "group": "News | International",
+    "tvg_id": "NewsLiveBangla.in@SD"
+  },
+  {
+    "name": "OlayTurk TV (720p) [Geo-blocked]",
+    "group": "News | International",
+    "tvg_id": "OlayTurkTV.tr@SD"
+  },
+  {
+    "name": "RSelvaTV (720p)",
+    "group": "News | International",
+    "tvg_id": "RSelvaTV.pe@SD"
+  },
+  {
+    "name": "SK 1 (720p)",
+    "group": "News | International",
+    "tvg_id": "SK1.ua@SD"
+  },
+  {
+    "name": "Sky News Extra 2 (540p) [Not 24/7]",
+    "group": "News | International",
+    "tvg_id": "SkyNewsExtra2.au@SD"
+  },
+  {
+    "name": "Sky News Extra 3 (1080p)",
+    "group": "News | International",
+    "tvg_id": "SkyNewsExtra3.au@SD"
+  },
+  {
+    "name": "T13 En Vivo (1080p)",
+    "group": "News | International",
+    "tvg_id": "T13EnVivo.cl@SD"
+  },
+  {
+    "name": "Telegela 647 (720p)",
+    "group": "News | International",
+    "tvg_id": "Telegela647.it@SD"
+  },
+  {
+    "name": "Thanthi TV (576p)",
+    "group": "News | International",
+    "tvg_id": "ThanthiTV.in@SD"
+  },
+  {
+    "name": "Tolk (720p)",
+    "group": "News | International",
+    "tvg_id": "Tolk.ru@HD"
+  },
+  {
+    "name": "TV27 News (360p)",
+    "group": "News | International",
+    "tvg_id": "TV27News.in@SD"
+  },
+  {
+    "name": "TV Brusque (720p)",
+    "group": "News | International",
+    "tvg_id": "TVBrusque.br@SD"
+  },
+  {
+    "name": "TVideoNews (720p) [Not 24/7]",
+    "group": "News | International",
+    "tvg_id": "TVideoNews.br@SD"
+  },
+  {
+    "name": "Weathernews (720p)",
+    "group": "News | International",
+    "tvg_id": "Weathernews.jp@SD"
+  },
+  {
+    "name": "\u0110\u1ed3ng Nai 1 (480p) [Not 24/7]",
+    "group": "News | International",
+    "tvg_id": "DongNaiTV1.vn@SD"
+  },
+  {
+    "name": "100% NEWS (576p)",
+    "group": "News | International",
+    "tvg_id": "100NEWS.ua@SD"
+  },
+  {
+    "name": "Afghanistan International (720p)",
+    "group": "News | International",
+    "tvg_id": "AfghanistanInternational.uk@SD"
+  },
+  {
+    "name": "Afrik Info TV",
+    "group": "News | International",
+    "tvg_id": "AfrikInfoTV.gn@SD"
+  },
+  {
+    "name": "AL24 News",
+    "group": "News | International",
+    "tvg_id": "AL24News.dz@SD"
+  },
+  {
+    "name": "Al Alam Al Yawm",
+    "group": "News | International",
+    "tvg_id": "AlAlamAlYawm.sa@SD"
+  },
+  {
+    "name": "Al Masar TV (576p)",
+    "group": "News | International",
+    "tvg_id": "AlMasarTV.ly@SD"
+  },
+  {
+    "name": "Alalam News Channel Syria (1080p)",
+    "group": "News | International",
+    "tvg_id": "AlalamNewsChannelSyria.sy@SD"
+  },
+  {
+    "name": "Almahriah TV (576p)",
+    "group": "News | International",
+    "tvg_id": "AlmahriahTV.tr@SD"
+  },
+  {
+    "name": "ALWifak News TV (720p)",
+    "group": "News | International",
+    "tvg_id": "ALWifakNewsTV.lb@SD"
+  },
+  {
+    "name": "Antena 3 CNN HD (1080i)",
+    "group": "News | International",
+    "tvg_id": "Antena3CNN.ro@HD"
+  },
+  {
+    "name": "Antik Info TV (1080p)",
+    "group": "News | International",
+    "tvg_id": "AntikInfoTV.sk@HD"
+  },
+  {
+    "name": "Baraka Television (720p) [Not 24/7]",
+    "group": "News | International",
+    "tvg_id": "BarakaTelevision.cd@SD"
+  },
+  {
+    "name": "Canal Metropolitano de Noticias",
+    "group": "News | International",
+    "tvg_id": "CanalMetropolitanodeNoticias.br@SD"
+  },
+  {
+    "name": "Dabanga TV (1080p)",
+    "group": "News | International",
+    "tvg_id": "DabangaTV.sd@SD"
+  },
+  {
+    "name": "DVB TV (720p) [Geo-blocked]",
+    "group": "News | International",
+    "tvg_id": "DVBTV.mm@SD"
+  },
+  {
+    "name": "Euronews Georgia",
+    "group": "News | International",
+    "tvg_id": "EuronewsGeorgia.ge@SD"
+  },
+  {
+    "name": "Euronews Romania (576p)",
+    "group": "News | International",
+    "tvg_id": "EuronewsRomania.ro@SD"
+  },
+  {
+    "name": "For You TV",
+    "group": "News | International",
+    "tvg_id": "ForYouTV.cm@SD"
+  },
+  {
+    "name": "IraneFarda TV (720p)",
+    "group": "News | International",
+    "tvg_id": "IraneFardaTV.uk@SD"
+  },
+  {
+    "name": "Kapaz TV",
+    "group": "News | International",
+    "tvg_id": "KapazTV.az@SD"
+  },
+  {
+    "name": "Lolwe TV (576p) [Not 24/7]",
+    "group": "News | International",
+    "tvg_id": "LolweTV.ke@SD"
+  },
+  {
+    "name": "M95 Television Marbella (1080p) [Not 24/7]",
+    "group": "News | International",
+    "tvg_id": "M95TelevisionMarbella.es@SD"
+  },
+  {
+    "name": "Markiza TN Live",
+    "group": "News | International",
+    "tvg_id": "MarkizaTNLive.sk@SD"
+  },
+  {
+    "name": "Mercurio Noticias",
+    "group": "News | International",
+    "tvg_id": "MercurioNoticias.ar@SD"
+  },
+  {
+    "name": "Monaco Info (1080p)",
+    "group": "News | International",
+    "tvg_id": "MonacoInfo.mc@SD"
+  },
+  {
+    "name": "Moon TV (576p)",
+    "group": "News | International",
+    "tvg_id": "MoonTV.in@SD"
+  },
+  {
+    "name": "Newsmax Balkans (1080p)",
+    "group": "News | International",
+    "tvg_id": "NewsmaxBalkans.ba@SD"
+  },
+  {
+    "name": "Newsmax Polska (576i)",
+    "group": "News | International",
+    "tvg_id": "NewsmaxPolska.pl@SD"
+  },
+  {
+    "name": "Norte Informativo TV (240p)",
+    "group": "News | International",
+    "tvg_id": "NorteInformativoTV.cr@SD"
+  },
+  {
+    "name": "Obshchestvennoe Nezavisimoe Televidenie (576p)",
+    "group": "News | International",
+    "tvg_id": "ObshchestvennoeNezavisimoeTelevidenie.ua@SD"
+  },
+  {
+    "name": "Oplot TV (1080p) [Geo-blocked]",
+    "group": "News | International",
+    "tvg_id": "OplotTV.ru@Khartsyzsk"
+  },
+  {
+    "name": "Prima News",
+    "group": "News | International",
+    "tvg_id": "PrimaNews.ro@SD"
+  },
+  {
+    "name": "PROTV News (1080p)",
+    "group": "News | International",
+    "tvg_id": "PROTVNews.ro@SD"
+  },
+  {
+    "name": "Puranoticia TV (720p)",
+    "group": "News | International",
+    "tvg_id": "PuranoticiaTV.cl@SD"
+  },
+  {
+    "name": "Radio Ancon (720p)",
+    "group": "News | International",
+    "tvg_id": "RadioAncon.pa@SD"
+  },
+  {
+    "name": "Radio Isla TV (1080p)",
+    "group": "News | International",
+    "tvg_id": "RadioIslaTV.pr@SD"
+  },
+  {
+    "name": "Realitatea TV (406p)",
+    "group": "News | International",
+    "tvg_id": "RealitateaTV.md@SD"
+  },
+  {
+    "name": "Sahara 24 (1080p)",
+    "group": "News | International",
+    "tvg_id": "Sahara24.mr@HD"
+  },
+  {
+    "name": "Suara Surabaya Visual Radio (720p)",
+    "group": "News | International",
+    "tvg_id": "SuaraSurabayaVisualRadio.id@Surabaya"
+  },
+  {
+    "name": "TTV News",
+    "group": "News | International",
+    "tvg_id": "TTVNews.tw@SD"
+  },
+  {
+    "name": "UNews (1080p)",
+    "group": "News | International",
+    "tvg_id": "UNews.lb@SD"
+  },
+  {
+    "name": "Vergina TV (1080p)",
+    "group": "News | International",
+    "tvg_id": "VerginaTV.gr@SD"
+  },
+  {
+    "name": "Vesti FM (720p)",
+    "group": "News | International",
+    "tvg_id": "VestiFM.ru@HD"
+  },
+  {
+    "name": "VTV (Maldives)",
+    "group": "News | International",
+    "tvg_id": "VTV.mv@SD"
+  },
+  {
+    "name": "Afrique Media (720p)",
+    "group": "News | International",
+    "tvg_id": "AfriqueMedia.cm@SD"
+  },
+  {
+    "name": "Connecting America",
+    "group": "News | International",
     "tvg_id": ""
   },
   {
     "name": "IN | Republic Bangla",
-    "group": "International News",
+    "group": "News | International",
     "tvg_id": ""
   },
   {
-    "name": "IN | Zee 24 Ghanta",
-    "group": "International News",
+    "name": "Yahoo News",
+    "group": "News | International",
     "tvg_id": ""
   },
   {
-    "name": "India Daily 24x7",
-    "group": "International News",
-    "tvg_id": "IN4000007M9"
+    "name": "LRT Radijas (1080p)",
+    "group": "News | International",
+    "tvg_id": "LRTRadijas.lt@SD"
   },
   {
-    "name": "India TV Aap Ki Adalat (1080p) [Geo-blocked]",
-    "group": "International News",
-    "tvg_id": "IndiaTVAapKiAdalat.in@SD"
-  },
-  {
-    "name": "India TV News",
-    "group": "International News",
-    "tvg_id": "IN4000001LP"
-  },
-  {
-    "name": "Indywood TV (720p)",
-    "group": "International News",
-    "tvg_id": "IndywoodTV.in@SD"
-  },
-  {
-    "name": "Informatia TV",
-    "group": "International News",
-    "tvg_id": "InformatiaTV.ro@SD"
-  },
-  {
-    "name": "Informer TV (720p)",
-    "group": "International News",
-    "tvg_id": "InformerTV.rs@SD"
-  },
-  {
-    "name": "Iran International (1080p)",
-    "group": "International News",
-    "tvg_id": "IranInternational.uk@SD"
-  },
-  {
-    "name": "IraneFarda TV",
-    "group": "International News",
-    "tvg_id": "IraneFardaTV.uk@SD"
-  },
-  {
-    "name": "IRINN (576p)",
-    "group": "International News",
-    "tvg_id": "IRINN.ir@SD"
-  },
-  {
-    "name": "J3NEWS TV",
-    "group": "International News",
-    "tvg_id": "J3NEWSTV.br@SD"
-  },
-  {
-    "name": "Jago News 24",
-    "group": "International News",
-    "tvg_id": ""
-  },
-  {
-    "name": "Jingmen Comprehensive News Channel",
-    "group": "International News",
-    "tvg_id": "JingmenComprehensiveNewsChannel.cn@SD"
-  },
-  {
-    "name": "Kadak (1080p)",
-    "group": "International News",
-    "tvg_id": "Kadak.in@SD"
-  },
-  {
-    "name": "Kannur Vision (1080p)",
-    "group": "International News",
-    "tvg_id": "KannurVision.in@SD"
-  },
-  {
-    "name": "Kapaz TV",
-    "group": "International News",
-    "tvg_id": "KapazTV.az@SD"
-  },
-  {
-    "name": "Karnataka News Beat (1080p)",
-    "group": "International News",
-    "tvg_id": "KarnatakaNewsBeat.in@SD"
-  },
-  {
-    "name": "KBC News (1080p)",
-    "group": "International News",
-    "tvg_id": "KBCNews.in@SD"
-  },
-  {
-    "name": "KBP Times (1080p)",
-    "group": "International News",
-    "tvg_id": "KBPTimes.in@SD"
-  },
-  {
-    "name": "KPTV FOX 12 Oregon News",
-    "group": "International News",
-    "tvg_id": "5c8d77c2f6b85da3a7e74223b769ef5c"
-  },
-  {
-    "name": "KTN News (360p)",
-    "group": "International News",
-    "tvg_id": "KTNNews.pk@SD"
+    "name": "Haber61 TV (720p) [Not 24/7]",
+    "group": "News | International",
+    "tvg_id": "Haber61TV.tr@SD"
   },
   {
     "name": "KTV News (1080p)",
-    "group": "International News",
+    "group": "News | International",
     "tvg_id": "KTVNews.kw@SD"
   },
   {
-    "name": "Kurdsat News (1080p)",
-    "group": "International News",
-    "tvg_id": "KurdsatNews.iq@SD"
+    "name": "NAN TV",
+    "group": "News | International",
+    "tvg_id": "NANTV.bd@SD"
+  },
+  {
+    "name": "Radio Uno Tacna (720p)",
+    "group": "News | International",
+    "tvg_id": "RadioUnoTacna.pe@SD"
+  },
+  {
+    "name": "Telediario Now",
+    "group": "News | International",
+    "tvg_id": "ceb64d994c7756c2a8f09ace94c3e43f"
+  },
+  {
+    "name": "Turno (720p)",
+    "group": "News | International",
+    "tvg_id": "Turno.cl@SD"
+  },
+  {
+    "name": "Alert TV (576p) [Not 24/7]",
+    "group": "News | International",
+    "tvg_id": "AlertTV.gr@SD"
+  },
+  {
+    "name": "CCTV+ 2 (600p) [Not 24/7]",
+    "group": "News | International",
+    "tvg_id": "CCTVPlus2.cn@SD"
+  },
+  {
+    "name": "D\u0130M TV (720p) [Geo-blocked]",
+    "group": "News | International",
+    "tvg_id": "DimTV.tr@SD"
+  },
+  {
+    "name": "like Gecko) Chrome/144.0.0.0 Safari/537.36\" group-title=\"Business;News\",CNBC Mongolia (720p)",
+    "group": "News | International",
+    "tvg_id": "CNBCMongolia.mn@SD"
+  },
+  {
+    "name": "like Gecko) Chrome/147.0.0.0 Safari/537.36\" group-title=\"News\",Public First (576p)",
+    "group": "News | International",
+    "tvg_id": "PublicFirst.in@SD"
+  },
+  {
+    "name": "Ma'an TV (720p)",
+    "group": "News | International",
+    "tvg_id": "MaanTV.ps@SD"
+  },
+  {
+    "name": "News Central",
+    "group": "News | International",
+    "tvg_id": "NewsCentral.ng@SD"
+  },
+  {
+    "name": "Pervyy Respublikanskiy",
+    "group": "News | International",
+    "tvg_id": "PervyyRespublikanskiy.ru@SD"
+  },
+  {
+    "name": "Silverbird News 24 (576p)",
+    "group": "News | International",
+    "tvg_id": "SilverbirdNews24.ng@SD"
+  },
+  {
+    "name": "Sky News Extra 1 (540p)",
+    "group": "News | International",
+    "tvg_id": "SkyNewsExtra1.au@SD"
+  },
+  {
+    "name": "ICN Digital",
+    "group": "News | International",
+    "tvg_id": "ICNDigital.hn@SD"
+  },
+  {
+    "name": "Alhaqeqa Aldawlia (1080p) [Not 24/7]",
+    "group": "News | International",
+    "tvg_id": "AlhaqeqaAldawlia.jo@SD"
+  },
+  {
+    "name": "Apostrophe TV (1080p)",
+    "group": "News | International",
+    "tvg_id": "ApostropheTV.ua@SD"
+  },
+  {
+    "name": "Benin Web TV (720p)",
+    "group": "News | International",
+    "tvg_id": "BeninWebTV.bj@SD"
+  },
+  {
+    "name": "BN Channel (720p)",
+    "group": "News | International",
+    "tvg_id": "BNChannel.id@SD"
+  },
+  {
+    "name": "BTB Info (1080p)",
+    "group": "News | International",
+    "tvg_id": "BTBInfo.pl@SD"
+  },
+  {
+    "name": "Canal TDC",
+    "group": "News | International",
+    "tvg_id": "CanalTDC.ar@SD"
+  },
+  {
+    "name": "Chifeng Comprehensive News Chanel",
+    "group": "News | International",
+    "tvg_id": "ChifengComprehensiveNewsChanel.cn@SD"
+  },
+  {
+    "name": "Chuxiong News Channel [Not 24/7]",
+    "group": "News | International",
+    "tvg_id": "ChuxiongNewsChannel.cn@SD"
+  },
+  {
+    "name": "Dotto TV (1080p)",
+    "group": "News | International",
+    "tvg_id": "DottoTV.ro@SD"
+  },
+  {
+    "name": "FZTV-1 News \u65b0\u95fb\u7efc\u5408\u9891\u9053",
+    "group": "News | International",
+    "tvg_id": "FZTV1.cn"
+  },
+  {
+    "name": "Informatia TV",
+    "group": "News | International",
+    "tvg_id": "InformatiaTV.ro@SD"
+  },
+  {
+    "name": "Jingmen Comprehensive News Channel",
+    "group": "News | International",
+    "tvg_id": "JingmenComprehensiveNewsChannel.cn@SD"
+  },
+  {
+    "name": "Lanzhou Comprehensive News Channel",
+    "group": "News | International",
+    "tvg_id": "LanzhouComprehensiveNewsChannel.cn@SD"
+  },
+  {
+    "name": "like Gecko) Chrome/149.0.0.0 Safari/537.3\" group-title=\"News\",Euronews Bulgaria",
+    "group": "News | International",
+    "tvg_id": "EuronewsBulgaria.bg@SD"
+  },
+  {
+    "name": "like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0\" group-title=\"News\",Antena 3 CNN (1080p)",
+    "group": "News | International",
+    "tvg_id": "Antena3CNN.ro@SD"
+  },
+  {
+    "name": "Meteonews (1080p)",
+    "group": "News | International",
+    "tvg_id": "Meteonews.ch@SD"
+  },
+  {
+    "name": "National Iranian Congress TV",
+    "group": "News | International",
+    "tvg_id": "NationalIranianCongressTV.us@SD"
+  },
+  {
+    "name": "News1",
+    "group": "News | International",
+    "tvg_id": "News1.th@SD"
+  },
+  {
+    "name": "News24 Weather",
+    "group": "News | International",
+    "tvg_id": "News24Weather.au@SD"
+  },
+  {
+    "name": "O'zbekiston 24 (1080p)",
+    "group": "News | International",
+    "tvg_id": "Ozbekiston24.uz@SD"
+  },
+  {
+    "name": "Seraj TV (1080i)",
+    "group": "News | International",
+    "tvg_id": "SerajTV.ps@SD"
+  },
+  {
+    "name": "TeleMoldova + [Geo-blocked]",
+    "group": "News | International",
+    "tvg_id": "TeleMoldovaPlus.ro@SD"
+  },
+  {
+    "name": "Top News (720p)",
+    "group": "News | International",
+    "tvg_id": "TopNews.th@SD"
+  },
+  {
+    "name": "TVK Stella (576p)",
+    "group": "News | International",
+    "tvg_id": "TVKStella.pl@SD"
+  },
+  {
+    "name": "UzReport TV (1080p)",
+    "group": "News | International",
+    "tvg_id": "UzReportTV.uz@SD"
+  },
+  {
+    "name": "Al Masirah (720p) [Not 24/7]",
+    "group": "News | International",
+    "tvg_id": "AlMasirah.ye@SD"
+  },
+  {
+    "name": "APA Tv (1080p)",
+    "group": "News | International",
+    "tvg_id": "APATv.az@SD"
+  },
+  {
+    "name": "Breaking News",
+    "group": "News | International",
+    "tvg_id": ""
+  },
+  {
+    "name": "Jago News 24",
+    "group": "News | International",
+    "tvg_id": ""
+  },
+  {
+    "name": "Qosqo Times (720p)",
+    "group": "News | International",
+    "tvg_id": "QosqoTimes.pe@SD"
+  },
+  {
+    "name": "Govorit Moskva (720p)",
+    "group": "News | International",
+    "tvg_id": "GovoritMoskva.ru@SD"
+  },
+  {
+    "name": "RT France (1080p) [Geo-blocked]",
+    "group": "News | International",
+    "tvg_id": "RTFrance.fr@SD"
+  },
+  {
+    "name": "Vinh Long TV 1 (720p)",
+    "group": "News | International",
+    "tvg_id": "VinhLongTV1.vn@SD"
+  },
+  {
+    "name": "Ecotel TV (720p)",
+    "group": "News | International",
+    "tvg_id": "EcotelTV.ec@SD"
+  },
+  {
+    "name": "J3NEWS TV",
+    "group": "News | International",
+    "tvg_id": "J3NEWSTV.br@SD"
+  },
+  {
+    "name": "Momento24",
+    "group": "News | International",
+    "tvg_id": "Momento24.co@SD"
+  },
+  {
+    "name": "Novorossiya TV (1080p) [Geo-blocked]",
+    "group": "News | International",
+    "tvg_id": "NovorossiyaTV.ru@SD"
   }
 ]
