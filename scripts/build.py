@@ -634,13 +634,15 @@ def load_channel_numbers():
 def assign_channel_numbers(entries):
     """Assign stable, collision-free numbers while retaining prior assignments."""
     registry = load_channel_numbers()
+    current_ids = {stable_channel_id(entry) for entry in entries}
+
     used = {}
     for channel_id, record in registry.items():
         group = record.get("group")
         number = record.get("number")
         if group in GROUP_RANGES and isinstance(number, int):
             low, high = GROUP_RANGES[group]
-            if low <= number <= high:
+            if low <= number <= high and channel_id not in current_ids:
                 used.setdefault(group, set()).add(number)
 
     assignments = {}
@@ -649,18 +651,24 @@ def assign_channel_numbers(entries):
         group = entry["group"]
         low, high = GROUP_RANGES[group]
         previous = registry.get(channel_id)
-        number = None
         if previous and previous.get("group") == group:
             candidate = previous.get("number")
             if isinstance(candidate, int) and low <= candidate <= high and candidate not in used.get(group, set()):
-                number = candidate
+                used.setdefault(group, set()).add(candidate)
+                assignments[channel_id] = {"group": group, "number": candidate}
+                entry["number"] = candidate
+
+    for entry in entries:
+        channel_id = stable_channel_id(entry)
+        if channel_id in assignments:
+            continue
+        group = entry["group"]
+        low, high = GROUP_RANGES[group]
+        occupied = used.setdefault(group, set())
+        number = next((candidate for candidate in range(low, high + 1) if candidate not in occupied), None)
         if number is None:
-            occupied = used.setdefault(group, set())
-            number = next((candidate for candidate in range(low, high + 1) if candidate not in occupied), None)
-            if number is None:
-                raise RuntimeError(f"Channel-number block exhausted for group: {group} ({low}-{high})")
-            occupied.add(number)
-        used.setdefault(group, set()).add(number)
+            raise RuntimeError(f"Channel-number block exhausted for group: {group} ({low}-{high})")
+        occupied.add(number)
         assignments[channel_id] = {"group": group, "number": number}
         entry["number"] = number
 
