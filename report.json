@@ -1,26 +1,26 @@
 {
-  "generated_utc": "2026-11-25T02:32:09Z",
+  "generated_utc": "2026-11-25T03:24:25Z",
   "primary_sources_ok": "7/7",
   "source_entries": 13740,
   "unique_urls": 7937,
-  "passed_health_checks": 4602,
-  "grace_retained_streams": 114,
-  "unique_primary_channels": 4019,
+  "passed_health_checks": 4593,
+  "grace_retained_streams": 66,
+  "unique_primary_channels": 4010,
   "alternate_streams_saved": 583,
-  "average_stream_score": 89.1,
+  "average_stream_score": 90.0,
   "groups": {
-    "Live Sports": 447,
-    "International News": 990,
-    "Canada": 375,
-    "USA": 1098,
+    "Live Sports": 446,
+    "International News": 987,
+    "Canada": 386,
+    "USA": 1093,
     "India": 525,
-    "Pakistan": 37,
-    "Movies": 547
+    "Pakistan": 36,
+    "Movies": 537
   },
-  "unique_tvg_ids": 3789,
-  "epg_mapped_ids": 1820,
-  "epg_mapping_percent": 48.0,
+  "unique_tvg_ids": 3779,
+  "epg_mapped_ids": 1809,
+  "epg_mapping_percent": 47.9,
   "source_errors": [],
-  "epg_final_covered_ids": 1947,
-  "epg_final_percent": 51.4
+  "epg_final_covered_ids": 1940,
+  "epg_final_percent": 51.3
 }

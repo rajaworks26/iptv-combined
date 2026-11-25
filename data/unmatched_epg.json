@@ -250,6 +250,11 @@
     "tvg_id": "CA4600017KV"
   },
   {
+    "name": "Cowboy+ Sports",
+    "group": "Live Sports",
+    "tvg_id": "647f8d22a2fc3fadb4721685-680ad9f73f3c406c06d7392b"
+  },
+  {
     "name": "CR | Cricket Gold",
     "group": "Live Sports",
     "tvg_id": ""
@@ -323,6 +328,11 @@
     "name": "ESPN 4 (1080p)",
     "group": "Live Sports",
     "tvg_id": "ESPN4.br@SD"
+  },
+  {
+    "name": "Eurosport 3 Polska (1080p)",
+    "group": "Live Sports",
+    "tvg_id": "Eurosport3Polska.pl@SD"
   },
   {
     "name": "Eurosport 4 Polska (1080p)",
@@ -865,11 +875,6 @@
     "tvg_id": "3f01188b-bba8-44ed-a75a-2662c108450c"
   },
   {
-    "name": "Sport 1 (Slovakia)",
-    "group": "Live Sports",
-    "tvg_id": "Sport1.sk@HD"
-  },
-  {
     "name": "Sport Total FM (576i)",
     "group": "Live Sports",
     "tvg_id": "SportTotalFM.ro@SD"
@@ -1010,11 +1015,6 @@
     "tvg_id": "TRSport.it@SD"
   },
   {
-    "name": "TSN Tele Sondrio News",
-    "group": "Live Sports",
-    "tvg_id": ""
-  },
-  {
     "name": "Turf Movil (720p)",
     "group": "Live Sports",
     "tvg_id": "TurfMovil.cl@SD"
@@ -1068,6 +1068,11 @@
     "name": "Universal Westerns",
     "group": "Live Sports",
     "tvg_id": "8346cc0f3d415e39875fca80b67fd951"
+  },
+  {
+    "name": "Vinh Long TV 4 (720p)",
+    "group": "Live Sports",
+    "tvg_id": "VinhLongTV4.vn@SD"
   },
   {
     "name": "ViX Lo Mejor de Liga MX",
@@ -1240,6 +1245,11 @@
     "tvg_id": "50b18dea9c5c51568c1343fcd3d88ec9"
   },
   {
+    "name": "ABP Asmita",
+    "group": "International News",
+    "tvg_id": "INBD400010BD"
+  },
+  {
     "name": "ABP Ganga (1080p)",
     "group": "International News",
     "tvg_id": "ABPGanga.in@SD"
@@ -1285,6 +1295,11 @@
     "tvg_id": "AfrikInfoTV.gn@SD"
   },
   {
+    "name": "Afrique Media (720p)",
+    "group": "International News",
+    "tvg_id": "AfriqueMedia.cm@SD"
+  },
+  {
     "name": "AJ Net News (576p)",
     "group": "International News",
     "tvg_id": "AJNetNews.in@SD"
@@ -1323,11 +1338,6 @@
     "name": "Al Mashhad (1080p)",
     "group": "International News",
     "tvg_id": "AlMashhad.ae@SD"
-  },
-  {
-    "name": "Al Masirah (720p) [Not 24/7]",
-    "group": "International News",
-    "tvg_id": "AlMasirah.ye@SD"
   },
   {
     "name": "Al Masirah Mubacher (642p) [Not 24/7]",
@@ -1420,11 +1430,6 @@
     "tvg_id": "AntikInfoTV.sk@HD"
   },
   {
-    "name": "APA Tv (1080p)",
-    "group": "International News",
-    "tvg_id": "APATv.az@SD"
-  },
-  {
     "name": "Apostrophe TV (1080p)",
     "group": "International News",
     "tvg_id": "ApostropheTV.ua@SD"
@@ -1445,11 +1450,6 @@
     "tvg_id": "(no tvg-id)"
   },
   {
-    "name": "Arizona's Family",
-    "group": "International News",
-    "tvg_id": "ec2faed50af3503e934f0c342a7952fe"
-  },
-  {
     "name": "Asharq Radio (1080p)",
     "group": "International News",
     "tvg_id": "AsharqRadio.sa@SD"
@@ -1458,11 +1458,6 @@
     "name": "Ashwaveega News 24x7 (720p)",
     "group": "International News",
     "tvg_id": "AshwaveegaNews24x7.in@SD"
-  },
-  {
-    "name": "Asian News (1080p)",
-    "group": "International News",
-    "tvg_id": "AsianNews.in@SD"
   },
   {
     "name": "Astra TV (1080p)",
@@ -1495,11 +1490,6 @@
     "tvg_id": "AwaazIndiaTV.in@SD"
   },
   {
-    "name": "Balafon TV [Geo-blocked]",
-    "group": "International News",
-    "tvg_id": "BalafonTV.cm@SD"
-  },
-  {
     "name": "Bangla Jago (720p)",
     "group": "International News",
     "tvg_id": "BanglaJago.in@SD"
@@ -1510,9 +1500,9 @@
     "tvg_id": "BarakaTelevision.cd@SD"
   },
   {
-    "name": "BBC Comedy (720p)",
+    "name": "BBC Comedy",
     "group": "International News",
-    "tvg_id": ""
+    "tvg_id": "647f8d22a2fc3fadb4721685-65622fb65dbccec83a87b643"
   },
   {
     "name": "BBC Drama \u2013 Pluto TV",
@@ -1535,14 +1525,19 @@
     "tvg_id": ""
   },
   {
-    "name": "BBC Radio 1",
+    "name": "BBC Radio 1Xtra",
     "group": "International News",
-    "tvg_id": "BBCRadio1.uk"
+    "tvg_id": "BBCRadio1Xtra.uk"
   },
   {
     "name": "BBC Radio 2",
     "group": "International News",
     "tvg_id": "BBCRadio2.uk"
+  },
+  {
+    "name": "BBC Radio 3",
+    "group": "International News",
+    "tvg_id": "BBCRadio3.uk"
   },
   {
     "name": "BBC Radio 5 Live",
@@ -1820,6 +1815,11 @@
     "tvg_id": ""
   },
   {
+    "name": "CCTV+ 1 (600p) [Not 24/7]",
+    "group": "International News",
+    "tvg_id": "CCTVPlus1.cn@SD"
+  },
+  {
     "name": "CCTV+ 2 (600p) [Not 24/7]",
     "group": "International News",
     "tvg_id": "CCTVPlus2.cn@SD"
@@ -2030,6 +2030,11 @@
     "tvg_id": "4f059328-a08e-41c0-aa0e-fb11eb69da7e"
   },
   {
+    "name": "DW \u0627\u0644\u0639\u0631\u0628\u064a\u0629",
+    "group": "International News",
+    "tvg_id": "DWArabic.de"
+  },
+  {
     "name": "EAC News TV",
     "group": "International News",
     "tvg_id": "EACNewsTV.kh@SD"
@@ -2043,6 +2048,11 @@
     "name": "Ecotel TV (720p)",
     "group": "International News",
     "tvg_id": "EcotelTV.ec@SD"
+  },
+  {
+    "name": "Egnatia TV (576p)",
+    "group": "International News",
+    "tvg_id": "EgnatiaTV.gr@SD"
   },
   {
     "name": "Ekamra Bharat Odia (400p)",
@@ -2190,11 +2200,6 @@
     "tvg_id": "GemTV.in@SD"
   },
   {
-    "name": "Giornale Radio TV (720p)",
-    "group": "International News",
-    "tvg_id": "GiornaleRadioTV.it@SD"
-  },
-  {
     "name": "Global India (720p)",
     "group": "International News",
     "tvg_id": "GlobalIndia.in@SD"
@@ -2323,11 +2328,6 @@
     "name": "HBO 3 (Czech Republic)",
     "group": "International News",
     "tvg_id": "HBO3.cz@SD"
-  },
-  {
-    "name": "Headlines Tripura (720p)",
-    "group": "International News",
-    "tvg_id": "HeadlinesTripura.in@SD"
   },
   {
     "name": "Hermanas Mirabal TV (720p) [Not 24/7]",
@@ -2475,6 +2475,11 @@
     "tvg_id": "KBCNews.in@SD"
   },
   {
+    "name": "KBP Times (1080p)",
+    "group": "International News",
+    "tvg_id": "KBPTimes.in@SD"
+  },
+  {
     "name": "KPTV FOX 12 Oregon News",
     "group": "International News",
     "tvg_id": "5c8d77c2f6b85da3a7e74223b769ef5c"
@@ -2493,10 +2498,5 @@
     "name": "Kurdsat News (1080p)",
     "group": "International News",
     "tvg_id": "KurdsatNews.iq@SD"
-  },
-  {
-    "name": "L'altro Corriere TV",
-    "group": "International News",
-    "tvg_id": "LaltroCorriereTV.it@SD"
   }
 ]
