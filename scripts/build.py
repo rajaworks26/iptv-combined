@@ -922,6 +922,7 @@ def main():
         entry["active_epg"] = bool(entry["tvgid"] and entry["tvgid"] in active_epg_ids)
 
     primary.sort(key=lambda entry: (
+        GROUP_INDEX[entry["group"]],
         0 if entry["active_epg"] else 1,
         -entry["score"],
         natural_key(clean_display_name(entry["name"])),
