@@ -932,18 +932,18 @@ def main():
 
     assign_channel_numbers(primary)
 
-    # Ensure every primary entry has a unique display name across playlists
-    seen_display_names = set()
+    # Deduplicate on the badge-free base name so stripping [1080p] never causes collisions
+    seen_base_names = set()
     for entry in primary:
         base_clean = clean_display_name(entry["name"])
         badge = resolution_badge(entry.get("height", 0))
-        candidate_name = f"{base_clean}{badge}"
+        candidate_base = base_clean
         suffix = 2
-        while candidate_name.casefold() in seen_display_names:
-            candidate_name = f"{base_clean} (Feed {suffix}){badge}"
+        while candidate_base.casefold() in seen_base_names:
+            candidate_base = f"{base_clean} (Feed {suffix})"
             suffix += 1
-        seen_display_names.add(candidate_name.casefold())
-        entry["display_name"] = candidate_name
+        seen_base_names.add(candidate_base.casefold())
+        entry["display_name"] = f"{candidate_base}{badge}"
 
     numbered = [(entry, entry["number"], entry["group"]) for entry in primary]
 
