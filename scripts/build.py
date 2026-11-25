@@ -634,7 +634,18 @@ def load_channel_numbers():
 def assign_channel_numbers(entries):
     """Assign stable, collision-free numbers while retaining prior assignments."""
     registry = load_channel_numbers()
-    current_ids = {stable_channel_id(entry) for entry in entries}
+
+    # Disambiguate any duplicate stable_channel_id among primary entries so no two get the same tvg-chno
+    seen_ids = set()
+    for entry in entries:
+        base_id = stable_channel_id(entry)
+        channel_id = base_id
+        suffix = 2
+        while channel_id in seen_ids:
+            channel_id = f"{base_id}#{suffix}"
+            suffix += 1
+        seen_ids.add(channel_id)
+        entry["_assigned_id"] = channel_id
 
     used = {}
     for channel_id, record in registry.items():
@@ -642,12 +653,13 @@ def assign_channel_numbers(entries):
         number = record.get("number")
         if group in GROUP_RANGES and isinstance(number, int):
             low, high = GROUP_RANGES[group]
-            if low <= number <= high and channel_id not in current_ids:
+            if low <= number <= high and channel_id not in seen_ids:
                 used.setdefault(group, set()).add(number)
 
     assignments = {}
+    # Pass 1: Keep existing valid numbers for channels still in the same group
     for entry in entries:
-        channel_id = stable_channel_id(entry)
+        channel_id = entry["_assigned_id"]
         group = entry["group"]
         low, high = GROUP_RANGES[group]
         previous = registry.get(channel_id)
@@ -658,10 +670,11 @@ def assign_channel_numbers(entries):
                 assignments[channel_id] = {"group": group, "number": candidate}
                 entry["number"] = candidate
 
+    # Pass 2: Assign the next free number to new or re-grouped channels
     for entry in entries:
-        channel_id = stable_channel_id(entry)
-        if channel_id in assignments:
+        if "number" in entry:
             continue
+        channel_id = entry["_assigned_id"]
         group = entry["group"]
         low, high = GROUP_RANGES[group]
         occupied = used.setdefault(group, set())
