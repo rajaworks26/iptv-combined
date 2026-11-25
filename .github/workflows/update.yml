@@ -30,8 +30,21 @@ jobs:
         with:
           node-version: '20'
 
+      - name: Syntax check
+        run: |
+          python -m py_compile scripts/build.py scripts/validate.py scripts/config.py
+
+      - name: Run automated tests
+        run: |
+          python -m unittest discover -s tests -v
+
       - name: Build playlists and EPG channel map
+        env:
+          IPTV_OUTPUT_DIR: ${{ github.workspace }}/build_staging
         run: python scripts/build.py
+
+      - name: Validate staged outputs
+        run: python scripts/validate.py --root "${{ github.workspace }}/build_staging"
 
       - name: Install IPTV-org EPG generator
         run: |
@@ -41,7 +54,7 @@ jobs:
 
       - name: Generate EPG
         run: |
-          cp epg.channels.xml /tmp/epg/channels.xml
+          cp build_staging/epg.channels.xml /tmp/epg/channels.xml
           cd /tmp/epg
           npm run grab -- --channels=channels.xml --output="${{ github.workspace }}/combined.xml" --maxConnections=10 --timeout=30000
 
@@ -53,12 +66,12 @@ jobs:
           from datetime import datetime, timedelta, timezone
           from pathlib import Path
 
-          m3u = Path('combined.m3u').read_text(encoding='utf-8', errors='ignore')
+          m3u = Path('build_staging/combined.m3u').read_text(encoding='utf-8', errors='ignore')
           wanted = set(re.findall(r'tvg-id="([^"]+)"', m3u)) - {''}
 
           tree = ET.parse('combined.xml')
           root = tree.getroot()
-          have = {c.attrib.get('id') for c in root.findall('channel')}
+          have = {channel.attrib.get('id') for channel in root.findall('channel')}
 
           fast_urls = [
               'https://i.mjh.nz/PlutoTV/ca.xml.gz',
@@ -69,72 +82,82 @@ jobs:
           ]
           for url in fast_urls:
               try:
-                  req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
-                  ext = ET.fromstring(gzip.decompress(urllib.request.urlopen(req, timeout=60).read()))
+                  request = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+                  external = ET.fromstring(gzip.decompress(urllib.request.urlopen(request, timeout=60).read()))
                   added = set()
-                  for ch in ext.findall('channel'):
-                      cid = ch.attrib.get('id', '')
-                      if cid in wanted and cid not in have:
-                          root.append(ch)
-                          have.add(cid)
-                          added.add(cid)
-                  for prog in ext.findall('programme'):
-                      if prog.attrib.get('channel', '') in added:
-                          root.append(prog)
+                  for channel in external.findall('channel'):
+                      channel_id = channel.attrib.get('id', '')
+                      if channel_id in wanted and channel_id not in have:
+                          root.append(channel)
+                          have.add(channel_id)
+                          added.add(channel_id)
+                  for programme in external.findall('programme'):
+                      if programme.attrib.get('channel', '') in added:
+                          root.append(programme)
                   print(f'Merged {len(added)} FAST channels from {url}')
-              except Exception as exc:
-                  print(f'Warning: skipped {url}: {exc}')
+              except Exception as error:
+                  print(f'Warning: skipped {url}: {error}')
 
-          def ts(s):
+          def timestamp(value):
               try:
-                  return datetime.strptime(s.strip(), '%Y%m%d%H%M%S %z')
+                  return datetime.strptime(value.strip(), '%Y%m%d%H%M%S %z')
               except Exception:
                   try:
-                      return datetime.strptime(s.strip()[:14], '%Y%m%d%H%M%S').replace(tzinfo=timezone.utc)
+                      return datetime.strptime(value.strip()[:14], '%Y%m%d%H%M%S').replace(tzinfo=timezone.utc)
                   except Exception:
                       return None
 
           now = datetime.now(timezone.utc)
-          lo, hi = now - timedelta(hours=12), now + timedelta(hours=72)
-          for p in list(root.findall('programme')):
-              st = ts(p.attrib.get('start', ''))
-              en = ts(p.attrib.get('stop', '')) or st
-              if (en and en < lo) or (st and st > hi):
-                  root.remove(p)
+          lower = now - timedelta(hours=12)
+          upper = now + timedelta(hours=72)
+          for programme in list(root.findall('programme')):
+              start = timestamp(programme.attrib.get('start', ''))
+              stop = timestamp(programme.attrib.get('stop', '')) or start
+              if (stop and stop < lower) or (start and start > upper):
+                  root.remove(programme)
 
-          with_prog = {p.attrib.get('channel') for p in root.findall('programme')}
-          covered = wanted & with_prog
-          rep = json.loads(Path('report.json').read_text())
-          rep['epg_final_covered_ids'] = len(covered)
-          rep['epg_final_percent'] = round(100 * len(covered) / max(len(wanted), 1), 1)
-          Path('report.json').write_text(json.dumps(rep, indent=2) + '\n')
+          with_programmes = {programme.attrib.get('channel') for programme in root.findall('programme')}
+          covered = wanted & with_programmes
+          Path('data').mkdir(exist_ok=True)
+          Path('data/epg_active_ids.json').write_text(json.dumps(sorted(covered), separators=(',', ':')) + '\n')
+
+          report = json.loads(Path('build_staging/report.json').read_text())
+          report['epg_final_covered_ids'] = len(covered)
+          report['epg_final_percent'] = round(100 * len(covered) / max(len(wanted), 1), 1)
+          Path('build_staging/report.json').write_text(json.dumps(report, indent=2) + '\n')
 
           tree.write('combined.xml', encoding='utf-8', xml_declaration=True)
-          with open('combined.xml', 'rb') as f_in, gzip.open('combined.xml.gz', 'wb', compresslevel=9) as f_out:
-              shutil.copyfileobj(f_in, f_out)
-          print(rep['epg_final_percent'], '% final EPG coverage')
+          with open('combined.xml', 'rb') as source, gzip.open('combined.xml.gz', 'wb', compresslevel=9) as target:
+              shutil.copyfileobj(source, target)
+          print(report['epg_final_percent'], '% final EPG coverage')
           PY
 
-      - name: Validate outputs
-        run: python scripts/validate.py
+      - name: Validate final outputs
+        run: python scripts/validate.py --root "${{ github.workspace }}"
 
-      - name: Commit playlists (main branch, small text files only)
+      - name: Publish validated playlists
         run: |
+          cp build_staging/combined.m3u build_staging/alternates.m3u build_staging/language-*.m3u .
+          cp build_staging/sports.m3u build_staging/news.m3u build_staging/canada.m3u build_staging/usa.m3u .
+          cp build_staging/india.m3u build_staging/pakistan.m3u build_staging/movies.m3u build_staging/music.m3u .
+          cp build_staging/report.json build_staging/channel_numbers.json .
+          cp build_staging/epg.channels.xml .
+
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git rm --cached --ignore-unmatch -q combined.xml combined.xml.gz epg.channels.xml
-          git add .gitignore combined.m3u alternates.m3u language-*.m3u report.json data/
-          git diff --cached --quiet || git commit -m "Auto-update playlists and stream history"
-          git pull --rebase origin main
-          git push origin HEAD:main
+          git rm --cached --ignore-unmatch -q combined.xml combined.xml.gz epg.channels.xml top-picks.m3u
+          git add .gitignore combined.m3u alternates.m3u language-*.m3u sports.m3u news.m3u canada.m3u usa.m3u india.m3u pakistan.m3u movies.m3u music.m3u channel_numbers.json report.json data/ epg.channels.xml
+          git diff --cached --quiet || git commit -m "Auto-update playlists, channel numbering, and stream history"
+          git pull --rebase origin "${GITHUB_REF_NAME:-main}"
+          git push origin "HEAD:${GITHUB_REF_NAME:-main}"
 
-      - name: Publish EPG to orphan 'epg' branch (no history growth)
+      - name: Publish EPG to orphan 'epg' branch
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          d=$(mktemp -d)
-          cp combined.xml.gz "$d/"
-          cd "$d"
+          directory=$(mktemp -d)
+          cp combined.xml.gz "$directory/"
+          cd "$directory"
           git init -q -b epg
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

@@ -6,75 +6,114 @@
 [![EPG Coverage](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Frajaworks26%2Fiptv-combined%2Fmain%2Freport.json&query=%24.epg_final_percent&suffix=%25&label=EPG%20coverage&color=blue)](https://raw.githubusercontent.com/rajaworks26/iptv-combined/main/report.json)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-An automated, self-maintaining IPTV playlist and XMLTV EPG aggregator built for modern IPTV players. Every 6 hours, GitHub Actions fetches public streams across **28 sources** (7 primary + 21 supplementary), probes each stream down to the live media segment, scores and deduplicates channels, merges official FAST + `iptv-org` TV guides, and publishes lightweight outputs to GitHub.
+An automatically maintained IPTV playlist and XMLTV EPG aggregator. It combines public sources, probes live streams, retains a 10-run reliability history, deduplicates channels, preserves backup streams, merges EPG data, and publishes clean, neutral playlists for TiviMate and other compatible IPTV players.
 
----
+## Project overview
 
-## Quick Setup (Player URLs)
+- Automated stream health checks and live-media verification.
+- 10-run historical reliability scoring; a single successful probe does not replace history.
+- Stream deduplication with primary and backup stream selection.
+- EPG merging and publication through the orphan `epg` branch.
+- EPG-first sorting, followed by historical reliability and natural channel-name ordering.
+- Clean channel names and verified resolution badges only when resolution was reliably detected.
+- Stable, collision-free channel numbering persisted across builds.
+- Regional, category, and language playlists.
+- Validation before publication; failed validation preserves the previous valid outputs.
 
-Copy and paste these two URLs into your IPTV player:
-
-| Type | URL | Notes |
-| :--- | :--- | :--- |
-| **Primary Playlist (M3U)** | `https://raw.githubusercontent.com/rajaworks26/iptv-combined/main/combined.m3u` | Main deduplicated live TV playlist (7 groups) |
-| **EPG TV Guide (Gzipped XMLTV)** | `https://raw.githubusercontent.com/rajaworks26/iptv-combined/epg/combined.xml.gz` | Force-pushed orphan `epg` branch (keeps `main` history small) |
-
-### Additional Playlists
+## Playlist URLs
 
 | Playlist | URL |
 | :--- | :--- |
-| **Backup Streams** | `https://raw.githubusercontent.com/rajaworks26/iptv-combined/main/alternates.m3u` |
-| **English** | `https://raw.githubusercontent.com/rajaworks26/iptv-combined/main/language-english.m3u` |
-| **Hindi** | `https://raw.githubusercontent.com/rajaworks26/iptv-combined/main/language-hindi.m3u` |
-| **Urdu** | `https://raw.githubusercontent.com/rajaworks26/iptv-combined/main/language-urdu.m3u` |
-| **Punjabi** | `https://raw.githubusercontent.com/rajaworks26/iptv-combined/main/language-punjabi.m3u` |
-| **Tamil** | `https://raw.githubusercontent.com/rajaworks26/iptv-combined/main/language-tamil.m3u` |
-| **Telugu** | `https://raw.githubusercontent.com/rajaworks26/iptv-combined/main/language-telugu.m3u` |
+| Combined | [combined.m3u](https://raw.githubusercontent.com/rajaworks26/iptv-combined/main/combined.m3u) |
+| Backup streams | [alternates.m3u](https://raw.githubusercontent.com/rajaworks26/iptv-combined/main/alternates.m3u) |
+| Sports | [sports.m3u](https://raw.githubusercontent.com/rajaworks26/iptv-combined/main/sports.m3u) |
+| News | [news.m3u](https://raw.githubusercontent.com/rajaworks26/iptv-combined/main/news.m3u) |
+| Canada | [canada.m3u](https://raw.githubusercontent.com/rajaworks26/iptv-combined/main/canada.m3u) |
+| USA | [usa.m3u](https://raw.githubusercontent.com/rajaworks26/iptv-combined/main/usa.m3u) |
+| India | [india.m3u](https://raw.githubusercontent.com/rajaworks26/iptv-combined/main/india.m3u) |
+| Pakistan | [pakistan.m3u](https://raw.githubusercontent.com/rajaworks26/iptv-combined/main/pakistan.m3u) |
+| Movies | [movies.m3u](https://raw.githubusercontent.com/rajaworks26/iptv-combined/main/movies.m3u) |
+| Music | [music.m3u](https://raw.githubusercontent.com/rajaworks26/iptv-combined/main/music.m3u) |
+| English | [language-english.m3u](https://raw.githubusercontent.com/rajaworks26/iptv-combined/main/language-english.m3u) |
+| Hindi | [language-hindi.m3u](https://raw.githubusercontent.com/rajaworks26/iptv-combined/main/language-hindi.m3u) |
+| Urdu | [language-urdu.m3u](https://raw.githubusercontent.com/rajaworks26/iptv-combined/main/language-urdu.m3u) |
+| Punjabi | [language-punjabi.m3u](https://raw.githubusercontent.com/rajaworks26/iptv-combined/main/language-punjabi.m3u) |
+| Tamil | [language-tamil.m3u](https://raw.githubusercontent.com/rajaworks26/iptv-combined/main/language-tamil.m3u) |
+| Telugu | [language-telugu.m3u](https://raw.githubusercontent.com/rajaworks26/iptv-combined/main/language-telugu.m3u) |
+| EPG guide | [combined.xml.gz](https://raw.githubusercontent.com/rajaworks26/iptv-combined/epg/combined.xml.gz) |
 
-### Setup
-1. **Add Playlist:** Settings → Playlists → Add playlist → M3U playlist → paste the **Primary Playlist** URL above.
-2. **Assign EPG:** Settings → EPG → EPG sources → Add source → paste the **EPG TV Guide** URL (`.../epg/combined.xml.gz`) and assign it to the playlist.
-3. **Update Interval:** Set both Playlist and EPG update intervals to **Every 6 hours** (or **On app start**).
+## Channel groups
 
----
+| Order | Group | Description | Channel numbers |
+| ---: | :--- | :--- | :--- |
+| 1 | Live Sports | Dedicated major sports networks and sports services | 1000–1999 |
+| 2 | News \| International | International news networks | 2000–2999 |
+| 3 | Canada \| General & News | Canadian entertainment, national networks, public broadcasting, and domestic news | 3000–3999 |
+| 4 | Canada \| Sports & Regional | Canadian regional, local, community, provincial, and regional sports channels | 4000–4999 |
+| 5 | USA \| Networks & Entertainment | American broadcast and general entertainment channels | 5000–9999 |
+| 6 | USA \| News & Business | American news, business, financial, political, and public-affairs channels | 10000–11999 |
+| 7 | USA \| Kids & Family | American children’s and family channels | 12000–13999 |
+| 8 | USA \| Documentary & Lifestyle | American documentary, educational, science, nature, travel, food, home, and lifestyle channels | 14000–15999 |
+| 9 | India \| Hindi & General | Hindi-language and general Indian programming | 16000–17999 |
+| 10 | India \| Punjabi & Regional | Punjabi and other eligible Indian regional-language channels | 18000–19999 |
+| 11 | India \| South (Tamil & Telugu) | Tamil and Telugu programming | 20000–21999 |
+| 12 | Pakistan | Pakistani entertainment, news, religious, regional, and other programming | 22000–23999 |
+| 13 | Movies | Dedicated movie channels across supported countries and languages | 24000–29999 |
+| 14 | Music | Dedicated music television channels | 30000–34999 |
 
-## Playlist Structure
+The combined playlist contains no Top Picks, Favorites, or other subjective curated groups.
 
-Channels are strictly classified into **7 groups** (unplaceable channels are dropped rather than falling back to `USA`):
+## Sorting and numbering
 
-1. **Live Sports**
-2. **International News**
-3. **Canada**
-4. **USA**
-5. **India**
-6. **Pakistan**
-7. **Movies**
+Within each group, primary channels are ordered by:
 
----
+1. Active EPG availability, descending.
+2. Existing 10-run reliability score, descending.
+3. Normalized channel name, using natural sorting.
+4. Stable channel identifier, as the final deterministic tie-breaker.
 
-## How It Works
+Active EPG means the channel has current or upcoming programme listings in the merged EPG data. A populated `tvg-id` alone does not prove active coverage.
 
-* **Strict Live Stream Probing (`scripts/build.py`):** Rejects VOD extensions (`.mp4`, `.mkv`, `.avi`), expiring token URLs (`wmsAuthSign=`, `hdnea=`), HTTP 200 HTML/JSON error pages, VOD playlists (`#EXT-X-ENDLIST` / `PLAYLIST-TYPE:VOD`), and verifies actual binary media segments.
-* **10-Run Reliability Scoring & Deduplication:** Tracks stream uptime in `data/stream_history.json` across the last 10 runs and ranks duplicates on a 0–100 scale (**Uptime 45 pts**, **EPG/Logo Metadata 25 pts**, **Resolution 15 pts**, **Latency 15 pts**). The highest-scoring stream goes into `combined.m3u`; runners-up go into `alternates.m3u`.
-* **Merged XMLTV EPG (`epg` branch):** Resolves EPG IDs by exact `tvg-id` and normalized channel name, generates `iptv-org` guide schedules, merges official XMLTV feeds (`i.mjh.nz` for Pluto TV, Samsung TV Plus, Plex, and Roku), prunes stale programmes (12h back / 72h ahead), and force-pushes `combined.xml.gz` to the orphan `epg` branch.
-* **Validation Gate (`scripts/validate.py`):** Verifies group counts, minimum channel thresholds, and `epg_final_percent` in `report.json` before committing. If an upstream outage occurs, the job aborts before touching the live playlist.
+Channel numbers are stored in `channel_numbers.json` and persist across builds. A channel keeps its number when its EPG coverage, reliability score, display name, resolution, or primary stream URL changes. Temporarily unavailable channels retain their assignments, and retired numbers are not automatically recycled.
 
----
+IPTV players may display channels by file order or by `tvg-chno`, depending on the player’s settings.
+
+## IPTV player setup
+
+### TiviMate
+
+1. Open **Settings** → **Playlists** → **Add playlist**.
+2. Choose **M3U playlist** and paste the Combined playlist URL.
+3. Open **Settings** → **EPG** → **EPG sources** → **Add source**.
+4. Paste the EPG guide URL and assign it to the playlist.
+5. Set playlist and EPG update intervals to **Every 6 hours**, or **On app start**.
+
+### VLC, Kodi, and IPTV Smarters
+
+Add the Combined playlist URL as an M3U source and add the EPG guide URL as an XMLTV source. In Kodi, enable the PVR IPTV Simple Client add-on and supply both URLs. Player-specific settings may determine whether file order or channel number order takes precedence.
+
+## Automation and reliability
+
+GitHub Actions updates the playlists four times daily at 01:17, 07:17, 13:17, and 19:17 UTC. The workflow runs syntax checks and automated tests before building.
+
+The build probes streams, records the last 10 results in `data/stream_history.json`, scores channels, deduplicates by channel identity, selects the strongest primary stream, and retains suitable runners-up in `alternates.m3u`.
+
+The workflow generates the EPG, merges official FAST XMLTV guides, prunes programmes outside a 12-hour past to 72-hour future window, records channels with active listings, validates all staged outputs, and publishes only after validation succeeds. The compressed EPG is published to the orphan `epg` branch.
 
 ## License
 
 The code in this repository is released under the [MIT License](LICENSE).
 
-## Sources & Attribution
+## Sources & attribution
 
 This project aggregates publicly available third-party playlist and EPG sources (**28 total**: 7 primary country playlists + 21 supplementary global, category, language, and FAST sources). Those sources remain subject to their own terms, licenses, and regional availability. This repository does not host, store, or restream video content.
 
-* **iptv-org** — country, category, and language playlists (`iptv-org/iptv`)
-* **Free-TV** — curated country playlists (`Free-TV/IPTV`)
-* **Zaman-Topu** — active global playlist (`Zaman-Topu/Ip-tv-Collection`)
-* **IPTV-By-Shovo** — curated global playlist (`shovo127/IPTV-By-Shovo`)
-* **BuddyChewChew** — FAST platform playlists (`Pluto TV`, `Samsung TV Plus`, `Plex`, `Roku`)
-* **Hindi_Punjabi-iptv-playlist** — regional Hindi/Punjabi channels (`deep2772`)
-* **i.mjh.nz** — official XMLTV schedules for Pluto TV, Samsung TV Plus, Plex, and Roku
+- **iptv-org** — country, category, and language playlists (`iptv-org/iptv`)
+- **Free-TV** — curated country playlists (`Free-TV/IPTV`)
+- **Zaman-Topu** — active global playlist (`Zaman-Topu/Ip-tv-Collection`)
+- **IPTV-By-Shovo** — curated global playlist (`shovo127/IPTV-By-Shovo`)
+- **BuddyChewChew** — FAST platform playlists (`Pluto TV`, `Samsung TV Plus`, `Plex`, `Roku`)
+- **Hindi_Punjabi-iptv-playlist** — regional Hindi/Punjabi channels (`deep2772`)
+- **i.mjh.nz** — official XMLTV schedules for Pluto TV, Samsung TV Plus, Plex, and Roku
 
 Channel availability, legality, and geographic access vary by location. Use only content you are legally permitted to access in your region.
