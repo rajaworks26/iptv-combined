@@ -667,6 +667,10 @@
     "group": "Canada | General & News",
     "number": 3137
   },
+  "647f8d22a2fc3fadb4721685-5efe1de5e0b3f5003f5d9f76": {
+    "group": "Canada | General & News",
+    "number": 3396
+  },
   "647f8d22a2fc3fadb4721685-5efe1de8e0b3f5003f5d9f91": {
     "group": "Canada | General & News",
     "number": 3015
@@ -678,6 +682,10 @@
   "647f8d22a2fc3fadb4721685-5fc70600598c41002da3dd19": {
     "group": "Canada | General & News",
     "number": 3013
+  },
+  "647f8d22a2fc3fadb4721685-606605549dbfca002d2ae877": {
+    "group": "Canada | General & News",
+    "number": 3406
   },
   "647f8d22a2fc3fadb4721685-608aec5fa09205002da4f28f": {
     "group": "Canada | General & News",
@@ -702,6 +710,10 @@
   "647f8d22a2fc3fadb4721685-61aaa0cc784a2161d3caf7ff": {
     "group": "Canada | General & News",
     "number": 3011
+  },
+  "647f8d22a2fc3fadb4721685-62ee74af52f7d73061eec491": {
+    "group": "Canada | General & News",
+    "number": 3403
   },
   "647f8d22a2fc3fadb4721685-62efbb8652f7d73061eec498": {
     "group": "Canada | General & News",
@@ -739,6 +751,14 @@
     "group": "Canada | General & News",
     "number": 3035
   },
+  "647f8d22a2fc3fadb4721685-635847d0d3a668f1cafc1f9d": {
+    "group": "Canada | General & News",
+    "number": 3399
+  },
+  "647f8d22a2fc3fadb4721685-636d5aa3dc2c550b145ed422": {
+    "group": "Canada | General & News",
+    "number": 3397
+  },
   "647f8d22a2fc3fadb4721685-63894c1965b848bf2c8a7800": {
     "group": "Canada | General & News",
     "number": 3032
@@ -767,6 +787,10 @@
     "group": "Canada | General & News",
     "number": 3041
   },
+  "647f8d22a2fc3fadb4721685-6490c01f3b3ce9e1aaad95be": {
+    "group": "Canada | General & News",
+    "number": 3404
+  },
   "647f8d22a2fc3fadb4721685-64b710b44612b1f48e9ad31a": {
     "group": "Canada | General & News",
     "number": 3010
@@ -786,6 +810,18 @@
   "647f8d22a2fc3fadb4721685-64f115ad2173e54397ce0d40": {
     "group": "Canada | General & News",
     "number": 3074
+  },
+  "647f8d22a2fc3fadb4721685-651600fb2ff655e77635c62a": {
+    "group": "Canada | General & News",
+    "number": 3405
+  },
+  "647f8d22a2fc3fadb4721685-652a8b001b5c74bc83cf727c": {
+    "group": "Canada | General & News",
+    "number": 3398
+  },
+  "647f8d22a2fc3fadb4721685-653d9d28d3e2e30d889226be": {
+    "group": "Canada | General & News",
+    "number": 3402
   },
   "647f8d22a2fc3fadb4721685-656229e4b7d737841f30a4fb": {
     "group": "Canada | General & News",
@@ -831,9 +867,17 @@
     "group": "Canada | General & News",
     "number": 3079
   },
+  "647f8d22a2fc3fadb4721685-66e4cbef38de9754b6b13e90": {
+    "group": "Canada | General & News",
+    "number": 3401
+  },
   "647f8d22a2fc3fadb4721685-66f6b947515e742745f5ca34": {
     "group": "Canada | General & News",
     "number": 3034
+  },
+  "647f8d22a2fc3fadb4721685-67858517d3749c9bdd4d2ecf": {
+    "group": "Canada | General & News",
+    "number": 3400
   },
   "647f8d22a2fc3fadb4721685-67884bd6d37f2fd48d6220db": {
     "group": "Canada | General & News",
@@ -874,6 +918,10 @@
   "647f8d22a2fc3fadb4721685-68caada21fabab6eb2e99331": {
     "group": "Canada | General & News",
     "number": 3054
+  },
+  "647f8d22a2fc3fadb4721685-68db6b54475aa6420c85f230": {
+    "group": "Canada | General & News",
+    "number": 3407
   },
   "647f8d22a2fc3fadb4721685-69333216ac5b3f9f53442374": {
     "group": "Canada | General & News",
@@ -5524,8 +5572,8 @@
     "number": 2348
   },
   "DailyPostTV.in@SD": {
-    "group": "India | Hindi & General",
-    "number": 16720
+    "group": "News | International",
+    "number": 2557
   },
   "DailyPostTV.in@SD#2": {
     "group": "India | Hindi & General",
@@ -7119,6 +7167,10 @@
     "group": "Movies",
     "number": 24056
   },
+  "FuboSportsNetwork.us@HD": {
+    "group": "Live Sports",
+    "number": 1452
+  },
   "FuboSportsNetwork.us@SD": {
     "group": "Live Sports",
     "number": 1016
@@ -7396,8 +7448,8 @@
     "number": 24263
   },
   "Goldmines.in@SD": {
-    "group": "India | Hindi & General",
-    "number": 16693
+    "group": "Movies",
+    "number": 24578
   },
   "Goldmines.in@SD#2": {
     "group": "Movies",
@@ -10439,6 +10491,10 @@
     "group": "Music",
     "number": 30658
   },
+  "Match4.hu@SD": {
+    "group": "Live Sports",
+    "number": 1454
+  },
   "MatchPremier.ru@SD": {
     "group": "Live Sports",
     "number": 1233
@@ -10810,6 +10866,10 @@
   "MontonesTV.do@HD": {
     "group": "Music",
     "number": 30109
+  },
+  "MontrealGreekTV.ca@SD": {
+    "group": "Canada | General & News",
+    "number": 3408
   },
   "MoonTV.in@SD": {
     "group": "News | International",
@@ -11506,6 +11566,14 @@
   "News11.in@SD#2": {
     "group": "India | Hindi & General",
     "number": 16476
+  },
+  "News12Bronx.us@SD": {
+    "group": "USA | News & Business",
+    "number": 10077
+  },
+  "News12HudsonValley.us@SD": {
+    "group": "USA | News & Business",
+    "number": 10078
   },
   "News12PlusLongIsland.us@HD": {
     "group": "USA | News & Business",
@@ -12719,6 +12787,10 @@
     "group": "Movies",
     "number": 24338
   },
+  "PlutoTVBudTerence.de@DACH": {
+    "group": "Movies",
+    "number": 24579
+  },
   "PlutoTVBudTerence.se@DK": {
     "group": "Movies",
     "number": 24538
@@ -12882,6 +12954,10 @@
   "PlutoTVCrimeMovies.us@SD": {
     "group": "Movies",
     "number": 24359
+  },
+  "PlutoTVCultFilms.de@GB": {
+    "group": "Movies",
+    "number": 24580
   },
   "PlutoTVCultFilms.us@US": {
     "group": "Movies",
@@ -14243,6 +14319,10 @@
     "group": "Live Sports",
     "number": 1301
   },
+  "RealMadridTV.es@SD#2": {
+    "group": "Live Sports",
+    "number": 1453
+  },
   "RealMadridTVEnglish.es@SD": {
     "group": "Live Sports",
     "number": 1329
@@ -14338,6 +14418,10 @@
   "RepublicBangla.in@SD": {
     "group": "India | Hindi & General",
     "number": 16529
+  },
+  "RepublicBharat.in@SD": {
+    "group": "News | International",
+    "number": 2558
   },
   "RepublicKannada.in@SD": {
     "group": "India | Punjabi & Regional",
@@ -14874,6 +14958,10 @@
   "SerajTV.ps@SD": {
     "group": "News | International",
     "number": 2457
+  },
+  "ServusTV.at@SD": {
+    "group": "Movies",
+    "number": 24581
   },
   "SetantaSports3.ge@SD": {
     "group": "Live Sports",
@@ -16315,6 +16403,10 @@
     "group": "News | International",
     "number": 2219
   },
+  "TVSimSaoMateus.br@SD": {
+    "group": "News | International",
+    "number": 2549
+  },
   "TVUNO.pe@SD": {
     "group": "Music",
     "number": 30572
@@ -16795,6 +16887,10 @@
     "group": "News | International",
     "number": 2214
   },
+  "TimesNowNavbharat.in@HD": {
+    "group": "India | Hindi & General",
+    "number": 16693
+  },
   "TimesNowNavbharat.in@SD": {
     "group": "News | International",
     "number": 2039
@@ -17042,6 +17138,10 @@
   "UMSATVULP.bo@SD": {
     "group": "News | International",
     "number": 2114
+  },
+  "UN24.ve@untv720": {
+    "group": "News | International",
+    "number": 2556
   },
   "UNETV.hn@SD": {
     "group": "News | International",
@@ -18016,8 +18116,8 @@
     "number": 16618
   },
   "Zoom.in@SD": {
-    "group": "News | International",
-    "number": 2549
+    "group": "Music",
+    "number": 30738
   },
   "Zoom.in@SD#2": {
     "group": "Music",
