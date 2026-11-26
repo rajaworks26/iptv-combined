@@ -1,10 +1,10 @@
 #EXTM3U x-tvg-url="https://raw.githubusercontent.com/rajaworks26/iptv-combined/epg/combined.xml.gz"
-#EXTINF: tvg-logo="https://i.imgur.com/DodsLuW.png"  tvg-id="TamilVisionTV.ca@SD"  tvg-name="TamilVision-TV [1080p]"  tvg-chno="3026"  group-title="Canada | General & News" -1,TamilVision-TV [1080p]
+#EXTINF: tvg-logo="https://i.imgur.com/DodsLuW.png"  tvg-id="TamilVisionTV.ca@SD"  tvg-name="TamilVision-TV"  tvg-chno="3026"  group-title="Canada | General & News" -1,TamilVision-TV
 https://live.cmr24.fm/TVI/HD/chunks.m3u8
-#EXTINF: tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_DD_TAMIL/images/LOGO_HD/image.png"  tvg-id="DDTamil.in@HD"  tvg-name="DD Tamil HD [1080p]"  tvg-chno="20002"  group-title="India | South (Tamil & Telugu)" -1,DD Tamil HD [1080p]
-https://d2lk5u59tns74c.cloudfront.net/out/v1/abf46b14847e45499f4a47f3a9afe93d/index.m3u8
 #EXTINF: tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_COLORS_TAMIL/images/LOGO_HD/image.png"  tvg-id="ColorsTamil.in@HD"  tvg-name="Colors Tamil HD [720p]"  tvg-chno="20001"  group-title="India | South (Tamil & Telugu)" -1,Colors Tamil HD [720p]
 https://da86m1sqpm3o0.cloudfront.net/28072023/smil:colorstamilhd11.smil/playlist.m3u8
+#EXTINF: tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_DD_TAMIL/images/LOGO_HD/image.png"  tvg-id="DDTamil.in@HD"  tvg-name="DD Tamil HD [1080p]"  tvg-chno="20002"  group-title="India | South (Tamil & Telugu)" -1,DD Tamil HD [1080p]
+https://d2lk5u59tns74c.cloudfront.net/out/v1/abf46b14847e45499f4a47f3a9afe93d/index.m3u8
 #EXTINF: tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_NEWS18_TAMIL_NADU/images/LOGO_HD/image.png"  tvg-id="News18TamilNadu.in@SD"  tvg-name="News18 Tamil Nadu [1080p]"  tvg-chno="20005"  group-title="India | South (Tamil & Telugu)" -1,News18 Tamil Nadu [1080p]
 https://n18syndication.akamaized.net/bpk-tv/News18_Tamil_Nadu_NW18_MOB/output01/master.m3u8
 #EXTINF: tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Janam_Tamil.png"  tvg-id="TamilJanam.in@SD"  tvg-name="Tamil Janam [720p]"  tvg-chno="20018"  group-title="India | South (Tamil & Telugu)" -1,Tamil Janam [720p]
