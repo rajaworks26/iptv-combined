@@ -35,9 +35,21 @@
     "group": "Music",
     "number": 30695
   },
+  "(no tvg-id)#18": {
+    "group": "Music",
+    "number": 30712
+  },
+  "(no tvg-id)#19": {
+    "group": "Music",
+    "number": 30713
+  },
   "(no tvg-id)#2": {
     "group": "Canada | General & News",
     "number": 3163
+  },
+  "(no tvg-id)#20": {
+    "group": "Music",
+    "number": 30717
   },
   "(no tvg-id)#3": {
     "group": "Canada | Sports & Regional",
@@ -479,6 +491,10 @@
     "group": "Canada | General & News",
     "number": 3263
   },
+  "62cbfc572dc3750007a493ce": {
+    "group": "Canada | General & News",
+    "number": 3388
+  },
   "62cbfcd8c2db990007861e43": {
     "group": "Canada | General & News",
     "number": 3264
@@ -522,6 +538,10 @@
   "62e926429cb58900088f951f": {
     "group": "Canada | General & News",
     "number": 3275
+  },
+  "62e92951c2db99000787c00d": {
+    "group": "Canada | General & News",
+    "number": 3387
   },
   "62e92b5fca869f00078f0162": {
     "group": "Canada | General & News",
@@ -642,6 +662,10 @@
   "647f8d22a2fc3fadb4721685-5fc70600598c41002da3dd19": {
     "group": "Canada | General & News",
     "number": 3013
+  },
+  "647f8d22a2fc3fadb4721685-608aec5fa09205002da4f28f": {
+    "group": "Canada | General & News",
+    "number": 3384
   },
   "647f8d22a2fc3fadb4721685-60d4eddeb2fdec002c141137": {
     "group": "Canada | General & News",
@@ -767,6 +791,10 @@
     "group": "Canada | General & News",
     "number": 3139
   },
+  "647f8d22a2fc3fadb4721685-6674b68af04cf4bb9233c916": {
+    "group": "Canada | General & News",
+    "number": 3386
+  },
   "647f8d22a2fc3fadb4721685-668561babc1490a2f408f30c": {
     "group": "Canada | General & News",
     "number": 3001
@@ -786,6 +814,10 @@
   "647f8d22a2fc3fadb4721685-66f6b947515e742745f5ca34": {
     "group": "Canada | General & News",
     "number": 3034
+  },
+  "647f8d22a2fc3fadb4721685-67884bd6d37f2fd48d6220db": {
+    "group": "Canada | General & News",
+    "number": 3385
   },
   "647f8d22a2fc3fadb4721685-67cbd119cc5136329877e096": {
     "group": "Canada | General & News",
@@ -823,9 +855,17 @@
     "group": "Canada | General & News",
     "number": 3054
   },
+  "647f8d22a2fc3fadb4721685-69333216ac5b3f9f53442374": {
+    "group": "Canada | General & News",
+    "number": 3382
+  },
   "647f8d22a2fc3fadb4721685-6970fdabbde579fb71262401": {
     "group": "Canada | General & News",
     "number": 3006
+  },
+  "647f8d22a2fc3fadb4721685-6995ed8173f56d61dc078f0d": {
+    "group": "Canada | General & News",
+    "number": 3383
   },
   "647f8d22a2fc3fadb4721685-69a1f84e8d9f2822f6f50639": {
     "group": "Canada | General & News",
@@ -1199,6 +1239,10 @@
     "group": "Movies",
     "number": 24209
   },
+  "742": {
+    "group": "News | International",
+    "number": 2538
+  },
   "79ce27a8-bbfa-4661-a6ff-e6006e1510a3": {
     "group": "Live Sports",
     "number": 1039
@@ -1291,6 +1335,10 @@
     "group": "India | Hindi & General",
     "number": 16431
   },
+  "9PlusNews.in@SD": {
+    "group": "India | Hindi & General",
+    "number": 16696
+  },
   "9XJalwa.in@SD": {
     "group": "India | Hindi & General",
     "number": 16545
@@ -1374,6 +1422,10 @@
   "ABC.us@KMGHTV": {
     "group": "USA | Networks & Entertainment",
     "number": 5247
+  },
+  "ABC.us@KRCA": {
+    "group": "USA | Networks & Entertainment",
+    "number": 5904
   },
   "ABC.us@KRGVTV": {
     "group": "USA | Networks & Entertainment",
@@ -1643,6 +1695,10 @@
     "group": "Movies",
     "number": 24271
   },
+  "AMCEurope.uk@Hungary#2": {
+    "group": "Movies",
+    "number": 24569
+  },
   "AMCThrillers.us@SD": {
     "group": "Movies",
     "number": 24001
@@ -1790,6 +1846,10 @@
   "AXNCEE.es@Hungary": {
     "group": "Movies",
     "number": 24272
+  },
+  "AXNCEE.es@Hungary#2": {
+    "group": "Movies",
+    "number": 24570
   },
   "AXNCrime.us@SD": {
     "group": "Movies",
@@ -2102,6 +2162,10 @@
   "AlMahdiTV.us@SD": {
     "group": "USA | Networks & Entertainment",
     "number": 5026
+  },
+  "AlManar.lb@SD": {
+    "group": "News | International",
+    "number": 2543
   },
   "AlMasarTV.ly@SD": {
     "group": "News | International",
@@ -2443,6 +2507,10 @@
     "group": "Music",
     "number": 30403
   },
+  "AratuOn.br@SD": {
+    "group": "News | International",
+    "number": 2539
+  },
   "AreWeThereYet.us@SD": {
     "group": "USA | Networks & Entertainment",
     "number": 5262
@@ -2679,6 +2747,10 @@
     "group": "Movies",
     "number": 24180
   },
+  "B4UMusic.in@India": {
+    "group": "Music",
+    "number": 30703
+  },
   "BATVEducationalChannel.us@SD": {
     "group": "USA | Networks & Entertainment",
     "number": 5039
@@ -2826,6 +2898,10 @@
   "BRIDGEVostok.ru@SD": {
     "group": "Music",
     "number": 30411
+  },
+  "BRKNews.in@SD": {
+    "group": "India | Hindi & General",
+    "number": 16700
   },
   "BSTV.in@SD": {
     "group": "India | Hindi & General",
@@ -3623,6 +3699,10 @@
     "group": "Canada | General & News",
     "number": 3136
   },
+  "CABD1200026VA": {
+    "group": "Music",
+    "number": 30706
+  },
   "CABD1200029U0": {
     "group": "Music",
     "number": 30127
@@ -3807,6 +3887,10 @@
     "group": "USA | Networks & Entertainment",
     "number": 5872
   },
+  "CCNET.in@SD": {
+    "group": "India | Hindi & General",
+    "number": 16675
+  },
   "CCTV.us@SD": {
     "group": "USA | Networks & Entertainment",
     "number": 5857
@@ -3838,6 +3922,10 @@
   "CCTVKunnamkulam.in@SD": {
     "group": "India | Hindi & General",
     "number": 16250
+  },
+  "CCTVPlus1.cn@SD": {
+    "group": "News | International",
+    "number": 2547
   },
   "CCTVPlus2.cn@SD": {
     "group": "News | International",
@@ -4187,6 +4275,10 @@
     "group": "News | International",
     "number": 2011
   },
+  "Canal38.br@SD": {
+    "group": "News | International",
+    "number": 2540
+  },
   "CanalCaribe.cu@SD": {
     "group": "News | International",
     "number": 2364
@@ -4211,9 +4303,21 @@
     "group": "News | International",
     "number": 2345
   },
+  "CanalPlusActionEurope.nl@Austria": {
+    "group": "Movies",
+    "number": 24565
+  },
+  "CanalPlusActionEurope.nl@Czechia": {
+    "group": "Movies",
+    "number": 24566
+  },
   "CanalPlusActionEurope.nl@Magyar": {
     "group": "Movies",
     "number": 24223
+  },
+  "CanalPlusSport.fr@SD": {
+    "group": "Live Sports",
+    "number": 1444
   },
   "CanalPlusSport2SK.sk@SD": {
     "group": "Live Sports",
@@ -4459,6 +4563,10 @@
     "group": "Movies",
     "number": 24046
   },
+  "CinePlusClassic.fr@SD": {
+    "group": "Movies",
+    "number": 24562
+  },
   "CinePremiere.us@SD": {
     "group": "Movies",
     "number": 24228
@@ -4598,6 +4706,10 @@
   "CitricoTV.do@SD": {
     "group": "News | International",
     "number": 2064
+  },
+  "CityChannelHD.in@SD": {
+    "group": "India | Hindi & General",
+    "number": 16698
   },
   "CityEdenBirmaPlay.ru@HD": {
     "group": "Music",
@@ -5223,6 +5335,10 @@
     "group": "News | International",
     "number": 2021
   },
+  "DWEnglish.de": {
+    "group": "News | International",
+    "number": 2470
+  },
   "DY365.in@SD": {
     "group": "India | Hindi & General",
     "number": 16647
@@ -5232,8 +5348,8 @@
     "number": 2348
   },
   "DailyPostTV.in@SD": {
-    "group": "News | International",
-    "number": 2501
+    "group": "India | Hindi & General",
+    "number": 16693
   },
   "DailyPostTV.in@SD#2": {
     "group": "India | Hindi & General",
@@ -5562,6 +5678,10 @@
   "DreamTurk.tr@SD": {
     "group": "Music",
     "number": 30628
+  },
+  "DrisyaNewsPala.in@SD": {
+    "group": "India | Hindi & General",
+    "number": 16690
   },
   "DrisyaTV.in@SD": {
     "group": "India | Hindi & General",
@@ -6055,9 +6175,17 @@
     "group": "Live Sports",
     "number": 1354
   },
+  "Eurosport3Polska.pl@SD": {
+    "group": "Live Sports",
+    "number": 1441
+  },
   "Eurosport4KCzechia.cz@UHD": {
     "group": "Live Sports",
     "number": 1291
+  },
+  "Eurosport4Polska.pl@SD": {
+    "group": "Live Sports",
+    "number": 1439
   },
   "EurovisionSport.uk@Europe": {
     "group": "Live Sports",
@@ -6234,6 +6362,10 @@
   "FILMBOXPlusOne.pl@Magyar": {
     "group": "Movies",
     "number": 24256
+  },
+  "FILMBOXPlusOne.pl@Nederland": {
+    "group": "Movies",
+    "number": 24568
   },
   "FILMBOXPlusOne.pl@Romania": {
     "group": "Movies",
@@ -6451,6 +6583,10 @@
     "group": "Movies",
     "number": 24273
   },
+  "FilmMania.hu@SD": {
+    "group": "Movies",
+    "number": 24567
+  },
   "FilmPlus.cz@SD": {
     "group": "Movies",
     "number": 24278
@@ -6554,6 +6690,10 @@
   "ForeverKids.us@SD": {
     "group": "USA | Kids & Family",
     "number": 12047
+  },
+  "Formula.ge@SD": {
+    "group": "News | International",
+    "number": 2542
   },
   "Formula1AntenaPlay.ro@SD": {
     "group": "Live Sports",
@@ -7032,6 +7172,10 @@
     "number": 24263
   },
   "Goldmines.in@SD": {
+    "group": "India | Hindi & General",
+    "number": 16672
+  },
+  "Goldmines.in@SD#2": {
     "group": "Movies",
     "number": 24186
   },
@@ -7103,6 +7247,10 @@
     "group": "Movies",
     "number": 24525
   },
+  "GravitasMovies.us@SD": {
+    "group": "Movies",
+    "number": 24558
+  },
   "GreatEntertainmentTelevision.us@SD": {
     "group": "USA | Networks & Entertainment",
     "number": 5346
@@ -7110,6 +7258,10 @@
   "GreaterLoveTV.us@SD": {
     "group": "USA | Networks & Entertainment",
     "number": 5500
+  },
+  "GreenGoldTV.in@India": {
+    "group": "India | Hindi & General",
+    "number": 16679
   },
   "GreensboroTV.us@SD": {
     "group": "USA | Networks & Entertainment",
@@ -7363,6 +7515,10 @@
     "group": "USA | Networks & Entertainment",
     "number": 5348
   },
+  "HeadlinesTripura.in@SD": {
+    "group": "India | Hindi & General",
+    "number": 16703
+  },
   "HeartRadioAruba.aw@SD": {
     "group": "Music",
     "number": 30272
@@ -7571,6 +7727,10 @@
     "group": "India | Punjabi & Regional",
     "number": 18027
   },
+  "IN1600006GA": {
+    "group": "India | Punjabi & Regional",
+    "number": 18056
+  },
   "IN1600009NL": {
     "group": "India | Hindi & General",
     "number": 16284
@@ -7646,6 +7806,14 @@
   "IN24000052F": {
     "group": "India | Hindi & General",
     "number": 16194
+  },
+  "IN24News.in@SD": {
+    "group": "India | Hindi & General",
+    "number": 16691
+  },
+  "IN25000020M": {
+    "group": "India | Hindi & General",
+    "number": 16682
   },
   "IN2500003JW": {
     "group": "India | Hindi & General",
@@ -7730,6 +7898,10 @@
   "IN3800002VK": {
     "group": "India | Hindi & General",
     "number": 16345
+  },
+  "IN3800008CX": {
+    "group": "Movies",
+    "number": 24559
   },
   "IN3800010SH": {
     "group": "Movies",
@@ -7891,6 +8063,10 @@
     "group": "India | Hindi & General",
     "number": 16115
   },
+  "IN4900004LP": {
+    "group": "India | Hindi & General",
+    "number": 16678
+  },
   "IN4900008ZP": {
     "group": "Music",
     "number": 30238
@@ -7931,9 +8107,17 @@
     "group": "India | Hindi & General",
     "number": 16069
   },
+  "IN800012RO": {
+    "group": "India | Hindi & General",
+    "number": 16673
+  },
   "IN8000171I": {
     "group": "India | Hindi & General",
     "number": 16271
+  },
+  "IN8000196E": {
+    "group": "Music",
+    "number": 30707
   },
   "IN800021X7": {
     "group": "India | Hindi & General",
@@ -7983,9 +8167,17 @@
     "group": "India | Hindi & General",
     "number": 16180
   },
+  "INBC2800001D8": {
+    "group": "India | Hindi & General",
+    "number": 16674
+  },
   "INBD13000043W": {
     "group": "India | Hindi & General",
     "number": 16015
+  },
+  "INBD1300009QZ": {
+    "group": "India | Hindi & General",
+    "number": 16677
   },
   "INBD25000021N": {
     "group": "India | Hindi & General",
@@ -7994,6 +8186,10 @@
   "INBD2500012V1": {
     "group": "India | Punjabi & Regional",
     "number": 18015
+  },
+  "INBD2500015H5": {
+    "group": "India | Hindi & General",
+    "number": 16676
   },
   "INBD2500016OR": {
     "group": "India | Hindi & General",
@@ -8327,6 +8523,10 @@
     "group": "India | Hindi & General",
     "number": 16289
   },
+  "JRTVJarviradio.fi@SD": {
+    "group": "Music",
+    "number": 30710
+  },
   "JTBSClassic.in@Main": {
     "group": "India | Hindi & General",
     "number": 16596
@@ -8459,9 +8659,17 @@
     "group": "Music",
     "number": 30338
   },
+  "K7KeralamChannel.in@SD": {
+    "group": "India | Hindi & General",
+    "number": 16680
+  },
   "KBCNews.in@SD": {
     "group": "India | Hindi & General",
     "number": 16649
+  },
+  "KBPTimes.in@SD": {
+    "group": "India | Hindi & General",
+    "number": 16708
   },
   "KBSV231.us@SD": {
     "group": "USA | Networks & Entertainment",
@@ -8491,9 +8699,17 @@
     "group": "USA | Networks & Entertainment",
     "number": 5618
   },
+  "KNMusicTV.az@SD": {
+    "group": "Music",
+    "number": 30715
+  },
   "KNOVCD411.us@HD": {
     "group": "USA | Documentary & Lifestyle",
     "number": 14036
+  },
+  "KNSD481.us@HD": {
+    "group": "USA | Networks & Entertainment",
+    "number": 5906
   },
   "KNXVTV611.us@HD": {
     "group": "USA | Networks & Entertainment",
@@ -8646,6 +8862,10 @@
   "KartoonChannel.us@SD": {
     "group": "USA | Kids & Family",
     "number": 12015
+  },
+  "KasargodVision.in@SD": {
+    "group": "India | Hindi & General",
+    "number": 16699
   },
   "KashishNews.in@SD": {
     "group": "News | International",
@@ -9015,6 +9235,10 @@
     "group": "Live Sports",
     "number": 1098
   },
+  "LeMondeen24h.cd@SD": {
+    "group": "News | International",
+    "number": 2546
+  },
   "LegoChannel.us@SD": {
     "group": "USA | Kids & Family",
     "number": 12006
@@ -9083,6 +9307,10 @@
     "group": "USA | News & Business",
     "number": 10008
   },
+  "LiveTimes.in@SD": {
+    "group": "India | Hindi & General",
+    "number": 16706
+  },
   "LivingIndiaNews.in@SD": {
     "group": "India | Hindi & General",
     "number": 16425
@@ -9114,6 +9342,10 @@
   "LogosTVKids.es@SD": {
     "group": "USA | Kids & Family",
     "number": 12063
+  },
+  "LokmatBharat.in@SD": {
+    "group": "India | Hindi & General",
+    "number": 16685
   },
   "LokshahiNews.in@SD": {
     "group": "India | Hindi & General",
@@ -9186,6 +9418,10 @@
   "M4Sport.hu@SD": {
     "group": "Live Sports",
     "number": 1286
+  },
+  "M4SportPlus.hu@SD": {
+    "group": "Live Sports",
+    "number": 1445
   },
   "M6Music.fr@SD": {
     "group": "Music",
@@ -9479,6 +9715,10 @@
     "group": "Music",
     "number": 30481
   },
+  "MTVEmbarazadaalos16.us@Spain": {
+    "group": "Music",
+    "number": 30714
+  },
   "MTVExOnTheBeach.se@DK": {
     "group": "Music",
     "number": 30288
@@ -9518,6 +9758,10 @@
   "MTVLebanon.lb@SD": {
     "group": "Music",
     "number": 30010
+  },
+  "MTVLive.us@SD": {
+    "group": "Music",
+    "number": 30704
   },
   "MTVOriginals.us@Spain": {
     "group": "Music",
@@ -9610,6 +9854,10 @@
   "MTVTeenMom.se@NO": {
     "group": "Music",
     "number": 30508
+  },
+  "MTVTeenMom.us@Germany": {
+    "group": "Music",
+    "number": 30709
   },
   "MTVTeenMom.us@LatAm": {
     "group": "Music",
@@ -10343,6 +10591,10 @@
     "group": "News | International",
     "number": 2301
   },
+  "MunsifTV.in@SD#2": {
+    "group": "India | Hindi & General",
+    "number": 16671
+  },
   "MusicBoxBrazil.br@SD": {
     "group": "Music",
     "number": 30206
@@ -10398,6 +10650,10 @@
   "MuzangalaTV.ao@SD": {
     "group": "Music",
     "number": 30111
+  },
+  "Muzhskoy.ru@HD": {
+    "group": "Movies",
+    "number": 24564
   },
   "MuzsikaTV.hu@SD": {
     "group": "Music",
@@ -10635,6 +10891,10 @@
     "group": "India | Hindi & General",
     "number": 16042
   },
+  "NEBharat24.in@SD": {
+    "group": "India | Hindi & General",
+    "number": 16686
+  },
   "NENews.in@SD": {
     "group": "News | International",
     "number": 2302
@@ -10695,6 +10955,10 @@
     "group": "India | Punjabi & Regional",
     "number": 18050
   },
+  "NKTV24x7.in@SD": {
+    "group": "India | Hindi & General",
+    "number": 16694
+  },
   "NMBTV.us@SD": {
     "group": "USA | Networks & Entertainment",
     "number": 5529
@@ -10710,6 +10974,10 @@
   "NOWRock.uk@Poland": {
     "group": "Music",
     "number": 30113
+  },
+  "NOWRock.uk@SD": {
+    "group": "Music",
+    "number": 30705
   },
   "NRBTV.us@SD": {
     "group": "USA | Networks & Entertainment",
@@ -10895,6 +11163,10 @@
     "group": "USA | News & Business",
     "number": 10033
   },
+  "News12Westchester.us@SD": {
+    "group": "USA | News & Business",
+    "number": 10074
+  },
   "News18AssamNorthEast.in@SD": {
     "group": "India | Hindi & General",
     "number": 16163
@@ -10975,6 +11247,10 @@
     "group": "India | Hindi & General",
     "number": 16396
   },
+  "News21.in@SD": {
+    "group": "India | Hindi & General",
+    "number": 16687
+  },
   "News21BanglaTV.bd@SD": {
     "group": "News | International",
     "number": 2519
@@ -10982,6 +11258,10 @@
   "News24.al": {
     "group": "News | International",
     "number": 2089
+  },
+  "News24.in@SD": {
+    "group": "News | International",
+    "number": 2501
   },
   "News24MPChhattisgarh.in@SD": {
     "group": "News | International",
@@ -11078,6 +11358,10 @@
   "NewsNation.in@SD#2": {
     "group": "India | Hindi & General",
     "number": 16310
+  },
+  "NewsNation81.in@SD": {
+    "group": "India | Hindi & General",
+    "number": 16697
   },
   "NewsOne.pk@SD": {
     "group": "Pakistan",
@@ -11263,6 +11547,10 @@
     "group": "Pakistan",
     "number": 22014
   },
+  "NorCastWeather.us@HD": {
+    "group": "USA | Networks & Entertainment",
+    "number": 5905
+  },
   "NorocTV.md@SD": {
     "group": "Music",
     "number": 30521
@@ -11435,6 +11723,10 @@
     "group": "India | Hindi & General",
     "number": 16177
   },
+  "OmanSportsTV.om@SD": {
+    "group": "Live Sports",
+    "number": 1438
+  },
   "OmanTVMubashir.om@SD": {
     "group": "News | International",
     "number": 2240
@@ -11471,6 +11763,10 @@
     "group": "USA | News & Business",
     "number": 10015
   },
+  "OneFM.lb@SD": {
+    "group": "Music",
+    "number": 30711
+  },
   "OneMusicTelevision.de@SD": {
     "group": "Music",
     "number": 30525
@@ -11486,6 +11782,10 @@
   "OnePiece.us@US": {
     "group": "USA | Networks & Entertainment",
     "number": 5788
+  },
+  "OnkarNews.in@SD": {
+    "group": "India | Hindi & General",
+    "number": 16707
   },
   "OnlyBharat.in@SD": {
     "group": "India | Hindi & General",
@@ -12091,6 +12391,10 @@
     "group": "Movies",
     "number": 24150
   },
+  "PlutoTVCineClasico.us@LatAm": {
+    "group": "Movies",
+    "number": 24560
+  },
   "PlutoTVCineClassicos.us@BR": {
     "group": "Movies",
     "number": 24151
@@ -12122,6 +12426,10 @@
   "PlutoTVCineDrama.de@ES": {
     "group": "Movies",
     "number": 24348
+  },
+  "PlutoTVCineDrama.us@BR": {
+    "group": "Movies",
+    "number": 24561
   },
   "PlutoTVCineDrama.us@LatAm": {
     "group": "Movies",
@@ -12839,6 +13147,10 @@
     "group": "Pakistan",
     "number": 22015
   },
+  "PrameyaNews7.in@SD": {
+    "group": "India | Hindi & General",
+    "number": 16704
+  },
   "PrarthanaBhawanTV.in@SD": {
     "group": "India | Hindi & General",
     "number": 16501
@@ -12874,6 +13186,10 @@
   "PrensaLatinaTV.cu@SD": {
     "group": "News | International",
     "number": 2200
+  },
+  "PressTV.ir@SD": {
+    "group": "News | International",
+    "number": 2544
   },
   "PrimaNews.ro@SD": {
     "group": "News | International",
@@ -12962,6 +13278,10 @@
   "PulariTV.in@SD": {
     "group": "India | Hindi & General",
     "number": 16610
+  },
+  "Pulse24.in@SD": {
+    "group": "India | Hindi & General",
+    "number": 16681
   },
   "PunjabPlus.in@SD": {
     "group": "India | Hindi & General",
@@ -13390,6 +13710,10 @@
   "RadioRealpolitik.ar@SD": {
     "group": "Music",
     "number": 30297
+  },
+  "RadioRomania3Net.ro@SD": {
+    "group": "Music",
+    "number": 30716
   },
   "RadioRumbaTV.pe@SD": {
     "group": "Music",
@@ -13895,6 +14219,10 @@
     "group": "Movies",
     "number": 24118
   },
+  "STZTV.br@SD": {
+    "group": "News | International",
+    "number": 2541
+  },
   "SUMtvEnglish.us@SD": {
     "group": "USA | Networks & Entertainment",
     "number": 5205
@@ -14247,6 +14575,10 @@
     "group": "Canada | General & News",
     "number": 3188
   },
+  "SilkWayCinema.kz@SD": {
+    "group": "Movies",
+    "number": 24563
+  },
   "SilverbirdNews24.ng@SD": {
     "group": "News | International",
     "number": 2428
@@ -14322,6 +14654,10 @@
   "SkyRacing2.au@SD": {
     "group": "Live Sports",
     "number": 1357
+  },
+  "SkySportF1.it@SD": {
+    "group": "Live Sports",
+    "number": 1443
   },
   "SkySports1.mx@SD": {
     "group": "Live Sports",
@@ -14555,6 +14891,10 @@
     "group": "Live Sports",
     "number": 1287
   },
+  "Sport2.cz@HD": {
+    "group": "Live Sports",
+    "number": 1436
+  },
   "Sport2.cz@SD": {
     "group": "Live Sports",
     "number": 1290
@@ -14590,6 +14930,10 @@
   "SqalaTV.pe@SD": {
     "group": "Live Sports",
     "number": 1192
+  },
+  "SristiTV.in@SD": {
+    "group": "India | Hindi & General",
+    "number": 16688
   },
   "Stadium.us@SD": {
     "group": "Live Sports",
@@ -14650,6 +14994,10 @@
   "StarPravah.in@HD": {
     "group": "India | Hindi & General",
     "number": 16224
+  },
+  "StarSportsKhel.in@SD": {
+    "group": "Live Sports",
+    "number": 1440
   },
   "StarTrek.us@US": {
     "group": "USA | Networks & Entertainment",
@@ -14895,6 +15243,10 @@
     "group": "Pakistan",
     "number": 22016
   },
+  "SudarshanNews.in@SD": {
+    "group": "India | Hindi & General",
+    "number": 16701
+  },
   "SunGemini.in@SD": {
     "group": "India | Hindi & General",
     "number": 16413
@@ -15035,6 +15387,10 @@
     "group": "USA | Networks & Entertainment",
     "number": 5648
   },
+  "TBSLatinAmerica.us@Brazil": {
+    "group": "USA | Networks & Entertainment",
+    "number": 5901
+  },
   "TBSLatinAmerica.us@Panregional": {
     "group": "USA | Networks & Entertainment",
     "number": 5429
@@ -15102,6 +15458,10 @@
   "TNPNews.in@SD": {
     "group": "India | Hindi & General",
     "number": 16346
+  },
+  "TNT.ru@SD": {
+    "group": "USA | Networks & Entertainment",
+    "number": 5902
   },
   "TNT.us@East": {
     "group": "USA | Networks & Entertainment",
@@ -15238,6 +15598,10 @@
   "TV5News.in@SD#2": {
     "group": "India | Hindi & General",
     "number": 16536
+  },
+  "TV7Bharat.in@SD": {
+    "group": "India | Hindi & General",
+    "number": 16695
   },
   "TV7National.in@SD": {
     "group": "India | Hindi & General",
@@ -15575,6 +15939,10 @@
     "group": "India | South (Tamil & Telugu)",
     "number": 20019
   },
+  "TaraTV.in@SD": {
+    "group": "India | Hindi & General",
+    "number": 16692
+  },
   "Tarab.sa@SD": {
     "group": "Music",
     "number": 30133
@@ -15726,6 +16094,10 @@
   "ThanthiTV.in@SD": {
     "group": "News | International",
     "number": 2320
+  },
+  "Thats70s.uk@HD": {
+    "group": "Music",
+    "number": 30708
   },
   "TheAddamsFamily.us@SD": {
     "group": "USA | Networks & Entertainment",
@@ -15979,6 +16351,10 @@
     "group": "USA | News & Business",
     "number": 10039
   },
+  "ThendralTV.in@SD": {
+    "group": "India | Hindi & General",
+    "number": 16702
+  },
   "ThisOldHouse.us@SD": {
     "group": "USA | Networks & Entertainment",
     "number": 5223
@@ -16086,6 +16462,10 @@
   "TortuesNinjaTV.us@CA": {
     "group": "Canada | General & News",
     "number": 3199
+  },
+  "Tosh0.us@SD": {
+    "group": "USA | Networks & Entertainment",
+    "number": 5903
   },
   "TotalBhakti.in@SD": {
     "group": "India | Hindi & General",
@@ -16467,6 +16847,10 @@
     "group": "India | Hindi & General",
     "number": 16418
   },
+  "VandeBharatNews.in@SD": {
+    "group": "India | Hindi & General",
+    "number": 16689
+  },
   "VanithaTV.in@SD": {
     "group": "India | Hindi & General",
     "number": 16348
@@ -16550,6 +16934,10 @@
   "ViafreeMovies.se@SE": {
     "group": "Movies",
     "number": 24173
+  },
+  "ViasatFilm.hu@SD": {
+    "group": "Movies",
+    "number": 24571
   },
   "ViasatKino.ro@SD": {
     "group": "Movies",
@@ -17091,6 +17479,14 @@
     "group": "India | Hindi & General",
     "number": 16355
   },
+  "Zee24Kalak.in@SD": {
+    "group": "India | Hindi & General",
+    "number": 16683
+  },
+  "Zee24Taas.in@SD": {
+    "group": "India | Hindi & General",
+    "number": 16684
+  },
   "ZeeAction.in@SD": {
     "group": "Movies",
     "number": 24126
@@ -17200,8 +17596,8 @@
     "number": 16618
   },
   "Zoom.in@SD": {
-    "group": "News | International",
-    "number": 2470
+    "group": "Music",
+    "number": 30702
   },
   "Zoom.in@SD#2": {
     "group": "Music",
@@ -17275,6 +17671,10 @@
     "group": "Live Sports",
     "number": 1003
   },
+  "beINSports1Turk.tr@SD": {
+    "group": "Live Sports",
+    "number": 1442
+  },
   "beINSportsUSA.us@SD": {
     "group": "Live Sports",
     "number": 1423
@@ -17334,6 +17734,10 @@
   "dafd06b712a35fbe9935d4c04c2e8b53": {
     "group": "News | International",
     "number": 2121
+  },
+  "dc4a5da2-9423-4c3a-ac8e-62086ff7b6f1": {
+    "group": "India | Hindi & General",
+    "number": 16705
   },
   "df14a727-6c91-4c8f-ba9f-2ae527ce27dd": {
     "group": "News | International",
@@ -17715,6 +18119,10 @@
     "group": "USA | Networks & Entertainment",
     "number": 5884
   },
+  "local:7dde20d966d2f494": {
+    "group": "News | International",
+    "number": 2545
+  },
   "local:812d60ea28754ae2": {
     "group": "Music",
     "number": 30672
@@ -17722,6 +18130,10 @@
   "local:848007e2a9af7a5e": {
     "group": "Live Sports",
     "number": 1397
+  },
+  "local:86ed630dae301529": {
+    "group": "India | Hindi & General",
+    "number": 16709
   },
   "local:88665256a65bf306": {
     "group": "Live Sports",
@@ -18011,6 +18423,10 @@
     "group": "India | Hindi & General",
     "number": 16605
   },
+  "local:e723cc2c6b1046ab": {
+    "group": "Music",
+    "number": 30718
+  },
   "local:ea62a302649bfa09": {
     "group": "Live Sports",
     "number": 1418
@@ -18122,6 +18538,10 @@
   "vijuPlusSport.ru@HD": {
     "group": "Live Sports",
     "number": 1337
+  },
+  "vijuPlusSport.ru@SD": {
+    "group": "Live Sports",
+    "number": 1437
   },
   "vijuTV1000.ru@SD": {
     "group": "Movies",
