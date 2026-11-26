@@ -12,8 +12,8 @@ https://jmp2.uk/stvp-IN400058AF
 https://d116gfrn8orazi.cloudfront.net/index.m3u8?akes=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3NjcxOTc5NzJ9.O4qmdMPbHwKrCg6hFXvD70vjSPWKQd0a7NrjmFdeMB8
 #EXTINF: tvg-logo="https://dtil.tmsimg.com/assets/s158136_ld_h15_aa.png?lock=720x540"  tvg-id="AasthaTelugu.in@SD"  tvg-name="Aastha Telugu"  tvg-chno="20014"  group-title="India | South (Tamil & Telugu)" -1,Aastha Telugu
 https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/a3e6a5fec4354ec4ae0ca5ed539ff641/index.m3u8
-#EXTINF: tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_RAJ_NEWS_TELUGU/images/LOGO_HD/image.png"  tvg-id="RajNewsTelugu.in@SD"  tvg-name="Raj News Telugu [720p]"  tvg-chno="20017"  group-title="India | South (Tamil & Telugu)" -1,Raj News Telugu [720p]
-https://mumt04.tangotv.in/m18aqlK4RAJNEWSTELUGU/index.m3u8
+#EXTINF: tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_RAJ_NEWS_TELUGU/images/LOGO_HD/image.png"  tvg-id="RajNewsTelugu.in@SD"  tvg-name="Raj News Telugu [576p]"  tvg-chno="20017"  group-title="India | South (Tamil & Telugu)" -1,Raj News Telugu [576p]
+https://cdn.pishow.tv/ott/live/279/master.m3u8
 #EXTINF: tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yupptvnew/content/common/channel/logos/mjvezt.png"  tvg-id="WOWKidz.in@Telugu"  tvg-name="WOW Kidz Telugu [720p]"  tvg-chno="20008"  group-title="India | South (Tamil & Telugu)" -1,WOW Kidz Telugu [720p]
 https://yuppparoriglin.akamaized.net/181224/smil:wowkidztelgu.smil/playlist.m3u8?hdnts=st=1735898689~exp=1835898688~acl=*~hmac=f5fe24724fe05481e3841f9eb5ab8efdee0a3dd83645ae9dcf45703f525bab7b
 #EXTINF: tvg-logo="https://papaji.freetvindia.com/media/channels/Chhaya_Chitram_Telugu.png"  tvg-id="ChhayaChitramTelugu.in@SD"  tvg-name="Chhaya Chitram Telugu (360p) [720p]"  tvg-chno="20015"  group-title="India | South (Tamil & Telugu)" -1,Chhaya Chitram Telugu (360p) [720p]
@@ -22,7 +22,5 @@ https://samitaorigin.tangotv.in/CHHAYACHITRAMTELUGU/SAMITAORIGIN/index.m3u8
 https://yuppparoriglin.akamaized.net/181224/smil:6tv.smil/playlist.m3u8?hdnts=st=1735898689~exp=1835898688~acl=*~hmac=f5fe24724fe05481e3841f9eb5ab8efdee0a3dd83645ae9dcf45703f525bab7b
 #EXTINF: tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/PMC_Telugu.png"  tvg-id="PMCTelugu.in@SD"  tvg-name="PMC Telugu [720p]"  tvg-chno="20028"  group-title="India | South (Tamil & Telugu)" -1,PMC Telugu [720p]
 https://mumbai-edge.smartplaytv.in/PMC/index.m3u8
-#EXTINF: tvg-logo="https://i.imgur.com/WqTIoWS.png"  tvg-id="NTVTelugu.in@SD"  tvg-name="NTV Telugu [1080p]"  tvg-chno="20029"  group-title="India | South (Tamil & Telugu)" -1,NTV Telugu [1080p]
-https://mumbai-edge.smartplaytv.in/NTVTelugu/index.m3u8
 #EXTINF: tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_RAJ_MUSIX_TELUGU/images/LOGO_HD/image.png"  tvg-id="RajMusixTelugu.in@SD"  tvg-name="Raj Musix Telugu [576p]"  tvg-chno="30605"  group-title="Music" -1,Raj Musix Telugu [576p]
 https://cdn.pishow.tv/ott/live/1213/master.m3u8

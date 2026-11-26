@@ -5,37 +5,39 @@ https://r2.amml.in/sony-ten-3-hd/live.m3u8
 https://starsportshindiii.pages.dev/index.m3u8
 #EXTINF: tvg-logo="https://i.imgur.com/9Qq8DKh.png"  tvg-id="SonyKALHindi.us@SD"  tvg-name="Sony KAL Hindi [1080p]"  tvg-chno="5199"  group-title="USA | Networks & Entertainment" -1,Sony KAL Hindi [1080p]
 https://wurlsonypicturestv.global.transmit.live/hls/68deeb1c0238cda82df543dd/v1/spt_sonykal_1/lg_us/latest/main/hls/playlist.m3u8
+#EXTINF: tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/INBD1300010WP_20261124T041132SQUARE.png"  tvg-id="INBD1300010WP"  tvg-name="News18 India [1080p]"  tvg-chno="16672"  group-title="India | Hindi & General" -1 channel-id="INBD1300010WP",News18 India [1080p]
+https://jmp2.uk/stvp-INBD1300010WP
+#EXTINF: tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_HINDI_KHABAR/images/LOGO_HD/image.png"  tvg-id="HindiKhabar.in@SD"  tvg-name="Hindi Khabar [1080p]"  tvg-chno="16130"  group-title="India | Hindi & General" -1,Hindi Khabar [1080p]
+https://stream.ottlive.co.in/hindikhabar/index.m3u8
 #EXTINF: tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN1600009NL_20260818T082640SQUARE.png"  tvg-id="IN1600009NL"  tvg-name="HISTORY TV18 - Hindi [1080p]"  tvg-chno="16284"  group-title="India | Hindi & General" -1 channel-id="IN1600009NL",HISTORY TV18 - Hindi [1080p]
 https://jmp2.uk/stvp-IN1600009NL
-#EXTINF: tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN4000001LP_20261124T041120SQUARE.png"  tvg-id="IN4000001LP"  tvg-name="India TV News [1080p]"  tvg-chno="16141"  group-title="India | Hindi & General" -1 channel-id="IN4000001LP",India TV News [1080p]
-https://jmp2.uk/stvp-IN4000001LP
-#EXTINF: tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/INBA490002119_20261110T043322SQUARE.png"  tvg-id="INBA490002119"  tvg-name="Republic Bharat [1080p]"  tvg-chno="16185"  group-title="India | Hindi & General" -1 channel-id="INBA490002119",Republic Bharat [1080p]
-https://jmp2.uk/stvp-INBA490002119
-#EXTINF: tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_HINDI_KHABAR/images/LOGO_HD/image.png"  tvg-id="HindiKhabar.in@SD"  tvg-name="Hindi Khabar [1080p]"  tvg-chno="16130"  group-title="India | Hindi & General" -1,Hindi Khabar [1080p]
-https://livingindiaottlive.akamaized.net/hindikhabar/index.m3u8
 #EXTINF: tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN4000007M9_20260623T015101SQUARE.png"  tvg-id="IN4000007M9"  tvg-name="India Daily 24x7 [1080p]"  tvg-chno="16137"  group-title="India | Hindi & General" -1 channel-id="IN4000007M9",India Daily 24x7 [1080p]
 https://jmp2.uk/stvp-IN4000007M9
+#EXTINF: tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN4000001LP_20261124T041120SQUARE.png"  tvg-id="IN4000001LP"  tvg-name="India TV News [1080p]"  tvg-chno="16141"  group-title="India | Hindi & General" -1 channel-id="IN4000001LP",India TV News [1080p]
+https://jmp2.uk/stvp-IN4000001LP
 #EXTINF: tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN3900001YE_20260623T015508SQUARE.png"  tvg-id="IN3900001YE"  tvg-name="News24 [720p]"  tvg-chno="16174"  group-title="India | Hindi & General" -1 channel-id="IN3900001YE",News24 [720p]
 https://jmp2.uk/stvp-IN3900001YE
 #EXTINF: tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN300085JT_20260623T015403SQUARE.png"  tvg-id="IN300085JT"  tvg-name="News State BR JH [1080p]"  tvg-chno="16312"  group-title="India | Hindi & General" -1 channel-id="IN300085JT",News State BR JH [1080p]
 https://jmp2.uk/stvp-IN300085JT
+#EXTINF: tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/INBA490002119_20261110T043322SQUARE.png"  tvg-id="INBA490002119"  tvg-name="Republic Bharat [1080p]"  tvg-chno="16185"  group-title="India | Hindi & General" -1 channel-id="INBA490002119",Republic Bharat [1080p]
+https://jmp2.uk/stvp-INBA490002119
 #EXTINF: tvg-logo="https://s3.aynaott.com/storage/d2d8f00a60dc64dad6c0181cd86f7869"  tvg-id="9XJalwa.in@SD"  tvg-name="9x Jalwa"  tvg-chno="16545"  group-title="India | Hindi & General" -1,9x Jalwa
 https://tvsen6.aynaott.com/CiPT1VTG8bVekeAZiibd/index.m3u8?e=1784102591&u=ee5437a7-c16b-4700-b317-a41b77d5cba9&token=6ff3e5a92d4d71f3fc281780d3831c05
-#EXTINF: tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/INBD1300010WP_20261124T041132SQUARE.png"  tvg-id="INBD1300010WP"  tvg-name="News18 India [1080p]"  tvg-chno="16672"  group-title="India | Hindi & General" -1 channel-id="INBD1300010WP",News18 India [1080p]
-https://jmp2.uk/stvp-INBD1300010WP
+#EXTINF: tvg-logo="https://s3.aynaott.com/storage/9d0cda929d2a459842a85cce47442776"  tvg-id="Goldmines.in@SD"  tvg-name="Goldmines"  tvg-chno="16693"  group-title="India | Hindi & General" -1,Goldmines
+https://tvsen6.aynaott.com/hKrngve2/index.m3u8?e=1784102592&u=ee5437a7-c16b-4700-b317-a41b77d5cba9&token=c2995b4981869497cd8659e3a739f2d1
 #EXTINF: tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Naxatra_News_Hindi.png"  tvg-id="NaxatraNewsHindi.in@SD"  tvg-name="Naxatra News Hindi"  tvg-chno="16395"  group-title="India | Hindi & General" -1,Naxatra News Hindi
 https://d2gvyg6lvauoko.cloudfront.net/230226/naxatranewshindi/playlist.m3u8?hdnts=st=1735898689~exp=1835898688~acl=*~hmac=f5fe24724fe05481e3841f9eb5ab8efdee0a3dd83645ae9dcf45703f525bab7b
-#EXTINF: tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN46000011Q_20250205T004626SQUARE.png"  tvg-name="XXTreme Jobs Hindi [1080p]"  tvg-chno="16613"  group-title="India | Hindi & General" -1,XXTreme Jobs Hindi [1080p]
-https://cc-zko1curyce7jh.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-zko1curyce7jh/IQJW/WBD/XXtremeJobs_IN/XXtremeJobs_IN.m3u8
+#EXTINF: tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN460000585_20250416T020413SQUARE.png"  tvg-name="Wild Flix Hindi [1080p]"  tvg-chno="16612"  group-title="India | Hindi & General" -1,Wild Flix Hindi [1080p]
+https://cc-qgrxgp51645lw.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-qgrxgp51645lw/IQJW/WBD/WildFlix_IN/WildFlix_IN.m3u8
 #EXTINF: tvg-logo="https://s3.aynaott.com/storage/5e07d993dda4763f4c35125fb9734e72"  tvg-id="a787feb3-0d50-41ad-9d43-f2cc02fada70"  tvg-name="The Q"  tvg-chno="16634"  group-title="India | Hindi & General" -1,The Q
 https://tvsen6.aynaott.com/3PjZZahm/index.m3u8?e=1784102596&u=ee5437a7-c16b-4700-b317-a41b77d5cba9&token=92ddc6a5821e135aef133dbd8b8b6fc7
 #EXTINF: tvg-logo="https://logodix.com/logo/2131933.jpg"  tvg-name="NEWS | NDTV Hindi [720p]"  tvg-chno="16631"  group-title="India | Hindi & General" -1,NEWS | NDTV Hindi [720p]
 https://ndtvindiaelemarchana.akamaized.net/hls/live/2003679-b/ndtvindia/master.m3u8
-#EXTINF: tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN460000585_20250416T020413SQUARE.png"  tvg-name="Wild Flix Hindi [1080p]"  tvg-chno="16612"  group-title="India | Hindi & General" -1,Wild Flix Hindi [1080p]
-https://cc-qgrxgp51645lw.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-qgrxgp51645lw/IQJW/WBD/WildFlix_IN/WildFlix_IN.m3u8
+#EXTINF: tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN46000011Q_20250205T004626SQUARE.png"  tvg-name="XXTreme Jobs Hindi [1080p]"  tvg-chno="16613"  group-title="India | Hindi & General" -1,XXTreme Jobs Hindi [1080p]
+https://cc-zko1curyce7jh.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-zko1curyce7jh/IQJW/WBD/XXtremeJobs_IN/XXtremeJobs_IN.m3u8
 #EXTINF: tvg-logo="https://i.imgur.com/EO6cYUI.png"  tvg-id="GodStandsTV.pk@Hindi"  tvg-name="God Stands TV Hindi"  tvg-chno="22029"  group-title="Pakistan" -1,God Stands TV Hindi
 https://online.godstands.tv:5443/WebRTCApp/streams/HindiStreaming.m3u8
-#EXTINF: tvg-logo="https://s3.aynaott.com/storage/3132515182ec50091b496fe515564084"  tvg-id="4d5c3f29-c835-4920-8fa0-c0bafeaa31ed"  tvg-name="Hindi Movie Classic 24 [1080p]"  tvg-chno="24103"  group-title="Movies" -1,Hindi Movie Classic 24 [1080p]
+#EXTINF: tvg-logo="https://s3.aynaott.com/storage/3132515182ec50091b496fe515564084"  tvg-id="4d5c3f29-c835-4920-8fa0-c0bafeaa31ed"  tvg-name="Hindi Movie Classic 24"  tvg-chno="24103"  group-title="Movies" -1,Hindi Movie Classic 24
 https://vods2.aynaott.com/hindimovies/index.m3u8
-#EXTINF: tvg-logo="https://i.ibb.co/SwWjbPSv/hindi-hits-hd.png"  tvg-id="HindiHits.in@SD"  tvg-name="Hindi Hits SD"  tvg-chno="30093"  group-title="Music" -1,Hindi Hits SD
+#EXTINF: tvg-logo="https://i.ibb.co/SwWjbPSv/hindi-hits-hd.png"  tvg-id="HindiHits.in@SD"  tvg-name="Hindi Hits SD [1080p]"  tvg-chno="30093"  group-title="Music" -1,Hindi Hits SD [1080p]
 http://146.59.253.52:8080/hindihitshd/index.m3u8
