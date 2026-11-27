@@ -7823,6 +7823,10 @@
     "group": "India | Hindi & General",
     "number": 16453
   },
+  "HMTV.in@SD#2": {
+    "group": "Music",
+    "number": 30742
+  },
   "HNN24x7.in@SD": {
     "group": "News | International",
     "number": 2175
@@ -8282,6 +8286,10 @@
   "IN26000170D": {
     "group": "India | Hindi & General",
     "number": 16241
+  },
+  "IN2600020H9": {
+    "group": "India | Hindi & General",
+    "number": 16742
   },
   "IN2600021ED": {
     "group": "India | Hindi & General",
@@ -10339,6 +10347,10 @@
     "group": "Music",
     "number": 30491
   },
+  "MTVPlutoTV.us@US": {
+    "group": "Music",
+    "number": 30744
+  },
   "MTVReality.de@ES": {
     "group": "Music",
     "number": 30492
@@ -11483,6 +11495,10 @@
     "group": "India | Hindi & General",
     "number": 16161
   },
+  "NDTVIndia.in": {
+    "group": "India | Hindi & General",
+    "number": 16743
+  },
   "NDTVIndia.in@SD": {
     "group": "India | Hindi & General",
     "number": 16041
@@ -11791,9 +11807,17 @@
     "group": "USA | News & Business",
     "number": 10077
   },
+  "News12Conneticut.us@SD": {
+    "group": "USA | News & Business",
+    "number": 10088
+  },
   "News12HudsonValley.us@SD": {
     "group": "USA | News & Business",
     "number": 10078
+  },
+  "News12NewJersey.us@SD": {
+    "group": "USA | News & Business",
+    "number": 10087
   },
   "News12NewYork.us@SD": {
     "group": "USA | News & Business",
@@ -13499,6 +13523,10 @@
     "group": "Movies",
     "number": 24162
   },
+  "PlutoTVParanormal.de@DACH": {
+    "group": "Movies",
+    "number": 24599
+  },
   "PlutoTVParanormal.de@ES": {
     "group": "Movies",
     "number": 24386
@@ -14258,6 +14286,10 @@
   "RTNChicago.us@SD": {
     "group": "USA | Networks & Entertainment",
     "number": 5543
+  },
+  "RTPNoticias.pt@HD": {
+    "group": "News | International",
+    "number": 2565
   },
   "RTPNoticias.pt@SD": {
     "group": "News | International",
@@ -15426,6 +15458,10 @@
   "SkyRacing2.au@SD": {
     "group": "Live Sports",
     "number": 1357
+  },
+  "SkyShowtime1.ro@HD": {
+    "group": "Movies",
+    "number": 24600
   },
   "SkySportF1.it@SD": {
     "group": "Live Sports",
@@ -18436,8 +18472,8 @@
     "number": 16618
   },
   "Zoom.in@SD": {
-    "group": "Music",
-    "number": 30742
+    "group": "News | International",
+    "number": 2564
   },
   "Zoom.in@SD#2": {
     "group": "Music",

@@ -15,10 +15,10 @@ https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/da821c24a59d4e57960497aeaca8fb33/in
 https://neotv.ottlive.co.in/gtcpunjabiuk/index.m3u8
 #EXTINF: tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN400064VZ_20260623T015554SQUARE.png"  tvg-id="IN400064VZ"  tvg-name="Punjabi Shorts [1080p]"  tvg-chno="18051"  group-title="India | Punjabi & Regional" -1 channel-id="IN400064VZ",Punjabi Shorts [1080p]
 https://jmp2.uk/stvp-IN400064VZ
-#EXTINF: tvg-logo="https://papaji.freetvindia.com/media/PunjabiTV.png"  tvg-id="PunjabiTV.in@SD"  tvg-name="Punjabi TV [720p]"  tvg-chno="18028"  group-title="India | Punjabi & Regional" -1,Punjabi TV [720p]
-https://samitaorigin.tangotv.in/PUNJABITV/SAMITAORIGIN/index.m3u8
 #EXTINF: tvg-logo="https://papaji.freetvindia.com/media/World_Punjabi_TV.png"  tvg-id="WorldPunjabiTV.in@SD"  tvg-name="World Punjabi TV [1080p]"  tvg-chno="18045"  group-title="India | Punjabi & Regional" -1,World Punjabi TV [1080p]
 https://live1.ottlive.co.in/worldpunjabitv/worldpunjabitv/index.m3u8
+#EXTINF: tvg-logo="https://papaji.freetvindia.com/media/PunjabiTV.png"  tvg-id="PunjabiTV.in@SD"  tvg-name="Punjabi TV [720p]"  tvg-chno="18028"  group-title="India | Punjabi & Regional" -1,Punjabi TV [720p]
+https://samitaorigin.tangotv.in/PUNJABITV/SAMITAORIGIN/index.m3u8
 #EXTINF: tvg-logo="https://play-lh.googleusercontent.com/8zcsR5HWFk84RwYkA6r-OXvYzFtVBOmgnicCYMGXPAmMKEozaRQ9Idw4g2dljsIvZ5ES6r8G_lxs19IU9h-ADg"  tvg-id="D5ChannelPunjabi.in@SD"  tvg-name="D5 Channel Punjabi"  tvg-chno="18034"  group-title="India | Punjabi & Regional" -1,D5 Channel Punjabi
 https://d5.tv360.ca:3453/live/cd5live.m3u8
 #EXTINF: tvg-logo="https://i.imgur.com/AWUcSb8.png"  tvg-id="MahaPunjabi.in@SD"  tvg-name="Maha Punjabi [576p]"  tvg-chno="18043"  group-title="India | Punjabi & Regional" -1,Maha Punjabi [576p]
