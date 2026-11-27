@@ -2,10 +2,10 @@
 #EXTINF: tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_ETV_TELUGU/images/LOGO_HD/image.png"  tvg-id="ETVTelugu.in@USA"  tvg-name="like Gecko) Chrome/145.0.0.0 Safari/537.36 group-title=EntertainmentETV Telugu USA [720p]"  tvg-chno="5508"  group-title="USA | Networks & Entertainment" -1 http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",like Gecko) Chrome/145.0.0.0 Safari/537.36"ETV Telugu USA [720p]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36
 https://livegeorouus.akamaized.net/100823/etvhd_2500/playlist.m3u8?hdnts=st=1735898689~exp=1835898688~acl=*~hmac=f5fe24724fe05481e3841f9eb5ab8efdee0a3dd83645ae9dcf45703f525bab7b|User-Agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F145.0.0.0+Safari%2F537.36
-#EXTINF: tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_TV9_TELUGU_NEWS/images/LOGO_HD/image.png"  tvg-id="TV9Telugu.in@SD"  tvg-name="TV9 Telugu [1080p]"  tvg-chno="20000"  group-title="India | South (Tamil & Telugu)" -1,TV9 Telugu [1080p]
-https://amg01106-amg01106c4-amgplt0747.playout.now3.amagi.tv/amg01106c4/hls.m3u8
 #EXTINF: tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_ETV_HD/images/LOGO_HD/image.png"  tvg-id="ETVTelugu.in@HD"  tvg-name="ETV Telugu HD [1080p]"  tvg-chno="20003"  group-title="India | South (Tamil & Telugu)" -1,ETV Telugu HD [1080p]
 https://d1qkhu31k9gfli.cloudfront.net/v1/a801314f85894ba289029d23aae579a7/airt16KSW.m3u8
+#EXTINF: tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_TV9_TELUGU_NEWS/images/LOGO_HD/image.png"  tvg-id="TV9Telugu.in@SD"  tvg-name="TV9 Telugu [1080p]"  tvg-chno="20000"  group-title="India | South (Tamil & Telugu)" -1,TV9 Telugu [1080p]
+https://amg01106-amg01106c4-amgplt0747.playout.now3.amagi.tv/amg01106c4/hls.m3u8
 #EXTINF: tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN400058AF_20260623T015750SQUARE.png"  tvg-id="IN400058AF"  tvg-name="TeluguOne TV [1080p]"  tvg-chno="20006"  group-title="India | South (Tamil & Telugu)" -1 channel-id="IN400058AF",TeluguOne TV [1080p]
 https://jmp2.uk/stvp-IN400058AF
 #EXTINF: tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0023178R.png?lock=720x540"  tvg-id="ZeeTeluguNews.in@SD"  tvg-name="Zee Telugu News [1080p]"  tvg-chno="20009"  group-title="India | South (Tamil & Telugu)" -1,Zee Telugu News [1080p]
@@ -16,12 +16,12 @@ https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/a3e6a5fec4354ec4ae0ca5ed539ff641/in
 https://mumt04.tangotv.in/m18aqlK4RAJNEWSTELUGU/index.m3u8
 #EXTINF: tvg-logo="https://i.imgur.com/WqTIoWS.png"  tvg-id="NTVTelugu.in@SD"  tvg-name="NTV Telugu [1080p]"  tvg-chno="20029"  group-title="India | South (Tamil & Telugu)" -1,NTV Telugu [1080p]
 https://mumbai-edge.smartplaytv.in/NTVTelugu/index.m3u8
-#EXTINF: tvg-logo="https://papaji.freetvindia.com/media/channels/Chhaya_Chitram_Telugu.png"  tvg-id="ChhayaChitramTelugu.in@SD"  tvg-name="Chhaya Chitram Telugu (360p) [720p]"  tvg-chno="20015"  group-title="India | South (Tamil & Telugu)" -1,Chhaya Chitram Telugu (360p) [720p]
-https://samitaorigin.tangotv.in/CHHAYACHITRAMTELUGU/SAMITAORIGIN/index.m3u8
 #EXTINF: tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yupptvnew/content/common/channel/logos/mjvezt.png"  tvg-id="WOWKidz.in@Telugu"  tvg-name="WOW Kidz Telugu [720p]"  tvg-chno="20008"  group-title="India | South (Tamil & Telugu)" -1,WOW Kidz Telugu [720p]
 https://yuppparoriglin.akamaized.net/181224/smil:wowkidztelgu.smil/playlist.m3u8?hdnts=st=1735898689~exp=1835898688~acl=*~hmac=f5fe24724fe05481e3841f9eb5ab8efdee0a3dd83645ae9dcf45703f525bab7b
 #EXTINF: tvg-logo="https://i.imgur.com/l3EcRnZ.png"  tvg-id="6TVTelugu.in@SD"  tvg-name="6 TV Telugu"  tvg-chno="20020"  group-title="India | South (Tamil & Telugu)" -1,6 TV Telugu
 https://yuppparoriglin.akamaized.net/181224/smil:6tv.smil/playlist.m3u8?hdnts=st=1735898689~exp=1835898688~acl=*~hmac=f5fe24724fe05481e3841f9eb5ab8efdee0a3dd83645ae9dcf45703f525bab7b
+#EXTINF: tvg-logo="https://papaji.freetvindia.com/media/channels/Chhaya_Chitram_Telugu.png"  tvg-id="ChhayaChitramTelugu.in@SD"  tvg-name="Chhaya Chitram Telugu (360p) [720p]"  tvg-chno="20015"  group-title="India | South (Tamil & Telugu)" -1,Chhaya Chitram Telugu (360p) [720p]
+https://samitaorigin.tangotv.in/CHHAYACHITRAMTELUGU/SAMITAORIGIN/index.m3u8
 #EXTINF: tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/PMC_Telugu.png"  tvg-id="PMCTelugu.in@SD"  tvg-name="PMC Telugu [720p]"  tvg-chno="20028"  group-title="India | South (Tamil & Telugu)" -1,PMC Telugu [720p]
 https://mumbai-edge.smartplaytv.in/PMC/index.m3u8
 #EXTINF: tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_RAJ_MUSIX_TELUGU/images/LOGO_HD/image.png"  tvg-id="RajMusixTelugu.in@SD"  tvg-name="Raj Musix Telugu [576p]"  tvg-chno="30605"  group-title="Music" -1,Raj Musix Telugu [576p]
