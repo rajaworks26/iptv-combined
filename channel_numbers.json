@@ -5459,6 +5459,10 @@
     "group": "India | Hindi & General",
     "number": 16257
   },
+  "DDAssam.in@SD": {
+    "group": "India | Hindi & General",
+    "number": 16739
+  },
   "DDBangla.in@SD": {
     "group": "India | Hindi & General",
     "number": 16371
@@ -5680,8 +5684,8 @@
     "number": 2348
   },
   "DailyPostTV.in@SD": {
-    "group": "India | Hindi & General",
-    "number": 16737
+    "group": "News | International",
+    "number": 2557
   },
   "DailyPostTV.in@SD#2": {
     "group": "India | Hindi & General",
@@ -6891,6 +6895,10 @@
     "group": "USA | Networks & Entertainment",
     "number": 5859
   },
+  "FarraPlay.py@SD": {
+    "group": "Music",
+    "number": 30743
+  },
   "Farscape.us@SD": {
     "group": "USA | Networks & Entertainment",
     "number": 5860
@@ -7592,8 +7600,8 @@
     "number": 24263
   },
   "Goldmines.in@SD": {
-    "group": "Movies",
-    "number": 24596
+    "group": "India | Hindi & General",
+    "number": 16737
   },
   "Goldmines.in@SD#2": {
     "group": "Movies",
@@ -8346,6 +8354,10 @@
   "IN3800002VK": {
     "group": "India | Hindi & General",
     "number": 16345
+  },
+  "IN38000072R": {
+    "group": "Movies",
+    "number": 24596
   },
   "IN3800008CX": {
     "group": "Movies",
@@ -9170,6 +9182,10 @@
   "KBSV231.us@SD": {
     "group": "USA | Networks & Entertainment",
     "number": 5616
+  },
+  "KCLTV.in@SD": {
+    "group": "India | Hindi & General",
+    "number": 16741
   },
   "KCM.sg@India": {
     "group": "Movies",
@@ -13819,6 +13835,10 @@
     "group": "India | Hindi & General",
     "number": 16575
   },
+  "PowranMedia.in@SD": {
+    "group": "India | Hindi & General",
+    "number": 16740
+  },
   "Pradesh24Gujarati.in@SD": {
     "group": "India | Punjabi & Regional",
     "number": 18046
@@ -18416,8 +18436,8 @@
     "number": 16618
   },
   "Zoom.in@SD": {
-    "group": "News | International",
-    "number": 2557
+    "group": "Music",
+    "number": 30742
   },
   "Zoom.in@SD#2": {
     "group": "Music",

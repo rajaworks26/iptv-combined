@@ -9,19 +9,19 @@ https://d2lk5u59tns74c.cloudfront.net/out/v1/abf46b14847e45499f4a47f3a9afe93d/in
 https://n18syndication.akamaized.net/bpk-tv/News18_Tamil_Nadu_NW18_MOB/output01/master.m3u8
 #EXTINF: tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Janam_Tamil.png"  tvg-id="TamilJanam.in@SD"  tvg-name="Tamil Janam [720p]"  tvg-chno="20018"  group-title="India | South (Tamil & Telugu)" -1,Tamil Janam [720p]
 https://mumt01.tangotv.in/O5aw8Zn3JANAMTVTAMIL/index.m3u8
+#EXTINF: tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_DD_TAMIL/images/LOGO_HD/image.png"  tvg-id="DDTamil.in@SD"  tvg-name="like Gecko) Chrome/147.0.0.0 Safari/537.36 group-title=GeneralDD Tamil [576p]"  tvg-chno="20023"  group-title="India | South (Tamil & Telugu)" -1 http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36",like Gecko) Chrome/147.0.0.0 Safari/537.36"DD Tamil [576p]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+https://fta.ektv.in/live/679/master.m3u8|User-Agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F147.0.0.0+Safari%2F537.36
 #EXTINF: tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_NEWS_TAMIL_24X7/images/LOGO_HD/image.png"  tvg-id="NewsTamil24x7.in@SD"  tvg-name="News Tamil 24x7 [1080p]"  tvg-chno="20024"  group-title="India | South (Tamil & Telugu)" -1,News Tamil 24x7 [1080p]
 https://stream.ottlive.co.in/newstamil/index.m3u8
 #EXTINF: tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yupptvnew/content/common/channel/logos/mjvezt.png"  tvg-id="WOWKidz.in@Tamil"  tvg-name="WOW Kidz Tamil [720p]"  tvg-chno="20007"  group-title="India | South (Tamil & Telugu)" -1,WOW Kidz Tamil [720p]
 https://yuppparoriglin.akamaized.net/181224/smil:wowkidztam.smil/playlist.m3u8?hdnts=st=1735898689~exp=1835898688~acl=*~hmac=f5fe24724fe05481e3841f9eb5ab8efdee0a3dd83645ae9dcf45703f525bab7b
-#EXTINF: tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_NEWS7_TAMIL/images/LOGO_HD/image.png"  tvg-id="News7Tamil.in@SD"  tvg-name="News 7 Tamil"  tvg-chno="20012"  group-title="India | South (Tamil & Telugu)" -1,News 7 Tamil
-https://segment.yuppcdn.net/240122/news7/playlist.m3u8
 #EXTINF: tvg-logo="https://i.imgur.com/YQK9ewf.png"  tvg-id="AasthaTamil.in@SD"  tvg-name="Aastha Tamil"  tvg-chno="20021"  group-title="India | South (Tamil & Telugu)" -1,Aastha Tamil
 https://aasthaott.akamaized.net/110923/smil:aasthatamil.smil/playlist.m3u8
+#EXTINF: tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_NEWS7_TAMIL/images/LOGO_HD/image.png"  tvg-id="News7Tamil.in@SD"  tvg-name="News 7 Tamil"  tvg-chno="20012"  group-title="India | South (Tamil & Telugu)" -1,News 7 Tamil
+https://segment.yuppcdn.net/240122/news7/playlist.m3u8
 #EXTINF: tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Tamilan_Television.png"  tvg-id="TamilanTV.in@SD"  tvg-name="Tamilan TV [720p]"  tvg-chno="20019"  group-title="India | South (Tamil & Telugu)" -1,Tamilan TV [720p]
 https://mumt04.tangotv.in/m18aqlK4TAMILANTELEVISION/index.m3u8
-#EXTINF: tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_DD_TAMIL/images/LOGO_HD/image.png"  tvg-id="DDTamil.in@SD"  tvg-name="like Gecko) Chrome/147.0.0.0 Safari/537.36 group-title=GeneralDD Tamil [576p]"  tvg-chno="20023"  group-title="India | South (Tamil & Telugu)" -1 http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36",like Gecko) Chrome/147.0.0.0 Safari/537.36"DD Tamil [576p]
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
-https://fta.ektv.in/live/679/master.m3u8|User-Agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F147.0.0.0+Safari%2F537.36
 #EXTINF: tvg-logo="https://www.news.keralatv.in/media/2018/11/Safari-Television-Added-on-Sun-Direct-692x376.jpg"  tvg-name="Safari TV Tamil"  tvg-chno="20025"  group-title="India | South (Tamil & Telugu)" -1,Safari TV Tamil
 https://j78dp346yq5r-hls-live.5centscdn.com/safari/live.stream/playlist.m3u8
 #EXTINF: tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN400061DB_20260623T015348SQUARE.png"  tvg-id="NHTamilGold.in@HD"  tvg-name="NH Tamil Gold [1080p]"  tvg-chno="24112"  group-title="Movies" -1,NH Tamil Gold [1080p]
