@@ -7676,8 +7676,8 @@
     "number": 24263
   },
   "Goldmines.in@SD": {
-    "group": "Movies",
-    "number": 24603
+    "group": "India | Hindi & General",
+    "number": 16747
   },
   "Goldmines.in@SD#2": {
     "group": "Movies",
@@ -11515,6 +11515,10 @@
     "group": "USA | Networks & Entertainment",
     "number": 5167
   },
+  "NBC.us@WTVJ": {
+    "group": "USA | Networks & Entertainment",
+    "number": 5959
+  },
   "NBC.us@WVIT": {
     "group": "USA | Networks & Entertainment",
     "number": 5168
@@ -11612,8 +11616,8 @@
     "number": 16686
   },
   "NENews.in@SD": {
-    "group": "News | International",
-    "number": 2302
+    "group": "India | Hindi & General",
+    "number": 16744
   },
   "NENews.in@SD#2": {
     "group": "India | Hindi & General",
@@ -11895,6 +11899,10 @@
     "group": "USA | News & Business",
     "number": 10077
   },
+  "News12Brooklyn.us@SD": {
+    "group": "USA | News & Business",
+    "number": 10033
+  },
   "News12Conneticut.us@SD": {
     "group": "USA | News & Business",
     "number": 10088
@@ -11916,8 +11924,12 @@
     "number": 10086
   },
   "News12PlusLongIsland.us@HD": {
+    "group": "News | International",
+    "number": 2302
+  },
+  "News12PlusLongIsland.us@HD#2": {
     "group": "USA | News & Business",
-    "number": 10033
+    "number": 10089
   },
   "News12Westchester.us@SD": {
     "group": "USA | News & Business",
@@ -13822,6 +13834,10 @@
   "PlutoTVTheTwilightZone.us@SD": {
     "group": "USA | Networks & Entertainment",
     "number": 5640
+  },
+  "PlutoTVThrillers.de@ES": {
+    "group": "Movies",
+    "number": 24603
   },
   "PlutoTVThrillers.de@GB": {
     "group": "Movies",
@@ -17860,8 +17876,8 @@
     "number": 5832
   },
   "VelichamTV.in@SD": {
-    "group": "News | International",
-    "number": 2325
+    "group": "India | Hindi & General",
+    "number": 16746
   },
   "VelichamTV.in@SD#2": {
     "group": "India | Hindi & General",
@@ -18600,8 +18616,8 @@
     "number": 16618
   },
   "Zoom.in@SD": {
-    "group": "News | International",
-    "number": 2564
+    "group": "Music",
+    "number": 30745
   },
   "Zoom.in@SD#2": {
     "group": "Music",
