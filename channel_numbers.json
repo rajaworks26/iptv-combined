@@ -2835,6 +2835,10 @@
     "group": "USA | Networks & Entertainment",
     "number": 5265
   },
+  "AtlanticoTelevision.es@HD": {
+    "group": "News | International",
+    "number": 2566
+  },
   "Atlas.us@SD": {
     "group": "USA | Documentary & Lifestyle",
     "number": 14002
@@ -3340,8 +3344,8 @@
     "number": 16641
   },
   "Bharat24.in@SD": {
-    "group": "News | International",
-    "number": 2271
+    "group": "India | Hindi & General",
+    "number": 16744
   },
   "Bharat24.in@SD#2": {
     "group": "India | Hindi & General",
@@ -5439,6 +5443,10 @@
     "group": "Live Sports",
     "number": 1257
   },
+  "DAZNF1.uk@Spain": {
+    "group": "Live Sports",
+    "number": 1467
+  },
   "DAZNHeldinnenxPlutoTV.de@DACH": {
     "group": "Live Sports",
     "number": 1389
@@ -6607,6 +6615,10 @@
     "group": "USA | Networks & Entertainment",
     "number": 5916
   },
+  "FEVATV.ca@SD": {
+    "group": "Canada | General & News",
+    "number": 3413
+  },
   "FGNChannel.in@SD": {
     "group": "India | Hindi & General",
     "number": 16273
@@ -6758,6 +6770,10 @@
   "FILMBOXPlusOne.pl@UkraineBaltics": {
     "group": "Movies",
     "number": 24576
+  },
+  "FINTECHTV.us@HD": {
+    "group": "USA | Networks & Entertainment",
+    "number": 5957
   },
   "FITE247.us@SD": {
     "group": "Live Sports",
@@ -6915,6 +6931,10 @@
     "group": "Live Sports",
     "number": 1278
   },
+  "FastSports1.am@SD": {
+    "group": "Live Sports",
+    "number": 1468
+  },
   "FastTV.us@SD": {
     "group": "USA | Networks & Entertainment",
     "number": 5497
@@ -6974,6 +6994,10 @@
   "Film4.hu@SD": {
     "group": "Movies",
     "number": 24277
+  },
+  "FilmBoxPremium.nl@Adria": {
+    "group": "Movies",
+    "number": 24602
   },
   "FilmCafe.hu@Hungary": {
     "group": "Movies",
@@ -8707,6 +8731,10 @@
     "group": "India | Hindi & General",
     "number": 16539
   },
+  "INBD4000058T": {
+    "group": "News | International",
+    "number": 2568
+  },
   "INBD400010BD": {
     "group": "India | Hindi & General",
     "number": 16080
@@ -9510,6 +9538,10 @@
   "Kinoteatr.uz@SD": {
     "group": "Movies",
     "number": 24474
+  },
+  "Kinouzhas.ru@SD": {
+    "group": "Movies",
+    "number": 24601
   },
   "KissKissNapoliTV.it@SD": {
     "group": "Music",
@@ -11023,6 +11055,10 @@
     "group": "News | International",
     "number": 2187
   },
+  "MirameTV.es@SD": {
+    "group": "News | International",
+    "number": 2271
+  },
   "MirrorNow.in@SD": {
     "group": "India | Hindi & General",
     "number": 16159
@@ -12255,6 +12291,10 @@
     "group": "Movies",
     "number": 24324
   },
+  "Noticias16.do@SD": {
+    "group": "News | International",
+    "number": 2567
+  },
   "Noticiero90Minutos.co@SD": {
     "group": "News | International",
     "number": 2193
@@ -12414,6 +12454,10 @@
   "OliTV.in@SD": {
     "group": "India | Hindi & General",
     "number": 16177
+  },
+  "OmShanti.in@SD": {
+    "group": "India | Hindi & General",
+    "number": 16745
   },
   "OmanSportsTV.om@SD": {
     "group": "Live Sports",
@@ -12742,6 +12786,10 @@
   "PTV.ua@SD": {
     "group": "Pakistan",
     "number": 22046
+  },
+  "PTVHome.pk@SD": {
+    "group": "Pakistan",
+    "number": 22049
   },
   "Pac12Insider.us@SD": {
     "group": "Live Sports",
@@ -13795,6 +13843,14 @@
     "group": "Music",
     "number": 30532
   },
+  "PolsatSportPremium1.pl@SD": {
+    "group": "Live Sports",
+    "number": 1472
+  },
+  "PolsatSportPremium2.pl@SD": {
+    "group": "Live Sports",
+    "number": 1473
+  },
   "PopcornCentral.mx@SD": {
     "group": "Movies",
     "number": 24030
@@ -14623,6 +14679,10 @@
     "group": "USA | Networks & Entertainment",
     "number": 5182
   },
+  "RealLifeNetwork.us@HD": {
+    "group": "USA | Networks & Entertainment",
+    "number": 5958
+  },
   "RealMadridTV.es@SD": {
     "group": "Live Sports",
     "number": 1301
@@ -14710,6 +14770,10 @@
   "RedseatTheFirst.us@SD": {
     "group": "News | International",
     "number": 2202
+  },
+  "Reelz.us@SD": {
+    "group": "USA | Documentary & Lifestyle",
+    "number": 14072
   },
   "ReelzFamousInfamous.us@HD": {
     "group": "USA | Documentary & Lifestyle",
@@ -15691,6 +15755,10 @@
     "group": "Live Sports",
     "number": 1332
   },
+  "Sport.uz@SD": {
+    "group": "Live Sports",
+    "number": 1471
+  },
   "Sport1.cz@HD": {
     "group": "Live Sports",
     "number": 1331
@@ -16571,6 +16639,10 @@
     "group": "Music",
     "number": 30012
   },
+  "TVPSport.pl@SD": {
+    "group": "Live Sports",
+    "number": 1470
+  },
   "TVPWorld.pl@SD": {
     "group": "News | International",
     "number": 2396
@@ -17218,6 +17290,10 @@
   "TiankovOrientFolk.bg@SD": {
     "group": "Music",
     "number": 30564
+  },
+  "TigoSports.bo@SD": {
+    "group": "Live Sports",
+    "number": 1469
   },
   "TigoSportsPlus.py@SD": {
     "group": "Live Sports",
