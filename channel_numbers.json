@@ -1839,6 +1839,10 @@
     "group": "Movies",
     "number": 24569
   },
+  "AMCEurope.uk@Romania": {
+    "group": "Movies",
+    "number": 24604
+  },
   "AMCThrillers.us@SD": {
     "group": "Movies",
     "number": 24001
@@ -3011,9 +3015,57 @@
     "group": "News | International",
     "number": 2057
   },
+  "BFMBusiness.fr@SD": {
+    "group": "News | International",
+    "number": 2570
+  },
+  "BFMCotedAzur.fr@SD": {
+    "group": "News | International",
+    "number": 2580
+  },
+  "BFMDICIAlpesduSud.fr@SD": {
+    "group": "News | International",
+    "number": 2571
+  },
+  "BFMDICIHauteProvence.fr@SD": {
+    "group": "News | International",
+    "number": 2572
+  },
+  "BFMGrandLille.fr@SD": {
+    "group": "News | International",
+    "number": 2573
+  },
+  "BFMGrandLittoral.fr@SD": {
+    "group": "News | International",
+    "number": 2574
+  },
+  "BFMLyon.fr@SD": {
+    "group": "News | International",
+    "number": 2575
+  },
+  "BFMMarseille.fr@SD": {
+    "group": "News | International",
+    "number": 2576
+  },
+  "BFMNormandie.fr@SD": {
+    "group": "News | International",
+    "number": 2577
+  },
   "BFMTV.fr@SD": {
     "group": "News | International",
     "number": 2058
+  },
+  "BFMTV.fr@SD#2": {
+    "group": "News | International",
+    "number": 2557
+  },
+  "BFMTechCo.fr@SD": {
+    "group": "News | International",
+    "number": 2579
+  },
+  "BFMVar.fr@SD": {
+    "group": "News | International",
+    "number": 2578
   },
   "BHIChannel.in@SD": {
     "group": "India | Hindi & General",
@@ -3344,8 +3396,8 @@
     "number": 16641
   },
   "Bharat24.in@SD": {
-    "group": "India | Hindi & General",
-    "number": 16744
+    "group": "News | International",
+    "number": 2569
   },
   "Bharat24.in@SD#2": {
     "group": "India | Hindi & General",
@@ -5692,8 +5744,8 @@
     "number": 2348
   },
   "DailyPostTV.in@SD": {
-    "group": "News | International",
-    "number": 2557
+    "group": "India | Hindi & General",
+    "number": 16737
   },
   "DailyPostTV.in@SD#2": {
     "group": "India | Hindi & General",
@@ -7624,8 +7676,8 @@
     "number": 24263
   },
   "Goldmines.in@SD": {
-    "group": "India | Hindi & General",
-    "number": 16737
+    "group": "Movies",
+    "number": 24603
   },
   "Goldmines.in@SD#2": {
     "group": "Movies",

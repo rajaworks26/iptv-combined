@@ -20,6 +20,8 @@ https://segment.yuppcdn.net/240122/news7/playlist.m3u8
 https://mumt04.tangotv.in/m18aqlK4TAMILANTELEVISION/index.m3u8
 #EXTINF: tvg-logo="https://i.imgur.com/YQK9ewf.png"  tvg-id="AasthaTamil.in@SD"  tvg-name="Aastha Tamil"  tvg-chno="20021"  group-title="India | South (Tamil & Telugu)" -1,Aastha Tamil
 https://aasthaott.akamaized.net/110923/smil:aasthatamil.smil/playlist.m3u8
+#EXTINF: tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_NEWS_TAMIL_24X7/images/LOGO_HD/image.png"  tvg-id="NewsTamil24x7.in@SD"  tvg-name="News Tamil 24x7 [1080p]"  tvg-chno="20024"  group-title="India | South (Tamil & Telugu)" -1,News Tamil 24x7 [1080p]
+https://stream.ottlive.co.in/newstamil/index.m3u8
 #EXTINF: tvg-logo="https://www.news.keralatv.in/media/2018/11/Safari-Television-Added-on-Sun-Direct-692x376.jpg"  tvg-name="Safari TV Tamil"  tvg-chno="20025"  group-title="India | South (Tamil & Telugu)" -1,Safari TV Tamil
 https://j78dp346yq5r-hls-live.5centscdn.com/safari/live.stream/playlist.m3u8
 #EXTINF: tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN400061DB_20260623T015348SQUARE.png"  tvg-id="NHTamilGold.in@HD"  tvg-name="NH Tamil Gold [1080p]"  tvg-chno="24112"  group-title="Movies" -1,NH Tamil Gold [1080p]
